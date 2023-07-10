@@ -14,25 +14,6 @@ typedef struct{
 }LightData;
 
 typedef struct {
-	
-	Mtx modeling;
-	Mtx projection;
-	Mtx viewpoint;
-	Mtx camRot;
-	u16 normal;
-
-	float distance_from_player;
-	float horizontal_distance_from_player;
-	float vertical_distance_from_player;
-    float angle_around_player;
-
-	float pos[3];
-	float pitch;
-	float yaw;
-	float roll;
-} Camera;
-
-typedef struct {
 
 	Mtx	pos_mtx;
 	Mtx	rot_mtx[3];
