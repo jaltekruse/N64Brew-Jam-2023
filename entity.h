@@ -2,8 +2,25 @@
 #define ENTITY_H
 
 
+typedef struct {
+
+	Mtx	pos_mtx;
+	Mtx	rot_mtx[3];
+	Mtx scale_mtx;
+
+	float pos[3];
+	float dir[3];
+	float pitch;
+	float yaw;
+	float scale;
+
+	Gfx *mesh;
+
+} StaticObject;
+
 
 typedef enum { 
+
     IDLE,
     START_WALKING,
     WALKING, 
@@ -14,11 +31,16 @@ typedef enum {
    	JUMP,
 	AIRIDLE,	
 	LAND
+
 } EntityState;
 
+
 typedef enum {
+
 	NICK
+
 } EntityType;
+
 
 typedef struct {
 
@@ -43,13 +65,12 @@ typedef struct {
 
 	float horizontal_speed;
 	float vertical_speed;
+	float input_amount;
 
 	EntityType type;
 	EntityState state;
 
 	ModelHelper model;
-
-	float input_amount;
 
 } Entity;
 
@@ -85,24 +106,16 @@ void set_animation(Entity *entity) {
 
         if (entity->type == NICK) {
 
-        if (entity->state  == IDLE) set_anim(&entity->model, ANIMATION_nick_idle);
-        if (entity->state  == START_WALKING) set_anim(&entity->model, ANIMATION_nick_start_walking);
-
-
-        if (entity->state  == WALKING) set_anim_transition(&entity->model, ANIMATION_nick_walking);
-
-
-        if (entity->state  == START_RUNNING) set_anim(&entity->model, ANIMATION_nick_start_running);
-
-
-        if (entity->state  == RUNNING) set_anim_transition(&entity->model, ANIMATION_nick_running);
-
-
-        if (entity->state  == STOP_RUNNING) set_anim(&entity->model, ANIMATION_nick_stop_running);
-        if (entity->state  == ROLL) set_anim(&entity->model, ANIMATION_nick_sprinting_roll);
-        if (entity->state  == JUMP) set_anim(&entity->model, ANIMATION_nick_jump);
-        if (entity->state  == AIRIDLE) set_anim(&entity->model, ANIMATION_nick_falling_idle);
-        if (entity->state  == LAND) set_anim(&entity->model, ANIMATION_nick_falling_to_landing);
+            if (entity->state  == IDLE) set_anim(&entity->model, ANIMATION_nick_tap_shoe_left);
+            if (entity->state  == START_WALKING) set_anim(&entity->model, ANIMATION_nick_walk_left);
+            if (entity->state  == WALKING) set_anim_transition(&entity->model, ANIMATION_nick_walk_left);
+            if (entity->state  == START_RUNNING) set_anim(&entity->model, ANIMATION_nick_stand_to_run_left);
+            if (entity->state  == RUNNING) set_anim_transition(&entity->model, ANIMATION_nick_run_left);
+            if (entity->state  == STOP_RUNNING) set_anim(&entity->model, ANIMATION_nick_run_to_stand_left);
+            if (entity->state  == ROLL) set_anim(&entity->model, ANIMATION_nick_run_to_roll_left);
+            if (entity->state  == JUMP) set_anim(&entity->model, ANIMATION_nick_jump_left);
+            if (entity->state  == AIRIDLE) set_anim(&entity->model, ANIMATION_nick_fall_idle_left);
+            if (entity->state  == LAND) set_anim(&entity->model, ANIMATION_nick_fall_to_stand_left);
 
     }
 }

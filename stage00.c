@@ -63,7 +63,7 @@ float anim_speed;
 // Camera
 Camera cam = {
 
-    distance_from_player: 1200,
+    distance_from_player: 200,
     pitch: 30,
     angle_around_player: 0,
 };
@@ -123,7 +123,7 @@ void init_nick(Entity *entity){
 
     if (entity->type == NICK) {
         initmodel(&entity->model, MODEL_nick, nickMtx);
-        set_anim(&entity->model, ANIMATION_nick_idle); 
+        set_anim(&entity->model, ANIMATION_nick_look_around_left); 
         set_animcallback(&entity->model, animcallback);
     }
 }

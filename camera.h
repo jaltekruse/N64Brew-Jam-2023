@@ -22,6 +22,14 @@ typedef struct {
 } Camera;
 
 
+typedef struct{
+    Light amb;
+    Light dir;
+	float angle[3];
+	int ambcol;
+}LightData;
+
+
 void set_camera_position(Camera *camera, Entity entity);
 
 

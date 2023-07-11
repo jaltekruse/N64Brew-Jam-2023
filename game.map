@@ -1,0 +1,711 @@
+
+Secciones de salida descartadas
+
+ .data          0x0000000000000000        0x0 asm/rom_header.o
+ .bss           0x0000000000000000        0x0 asm/rom_header.o
+ .reginfo       0x0000000000000000       0x18 asm/rom_header.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 asm/rom_header.o
+ .pdr           0x0000000000000000        0x0 asm/rom_header.o
+ .gnu.attributes
+                0x0000000000000000       0x10 asm/rom_header.o
+ .data          0x0000000000000000        0x0 asm/entry.o
+ .bss           0x0000000000000000        0x0 asm/entry.o
+ .reginfo       0x0000000000000000       0x18 asm/entry.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 asm/entry.o
+ .pdr           0x0000000000000000        0x0 asm/entry.o
+ .gnu.attributes
+                0x0000000000000000       0x10 asm/entry.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 codesegment.o
+ .reginfo       0x0000000000000000       0x18 codesegment.o
+ .eh_frame      0x0000000000000000       0x78 codesegment.o
+ .comment       0x0000000000000000      0xcea codesegment.o
+ .pdr           0x0000000000000000     0x39a0 codesegment.o
+ .debug_aranges
+                0x0000000000000000     0x1940 codesegment.o
+ .debug_info    0x0000000000000000    0x3e3e5 codesegment.o
+ .debug_abbrev  0x0000000000000000     0xfb3a codesegment.o
+ .debug_line    0x0000000000000000    0x119b5 codesegment.o
+ .debug_frame   0x0000000000000000     0x45fc codesegment.o
+ .debug_str     0x0000000000000000    0x280c9 codesegment.o
+ .debug_line_str
+                0x0000000000000000      0x797 codesegment.o
+ .debug_loclists
+                0x0000000000000000     0x1c6d codesegment.o
+ .debug_rnglists
+                0x0000000000000000      0x1d0 codesegment.o
+ .gnu.attributes
+                0x0000000000000000       0x10 codesegment.o
+ .mdebug.abi32  0x0000000000000000        0x0 codesegment.o
+
+Configuración de la Memoria
+
+Nombre           Origen             Longitud           Atributos
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Guión del enlazador y mapa de memoria
+
+LOAD asm/rom_header.o
+LOAD boot.6102.o
+LOAD asm/entry.o
+LOAD codesegment.o
+LOAD /usr/lib/n64/PR/rspboot.o
+LOAD /usr/lib/n64/PR/gspF3DEX2.fifo.o
+LOAD /usr/lib/n64/PR/gspL3DEX2.fifo.o
+LOAD /usr/lib/n64/PR/gspF3DEX2.Rej.fifo.o
+LOAD /usr/lib/n64/PR/gspF3DEX2.NoN.fifo.o
+LOAD /usr/lib/n64/PR/gspF3DLX2.Rej.fifo.o
+LOAD /usr/lib/n64/PR/gspS2DEX2.fifo.o
+                0x00000000000cfbd8                __romPos = 0x0
+                0x0000000004000000                _bootSegmentStart = ADDR (.boot)
+                0x0000000000000000                _bootSegmentRomStart = __romPos
+
+.boot           0x0000000004000000     0x1000 dirección de carga 0x0000000000000000
+ asm/rom_header.o(.text)
+ .text          0x0000000004000000       0x40 asm/rom_header.o
+ boot.6102.o(.data)
+ .data          0x0000000004000040      0xfc0 boot.6102.o
+                0x0000000004000040                _binary__usr_lib_n64_PR_bootcode_boot_6102_start
+                0x0000000004001000                _binary__usr_lib_n64_PR_bootcode_boot_6102_end
+                0x0000000004001000                _bootSegmentEnd = (ADDR (.boot) + SIZEOF (.boot))
+                0x0000000000001000                _bootSegmentRomEnd = (__romPos + SIZEOF (.boot))
+                0x00000000000cfbd8                __romPos = (__romPos + SIZEOF (.boot))
+                0x0000000080025c00                _codeSegmentStart = ADDR (.code)
+                0x0000000000001000                _codeSegmentRomStart = __romPos
+
+.code           0x0000000080025c00    0xcebd8 dirección de carga 0x0000000000001000
+ asm/entry.o(.text)
+ .text          0x0000000080025c00       0x50 asm/entry.o
+                0x0000000080025c00                entry_point
+ codesegment.o(.text)
+ .text          0x0000000080025c50    0x24ec0 codesegment.o
+                0x0000000080025c50                nuBoot
+                0x0000000080025d88                mainproc
+                0x0000000080025e64                rcp_init
+                0x0000000080025f24                fb_clear
+                0x000000008002622c                rad
+                0x0000000080026270                deg
+                0x00000000800262b4                qi_sqrt
+                0x000000008002635c                lim
+                0x000000008002639c                get_time
+                0x0000000080026424                cycles_to_sec
+                0x00000000800264a8                time_management
+                0x0000000080026564                set_entity_position
+                0x0000000080026600                set_animation
+                0x00000000800267f4                entity_animcallback
+                0x00000000800268c8                set_entity_state
+                0x0000000080026c98                set_camera_position
+                0x0000000080026e4c                acceleration_to_speed
+                0x0000000080026ee8                handle_player_platformer
+                0x0000000080027844                handle_player_3d_shooter
+                0x0000000080027b90                move_player
+                0x0000000080027c7c                handle_camera_analog_stick
+                0x0000000080027e54                handle_camera_c_buttons
+                0x00000000800280c4                move_camera
+                0x000000008002817c                change_mode
+                0x0000000080028210                init_nick
+                0x00000000800282a8                animcallback
+                0x00000000800282ec                set_light
+                0x00000000800285f0                set_viewport
+                0x00000000800287ec                render_entity
+                0x000000008002899c                render_static_object
+                0x0000000080028b58                render_world
+                0x0000000080028f20                render_debug_data
+                0x0000000080028fbc                stage00_init
+                0x0000000080029008                stage00_update
+                0x00000000800291d4                stage00_draw
+                0x00000000800298b4                initmodel
+                0x00000000800299ac                set_predrawfunc
+                0x00000000800299e4                set_postdrawfunc
+                0x0000000080029a1c                set_animcallback
+                0x0000000080029d6c                advance_anim
+                0x000000008002a0c8                set_anim
+                0x000000008002a190                set_anim_transition
+                0x000000008002a358                get_currentanim
+                0x000000008002a890                drawmodel
+                0x000000008002abcc                usb_initialize
+                0x000000008002ae58                usb_getcart
+                0x000000008002ae80                usb_write
+                0x000000008002af08                usb_poll
+                0x000000008002afcc                usb_read
+                0x000000008002b1a4                usb_skip
+                0x000000008002b1fc                usb_rewind
+                0x000000008002b268                usb_purge
+                0x000000008002cd3c                nuContDataGetEx
+                0x000000008002ce14                nuContInit
+                0x000000008002ce64                nuContMgrInit
+                0x000000008002cfa8                nuContMgrRemove
+                0x000000008002cfe4                nuContDataClose
+                0x000000008002d028                nuContDataOpen
+                0x000000008002d34c                nuContPakMgrInit
+                0x000000008002d388                nuContPakMgrRemove
+                0x000000008002d7e8                nuContQueryRead
+                0x000000008002d824                nuContRmbMgrInit
+                0x000000008002d900                nuContRmbMgrRemove
+                0x000000008002e240                nuDebConClear
+                0x000000008002e9d8                nuDebConDispEX2
+                0x000000008002ee08                outitoasc
+                0x000000008002f270                getintval
+                0x000000008002f448                nuDebConPrintf
+                0x000000008002fb78                nuDebConPutc
+                0x000000008002fcac                nuDebConInc
+                0x000000008002fd3c                nuDebConRtn
+                0x000000008002febc                nuDebConEsc
+                0x0000000080030030                nuDebConTextPos
+                0x00000000800301cc                nuGfxDisplayOff
+                0x000000008003020c                nuGfxDisplayOn
+                0x000000008003023c                nuGfxFuncSet
+                0x000000008003029c                nuGfxInitEX2
+                0x00000000800303e0                nuGfxSetCfb
+                0x00000000800305c4                nuGfxSetUcodeFifo
+                0x0000000080030650                nuGfxSwapCfb
+                0x000000008003069c                nuGfxSwapCfbFuncSet
+                0x00000000800306f4                nuGfxTaskAllEndWait
+                0x0000000080030730                nuGfxTaskMgr
+                0x00000000800308a0                nuGfxTaskMgrInit
+                0x0000000080030c0c                nuGfxTaskStart
+                0x0000000080030fb8                nuGfxThreadStart
+                0x0000000080031028                nuPiInit
+                0x0000000080031088                nuScCreateScheduler
+                0x00000000800313f8                nuScGetAudioMQ
+                0x0000000080031420                nuScGetGfxMQ
+                0x0000000080031648                nuScAddClient
+                0x0000000080031714                nuScResetClientMesgType
+                0x0000000080031774                nuScRemoveClient
+                0x000000008003238c                nuScSetFrameBufferNum
+                0x00000000800323c8                nuScGetFrameRate
+                0x00000000800323f4                nuSiCallBackAdd
+                0x000000008003250c                nuSiCallBackRemove
+                0x00000000800325c8                nuSiMgrInit
+                0x000000008003268c                nuSiSendMesg
+                0x000000008003272c                nuSiMgrStop
+                0x0000000080032768                nuSiMgrRestart
+                0x0000000080032a8c                nuContDataLock
+                0x0000000080032ae0                nuContDataUnLock
+                0x0000000080032b30                nuDebConCPuts
+                0x0000000080032ba4                nuGfxRetraceWait
+                0x0000000080032c54                __osMotorAccess
+                0x0000000080032f40                osMotorInit
+                0x0000000080033154                osAfterPreNMI
+                0x0000000080033188                __createSpeedParam
+                0x00000000800332ac                osInitialize
+                0x00000000800335d0                osInitialize_isv
+                0x0000000080033630                __osContRamRead
+                0x0000000080033914                osPfsAllocateFile
+                0x0000000080033dcc                __osPfsDeclearPage
+                0x0000000080033fe4                __osDumpInode
+                0x00000000800341dc                osPfsDeleteFile
+                0x00000000800344d8                __osPfsReleasePages
+                0x00000000800345bc                osPfsFileState
+                0x00000000800348a0                osPfsFreeBlocks
+                0x0000000080034a1c                __osPfsGetStatus
+                0x0000000080034b54                __osPfsRequestOneChannel
+                0x0000000080034c50                __osPfsGetOneChannelData
+                0x0000000080034d54                osPfsInitPak
+                0x00000000800352a4                osPfsIsPlug
+                0x00000000800354b0                __osPfsRequestData
+                0x00000000800355ac                __osPfsGetInitData
+                0x0000000080035700                osPfsNumFiles
+                0x0000000080035a14                osPfsReadWriteFile
+                0x0000000080035fcc                osPfsRepairId
+                0x0000000080036058                osPfsFindFile
+                0x00000000800362f4                __osPfsSelectBank
+                0x00000000800363b8                osCartRomInit
+                0x000000008003661c                __osPiCreateAccessQueue
+                0x0000000080036688                __osPiGetAccess
+                0x00000000800366e8                __osPiRelAccess
+                0x000000008003672c                osPiStartDma
+                0x00000000800369b4                osPiGetCmdQueue
+                0x00000000800369fc                osCreatePiManager
+                0x0000000080036d7c                __osPiRawStartDma
+                0x0000000080036fa4                osPiReadIo
+                0x0000000080037034                osPiWriteIo
+                0x00000000800370c4                isPrintfInit
+                0x000000008003746c                __checkHardware_isv
+                0x0000000080037500                __osInitialize_isv
+                0x0000000080037698                guRotateF
+                0x00000000800378f8                guRotate
+                0x000000008003796c                osCreateThread
+                0x0000000080037b84                osGetThreadPri
+                0x0000000080037bc8                osSetThreadPri
+                0x0000000080037d24                osStartThread
+                0x0000000080037ee4                osStopThread
+                0x0000000080037fd8                __osDequeueThread
+                0x000000008003804c                __osSpSetPc
+                0x000000008003824c                osSpTaskLoad
+                0x00000000800384f0                osSpTaskStartGo
+                0x0000000080038540                osSpTaskYield
+                0x0000000080038578                osSpTaskYielded
+                0x0000000080038604                strchr
+                0x000000008003867c                strlen
+                0x00000000800386d8                memcpy
+                0x0000000080038760                __osSyncVPrintf
+                0x00000000800387c8                osSyncPrintf
+                0x0000000080038820                rmonPrintf
+                0x000000008003889c                _Printf
+                0x0000000080039ab8                osCreateMesgQueue
+                0x0000000080039b5c                osJamMesg
+                0x0000000080039d00                osRecvMesg
+                0x0000000080039e90                osSendMesg
+                0x000000008003a024                osSetEventMesg
+                0x000000008003a124                __osRdbSend
+                0x000000008003a418                osVirtualToPhysical
+                0x000000008003a4c8                osViBlack
+                0x000000008003a56c                __osViInit
+                0x000000008003a6d4                osViGetCurrentFramebuffer
+                0x000000008003a754                osViGetCurrentMode
+                0x000000008003a7e0                osViGetNextFramebuffer
+                0x000000008003a860                osCreateViManager
+                0x000000008003acc8                osViSetEvent
+                0x000000008003ad98                osViSetMode
+                0x000000008003ae68                osViSetSpecialFeatures
+                0x000000008003b0f4                osViSetYScale
+                0x000000008003b21c                osViSwapBuffer
+                0x000000008003b30c                __osViSwapContext
+                0x000000008003b6c8                osGetTime
+                0x000000008003b7ac                __osTimerServicesInit
+                0x000000008003b858                __osTimerInterrupt
+                0x000000008003bb7c                __osSetTimerIntr
+                0x000000008003bc68                __osInsertTimer
+                0x000000008003be00                __osContAddressCrc
+                0x000000008003bf18                __osContDataCrc
+                0x000000008003c064                __osSiCreateAccessQueue
+                0x000000008003c0d0                __osSiGetAccess
+                0x000000008003c130                __osSiRelAccess
+                0x000000008003c174                __osSiRawStartDma
+                0x000000008003c28c                __osSiRawReadIo
+                0x000000008003c348                __osSiRawWriteIo
+                0x000000008003c3dc                fcos
+                0x000000008003c3dc                cosf
+                0x000000008003c3dc                __cosf
+                0x000000008003c628                guLookAtF
+                0x000000008003ca40                guLookAt
+                0x000000008003cadc                guMtxF2L
+                0x000000008003cc44                guMtxL2F
+                0x000000008003cdc0                guMtxIdentF
+                0x000000008003ce9c                guMtxIdent
+                0x000000008003cef0                guPerspectiveF
+                0x000000008003d18c                guPerspective
+                0x000000008003d210                fsin
+                0x000000008003d210                __sinf
+                0x000000008003d210                sinf
+                0x000000008003d4d0                osDpGetCounters
+                0x000000008003d568                osDpSetStatus
+                0x000000008003d5a0                osContStartQuery
+                0x000000008003d64c                osContGetQuery
+                0x000000008003d690                osContStartReadData
+                0x000000008003d740                osContGetReadData
+                0x000000008003d960                osContInit
+                0x000000008003db50                __osContGetInitData
+                0x000000008003dca4                __osPackRequestData
+                0x000000008003de34                __osError
+                0x000000008003de54                __osExceptionPreamble
+                0x000000008003de64                __ptExceptionPreamble
+                0x000000008003de84                __ptException
+                0x000000008003df28                __osException
+                0x000000008003e928                send_mesg
+                0x000000008003e9e8                handle_CpU
+                0x000000008003ea20                __osEnqueueAndYield
+                0x000000008003eb30                __osEnqueueThread
+                0x000000008003eb7c                __osPopThread
+                0x000000008003eb90                __osNop
+                0x000000008003eb98                __osDispatchThread
+                0x000000008003ed44                __osCleanupThread
+                0x000000008003ed54                __osDisableInt
+                0x000000008003edc4                __osRestoreInt
+                0x000000008003ede0                osSetIntMask
+                0x000000008003ee80                __isExpJP
+                0x000000008003ee9c                __isExp
+                0x000000008003efe0                MonitorInitBreak
+                0x000000008003f010                guMtxCatF
+                0x000000008003f110                guNormalize
+                0x000000008003f170                guScaleF
+                0x000000008003f1d0                guTranslateF
+                0x000000008003f230                guTranslate
+                0x000000008003f310                osMapTLBRdb
+                0x000000008003f368                __osProbeTLB
+                0x000000008003f420                osUnmapTLBAll
+                0x000000008003f464                __osGetCause
+                0x000000008003f470                osGetCount
+                0x000000008003f47c                __osGetSR
+                0x000000008003f488                __osSetCompare
+                0x000000008003f494                __osSetFpcCsr
+                0x000000008003f4a4                __osSetSR
+                0x000000008003f4b4                __osSetWatchLo
+                0x000000008003f4c4                bcmp
+                0x000000008003f608                bcopy
+                0x000000008003f960                bzero
+                0x000000008003fa18                sqrtf
+                0x000000008003fa24                osInvalDCache
+                0x000000008003fad4                osInvalICache
+                0x000000008003fb48                osWritebackDCacheAll
+                0x000000008003fb70                osWritebackDCache
+                0x000000008003fbe4                __osSumcalc
+                0x000000008003fc6c                __osIdCheckSum
+                0x000000008003fd44                __osRepairPackId
+                0x00000000800402ec                __osCheckPackId
+                0x0000000080040508                __osGetId
+                0x00000000800407f0                __osCheckId
+                0x0000000080040954                __osPfsRWInode
+                0x0000000080040ea8                __osDumpId
+                0x0000000080041034                __osContRamWrite
+                0x0000000080041344                osPfsChecker
+                0x0000000080041aa4                corrupted_init
+                0x0000000080041cac                corrupted
+                0x0000000080041f48                __osDevMgrMain
+                0x0000000080042570                __osEPiRawStartDma
+                0x00000000800429b8                __osEPiRawReadIo
+                0x0000000080042cac                __osEPiRawWriteIo
+                0x0000000080042f78                osEPiReadIo
+                0x0000000080043010                osEPiWriteIo
+                0x00000000800430a8                __osPiRawReadIo
+                0x0000000080043190                __osPiRawWriteIo
+                0x0000000080043250                __osResetGlobalIntMask
+                0x00000000800432bc                __osSetGlobalIntMask
+                0x000000008004331c                __assert
+                0x0000000080043628                kdebugserver
+                0x0000000080043760                osThreadProfileCallback
+                0x0000000080043830                osDestroyThread
+                0x0000000080043968                osYieldThread
+                0x00000000800439d4                __osSpDeviceBusy
+                0x0000000080043a24                __osSpGetStatus
+                0x0000000080043a50                __osSpRawStartDma
+                0x0000000080043b94                __osSpSetStatus
+                0x0000000080043bcc                _Ldtob
+                0x0000000080044da0                _Litob
+                0x000000008004514c                osInitRdb
+                0x0000000080045200                osReadHost
+                0x00000000800452f4                __osViGetCurrentContext
+                0x000000008004531c                osSetTimer
+                0x0000000080045540                __osSiDeviceBusy
+                0x0000000080045590                __rmonSendFault
+                0x0000000080045624                __rmonIOflush
+                0x0000000080045694                __rmonIOputw
+                0x0000000080045724                __rmonIOhandler
+                0x00000000800457f8                __assertBreak
+                0x0000000080045800                ldiv
+                0x00000000800458ac                lldiv
+                0x0000000080045a3c                __rmonExecute
+                0x0000000080045afc                __rmonSendHeader
+                0x0000000080045bb8                __rmonSendReply
+                0x0000000080045c7c                __rmonSendData
+                0x0000000080045dc8                rmonMain
+                0x0000000080045f54                __rmonWriteWordTo
+                0x0000000080045fac                __rmonReadWordAt
+                0x0000000080046028                __rmonMemcpy
+                0x0000000080046098                __rmonCopyWords
+                0x0000000080046168                __rmonReadMem
+                0x00000000800463a8                __rmonWriteMem
+                0x0000000080046630                __rmonListProcesses
+                0x00000000800466c4                __rmonLoadProgram
+                0x00000000800466ec                __rmonGetExeName
+                0x00000000800467c4                __rmonGetRegionCount
+                0x0000000080046858                __rmonGetRegions
+                0x0000000080046a60                __rmonSetFault
+                0x0000000080046acc                __rmonInit
+                0x0000000080046bd8                __rmonPanic
+                0x0000000080046bf0                __rmonSetComm
+                0x0000000080046fec                __rmonGetGRegisters
+                0x0000000080047168                __rmonSetGRegisters
+                0x0000000080047310                __rmonGetFRegisters
+                0x00000000800473f4                __rmonSetFRegisters
+                0x0000000080047560                __rmonGetSRegs
+                0x00000000800476fc                __rmonSetSRegs
+                0x0000000080047868                __rmonGetVRegs
+                0x00000000800479b4                __rmonSetVRegs
+                0x0000000080047aac                __rmonGetRegisterContents
+                0x0000000080047bc0                __rmonMaskIdleThreadInts
+                0x0000000080047c54                __rmonGetTCB
+                0x0000000080047ce0                __rmonStopUserThreads
+                0x0000000080047e04                __rmonListThreads
+                0x0000000080047f58                __rmonGetThreadStatus
+                0x0000000080048288                __rmonThreadStatus
+                0x0000000080048328                __rmonStopThread
+                0x00000000800484d4                __rmonRunThread
+                0x0000000080048808                __rmonRCPrunning
+                0x000000008004882c                __rmonIdleRCP
+                0x0000000080048870                __rmonStepRCP
+                0x0000000080048888                __rmonRunRCP
+                0x00000000800488b0                __osGetActiveQueue
+                0x00000000800488d8                __osSpRawReadIo
+                0x0000000080048994                __osSpRawWriteIo
+                0x0000000080048c44                __rmonSetBreak
+                0x0000000080048e5c                __rmonListBreak
+                0x0000000080048e84                __rmonClearBreak
+                0x0000000080049034                __rmonGetBranchTarget
+                0x0000000080049394                __rmonSetSingleStep
+                0x0000000080049494                __rmonGetExceptionStatus
+                0x0000000080049608                __rmonHitBreak
+                0x0000000080049650                __rmonHitSpBreak
+                0x00000000800496e8                __rmonHitCpuFault
+                0x000000008004984c                __divdi3
+                0x0000000080049d54                __udivdi3
+                0x000000008004a208                __umoddi3
+                0x000000008004a6d0                atan2
+                0x000000008004a814                cos
+                0x000000008004a938                memcmp
+                0x000000008004a96c                memset
+                0x000000008004a990                sin
+                0x000000008004ab00                fabs
+ /usr/lib/n64/PR/rspboot.o(.text)
+ .text          0x000000008004ab10       0xd0 /usr/lib/n64/PR/rspboot.o
+                0x000000008004ab10                rspbootTextStart
+                0x000000008004abe0                rspbootTextEnd
+ /usr/lib/n64/PR/gspF3DEX2.fifo.o(.text)
+ .text          0x000000008004abe0     0x1390 /usr/lib/n64/PR/gspF3DEX2.fifo.o
+                0x000000008004abe0                gspF3DEX2_fifoTextStart
+                0x000000008004bf70                gspF3DEX2_fifoTextEnd
+ /usr/lib/n64/PR/gspL3DEX2.fifo.o(.text)
+ .text          0x000000008004bf70     0x1190 /usr/lib/n64/PR/gspL3DEX2.fifo.o
+                0x000000008004bf70                gspL3DEX2_fifoTextStart
+                0x000000008004d100                gspL3DEX2_fifoTextEnd
+ /usr/lib/n64/PR/gspF3DEX2.Rej.fifo.o(.text)
+ .text          0x000000008004d100     0x1190 /usr/lib/n64/PR/gspF3DEX2.Rej.fifo.o
+                0x000000008004d100                gspF3DEX2_Rej_fifoTextStart
+                0x000000008004e290                gspF3DEX2_Rej_fifoTextEnd
+ /usr/lib/n64/PR/gspF3DEX2.NoN.fifo.o(.text)
+ .text          0x000000008004e290     0x1390 /usr/lib/n64/PR/gspF3DEX2.NoN.fifo.o
+                0x000000008004e290                gspF3DEX2_NoN_fifoTextStart
+                0x000000008004f620                gspF3DEX2_NoN_fifoTextEnd
+ /usr/lib/n64/PR/gspF3DLX2.Rej.fifo.o(.text)
+ .text          0x000000008004f620     0x1190 /usr/lib/n64/PR/gspF3DLX2.Rej.fifo.o
+                0x000000008004f620                gspF3DLX2_Rej_fifoTextStart
+                0x00000000800507b0                gspF3DLX2_Rej_fifoTextEnd
+ /usr/lib/n64/PR/gspS2DEX2.fifo.o(.text)
+ .text          0x00000000800507b0     0x18c0 /usr/lib/n64/PR/gspS2DEX2.fifo.o
+                0x00000000800507b0                gspS2DEX2_fifoTextStart
+                0x0000000080052070                gspS2DEX2_fifoTextEnd
+ codesegment.o(.data*)
+ .data          0x0000000080052070    0x9e014 codesegment.o
+                0x0000000080052080                rspinit_dl
+                0x00000000800520a0                rdpinit_dl
+                0x0000000080052118                face
+                0x0000000080052918                grey
+                0x0000000080053118                black
+                0x0000000080053918                hair
+                0x0000000080054118                skin
+                0x0000000080054918                pants
+                0x0000000080055118                shirt
+                0x0000000080055918                eye
+                0x00000000800e8d98                logo
+                0x00000000800e95a0                brew
+                0x00000000800e9ff0                mode
+                0x00000000800e9ff8                cam
+                0x00000000800ea128                light_data
+                0x00000000800ea158                cube
+                0x00000000800ea2c4                usb_readblock
+                0x00000000800ea2dc                nuContCallBack
+                0x00000000800ea310                nuContPakCallBack
+                0x00000000800ea31c                nuContRmbSearchTime
+                0x00000000800ea33c                nuContRmbCallBack
+                0x00000000800ea448                digitTxt
+                0x00000000800ea450                NaNTxt
+                0x00000000800ea458                infinityTxt
+                0x00000000800ea460                nuFont
+                0x00000000800eb390                nuFont2
+                0x00000000800ec3e8                nuGfxCfbNum
+                0x00000000800ec3ec                nuGfxUcodeFifoSize
+                0x00000000800ec3f0                nuVersion
+                0x00000000800ec400                nuScRetraceCounter
+                0x00000000800ec404                nuDebTaskPerfInterval
+                0x00000000800ec408                nuDebTaskPerfEnd
+                0x00000000800ec40c                nuDebConWin
+                0x00000000800ee9e8                osClockRate
+                0x00000000800ee9f0                osViClock
+                0x00000000800ee9f4                __OSGlobalIntMask
+                0x00000000800ee9f8                __osPfsLastChannel
+                0x00000000800eea00                __osCurrentHandle
+                0x00000000800eea0c                __osThreadTail
+                0x00000000800eea14                __osRunQueue
+                0x00000000800eea18                __osActiveQueue
+                0x00000000800eea64                __osRdb_IP6_Empty
+                0x00000000800eea68                __osViCurr
+                0x00000000800eea6c                __osViNext
+                0x00000000800eea70                osViModeTable
+                0x00000000800efbf0                __osTimerList
+                0x00000000800efbf4                osViModeMpalLan1
+                0x00000000800efc44                osViModeNtscLan1
+                0x00000000800efc94                osViModePalLan1
+                0x00000000800efce4                __osHwIntTable
+                0x00000000800efd0c                __osPiIntTable
+                0x00000000800efd24                __osPfsInodeCacheChannel
+                0x00000000800efd28                __osPfsInodeCacheBank
+                0x00000000800efd2c                __osCommonHandler
+                0x00000000800efd30                __os_error_message
+ /usr/lib/n64/PR/rspboot.o(.data*)
+ *fill*         0x00000000800f0084        0xc 
+ .data          0x00000000800f0090        0x0 /usr/lib/n64/PR/rspboot.o
+                0x00000000800f0090                rspbootDataEnd
+                0x00000000800f0090                rspbootDataStart
+ /usr/lib/n64/PR/gspF3DEX2.fifo.o(.data*)
+ .data          0x00000000800f0090      0x420 /usr/lib/n64/PR/gspF3DEX2.fifo.o
+                0x00000000800f0090                gspF3DEX2_fifoDataStart
+                0x00000000800f04b0                gspF3DEX2_fifoDataEnd
+ /usr/lib/n64/PR/gspL3DEX2.fifo.o(.data*)
+ .data          0x00000000800f04b0      0x3f0 /usr/lib/n64/PR/gspL3DEX2.fifo.o
+                0x00000000800f04b0                gspL3DEX2_fifoDataStart
+                0x00000000800f08a0                gspL3DEX2_fifoDataEnd
+ /usr/lib/n64/PR/gspF3DEX2.Rej.fifo.o(.data*)
+ .data          0x00000000800f08a0      0x410 /usr/lib/n64/PR/gspF3DEX2.Rej.fifo.o
+                0x00000000800f08a0                gspF3DEX2_Rej_fifoDataStart
+                0x00000000800f0cb0                gspF3DEX2_Rej_fifoDataEnd
+ /usr/lib/n64/PR/gspF3DEX2.NoN.fifo.o(.data*)
+ .data          0x00000000800f0cb0      0x420 /usr/lib/n64/PR/gspF3DEX2.NoN.fifo.o
+                0x00000000800f0cb0                gspF3DEX2_NoN_fifoDataStart
+                0x00000000800f10d0                gspF3DEX2_NoN_fifoDataEnd
+ /usr/lib/n64/PR/gspF3DLX2.Rej.fifo.o(.data*)
+ .data          0x00000000800f10d0      0x410 /usr/lib/n64/PR/gspF3DLX2.Rej.fifo.o
+                0x00000000800f10d0                gspF3DLX2_Rej_fifoDataStart
+                0x00000000800f14e0                gspF3DLX2_Rej_fifoDataEnd
+ /usr/lib/n64/PR/gspS2DEX2.fifo.o(.data*)
+ .data          0x00000000800f14e0      0x390 /usr/lib/n64/PR/gspS2DEX2.fifo.o
+                0x00000000800f14e0                gspS2DEX2_fifoDataStart
+                0x00000000800f1870                gspS2DEX2_fifoDataEnd
+ codesegment.o(.rodata*)
+ .rodata        0x00000000800f1870     0x2eb0 codesegment.o
+                0x00000000800f281c                __osCauseTable_pt
+                0x00000000800f2848                __osRcpImTable
+                0x00000000800f28d0                __libm_qnan_f
+                0x00000000800f4620                __clz_tab
+ .rodata.cst8   0x00000000800f4720       0xb8 codesegment.o
+                                         0xe0 (tamaño antes de la relajación)
+                0x00000000800f47d8                _codeSegmentEnd = (ADDR (.code) + SIZEOF (.code))
+                0x00000000000cfbd8                _codeSegmentRomEnd = (__romPos + SIZEOF (.code))
+                0x00000000000cfbd8                __romPos = (__romPos + SIZEOF (.code))
+                0x00000000800f47e0                _codeSegmentBssStart = ADDR (.code.noload)
+
+.code.noload    0x00000000800f47e0    0x7d080 dirección de carga 0x00000000000cfbe0
+ codesegment.o(COMMON)
+ codesegment.o(.scommon*)
+ codesegment.o(.bss*)
+ .bss           0x00000000800f47e0    0x7d080 codesegment.o
+                0x00000000800f47e0                nuMainStack
+                0x00000000800f67e0                nuIdleFunc
+                0x00000000800f8b48                contdata
+                0x00000000800f8b50                glist
+                0x0000000080100b50                glistp
+                0x0000000080100b58                time_data
+                0x0000000080100b70                anim_speed
+                0x0000000080100b78                nick
+                0x0000000080100d50                nickMtx
+                0x00000000801017e0                funcPointer_write
+                0x00000000801017e4                funcPointer_poll
+                0x00000000801017e8                funcPointer_read
+                0x00000000801017ec                usb_datatype
+                0x00000000801017f0                usb_datasize
+                0x00000000801017f4                usb_dataleft
+                0x00000000801017f8                dmaMessageBuf
+                0x00000000801017fc                dmaIOMessageBuf
+                0x0000000080101814                dmaMessageQ
+                0x0000000080101a30                nuContWaitMesgQ
+                0x0000000080101a48                nuContDataMutexQ
+                0x0000000080101a60                nuContStatus
+                0x0000000080101a70                nuContData
+                0x0000000080101a88                nuContNum
+                0x0000000080101a8c                nuContDataLockKey
+                0x0000000080101a90                nuContReadFunc
+                0x0000000080101a98                nuContPfs
+                0x0000000080101c40                nuContPakCompanyCode
+                0x0000000080101c44                nuContPakGameCode
+                0x0000000080101c48                nuContRmbCtl
+                0x000000008013a080                nuGfxUcode
+                0x000000008013a088                nuGfxTask
+                0x000000008013a3f8                nuGfxTaskSpool
+                0x000000008013a400                nuGfxTaskMgrMesgQ
+                0x000000008013a418                nuGfxCfb
+                0x000000008013a41c                nuGfxCfb_ptr
+                0x000000008013a420                nuGfxZBuffer
+                0x000000008013a424                nuGfxDisplay
+                0x000000008013a428                nuGfxCfbCounter
+                0x000000008013a42c                nuGfxUcodeFifoPtr
+                0x000000008013a430                nuGfxSwapCfbFunc
+                0x000000008013a434                nuGfxTaskEndFunc
+                0x000000008013c620                nuGfxFunc
+                0x000000008013c624                nuGfxPreNMIFunc
+                0x000000008013c628                nuGfxMesgQ
+                0x000000008013c640                nuGfxThread
+                0x000000008013e810                nuPiCartHandle
+                0x000000008013e900                nuRDPOutputBuf
+                0x000000008015e900                nusched
+                0x000000008015ef80                nuScPreNMIFunc
+                0x000000008015ef84                nuScPreNMIFlag
+                0x000000008015ef90                nuDebTaskPerf
+                0x000000008015f650                nuDebTaskPerfPtr
+                0x000000008015f654                nuDebTaskPerfCnt
+                0x0000000080165670                nuSiMesgQ
+                0x0000000080165688                nuSiMgrMesgQ
+                0x00000000801656a0                nuSiCallBackList
+                0x0000000080167880                nuYieldBuf
+                0x0000000080168490                nuDramStack
+                0x0000000080168990                __osShutdown
+                0x0000000080168994                __printfunc
+                0x0000000080168998                __kmc_pt_mode
+                0x00000000801689a0                __osPfsPifRam
+                0x00000000801689e0                __CartRomHandle
+                0x0000000080168a58                __osPiAccessQueueEnabled
+                0x0000000080168a60                __osPiAccessQueue
+                0x0000000080168a80                __osPiDevMgr
+                0x0000000080168a9c                __osPiTable
+                0x0000000080168aa0                __Dom1SpeedParam
+                0x0000000080168b18                __Dom2SpeedParam
+                0x000000008016a350                gISVDbgPrnAdrs
+                0x000000008016a354                leoComuBuffAdd
+                0x000000008016a358                gISVFlag
+                0x000000008016a35c                gISVChk
+                0x000000008016a360                ramOldVector
+                0x000000008016a374                __osRunningThread
+                0x000000008016a378                __osFaultedThread
+                0x000000008016a3c0                __osEventStateTab
+                0x000000008016a478                __osPreNMI
+                0x000000008016a4e0                __osViDevMgr
+                0x000000008016a4fc                __additional_scanline
+                0x000000008016b718                __osCurrentTime
+                0x000000008016b720                __osBaseCounter
+                0x000000008016b724                __osViIntrCount
+                0x000000008016b728                __osTimerCounter
+                0x000000008016b730                __osBaseTimer
+                0x000000008016b750                __osProfTimerQ
+                0x000000008016b768                __osProfileList
+                0x000000008016b76c                __osProfileListEnd
+                0x000000008016b770                __osProfileOverflowBin
+                0x000000008016b778                __osSiAccessQueue
+                0x000000008016b790                __osSiAccessQueueEnabled
+                0x000000008016b7a0                __osContinitialized
+                0x000000008016b7b0                __osContPifRam
+                0x000000008016b7f0                __osContLastCmd
+                0x000000008016b7f1                __osMaxControllers
+                0x000000008016b7f8                __osEepromTimer
+                0x000000008016b818                __osEepromTimerQ
+                0x000000008016b830                __osEepromTimerMsg
+                0x000000008016b838                __osPfsInodeCache
+                0x000000008016b938                NULSTR
+                0x000000008016b940                __osThreadSave
+                0x000000008016bb00                __osThprofFlag
+                0x000000008016bb04                __osThprofFunc
+                0x000000008016bb08                __osThprofLastTimer
+                0x000000008016bb0c                __osThprofCount
+                0x000000008016bb10                thprof
+                0x000000008016bf10                __osThprofHeap
+                0x000000008016c710                __osThprofStack
+                0x000000008016c714                __osRdb_IP6_Data
+                0x000000008016c718                __osRdb_IP6_Size
+                0x000000008016c71c                __osRdb_IP6_Ct
+                0x000000008016c720                __osRdb_IP6_CurWrite
+                0x000000008016c724                __osRdb_IP6_CurSend
+                0x000000008016c728                __osRdb_Read_Data_Buf
+                0x000000008016c72c                __osRdb_Read_Data_Ct
+                0x000000008016c760                __osRdb_DbgRead_Buf
+                0x000000008016c770                rmonRdbReadBuf
+                0x000000008016cf90                __rmonActive
+                0x000000008016d410                __rmonUtilityBuffer
+                0x000000008016d510                __rmonMQ
+                0x0000000080171750                __rmonRcpAtBreak
+                0x0000000080171860                . = ALIGN (0x8)
+                0x0000000080171860                _codeSegmentBssEnd = (ADDR (.code.noload) + SIZEOF (.code.noload))
+                0x000000000007d080                _codeSegmentBssSize = SIZEOF (.code.noload)
+
+/DISCARD/
+ *(*)
+OUTPUT(game.elf elf32-bigmips)

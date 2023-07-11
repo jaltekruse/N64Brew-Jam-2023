@@ -278,14 +278,17 @@ void handle_camera_c_buttons(Camera *camera, NUContData cont[1], TimeData time_d
     float zoom_input = lim(cont[0].button & D_CBUTTONS) - lim(contdata[0].button & U_CBUTTONS);
     float pan_input = lim(cont[0].button & R_CBUTTONS) - lim(contdata[0].button & L_CBUTTONS);
 
-	if (zoom_input != 0) camera->distance_from_player += zoom_input * time_data.frame_duration * 1000; 
-    if (pan_input != 0) camera->angle_around_player -= pan_input * time_data.frame_duration* 100;
+	if (zoom_input != 0) camera->pitch -= zoom_input * time_data.frame_duration * 70; 
+    if (pan_input != 0) camera->angle_around_player += pan_input * time_data.frame_duration* 100;
 
     if (camera->distance_from_player > 2000) camera->distance_from_player = 2000; 
     if (camera->distance_from_player < 500) camera->distance_from_player = 500;
 
     if (camera->angle_around_player > 360) {camera->angle_around_player  = camera->angle_around_player - 360;}
     if (camera->angle_around_player < 0) {camera->angle_around_player  = camera->angle_around_player + 360;}
+
+    if (camera->pitch > 85) camera->pitch = 85;
+    if (camera->pitch < -85) camera->pitch = -85;
 }
 
 
