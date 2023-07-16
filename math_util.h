@@ -16,7 +16,9 @@ int lim(u32 input);
 ==============================================================*/
 
 float rad(float angle){
+	osSyncPrintf("1 rad\n");
 	float radian = M_PI / 180 * angle;
+	osSyncPrintf("2 rad\n");
 	return radian;
 }
 

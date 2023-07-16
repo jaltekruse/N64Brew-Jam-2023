@@ -30,7 +30,12 @@ CP_LD_SCRIPT	= game_cp.ld
 
 NUSYSINC  = /usr/include/n64/nusys
 NUSYSLIB  = /usr/lib/n64/nusys
+# Note on July 16th, this was already commented out before we started messing
+# with ivf debugging
+# further note, apparently we didn't need either of these, somewhere Buu
+# has this stuff already set up for this ROM/game template from Sausage that we borrowed
 #NUOBJ		= $(NUSYSLIB)/nusys_rom.o
+#NUOBJ		= $(NUSYSLIB)/nusys_isv.o
 
 ################################################################
 #                         Make Commands                        #

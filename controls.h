@@ -94,27 +94,40 @@ void move_camera_stick(Camera *camera, NUContData cont[1], TimeData time_data){
 
 void move_camera_c_buttons(Camera *camera, NUContData cont[1], TimeData time_data){
 
+    osSyncPrintf("begin move_camera_c_buttons\n");
     float zoom_input = lim(cont[0].button & D_CBUTTONS) - lim(contdata[0].button & U_CBUTTONS);
-    float pan_input = lim(cont[0].button & R_CBUTTONS) - lim(contdata[0].button & L_CBUTTONS);
+    osSyncPrintf("1 move_camera_c_buttons\n");
+    float pan_input = lim(cont[0].button & R_CBUTTONS) - lim(contdata[0].button & L_CBUTTONS);\
+    osSyncPrintf("2 move_camera_c_buttons\n");
 
 	if (zoom_input != 0) camera->pitch -= zoom_input * time_data.frame_duration * 70; 
+    osSyncPrintf("3 move_camera_c_buttons\n");
     if (pan_input != 0) camera->angle_around_player += pan_input * time_data.frame_duration* 100;
+    osSyncPrintf("4 move_camera_c_buttons\n");
 
-    if (camera->distance_from_player > 2000) camera->distance_from_player = 2000; 
+    if (camera->distance_from_player > 2000) camera->distance_from_player = 2000;
+    osSyncPrintf("5 move_camera_c_buttons\n");
     if (camera->distance_from_player < 500) camera->distance_from_player = 500;
+    osSyncPrintf("6 move_camera_c_buttons\n");
 
     if (camera->angle_around_player > 360) {camera->angle_around_player  = camera->angle_around_player - 360;}
+    osSyncPrintf("7 move_camera_c_buttons\n");
     if (camera->angle_around_player < 0) {camera->angle_around_player  = camera->angle_around_player + 360;}
+    osSyncPrintf("8 move_camera_c_buttons\n");
 
     if (camera->pitch > 85) camera->pitch = 85;
+    osSyncPrintf("9 move_camera_c_buttons\n");
     if (camera->pitch < -85) camera->pitch = -85;
+    osSyncPrintf("10 move_camera_c_buttons\n");
 }
 
 
 void move_camera(Camera *camera, Entity entity, NUContData cont[1], TimeData time_data){
 
         move_camera_c_buttons(camera, cont, time_data);
+        osSyncPrintf("after move_camera_c_buttons\n");
         set_camera_position(camera, entity);
+        osSyncPrintf("after set_camera_position\n");
 
 }
 
