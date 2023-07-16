@@ -1936,7 +1936,7 @@ static Gfx gfx_nick_mixamorig_RightUpLeg[] = {
           Animation Data
 *********************************/
 
-static FrameData anim_nick__0_t_pose_framedata0[] = {
+static s64FrameData anim_nick__0_t_pose_framedata0[] = {
     {{0.0002f, -1.1525f, 80.5257f}, {1.0000f, 0.0000f, -0.0000f, -0.0000f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.9922f, -0.3753f, 73.6538f}, {1.0000f, 0.0000f, -0.0000f, 0.0000f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.0364f, -0.4655f, 73.5786f}, {1.0000f, 0.0000f, 0.0000f, -0.0000f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -1974,11 +1974,11 @@ static FrameData anim_nick__0_t_pose_framedata0[] = {
     {{-5.9628f, -2.3365f, 23.3625f}, {1.0000f, 0.0000f, -0.0000f, -0.0000f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.0056f, -1.5158f, 42.7764f}, {1.0000f, -0.0000f, 0.0000f, 0.0000f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick__0_t_pose_keyframes[] = {
+static s64KeyFrame anim_nick__0_t_pose_keyframes[] = {
     {0, anim_nick__0_t_pose_framedata0},
 };
 
-static FrameData anim_nick_crouch_idle_left_framedata0[] = {
+static s64FrameData anim_nick_crouch_idle_left_framedata0[] = {
     {{3.4994f, -35.5259f, 36.3142f}, {0.9724f, 0.2328f, 0.0132f, -0.0040f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.8056f, -26.0851f, 35.1869f}, {0.7681f, 0.4287f, 0.4737f, -0.0429f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.1174f, -28.3738f, 30.5915f}, {0.7639f, 0.3962f, -0.4934f, 0.1265f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -2016,7 +2016,7 @@ static FrameData anim_nick_crouch_idle_left_framedata0[] = {
     {{-7.3401f, -21.0197f, 10.5030f}, {0.7954f, 0.6008f, -0.0796f, -0.0079f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.4255f, -3.5833f, 18.8627f}, {0.8544f, -0.5154f, 0.0185f, -0.0634f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_idle_left_framedata9[] = {
+static s64FrameData anim_nick_crouch_idle_left_framedata9[] = {
     {{3.5615f, -35.4415f, 36.3435f}, {0.9733f, 0.2291f, 0.0111f, -0.0014f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.8481f, -25.9836f, 35.1847f}, {0.7693f, 0.4273f, 0.4730f, -0.0429f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.0744f, -28.3212f, 30.6152f}, {0.7640f, 0.3959f, -0.4932f, 0.1276f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -2054,7 +2054,7 @@ static FrameData anim_nick_crouch_idle_left_framedata9[] = {
     {{-7.3221f, -21.0036f, 10.5382f}, {0.7957f, 0.6004f, -0.0792f, -0.0077f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.4010f, -3.5431f, 18.8459f}, {0.8537f, -0.5167f, 0.0191f, -0.0627f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_idle_left_framedata19[] = {
+static s64FrameData anim_nick_crouch_idle_left_framedata19[] = {
     {{3.6862f, -35.2770f, 36.4455f}, {0.9736f, 0.2282f, 0.0111f, -0.0001f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.9514f, -25.7810f, 35.2191f}, {0.7702f, 0.4254f, 0.4733f, -0.0424f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.9636f, -28.2012f, 30.7102f}, {0.7649f, 0.3932f, -0.4930f, 0.1314f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -2092,7 +2092,7 @@ static FrameData anim_nick_crouch_idle_left_framedata19[] = {
     {{-7.2991f, -20.9764f, 10.6153f}, {0.7967f, 0.5992f, -0.0790f, -0.0076f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.3759f, -3.4734f, 18.8326f}, {0.8523f, -0.5189f, 0.0189f, -0.0630f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_idle_left_framedata29[] = {
+static s64FrameData anim_nick_crouch_idle_left_framedata29[] = {
     {{3.7201f, -35.1698f, 36.5346f}, {0.9741f, 0.2257f, 0.0101f, -0.0018f}, {1.0000f, 1.0000f, 1.0000f}},
     {{14.0154f, -25.6805f, 35.2615f}, {0.7704f, 0.4244f, 0.4738f, -0.0433f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.9069f, -28.1027f, 30.7898f}, {0.7656f, 0.3904f, -0.4935f, 0.1339f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -2130,7 +2130,7 @@ static FrameData anim_nick_crouch_idle_left_framedata29[] = {
     {{-7.2836f, -20.9534f, 10.6767f}, {0.7974f, 0.5982f, -0.0786f, -0.0077f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.3383f, -3.4226f, 18.8295f}, {0.8514f, -0.5204f, 0.0197f, -0.0627f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_idle_left_framedata39[] = {
+static s64FrameData anim_nick_crouch_idle_left_framedata39[] = {
     {{3.6097f, -35.1695f, 36.5206f}, {0.9744f, 0.2246f, 0.0102f, -0.0069f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.9791f, -25.7416f, 35.1924f}, {0.7694f, 0.4263f, 0.4733f, -0.0470f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.9687f, -28.0115f, 30.8185f}, {0.7664f, 0.3862f, -0.4956f, 0.1335f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -2168,7 +2168,7 @@ static FrameData anim_nick_crouch_idle_left_framedata39[] = {
     {{-7.3139f, -20.9406f, 10.7011f}, {0.7978f, 0.5977f, -0.0790f, -0.0088f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.3416f, -3.4043f, 18.8353f}, {0.8512f, -0.5208f, 0.0210f, -0.0619f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_idle_left_framedata49[] = {
+static s64FrameData anim_nick_crouch_idle_left_framedata49[] = {
     {{3.2433f, -35.3055f, 36.4791f}, {0.9748f, 0.2225f, 0.0074f, -0.0133f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.7251f, -25.9442f, 35.1859f}, {0.7685f, 0.4309f, 0.4708f, -0.0455f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.2287f, -28.0725f, 30.7353f}, {0.7654f, 0.3855f, -0.4991f, 0.1285f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -2206,7 +2206,7 @@ static FrameData anim_nick_crouch_idle_left_framedata49[] = {
     {{-7.3233f, -20.9640f, 10.6658f}, {0.7975f, 0.5982f, -0.0783f, -0.0087f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.3984f, -3.4364f, 18.8302f}, {0.8516f, -0.5201f, 0.0196f, -0.0619f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_idle_left_framedata59[] = {
+static s64FrameData anim_nick_crouch_idle_left_framedata59[] = {
     {{3.3403f, -35.5199f, 36.2476f}, {0.9727f, 0.2316f, 0.0110f, -0.0071f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.7118f, -26.0948f, 35.1676f}, {0.7683f, 0.4313f, 0.4711f, -0.0416f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.2262f, -28.3324f, 30.5505f}, {0.7639f, 0.3957f, -0.4943f, 0.1248f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -2244,7 +2244,7 @@ static FrameData anim_nick_crouch_idle_left_framedata59[] = {
     {{-7.3797f, -21.0087f, 10.5286f}, {0.7958f, 0.6003f, -0.0800f, -0.0086f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.4647f, -3.5454f, 18.8318f}, {0.8534f, -0.5168f, 0.0174f, -0.0649f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_idle_left_framedata69[] = {
+static s64FrameData anim_nick_crouch_idle_left_framedata69[] = {
     {{3.4971f, -35.5267f, 36.3132f}, {0.9724f, 0.2329f, 0.0132f, -0.0041f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.8037f, -26.0859f, 35.1899f}, {0.7681f, 0.4288f, 0.4736f, -0.0428f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.1184f, -28.3731f, 30.5898f}, {0.7639f, 0.3964f, -0.4933f, 0.1263f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -2282,7 +2282,7 @@ static FrameData anim_nick_crouch_idle_left_framedata69[] = {
     {{-7.3401f, -21.0195f, 10.5029f}, {0.7954f, 0.6008f, -0.0796f, -0.0079f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.4254f, -3.5833f, 18.8628f}, {0.8544f, -0.5154f, 0.0185f, -0.0634f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_crouch_idle_left_keyframes[] = {
+static s64KeyFrame anim_nick_crouch_idle_left_keyframes[] = {
     {0, anim_nick_crouch_idle_left_framedata0},
     {9, anim_nick_crouch_idle_left_framedata9},
     {19, anim_nick_crouch_idle_left_framedata19},
@@ -2293,7 +2293,7 @@ static KeyFrame anim_nick_crouch_idle_left_keyframes[] = {
     {69, anim_nick_crouch_idle_left_framedata69},
 };
 
-static FrameData anim_nick_crouch_idle_right_framedata0[] = {
+static s64FrameData anim_nick_crouch_idle_right_framedata0[] = {
     {{-3.4801f, -35.5294f, 36.3057f}, {0.9724f, 0.2328f, -0.0132f, 0.0041f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.1388f, -28.4390f, 30.7090f}, {0.7651f, 0.3972f, 0.4910f, -0.1258f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.8165f, -26.0243f, 35.0746f}, {0.7665f, 0.4307f, -0.4744f, 0.0432f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -2331,7 +2331,7 @@ static FrameData anim_nick_crouch_idle_right_framedata0[] = {
     {{-19.3003f, -15.3928f, 12.7981f}, {0.7436f, 0.5391f, 0.0650f, -0.3901f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.4875f, -2.6634f, 19.9658f}, {0.8283f, -0.4294f, 0.3387f, -0.1214f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_idle_right_framedata9[] = {
+static s64FrameData anim_nick_crouch_idle_right_framedata9[] = {
     {{-3.5421f, -35.4450f, 36.3350f}, {0.9733f, 0.2291f, -0.0111f, 0.0014f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.0957f, -28.3863f, 30.7327f}, {0.7652f, 0.3969f, 0.4908f, -0.1269f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.8585f, -25.9229f, 35.0722f}, {0.7677f, 0.4293f, -0.4738f, 0.0432f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -2369,7 +2369,7 @@ static FrameData anim_nick_crouch_idle_right_framedata9[] = {
     {{-19.3251f, -15.3757f, 12.8000f}, {0.7436f, 0.5395f, 0.0641f, -0.3897f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.5137f, -2.6245f, 19.9310f}, {0.8278f, -0.4304f, 0.3388f, -0.1213f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_idle_right_framedata19[] = {
+static s64FrameData anim_nick_crouch_idle_right_framedata19[] = {
     {{-3.6667f, -35.2806f, 36.4372f}, {0.9736f, 0.2282f, -0.0111f, 0.0002f}, {1.0000f, 1.0000f, 1.0000f}},
     {{7.9846f, -28.2658f, 30.8281f}, {0.7661f, 0.3942f, 0.4905f, -0.1308f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.9612f, -25.7206f, 35.1062f}, {0.7686f, 0.4274f, -0.4740f, 0.0427f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -2407,7 +2407,7 @@ static FrameData anim_nick_crouch_idle_right_framedata19[] = {
     {{-19.3993f, -15.3023f, 12.8995f}, {0.7447f, 0.5378f, 0.0616f, -0.3903f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.5389f, -2.5202f, 19.8854f}, {0.8254f, -0.4336f, 0.3401f, -0.1228f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_idle_right_framedata29[] = {
+static s64FrameData anim_nick_crouch_idle_right_framedata29[] = {
     {{-3.7004f, -35.1735f, 36.5264f}, {0.9741f, 0.2257f, -0.0101f, 0.0018f}, {1.0000f, 1.0000f, 1.0000f}},
     {{7.9279f, -28.1670f, 30.9080f}, {0.7668f, 0.3913f, 0.4911f, -0.1332f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-14.0248f, -25.6206f, 35.1485f}, {0.7689f, 0.4264f, -0.4745f, 0.0436f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -2445,7 +2445,7 @@ static FrameData anim_nick_crouch_idle_right_framedata29[] = {
     {{-19.4470f, -15.2711f, 12.9177f}, {0.7447f, 0.5379f, 0.0604f, -0.3906f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.5791f, -2.4672f, 19.8497f}, {0.8244f, -0.4352f, 0.3401f, -0.1236f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_idle_right_framedata39[] = {
+static s64FrameData anim_nick_crouch_idle_right_framedata39[] = {
     {{-3.5900f, -35.1732f, 36.5124f}, {0.9744f, 0.2246f, -0.0102f, 0.0070f}, {1.0000f, 1.0000f, 1.0000f}},
     {{7.9897f, -28.0758f, 30.9367f}, {0.7676f, 0.3872f, 0.4932f, -0.1328f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.9885f, -25.6819f, 35.0793f}, {0.7679f, 0.4283f, -0.4740f, 0.0473f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -2483,7 +2483,7 @@ static FrameData anim_nick_crouch_idle_right_framedata39[] = {
     {{-19.4484f, -15.2776f, 12.9098f}, {0.7445f, 0.5381f, 0.0608f, -0.3905f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.5801f, -2.4593f, 19.8144f}, {0.8241f, -0.4357f, 0.3404f, -0.1232f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_idle_right_framedata49[] = {
+static s64FrameData anim_nick_crouch_idle_right_framedata49[] = {
     {{-3.2235f, -35.3092f, 36.4710f}, {0.9748f, 0.2225f, -0.0074f, 0.0134f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.2506f, -28.1372f, 30.8533f}, {0.7666f, 0.3864f, 0.4967f, -0.1279f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.7353f, -25.8846f, 35.0730f}, {0.7670f, 0.4329f, -0.4715f, 0.0458f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -2521,7 +2521,7 @@ static FrameData anim_nick_crouch_idle_right_framedata49[] = {
     {{-19.3432f, -15.3418f, 12.8489f}, {0.7436f, 0.5388f, 0.0640f, -0.3907f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.5215f, -2.5440f, 19.8775f}, {0.8262f, -0.4328f, 0.3395f, -0.1212f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_idle_right_framedata59[] = {
+static s64FrameData anim_nick_crouch_idle_right_framedata59[] = {
     {{-3.2841f, -35.5111f, 36.2555f}, {0.9729f, 0.2307f, -0.0104f, 0.0081f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.2661f, -28.3774f, 30.6798f}, {0.7651f, 0.3960f, 0.4922f, -0.1245f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.7040f, -26.0246f, 35.0653f}, {0.7669f, 0.4333f, -0.4715f, 0.0418f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -2559,7 +2559,7 @@ static FrameData anim_nick_crouch_idle_right_framedata59[] = {
     {{-19.2672f, -15.3838f, 12.8365f}, {0.7439f, 0.5383f, 0.0658f, -0.3906f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.4456f, -2.6338f, 19.9513f}, {0.8276f, -0.4302f, 0.3397f, -0.1206f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_idle_right_framedata69[] = {
+static s64FrameData anim_nick_crouch_idle_right_framedata69[] = {
     {{-3.4778f, -35.5302f, 36.3048f}, {0.9724f, 0.2329f, -0.0132f, 0.0041f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.1399f, -28.4383f, 30.7072f}, {0.7651f, 0.3974f, 0.4908f, -0.1257f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.8145f, -26.0251f, 35.0775f}, {0.7665f, 0.4308f, -0.4743f, 0.0431f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -2597,7 +2597,7 @@ static FrameData anim_nick_crouch_idle_right_framedata69[] = {
     {{-19.3020f, -15.3915f, 12.7990f}, {0.7436f, 0.5391f, 0.0650f, -0.3901f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.4876f, -2.6635f, 19.9658f}, {0.8283f, -0.4293f, 0.3388f, -0.1213f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_crouch_idle_right_keyframes[] = {
+static s64KeyFrame anim_nick_crouch_idle_right_keyframes[] = {
     {0, anim_nick_crouch_idle_right_framedata0},
     {9, anim_nick_crouch_idle_right_framedata9},
     {19, anim_nick_crouch_idle_right_framedata19},
@@ -2608,7 +2608,7 @@ static KeyFrame anim_nick_crouch_idle_right_keyframes[] = {
     {69, anim_nick_crouch_idle_right_framedata69},
 };
 
-static FrameData anim_nick_crouch_to_run_left_framedata0[] = {
+static s64FrameData anim_nick_crouch_to_run_left_framedata0[] = {
     {{3.4993f, -35.5259f, 36.3142f}, {0.9724f, 0.2328f, 0.0132f, -0.0040f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.8055f, -26.0850f, 35.1873f}, {0.7681f, 0.4287f, 0.4737f, -0.0429f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.1173f, -28.3737f, 30.5915f}, {0.7639f, 0.3963f, -0.4934f, 0.1264f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -2646,7 +2646,7 @@ static FrameData anim_nick_crouch_to_run_left_framedata0[] = {
     {{-7.3402f, -21.0196f, 10.5030f}, {0.7954f, 0.6008f, -0.0796f, -0.0079f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.4255f, -3.5833f, 18.8628f}, {0.8544f, -0.5154f, 0.0185f, -0.0634f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_run_left_framedata3[] = {
+static s64FrameData anim_nick_crouch_to_run_left_framedata3[] = {
     {{2.2573f, -37.1726f, 31.8468f}, {0.9693f, 0.2453f, -0.0153f, 0.0117f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.1279f, -26.8478f, 32.2120f}, {0.7665f, 0.4017f, 0.5007f, 0.0191f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-9.4829f, -29.5258f, 27.3389f}, {0.7155f, 0.5331f, -0.4497f, 0.0395f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -2684,7 +2684,7 @@ static FrameData anim_nick_crouch_to_run_left_framedata3[] = {
     {{-10.5953f, -17.1638f, 11.4516f}, {0.8108f, 0.5689f, -0.1363f, -0.0195f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9735f, -1.6575f, 22.2113f}, {0.8862f, -0.4455f, 0.0866f, -0.0931f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_run_left_framedata5[] = {
+static s64FrameData anim_nick_crouch_to_run_left_framedata5[] = {
     {{4.9548f, -36.9574f, 36.2791f}, {0.9579f, 0.2862f, 0.0126f, -0.0187f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.8633f, -25.5802f, 34.4348f}, {0.7023f, 0.5527f, 0.4281f, -0.1343f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.2157f, -29.0386f, 33.6184f}, {0.6031f, 0.7116f, -0.3326f, 0.1389f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -2722,7 +2722,7 @@ static FrameData anim_nick_crouch_to_run_left_framedata5[] = {
     {{-9.5516f, -11.9206f, 11.6666f}, {0.8015f, 0.5916f, -0.0876f, 0.0022f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9938f, -1.9681f, 27.9720f}, {0.9627f, -0.2519f, 0.0793f, -0.0590f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_run_left_framedata6[] = {
+static s64FrameData anim_nick_crouch_to_run_left_framedata6[] = {
     {{7.3353f, -35.7164f, 38.4702f}, {0.9438f, 0.3230f, 0.0257f, -0.0658f}, {1.0000f, 1.0000f, 1.0000f}},
     {{15.8471f, -24.4015f, 34.9718f}, {0.6354f, 0.5963f, 0.4886f, -0.0447f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.9038f, -27.4752f, 37.7783f}, {0.3640f, 0.8747f, -0.2423f, 0.2089f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -2760,7 +2760,7 @@ static FrameData anim_nick_crouch_to_run_left_framedata6[] = {
     {{-8.2008f, -13.9599f, 13.6996f}, {0.8080f, 0.5732f, -0.1226f, 0.0602f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9190f, -2.4396f, 29.1803f}, {0.9525f, -0.2958f, 0.0430f, -0.0579f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_run_left_framedata7[] = {
+static s64FrameData anim_nick_crouch_to_run_left_framedata7[] = {
     {{8.8335f, -34.2523f, 40.8166f}, {0.9331f, 0.3458f, 0.0283f, -0.0942f}, {1.0000f, 1.0000f, 1.0000f}},
     {{17.0217f, -23.0539f, 36.3688f}, {0.6700f, 0.5078f, 0.5341f, -0.0889f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.1868f, -26.0623f, 42.6244f}, {0.0923f, 0.9479f, -0.2751f, 0.1312f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -2798,7 +2798,7 @@ static FrameData anim_nick_crouch_to_run_left_framedata7[] = {
     {{-6.8476f, -18.5047f, 19.0870f}, {0.8250f, 0.5188f, -0.1961f, 0.1079f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8031f, -3.0111f, 30.7674f}, {0.8984f, -0.4272f, -0.0211f, -0.1002f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_run_left_framedata8[] = {
+static s64FrameData anim_nick_crouch_to_run_left_framedata8[] = {
     {{7.9430f, -33.4945f, 43.0792f}, {0.9225f, 0.3580f, 0.0412f, -0.1385f}, {1.0000f, 1.0000f, 1.0000f}},
     {{16.5781f, -24.7169f, 36.2475f}, {0.7265f, 0.3292f, 0.5886f, -0.1317f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.2712f, -25.5961f, 47.2292f}, {0.1614f, 0.9257f, -0.3018f, -0.1613f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -2836,7 +2836,7 @@ static FrameData anim_nick_crouch_to_run_left_framedata8[] = {
     {{-6.1785f, -21.8675f, 26.0374f}, {0.9006f, 0.3635f, -0.1919f, 0.1411f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.7098f, -3.3180f, 31.8056f}, {0.8100f, -0.5721f, -0.0676f, -0.1092f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_run_left_framedata10[] = {
+static s64FrameData anim_nick_crouch_to_run_left_framedata10[] = {
     {{1.9319f, -32.7123f, 48.4884f}, {0.9300f, 0.3462f, 0.0099f, -0.1230f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.4679f, -27.6387f, 39.6331f}, {0.8262f, 0.2032f, 0.5166f, -0.0960f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.1121f, -24.0868f, 52.0828f}, {0.2552f, 0.8193f, -0.0994f, -0.5038f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -2874,7 +2874,7 @@ static FrameData anim_nick_crouch_to_run_left_framedata10[] = {
     {{-5.9207f, -21.1129f, 27.7437f}, {0.9946f, -0.0238f, -0.0826f, -0.0576f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8308f, -2.5061f, 33.3434f}, {0.8145f, -0.5792f, -0.0181f, -0.0288f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_run_left_framedata12[] = {
+static s64FrameData anim_nick_crouch_to_run_left_framedata12[] = {
     {{-3.3840f, -29.6963f, 59.2238f}, {0.9825f, 0.1629f, -0.0301f, -0.0857f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.1596f, -28.3193f, 51.8913f}, {0.5715f, 0.6949f, 0.4331f, 0.0538f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-9.4172f, -17.0148f, 54.3542f}, {0.6455f, 0.6821f, -0.3049f, -0.1583f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -2912,7 +2912,7 @@ static FrameData anim_nick_crouch_to_run_left_framedata12[] = {
     {{-6.1129f, -15.3997f, 24.1028f}, {0.9844f, 0.0933f, -0.0910f, -0.1185f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9113f, -1.4870f, 37.6665f}, {0.9274f, -0.3685f, -0.0203f, -0.0609f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_run_left_framedata15[] = {
+static s64FrameData anim_nick_crouch_to_run_left_framedata15[] = {
     {{-4.7644f, -23.6097f, 66.5664f}, {0.9895f, 0.1395f, -0.0079f, 0.0368f}, {1.0000f, 1.0000f, 1.0000f}},
     {{7.4250f, -18.3573f, 66.8803f}, {0.5824f, 0.5943f, 0.2183f, 0.5099f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-14.8686f, -18.4205f, 57.8754f}, {0.6736f, 0.0116f, -0.6861f, 0.2745f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -2950,7 +2950,7 @@ static FrameData anim_nick_crouch_to_run_left_framedata15[] = {
     {{-4.7917f, -2.9018f, 18.8022f}, {0.9199f, 0.3624f, -0.0196f, -0.1486f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8971f, -0.5766f, 38.0622f}, {0.9917f, -0.0351f, -0.0368f, -0.1180f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_crouch_to_run_left_keyframes[] = {
+static s64KeyFrame anim_nick_crouch_to_run_left_keyframes[] = {
     {0, anim_nick_crouch_to_run_left_framedata0},
     {3, anim_nick_crouch_to_run_left_framedata3},
     {5, anim_nick_crouch_to_run_left_framedata5},
@@ -2962,7 +2962,7 @@ static KeyFrame anim_nick_crouch_to_run_left_keyframes[] = {
     {15, anim_nick_crouch_to_run_left_framedata15},
 };
 
-static FrameData anim_nick_crouch_to_run_right_framedata0[] = {
+static s64FrameData anim_nick_crouch_to_run_right_framedata0[] = {
     {{-3.4800f, -35.5294f, 36.3057f}, {0.9724f, 0.2328f, -0.0132f, 0.0041f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.1388f, -28.4389f, 30.7089f}, {0.7651f, 0.3972f, 0.4910f, -0.1258f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.8164f, -26.0242f, 35.0749f}, {0.7665f, 0.4307f, -0.4744f, 0.0432f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -3000,7 +3000,7 @@ static FrameData anim_nick_crouch_to_run_right_framedata0[] = {
     {{-19.3003f, -15.3928f, 12.7982f}, {0.7436f, 0.5391f, 0.0650f, -0.3901f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.4875f, -2.6634f, 19.9658f}, {0.8283f, -0.4294f, 0.3387f, -0.1214f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_run_right_framedata3[] = {
+static s64FrameData anim_nick_crouch_to_run_right_framedata3[] = {
     {{-2.2482f, -37.2423f, 32.1710f}, {0.9683f, 0.2491f, 0.0153f, -0.0116f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.4894f, -29.6475f, 27.8318f}, {0.7143f, 0.5368f, 0.4475f, -0.0375f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.1375f, -26.8306f, 32.5250f}, {0.7634f, 0.4058f, -0.5022f, -0.0207f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -3038,7 +3038,7 @@ static FrameData anim_nick_crouch_to_run_right_framedata3[] = {
     {{-13.8335f, -12.9458f, 10.6524f}, {0.7519f, 0.5893f, 0.1159f, -0.2720f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9465f, -1.5690f, 24.2883f}, {0.9274f, -0.3101f, 0.2008f, -0.0587f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_run_right_framedata5[] = {
+static s64FrameData anim_nick_crouch_to_run_right_framedata5[] = {
     {{-4.9478f, -36.9579f, 36.0883f}, {0.9579f, 0.2862f, -0.0126f, 0.0187f}, {1.0000f, 1.0000f, 1.0000f}},
     {{7.2104f, -29.1287f, 33.5329f}, {0.6024f, 0.7126f, 0.3322f, -0.1380f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.8457f, -25.4915f, 34.1426f}, {0.7028f, 0.5519f, -0.4281f, 0.1347f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -3076,7 +3076,7 @@ static FrameData anim_nick_crouch_to_run_right_framedata5[] = {
     {{-10.5921f, -6.9248f, 9.7103f}, {0.7588f, 0.6099f, 0.1376f, -0.1824f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9957f, -1.2494f, 27.7169f}, {0.9842f, -0.1301f, 0.1185f, -0.0202f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_run_right_framedata6[] = {
+static s64FrameData anim_nick_crouch_to_run_right_framedata6[] = {
     {{-7.3270f, -35.7176f, 38.8523f}, {0.9437f, 0.3230f, -0.0257f, 0.0659f}, {1.0000f, 1.0000f, 1.0000f}},
     {{4.8909f, -27.5660f, 38.2619f}, {0.3623f, 0.8752f, 0.2446f, -0.2071f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-15.8165f, -24.3183f, 35.2488f}, {0.6359f, 0.5956f, -0.4887f, 0.0453f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -3114,7 +3114,7 @@ static FrameData anim_nick_crouch_to_run_right_framedata6[] = {
     {{-9.2599f, -2.5419f, 9.5463f}, {0.7686f, 0.6000f, 0.1538f, -0.1598f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9343f, -0.7497f, 28.6068f}, {0.9957f, -0.0269f, 0.0858f, -0.0201f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_run_right_framedata7[] = {
+static s64FrameData anim_nick_crouch_to_run_right_framedata7[] = {
     {{-8.8278f, -34.2536f, 40.8171f}, {0.9331f, 0.3458f, -0.0283f, 0.0942f}, {1.0000f, 1.0000f, 1.0000f}},
     {{3.1594f, -26.1549f, 42.7131f}, {0.0920f, 0.9471f, 0.2793f, -0.1287f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-16.9859f, -22.9722f, 36.2636f}, {0.6703f, 0.5068f, -0.5348f, 0.0892f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -3152,7 +3152,7 @@ static FrameData anim_nick_crouch_to_run_right_framedata7[] = {
     {{-8.4909f, 2.2318f, 10.5873f}, {0.7893f, 0.5689f, 0.1625f, -0.1641f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8114f, -0.1476f, 29.6852f}, {0.9934f, 0.0797f, 0.0719f, -0.0412f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_run_right_framedata8[] = {
+static s64FrameData anim_nick_crouch_to_run_right_framedata8[] = {
     {{-7.9394f, -33.4955f, 43.2704f}, {0.9225f, 0.3580f, -0.0412f, 0.1385f}, {1.0000f, 1.0000f, 1.0000f}},
     {{3.2217f, -25.6815f, 47.4946f}, {0.1633f, 0.9238f, 0.3054f, 0.1631f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-16.5496f, -24.6453f, 36.3243f}, {0.7255f, 0.3280f, -0.5905f, 0.1317f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -3190,7 +3190,7 @@ static FrameData anim_nick_crouch_to_run_right_framedata8[] = {
     {{-8.4607f, 7.3656f, 12.8970f}, {0.8127f, 0.5283f, 0.1681f, -0.1792f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.7123f, 0.1788f, 30.7398f}, {0.9720f, 0.2030f, 0.0866f, -0.0808f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_run_right_framedata10[] = {
+static s64FrameData anim_nick_crouch_to_run_right_framedata10[] = {
     {{-1.9304f, -32.7125f, 48.2978f}, {0.9300f, 0.3462f, -0.0099f, 0.1230f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.0473f, -24.1610f, 51.9704f}, {0.2564f, 0.8179f, 0.1023f, 0.5048f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.4457f, -27.5840f, 39.3177f}, {0.8243f, 0.2021f, -0.5203f, 0.0950f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -3228,7 +3228,7 @@ static FrameData anim_nick_crouch_to_run_right_framedata10[] = {
     {{-6.3711f, 12.5076f, 16.7795f}, {0.8293f, 0.4922f, 0.1565f, -0.2133f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8518f, -0.6145f, 31.1013f}, {0.9171f, 0.3774f, 0.0573f, -0.1153f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_run_right_framedata12[] = {
+static s64FrameData anim_nick_crouch_to_run_right_framedata12[] = {
     {{3.3861f, -29.6963f, 59.2241f}, {0.9825f, 0.1629f, 0.0301f, 0.0857f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.4439f, -17.0506f, 54.4810f}, {0.6439f, 0.6831f, 0.3064f, 0.1581f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.1733f, -28.3057f, 51.7547f}, {0.5704f, 0.6959f, -0.4333f, -0.0518f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -3266,7 +3266,7 @@ static FrameData anim_nick_crouch_to_run_right_framedata12[] = {
     {{-5.6272f, 11.0481f, 21.0202f}, {0.8185f, 0.5592f, 0.0478f, -0.1227f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9439f, -1.6298f, 35.7425f}, {0.9298f, 0.3678f, -0.0028f, -0.0133f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_run_right_framedata15[] = {
+static s64FrameData anim_nick_crouch_to_run_right_framedata15[] = {
     {{4.7727f, -23.6082f, 66.3762f}, {0.9895f, 0.1395f, 0.0079f, -0.0368f}, {1.0000f, 1.0000f, 1.0000f}},
     {{14.8766f, -18.4096f, 57.8178f}, {0.6755f, 0.0092f, 0.6849f, -0.2730f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.4960f, -18.3584f, 66.5959f}, {0.5805f, 0.5970f, -0.2158f, -0.5100f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -3304,7 +3304,7 @@ static FrameData anim_nick_crouch_to_run_right_framedata15[] = {
     {{-8.0923f, -17.5638f, 24.9562f}, {0.7857f, 0.6084f, -0.1080f, 0.0305f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9291f, -2.5085f, 37.0490f}, {0.9078f, -0.4140f, 0.0346f, -0.0575f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_crouch_to_run_right_keyframes[] = {
+static s64KeyFrame anim_nick_crouch_to_run_right_keyframes[] = {
     {0, anim_nick_crouch_to_run_right_framedata0},
     {3, anim_nick_crouch_to_run_right_framedata3},
     {5, anim_nick_crouch_to_run_right_framedata5},
@@ -3316,7 +3316,7 @@ static KeyFrame anim_nick_crouch_to_run_right_keyframes[] = {
     {15, anim_nick_crouch_to_run_right_framedata15},
 };
 
-static FrameData anim_nick_crouch_to_stand_left_framedata0[] = {
+static s64FrameData anim_nick_crouch_to_stand_left_framedata0[] = {
     {{3.4995f, -35.5266f, 36.3141f}, {0.9724f, 0.2328f, 0.0132f, -0.0040f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.8057f, -26.0857f, 35.1868f}, {0.7681f, 0.4287f, 0.4737f, -0.0429f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.1174f, -28.3744f, 30.5919f}, {0.7639f, 0.3963f, -0.4934f, 0.1264f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -3354,7 +3354,7 @@ static FrameData anim_nick_crouch_to_stand_left_framedata0[] = {
     {{-7.3402f, -21.0203f, 10.5030f}, {0.7954f, 0.6008f, -0.0796f, -0.0079f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.4255f, -3.5840f, 18.8628f}, {0.8544f, -0.5154f, 0.0185f, -0.0634f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_stand_left_framedata3[] = {
+static s64FrameData anim_nick_crouch_to_stand_left_framedata3[] = {
     {{3.3047f, -36.8505f, 37.5523f}, {0.9878f, 0.1542f, -0.0214f, -0.0007f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.8386f, -27.7914f, 36.1915f}, {0.7976f, 0.3708f, 0.4576f, -0.1305f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.3096f, -30.2780f, 31.3520f}, {0.7498f, 0.4297f, -0.4974f, 0.0757f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -3392,7 +3392,7 @@ static FrameData anim_nick_crouch_to_stand_left_framedata3[] = {
     {{-7.1903f, -20.8401f, 8.8115f}, {0.7781f, 0.6230f, -0.0797f, -0.0002f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.7830f, -4.6387f, 19.2660f}, {0.8858f, -0.4595f, 0.0484f, -0.0426f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_stand_left_framedata7[] = {
+static s64FrameData anim_nick_crouch_to_stand_left_framedata7[] = {
     {{2.6892f, -39.0180f, 49.3484f}, {0.9929f, 0.1143f, -0.0086f, -0.0332f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.4113f, -31.5417f, 43.3469f}, {0.7996f, 0.1672f, 0.4795f, -0.3205f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-9.0320f, -33.3438f, 42.9202f}, {0.7489f, 0.3855f, -0.5385f, -0.0233f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -3430,7 +3430,7 @@ static FrameData anim_nick_crouch_to_stand_left_framedata7[] = {
     {{-9.0913f, -19.3699f, 10.7046f}, {0.8046f, 0.5783f, -0.1341f, -0.0114f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.6682f, -9.3426f, 26.7503f}, {0.9493f, -0.2652f, 0.0731f, -0.1520f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_stand_left_framedata8[] = {
+static s64FrameData anim_nick_crouch_to_stand_left_framedata8[] = {
     {{2.1678f, -38.6849f, 54.1162f}, {0.9915f, 0.1180f, -0.0002f, -0.0545f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.8942f, -32.4333f, 46.8400f}, {0.7949f, 0.1513f, 0.4768f, -0.3434f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-9.5956f, -32.7833f, 47.9279f}, {0.7619f, 0.3424f, -0.5464f, -0.0621f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -3468,7 +3468,7 @@ static FrameData anim_nick_crouch_to_stand_left_framedata8[] = {
     {{-10.0953f, -18.3322f, 11.9927f}, {0.8195f, 0.5490f, -0.1639f, -0.0122f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.7730f, -10.8924f, 29.1362f}, {0.9544f, -0.2015f, 0.0952f, -0.1988f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_stand_left_framedata11[] = {
+static s64FrameData anim_nick_crouch_to_stand_left_framedata11[] = {
     {{0.5875f, -34.9235f, 67.9710f}, {0.9833f, 0.1636f, -0.0027f, -0.0801f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.8320f, -31.9484f, 59.4892f}, {0.7936f, 0.1843f, 0.4515f, -0.3638f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.6182f, -28.1813f, 61.8410f}, {0.7691f, 0.2316f, -0.5583f, -0.2075f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -3506,7 +3506,7 @@ static FrameData anim_nick_crouch_to_stand_left_framedata11[] = {
     {{-11.6782f, -15.2826f, 18.3139f}, {0.8827f, 0.4327f, -0.1728f, -0.0608f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.5903f, -14.1336f, 36.3698f}, {0.9305f, -0.0687f, 0.1601f, -0.3222f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_stand_left_framedata15[] = {
+static s64FrameData anim_nick_crouch_to_stand_left_framedata15[] = {
     {{-1.0753f, -27.8247f, 75.2702f}, {0.9860f, 0.1589f, -0.0291f, -0.0411f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.7460f, -27.7240f, 67.4390f}, {0.8272f, 0.2251f, 0.4770f, -0.1939f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.5203f, -20.8622f, 68.2211f}, {0.7558f, 0.1461f, -0.5410f, -0.3387f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -3544,7 +3544,7 @@ static FrameData anim_nick_crouch_to_stand_left_framedata15[] = {
     {{-6.8775f, -9.9893f, 21.1454f}, {0.8032f, 0.2381f, 0.0605f, -0.5427f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.6197f, -13.2785f, 40.0171f}, {0.8660f, 0.0522f, 0.1060f, -0.4859f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_stand_left_framedata19[] = {
+static s64FrameData anim_nick_crouch_to_stand_left_framedata19[] = {
     {{-1.9571f, -23.5634f, 75.1971f}, {0.9921f, 0.1218f, -0.0311f, -0.0045f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.2400f, -23.9277f, 67.9924f}, {0.8090f, 0.1752f, 0.5596f, -0.0397f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.1304f, -17.0234f, 67.5230f}, {0.7428f, 0.0869f, -0.5365f, -0.3909f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -3582,7 +3582,7 @@ static FrameData anim_nick_crouch_to_stand_left_framedata19[] = {
     {{-8.7566f, -8.9777f, 20.4311f}, {0.7866f, 0.2620f, 0.0084f, -0.5590f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.0636f, -11.4152f, 39.1290f}, {0.8663f, 0.0152f, 0.1281f, -0.4826f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_crouch_to_stand_left_keyframes[] = {
+static s64KeyFrame anim_nick_crouch_to_stand_left_keyframes[] = {
     {0, anim_nick_crouch_to_stand_left_framedata0},
     {3, anim_nick_crouch_to_stand_left_framedata3},
     {7, anim_nick_crouch_to_stand_left_framedata7},
@@ -3592,7 +3592,7 @@ static KeyFrame anim_nick_crouch_to_stand_left_keyframes[] = {
     {19, anim_nick_crouch_to_stand_left_framedata19},
 };
 
-static FrameData anim_nick_crouch_to_stand_right_framedata0[] = {
+static s64FrameData anim_nick_crouch_to_stand_right_framedata0[] = {
     {{-3.4802f, -35.5301f, 36.3057f}, {0.9724f, 0.2328f, -0.0132f, 0.0041f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.1388f, -28.4396f, 30.7093f}, {0.7651f, 0.3972f, 0.4910f, -0.1258f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.8166f, -26.0249f, 35.0744f}, {0.7665f, 0.4307f, -0.4744f, 0.0432f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -3630,7 +3630,7 @@ static FrameData anim_nick_crouch_to_stand_right_framedata0[] = {
     {{-19.3003f, -15.3935f, 12.7981f}, {0.7436f, 0.5391f, 0.0650f, -0.3901f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.4875f, -2.6641f, 19.9658f}, {0.8283f, -0.4294f, 0.3387f, -0.1214f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_stand_right_framedata3[] = {
+static s64FrameData anim_nick_crouch_to_stand_right_framedata3[] = {
     {{-3.2818f, -36.8498f, 37.5490f}, {0.9878f, 0.1542f, 0.0214f, 0.0007f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.3323f, -30.3331f, 31.4766f}, {0.7511f, 0.4302f, 0.4951f, -0.0748f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.8514f, -27.7315f, 36.0834f}, {0.7960f, 0.3728f, -0.4586f, 0.1306f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -3668,7 +3668,7 @@ static FrameData anim_nick_crouch_to_stand_right_framedata3[] = {
     {{-17.6858f, -18.7270f, 12.6948f}, {0.7634f, 0.5433f, 0.0442f, -0.3466f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.1405f, -4.4435f, 20.5914f}, {0.8437f, -0.4508f, 0.2768f, -0.0909f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_stand_right_framedata7[] = {
+static s64FrameData anim_nick_crouch_to_stand_right_framedata7[] = {
     {{-2.6799f, -39.0022f, 49.3459f}, {0.9929f, 0.1143f, 0.0086f, 0.0333f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.0250f, -33.3617f, 43.0512f}, {0.7505f, 0.3848f, 0.5367f, 0.0248f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.4143f, -31.4880f, 43.2197f}, {0.7984f, 0.1682f, -0.4807f, 0.3211f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -3706,7 +3706,7 @@ static FrameData anim_nick_crouch_to_stand_right_framedata7[] = {
     {{-11.6175f, -28.8299f, 21.7679f}, {0.9637f, 0.2268f, -0.0814f, -0.1150f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.2803f, -10.5085f, 26.5734f}, {0.7997f, -0.5896f, 0.0921f, -0.0664f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_stand_right_framedata8[] = {
+static s64FrameData anim_nick_crouch_to_stand_right_framedata8[] = {
     {{-2.1603f, -38.6689f, 54.1143f}, {0.9915f, 0.1180f, 0.0002f, 0.0545f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.5801f, -32.7887f, 48.0604f}, {0.7634f, 0.3413f, 0.5447f, 0.0637f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.8929f, -32.3931f, 46.7090f}, {0.7938f, 0.1522f, -0.4779f, 0.3440f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -3744,7 +3744,7 @@ static FrameData anim_nick_crouch_to_stand_right_framedata8[] = {
     {{-9.5548f, -31.1807f, 22.8656f}, {0.9883f, 0.1270f, -0.0833f, 0.0123f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.0707f, -12.7157f, 28.3838f}, {0.8123f, -0.5795f, 0.0460f, -0.0469f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_stand_right_framedata11[] = {
+static s64FrameData anim_nick_crouch_to_stand_right_framedata11[] = {
     {{-0.5820f, -34.9119f, 67.9707f}, {0.9833f, 0.1636f, 0.0027f, 0.0801f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.5860f, -28.1549f, 61.9694f}, {0.7702f, 0.2295f, 0.5572f, 0.2091f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.8289f, -31.9561f, 59.3601f}, {0.7927f, 0.1860f, -0.4519f, 0.3645f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -3782,7 +3782,7 @@ static FrameData anim_nick_crouch_to_stand_right_framedata11[] = {
     {{-4.8763f, -34.0794f, 23.4060f}, {0.9680f, 0.0439f, -0.0141f, 0.2466f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.4397f, -18.7345f, 35.2240f}, {0.9029f, -0.4236f, -0.0064f, 0.0726f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_stand_right_framedata15[] = {
+static s64FrameData anim_nick_crouch_to_stand_right_framedata15[] = {
     {{1.0779f, -27.8195f, 75.2728f}, {0.9860f, 0.1589f, 0.0291f, 0.0411f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.4761f, -20.8220f, 68.3431f}, {0.7563f, 0.1441f, 0.5401f, 0.3399f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.7507f, -27.7655f, 67.3233f}, {0.8262f, 0.2279f, -0.4771f, 0.1945f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -3820,7 +3820,7 @@ static FrameData anim_nick_crouch_to_stand_right_framedata15[] = {
     {{-3.1088f, -31.0789f, 23.3787f}, {0.9400f, 0.0172f, 0.0382f, 0.3387f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.6525f, -20.9037f, 39.7363f}, {0.9361f, -0.2618f, 0.0068f, 0.2350f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_crouch_to_stand_right_framedata19[] = {
+static s64FrameData anim_nick_crouch_to_stand_right_framedata19[] = {
     {{1.9609f, -23.5552f, 75.1972f}, {0.9921f, 0.1218f, 0.0311f, 0.0045f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.0895f, -16.9729f, 67.6396f}, {0.7433f, 0.0850f, 0.5354f, 0.3920f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.2501f, -23.9753f, 67.8798f}, {0.8080f, 0.1788f, -0.5599f, 0.0404f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -3858,7 +3858,7 @@ static FrameData anim_nick_crouch_to_stand_right_framedata19[] = {
     {{-1.5163f, -30.0888f, 23.1114f}, {0.9206f, 0.0214f, 0.0846f, 0.3806f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.6978f, -19.6241f, 39.1721f}, {0.9206f, -0.2754f, 0.0066f, 0.2768f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_crouch_to_stand_right_keyframes[] = {
+static s64KeyFrame anim_nick_crouch_to_stand_right_keyframes[] = {
     {0, anim_nick_crouch_to_stand_right_framedata0},
     {3, anim_nick_crouch_to_stand_right_framedata3},
     {7, anim_nick_crouch_to_stand_right_framedata7},
@@ -3868,7 +3868,7 @@ static KeyFrame anim_nick_crouch_to_stand_right_keyframes[] = {
     {19, anim_nick_crouch_to_stand_right_framedata19},
 };
 
-static FrameData anim_nick_fall_idle_left_framedata0[] = {
+static s64FrameData anim_nick_fall_idle_left_framedata0[] = {
     {{-10.2711f, -10.5103f, 68.0897f}, {0.8417f, 0.4890f, -0.1456f, -0.1766f}, {1.0000f, 1.0000f, 1.0000f}},
     {{2.5472f, -12.1288f, 64.5398f}, {0.9448f, 0.2004f, -0.1246f, -0.2273f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-15.9445f, 2.5283f, 67.1193f}, {0.8174f, 0.2752f, 0.0705f, -0.5012f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -3906,7 +3906,7 @@ static FrameData anim_nick_fall_idle_left_framedata0[] = {
     {{-21.2148f, -3.3251f, 34.5369f}, {0.8055f, 0.2821f, -0.4152f, -0.3149f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.3862f, 5.4862f, 38.6279f}, {0.6107f, -0.5663f, 0.2326f, -0.5022f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_fall_idle_left_framedata7[] = {
+static s64FrameData anim_nick_fall_idle_left_framedata7[] = {
     {{-10.5254f, -10.4447f, 67.9486f}, {0.8416f, 0.4871f, -0.1453f, -0.1824f}, {1.0000f, 1.0000f, 1.0000f}},
     {{2.4069f, -11.9903f, 64.3682f}, {0.9447f, 0.2102f, -0.0987f, -0.2317f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-16.3067f, 2.4082f, 67.1016f}, {0.8197f, 0.2795f, 0.0950f, -0.4908f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -3944,7 +3944,7 @@ static FrameData anim_nick_fall_idle_left_framedata7[] = {
     {{-21.4060f, -2.8701f, 33.8505f}, {0.7970f, 0.2832f, -0.3953f, -0.3583f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.4760f, 5.4619f, 38.4906f}, {0.6190f, -0.5486f, 0.2442f, -0.5061f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_fall_idle_left_framedata14[] = {
+static s64FrameData anim_nick_fall_idle_left_framedata14[] = {
     {{-10.9096f, -10.3469f, 67.8153f}, {0.8411f, 0.4858f, -0.1446f, -0.1888f}, {1.0000f, 1.0000f, 1.0000f}},
     {{1.9300f, -11.9972f, 64.1916f}, {0.9388f, 0.2109f, -0.0866f, -0.2583f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-16.7093f, 2.5144f, 67.1578f}, {0.8144f, 0.2792f, 0.1033f, -0.4981f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -3982,7 +3982,7 @@ static FrameData anim_nick_fall_idle_left_framedata14[] = {
     {{-21.8806f, -2.4617f, 34.4531f}, {0.7927f, 0.2745f, -0.3973f, -0.3720f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.5561f, 5.4044f, 38.3978f}, {0.6032f, -0.5576f, 0.2597f, -0.5077f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_fall_idle_left_framedata21[] = {
+static s64FrameData anim_nick_fall_idle_left_framedata21[] = {
     {{-10.7775f, -10.3028f, 67.9166f}, {0.8417f, 0.4863f, -0.1451f, -0.1846f}, {1.0000f, 1.0000f, 1.0000f}},
     {{1.9368f, -12.0477f, 64.3084f}, {0.9387f, 0.2056f, -0.1058f, -0.2558f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-16.4810f, 2.7323f, 67.1504f}, {0.8140f, 0.2728f, 0.0855f, -0.5057f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -4020,7 +4020,7 @@ static FrameData anim_nick_fall_idle_left_framedata21[] = {
     {{-21.7897f, -2.7999f, 35.1479f}, {0.7946f, 0.2792f, -0.4076f, -0.3529f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.4975f, 5.4205f, 38.4615f}, {0.5920f, -0.5759f, 0.2507f, -0.5049f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_fall_idle_left_framedata28[] = {
+static s64FrameData anim_nick_fall_idle_left_framedata28[] = {
     {{-10.2711f, -10.5103f, 68.0897f}, {0.8417f, 0.4890f, -0.1456f, -0.1766f}, {1.0000f, 1.0000f, 1.0000f}},
     {{2.5472f, -12.1288f, 64.5398f}, {0.9448f, 0.2004f, -0.1246f, -0.2273f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-15.9445f, 2.5283f, 67.1193f}, {0.8174f, 0.2752f, 0.0705f, -0.5012f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -4058,7 +4058,7 @@ static FrameData anim_nick_fall_idle_left_framedata28[] = {
     {{-21.2148f, -3.3251f, 34.5369f}, {0.8055f, 0.2821f, -0.4152f, -0.3149f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.3862f, 5.4862f, 38.6279f}, {0.6107f, -0.5663f, 0.2326f, -0.5022f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_fall_idle_left_keyframes[] = {
+static s64KeyFrame anim_nick_fall_idle_left_keyframes[] = {
     {0, anim_nick_fall_idle_left_framedata0},
     {7, anim_nick_fall_idle_left_framedata7},
     {14, anim_nick_fall_idle_left_framedata14},
@@ -4066,7 +4066,7 @@ static KeyFrame anim_nick_fall_idle_left_keyframes[] = {
     {28, anim_nick_fall_idle_left_framedata28},
 };
 
-static FrameData anim_nick_fall_idle_right_framedata0[] = {
+static s64FrameData anim_nick_fall_idle_right_framedata0[] = {
     {{10.2780f, -10.4929f, 68.2063f}, {0.8441f, 0.4848f, 0.1465f, 0.1759f}, {1.0000f, 1.0000f, 1.0000f}},
     {{15.9170f, 2.4903f, 67.2050f}, {0.8188f, 0.2710f, -0.0691f, 0.5013f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.5791f, -12.1606f, 64.5568f}, {0.9460f, 0.1958f, 0.1242f, 0.2264f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -4104,7 +4104,7 @@ static FrameData anim_nick_fall_idle_right_framedata0[] = {
     {{3.5145f, -20.4097f, 41.0371f}, {0.9374f, 0.2823f, 0.0998f, 0.1778f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.3769f, -2.6529f, 40.9768f}, {0.6989f, -0.6837f, -0.1146f, 0.1759f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_fall_idle_right_framedata7[] = {
+static s64FrameData anim_nick_fall_idle_right_framedata7[] = {
     {{10.5323f, -10.5470f, 68.0280f}, {0.8433f, 0.4842f, 0.1459f, 0.1819f}, {1.0000f, 1.0000f, 1.0000f}},
     {{16.2775f, 2.2543f, 67.1914f}, {0.8207f, 0.2766f, -0.0945f, 0.4909f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.4389f, -12.1296f, 64.3419f}, {0.9455f, 0.2072f, 0.0980f, 0.2312f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -4142,7 +4142,7 @@ static FrameData anim_nick_fall_idle_right_framedata7[] = {
     {{3.8859f, -20.2249f, 41.3377f}, {0.9365f, 0.2881f, 0.0970f, 0.1746f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.3126f, -2.6100f, 41.0573f}, {0.6961f, -0.6847f, -0.1320f, 0.1710f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_fall_idle_right_framedata14[] = {
+static s64FrameData anim_nick_fall_idle_right_framedata14[] = {
     {{10.9169f, -10.5759f, 67.8195f}, {0.8412f, 0.4856f, 0.1446f, 0.1887f}, {1.0000f, 1.0000f, 1.0000f}},
     {{16.6794f, 2.2377f, 67.2525f}, {0.8146f, 0.2788f, -0.1043f, 0.4979f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-1.9614f, -12.2395f, 64.0798f}, {0.9390f, 0.2110f, 0.0851f, 0.2580f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -4180,7 +4180,7 @@ static FrameData anim_nick_fall_idle_right_framedata14[] = {
     {{3.9553f, -20.1296f, 41.4041f}, {0.9278f, 0.3044f, 0.0934f, 0.1943f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.2540f, -2.5191f, 41.1714f}, {0.6972f, -0.6835f, -0.1334f, 0.1701f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_fall_idle_right_framedata21[] = {
+static s64FrameData anim_nick_fall_idle_right_framedata21[] = {
     {{10.7849f, -10.3765f, 67.9796f}, {0.8430f, 0.4839f, 0.1456f, 0.1842f}, {1.0000f, 1.0000f, 1.0000f}},
     {{16.4525f, 2.6074f, 67.2390f}, {0.8148f, 0.2704f, -0.0853f, 0.5056f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-1.9678f, -12.1544f, 64.2646f}, {0.9394f, 0.2032f, 0.1050f, 0.2553f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -4218,7 +4218,7 @@ static FrameData anim_nick_fall_idle_right_framedata21[] = {
     {{3.6271f, -20.2895f, 41.2532f}, {0.9279f, 0.3003f, 0.0948f, 0.1996f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.2962f, -2.5474f, 41.1241f}, {0.6981f, -0.6845f, -0.1175f, 0.1743f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_fall_idle_right_framedata28[] = {
+static s64FrameData anim_nick_fall_idle_right_framedata28[] = {
     {{10.2780f, -10.5567f, 68.1692f}, {0.8434f, 0.4861f, 0.1462f, 0.1761f}, {1.0000f, 1.0000f, 1.0000f}},
     {{15.9170f, 2.4296f, 67.2089f}, {0.8184f, 0.2723f, -0.0699f, 0.5012f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.5791f, -12.2129f, 64.5143f}, {0.9457f, 0.1973f, 0.1238f, 0.2266f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -4256,7 +4256,7 @@ static FrameData anim_nick_fall_idle_right_framedata28[] = {
     {{3.5145f, -20.3874f, 40.9687f}, {0.9370f, 0.2838f, 0.0996f, 0.1779f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.3769f, -2.6306f, 40.9646f}, {0.7000f, -0.6826f, -0.1149f, 0.1757f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_fall_idle_right_keyframes[] = {
+static s64KeyFrame anim_nick_fall_idle_right_keyframes[] = {
     {0, anim_nick_fall_idle_right_framedata0},
     {7, anim_nick_fall_idle_right_framedata7},
     {14, anim_nick_fall_idle_right_framedata14},
@@ -4264,7 +4264,7 @@ static KeyFrame anim_nick_fall_idle_right_keyframes[] = {
     {28, anim_nick_fall_idle_right_framedata28},
 };
 
-static FrameData anim_nick_fall_to_stand_left_framedata0[] = {
+static s64FrameData anim_nick_fall_to_stand_left_framedata0[] = {
     {{-11.3133f, -10.3253f, 68.0637f}, {0.8603f, 0.4845f, -0.1165f, -0.1075f}, {1.0000f, 1.0000f, 1.0000f}},
     {{1.6525f, -10.1281f, 64.6905f}, {0.9619f, 0.1937f, -0.1187f, -0.1524f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-18.8552f, 1.6757f, 66.5698f}, {0.8578f, 0.2576f, 0.0772f, -0.4381f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -4302,7 +4302,7 @@ static FrameData anim_nick_fall_to_stand_left_framedata0[] = {
     {{-22.7294f, -6.0253f, 34.2006f}, {0.8292f, 0.2998f, -0.4032f, -0.2447f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.4635f, 5.3480f, 38.0964f}, {0.6373f, -0.5906f, 0.1766f, -0.4625f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_fall_to_stand_left_framedata3[] = {
+static s64FrameData anim_nick_fall_to_stand_left_framedata3[] = {
     {{-11.3916f, -10.6037f, 70.2786f}, {0.8966f, 0.4151f, -0.1309f, -0.0824f}, {1.0000f, 1.0000f, 1.0000f}},
     {{1.4114f, -11.4556f, 66.1554f}, {0.9521f, 0.0822f, -0.1449f, -0.2566f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-18.8252f, 1.0583f, 67.0545f}, {0.8825f, 0.2230f, 0.0738f, -0.4075f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -4340,7 +4340,7 @@ static FrameData anim_nick_fall_to_stand_left_framedata3[] = {
     {{-20.9831f, -6.9945f, 29.9183f}, {0.8164f, 0.3546f, -0.3775f, -0.2555f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.3140f, 3.9726f, 38.3121f}, {0.7414f, -0.4813f, 0.1833f, -0.4302f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_fall_to_stand_left_framedata6[] = {
+static s64FrameData anim_nick_fall_to_stand_left_framedata6[] = {
     {{-8.6784f, -12.4206f, 74.0297f}, {0.9209f, 0.3710f, -0.1115f, -0.0434f}, {1.0000f, 1.0000f, 1.0000f}},
     {{3.6595f, -13.6524f, 67.8829f}, {0.9127f, -0.1084f, -0.0489f, -0.3909f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-17.0415f, -2.4992f, 67.8791f}, {0.9050f, 0.1714f, -0.0458f, -0.3867f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -4378,7 +4378,7 @@ static FrameData anim_nick_fall_to_stand_left_framedata6[] = {
     {{-17.6497f, 0.0175f, 22.0800f}, {0.7467f, 0.3601f, -0.2017f, -0.5216f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.5912f, -0.0067f, 38.7053f}, {0.8614f, -0.1022f, 0.2317f, -0.4403f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_fall_to_stand_left_framedata7[] = {
+static s64FrameData anim_nick_fall_to_stand_left_framedata7[] = {
     {{-6.6583f, -11.9786f, 75.2826f}, {0.9279f, 0.3562f, -0.1060f, -0.0296f}, {1.0000f, 1.0000f, 1.0000f}},
     {{5.5097f, -12.8172f, 68.3230f}, {0.8928f, -0.1844f, 0.0152f, -0.4107f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-15.8839f, -3.4956f, 68.2876f}, {0.9018f, 0.1421f, -0.1374f, -0.3843f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -4416,7 +4416,7 @@ static FrameData anim_nick_fall_to_stand_left_framedata7[] = {
     {{-15.1224f, 1.7019f, 21.3486f}, {0.7465f, 0.3469f, -0.0723f, -0.5632f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.8031f, -1.4468f, 39.0711f}, {0.8828f, 0.0112f, 0.2016f, -0.4242f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_fall_to_stand_left_framedata9[] = {
+static s64FrameData anim_nick_fall_to_stand_left_framedata9[] = {
     {{-5.4998f, -15.2313f, 69.1099f}, {0.9412f, 0.3260f, -0.0759f, -0.0462f}, {1.0000f, 1.0000f, 1.0000f}},
     {{6.5784f, -14.2441f, 61.9062f}, {0.8592f, -0.1818f, 0.1683f, -0.4476f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-15.8644f, -8.3196f, 61.8157f}, {0.8636f, 0.1616f, -0.3444f, -0.3308f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -4454,7 +4454,7 @@ static FrameData anim_nick_fall_to_stand_left_framedata9[] = {
     {{-14.6738f, 2.0122f, 16.0172f}, {0.6721f, 0.4417f, -0.0027f, -0.5942f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.0442f, -2.3196f, 33.7615f}, {0.8835f, 0.0478f, 0.1985f, -0.4216f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_fall_to_stand_left_framedata12[] = {
+static s64FrameData anim_nick_fall_to_stand_left_framedata12[] = {
     {{-13.7292f, -24.0427f, 51.6329f}, {0.9749f, 0.1315f, -0.0690f, -0.1658f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-0.1778f, -21.8607f, 48.8103f}, {0.8278f, 0.1611f, 0.2709f, -0.4641f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-21.3817f, -14.7310f, 43.4102f}, {0.7403f, 0.3016f, -0.5684f, -0.1948f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -4492,7 +4492,7 @@ static FrameData anim_nick_fall_to_stand_left_framedata12[] = {
     {{-19.2311f, -0.5837f, 8.5421f}, {0.5814f, 0.6377f, -0.0544f, -0.5024f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.1790f, -1.2161f, 23.7710f}, {0.8706f, -0.0941f, 0.3019f, -0.3768f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_fall_to_stand_left_framedata15[] = {
+static s64FrameData anim_nick_fall_to_stand_left_framedata15[] = {
     {{-18.6636f, -25.0371f, 42.6899f}, {0.9323f, 0.2501f, -0.1580f, -0.2080f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.5651f, -23.7434f, 43.7491f}, {0.8202f, 0.4018f, 0.2119f, -0.3477f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-22.4930f, -13.0192f, 35.1820f}, {0.6173f, 0.3404f, -0.6683f, -0.2378f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -4530,7 +4530,7 @@ static FrameData anim_nick_fall_to_stand_left_framedata15[] = {
     {{-17.5033f, -3.6220f, 6.7662f}, {0.6043f, 0.6944f, -0.0138f, -0.3904f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.1205f, -0.0768f, 22.1101f}, {0.9156f, -0.1552f, 0.2689f, -0.2556f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_fall_to_stand_left_framedata19[] = {
+static s64FrameData anim_nick_fall_to_stand_left_framedata19[] = {
     {{-17.7291f, -21.6258f, 53.1233f}, {0.9036f, 0.3452f, -0.1990f, -0.1574f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.4869f, -20.7954f, 53.7560f}, {0.8443f, 0.4254f, 0.2421f, -0.2182f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-21.4630f, -10.0820f, 44.9239f}, {0.5873f, 0.3136f, -0.6540f, -0.3592f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -4568,7 +4568,7 @@ static FrameData anim_nick_fall_to_stand_left_framedata19[] = {
     {{-15.4506f, -2.0063f, 12.8570f}, {0.6988f, 0.5506f, -0.0084f, -0.4565f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.7496f, 1.0634f, 29.4112f}, {0.9108f, -0.1440f, 0.2117f, -0.3240f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_fall_to_stand_left_framedata24[] = {
+static s64FrameData anim_nick_fall_to_stand_left_framedata24[] = {
     {{-9.3879f, -13.9592f, 71.2976f}, {0.9701f, 0.1999f, -0.1262f, -0.0547f}, {1.0000f, 1.0000f, 1.0000f}},
     {{4.2118f, -13.6635f, 66.9976f}, {0.8604f, 0.2603f, 0.4294f, -0.0868f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-16.9905f, -5.6306f, 62.3002f}, {0.6820f, 0.1812f, -0.5871f, -0.3967f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -4606,7 +4606,7 @@ static FrameData anim_nick_fall_to_stand_left_framedata24[] = {
     {{-10.1377f, 4.5009f, 19.6985f}, {0.7831f, 0.2950f, -0.0038f, -0.5474f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.7635f, 2.5956f, 38.2744f}, {0.8855f, 0.0013f, 0.1389f, -0.4435f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_fall_to_stand_left_framedata32[] = {
+static s64FrameData anim_nick_fall_to_stand_left_framedata32[] = {
     {{-1.8999f, -8.9574f, 75.1967f}, {0.9920f, 0.1219f, -0.0311f, -0.0047f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.2967f, -9.3261f, 67.9924f}, {0.8090f, 0.1753f, 0.5596f, -0.0399f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.0711f, -2.4140f, 67.5218f}, {0.7428f, 0.0868f, -0.5366f, -0.3910f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -4644,7 +4644,7 @@ static FrameData anim_nick_fall_to_stand_left_framedata32[] = {
     {{-8.6823f, 5.6489f, 20.4311f}, {0.7878f, 0.2619f, 0.0080f, -0.5575f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.0017f, 3.1922f, 39.1296f}, {0.8662f, 0.0157f, 0.1281f, -0.4827f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_fall_to_stand_left_keyframes[] = {
+static s64KeyFrame anim_nick_fall_to_stand_left_keyframes[] = {
     {0, anim_nick_fall_to_stand_left_framedata0},
     {3, anim_nick_fall_to_stand_left_framedata3},
     {6, anim_nick_fall_to_stand_left_framedata6},
@@ -4657,7 +4657,7 @@ static KeyFrame anim_nick_fall_to_stand_left_keyframes[] = {
     {32, anim_nick_fall_to_stand_left_framedata32},
 };
 
-static FrameData anim_nick_fall_to_stand_right_framedata0[] = {
+static s64FrameData anim_nick_fall_to_stand_right_framedata0[] = {
     {{11.3212f, -10.3191f, 68.0071f}, {0.8603f, 0.4845f, 0.1166f, 0.1076f}, {1.0000f, 1.0000f, 1.0000f}},
     {{18.8236f, 1.6449f, 66.6138f}, {0.8579f, 0.2573f, -0.0783f, 0.4378f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-1.6865f, -10.1327f, 64.5186f}, {0.9621f, 0.1937f, 0.1172f, 0.1521f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -4695,7 +4695,7 @@ static FrameData anim_nick_fall_to_stand_right_framedata0[] = {
     {{2.8041f, -19.7786f, 41.1627f}, {0.9511f, 0.2778f, 0.0858f, 0.1041f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.3433f, -1.0468f, 40.7111f}, {0.7020f, -0.6982f, -0.0568f, 0.1282f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_fall_to_stand_right_framedata3[] = {
+static s64FrameData anim_nick_fall_to_stand_right_framedata3[] = {
     {{11.3991f, -10.5977f, 70.1894f}, {0.8966f, 0.4151f, 0.1309f, 0.0824f}, {1.0000f, 1.0000f, 1.0000f}},
     {{18.7924f, 1.0404f, 67.0707f}, {0.8825f, 0.2229f, -0.0749f, 0.4074f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-1.4409f, -11.4762f, 65.9494f}, {0.9524f, 0.0818f, 0.1429f, 0.2565f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -4733,7 +4733,7 @@ static FrameData anim_nick_fall_to_stand_right_framedata3[] = {
     {{0.9266f, -20.4500f, 36.1665f}, {0.9484f, 0.2723f, 0.0608f, 0.1504f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.9473f, -1.8804f, 40.3786f}, {0.7823f, -0.6091f, -0.0210f, 0.1290f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_fall_to_stand_right_framedata6[] = {
+static s64FrameData anim_nick_fall_to_stand_right_framedata6[] = {
     {{8.6830f, -12.4161f, 73.9230f}, {0.9209f, 0.3710f, 0.1115f, 0.0434f}, {1.0000f, 1.0000f, 1.0000f}},
     {{17.0013f, -2.4852f, 67.8821f}, {0.9051f, 0.1712f, 0.0454f, 0.3865f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.6742f, -13.6974f, 67.6619f}, {0.9128f, -0.1085f, 0.0467f, 0.3910f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -4771,7 +4771,7 @@ static FrameData anim_nick_fall_to_stand_right_framedata6[] = {
     {{-1.3558f, -18.2939f, 25.9940f}, {0.9559f, 0.0695f, 0.0505f, 0.2808f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.3539f, -4.7935f, 39.8259f}, {0.9195f, -0.3603f, 0.0135f, 0.1568f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_fall_to_stand_right_framedata7[] = {
+static s64FrameData anim_nick_fall_to_stand_right_framedata7[] = {
     {{6.6614f, -11.9755f, 75.3028f}, {0.9279f, 0.3562f, 0.1060f, 0.0296f}, {1.0000f, 1.0000f, 1.0000f}},
     {{15.8425f, -3.4676f, 68.4161f}, {0.9020f, 0.1416f, 0.1370f, 0.3841f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.5220f, -12.8713f, 68.2311f}, {0.8926f, -0.1843f, -0.0174f, 0.4110f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -4809,7 +4809,7 @@ static FrameData anim_nick_fall_to_stand_right_framedata7[] = {
     {{-1.9818f, -15.8986f, 23.6687f}, {0.9293f, -0.0229f, 0.0721f, 0.3614f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.4944f, -5.4259f, 39.9663f}, {0.9505f, -0.2640f, 0.0126f, 0.1636f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_fall_to_stand_right_framedata9[] = {
+static s64FrameData anim_nick_fall_to_stand_right_framedata9[] = {
     {{5.5058f, -15.2191f, 69.1109f}, {0.9412f, 0.3260f, 0.0759f, 0.0462f}, {1.0000f, 1.0000f, 1.0000f}},
     {{15.8370f, -8.2816f, 61.9317f}, {0.8641f, 0.1600f, 0.3439f, 0.3309f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.5944f, -14.2789f, 61.7889f}, {0.8587f, -0.1811f, -0.1705f, 0.4481f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -4847,7 +4847,7 @@ static FrameData anim_nick_fall_to_stand_right_framedata9[] = {
     {{-0.1774f, -19.8816f, 22.6959f}, {0.9286f, 0.1225f, 0.0673f, 0.3437f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.7001f, -4.7477f, 34.3634f}, {0.8866f, -0.4283f, -0.0098f, 0.1744f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_fall_to_stand_right_framedata12[] = {
+static s64FrameData anim_nick_fall_to_stand_right_framedata12[] = {
     {{13.7355f, -24.0200f, 51.6314f}, {0.9749f, 0.1315f, 0.0690f, 0.1658f}, {1.0000f, 1.0000f, 1.0000f}},
     {{21.4051f, -14.7329f, 43.5323f}, {0.7413f, 0.3001f, 0.5676f, 0.1955f}, {1.0000f, 1.0000f, 1.0000f}},
     {{0.1229f, -21.8324f, 48.6929f}, {0.8270f, 0.1623f, -0.2726f, 0.4642f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -4885,7 +4885,7 @@ static FrameData anim_nick_fall_to_stand_right_framedata12[] = {
     {{2.5625f, -22.4925f, 21.7978f}, {0.9151f, 0.1822f, 0.0901f, 0.3481f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.0020f, -4.7695f, 26.3124f}, {0.7612f, -0.6032f, -0.0237f, 0.2371f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_fall_to_stand_right_framedata15[] = {
+static s64FrameData anim_nick_fall_to_stand_right_framedata15[] = {
     {{18.6708f, -25.0112f, 42.6883f}, {0.9323f, 0.2501f, 0.1580f, 0.2080f}, {1.0000f, 1.0000f, 1.0000f}},
     {{22.5589f, -13.0401f, 35.2865f}, {0.6184f, 0.3397f, 0.6673f, 0.2387f}, {1.0000f, 1.0000f, 1.0000f}},
     {{4.4855f, -23.6892f, 43.6529f}, {0.8193f, 0.4030f, -0.2133f, 0.3475f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -4923,7 +4923,7 @@ static FrameData anim_nick_fall_to_stand_right_framedata15[] = {
     {{4.0883f, -22.2187f, 21.3508f}, {0.9081f, 0.1897f, 0.1243f, 0.3519f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.4313f, -5.1039f, 24.8262f}, {0.7286f, -0.6232f, -0.0508f, 0.2796f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_fall_to_stand_right_framedata19[] = {
+static s64FrameData anim_nick_fall_to_stand_right_framedata19[] = {
     {{17.7368f, -21.6056f, 53.1213f}, {0.9036f, 0.3452f, 0.1990f, 0.1574f}, {1.0000f, 1.0000f, 1.0000f}},
     {{21.5198f, -10.0876f, 45.0405f}, {0.5883f, 0.3129f, 0.6529f, 0.3603f}, {1.0000f, 1.0000f, 1.0000f}},
     {{3.4151f, -20.7673f, 53.6512f}, {0.8431f, 0.4273f, -0.2429f, 0.2182f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -4961,7 +4961,7 @@ static FrameData anim_nick_fall_to_stand_right_framedata19[] = {
     {{2.1994f, -21.2102f, 22.2446f}, {0.9142f, 0.1562f, 0.0993f, 0.3605f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.4506f, -5.0974f, 30.8313f}, {0.8151f, -0.5103f, -0.0274f, 0.2727f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_fall_to_stand_right_framedata24[] = {
+static s64FrameData anim_nick_fall_to_stand_right_framedata24[] = {
     {{9.3924f, -13.9496f, 71.2974f}, {0.9701f, 0.1999f, 0.1262f, 0.0547f}, {1.0000f, 1.0000f, 1.0000f}},
     {{16.9857f, -5.6007f, 62.4295f}, {0.6827f, 0.1798f, 0.5859f, 0.3979f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.2458f, -13.6891f, 66.8806f}, {0.8592f, 0.2635f, -0.4299f, 0.0872f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -4999,7 +4999,7 @@ static FrameData anim_nick_fall_to_stand_right_framedata24[] = {
     {{-0.9792f, -16.5939f, 23.2203f}, {0.9234f, 0.0361f, 0.0790f, 0.3738f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.4353f, -5.1155f, 38.5134f}, {0.9125f, -0.3074f, 0.0059f, 0.2698f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_fall_to_stand_right_framedata32[] = {
+static s64FrameData anim_nick_fall_to_stand_right_framedata32[] = {
     {{1.9038f, -8.9492f, 75.1969f}, {0.9920f, 0.1219f, 0.0311f, 0.0047f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.0303f, -2.3636f, 67.6385f}, {0.7432f, 0.0849f, 0.5355f, 0.3921f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.3068f, -9.3736f, 67.8797f}, {0.8080f, 0.1789f, -0.5599f, 0.0405f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -5037,7 +5037,7 @@ static FrameData anim_nick_fall_to_stand_right_framedata32[] = {
     {{-1.5767f, -15.4811f, 23.1114f}, {0.9206f, 0.0213f, 0.0846f, 0.3806f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.7592f, -5.0173f, 39.1724f}, {0.9206f, -0.2754f, 0.0066f, 0.2768f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_fall_to_stand_right_keyframes[] = {
+static s64KeyFrame anim_nick_fall_to_stand_right_keyframes[] = {
     {0, anim_nick_fall_to_stand_right_framedata0},
     {3, anim_nick_fall_to_stand_right_framedata3},
     {6, anim_nick_fall_to_stand_right_framedata6},
@@ -5050,7 +5050,7 @@ static KeyFrame anim_nick_fall_to_stand_right_keyframes[] = {
     {32, anim_nick_fall_to_stand_right_framedata32},
 };
 
-static FrameData anim_nick_jog_left_framedata0[] = {
+static s64FrameData anim_nick_jog_left_framedata0[] = {
     {{-0.2561f, -8.4359f, 77.6436f}, {0.9991f, -0.0306f, 0.0070f, 0.0273f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.1039f, -3.5346f, 70.9598f}, {0.6764f, 0.4220f, 0.5061f, 0.3291f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.1426f, -8.8701f, 70.2043f}, {0.8269f, 0.2544f, -0.4991f, 0.0489f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -5088,7 +5088,7 @@ static FrameData anim_nick_jog_left_framedata0[] = {
     {{-5.2724f, 1.4557f, 21.4202f}, {0.9576f, 0.2847f, -0.0372f, 0.0239f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.4372f, -0.6687f, 40.6999f}, {0.9961f, 0.0769f, -0.0277f, -0.0339f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_jog_left_framedata3[] = {
+static s64FrameData anim_nick_jog_left_framedata3[] = {
     {{0.4447f, -8.5458f, 80.0116f}, {0.9997f, -0.0139f, 0.0113f, 0.0166f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.0881f, -2.7335f, 73.5949f}, {0.6250f, 0.3829f, 0.4967f, 0.4648f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.7416f, -10.4051f, 73.3184f}, {0.8039f, 0.3340f, -0.4776f, 0.1184f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -5126,7 +5126,7 @@ static FrameData anim_nick_jog_left_framedata3[] = {
     {{-5.4148f, 6.3936f, 25.3525f}, {0.9005f, 0.4342f, -0.0124f, 0.0209f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.6271f, -1.9662f, 42.8516f}, {0.9686f, 0.2426f, -0.0205f, -0.0497f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_jog_left_framedata6[] = {
+static s64FrameData anim_nick_jog_left_framedata6[] = {
     {{0.7726f, -8.9284f, 78.0961f}, {0.9989f, -0.0424f, 0.0191f, 0.0104f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.2674f, -3.9083f, 70.7739f}, {0.6531f, 0.3362f, 0.5343f, 0.4183f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.7732f, -10.2451f, 71.5870f}, {0.7816f, 0.3596f, -0.5057f, 0.0638f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -5164,7 +5164,7 @@ static FrameData anim_nick_jog_left_framedata6[] = {
     {{-6.1144f, 4.2753f, 22.7319f}, {0.7145f, 0.6994f, 0.0184f, 0.0013f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.8313f, -2.0766f, 41.0817f}, {0.9819f, 0.1870f, -0.0135f, -0.0277f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_jog_left_framedata9[] = {
+static s64FrameData anim_nick_jog_left_framedata9[] = {
     {{1.1089f, -9.6795f, 74.5833f}, {0.9990f, -0.0397f, 0.0143f, -0.0123f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.2880f, -6.1805f, 66.4622f}, {0.7503f, 0.2954f, 0.5760f, 0.1343f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.3082f, -8.3175f, 68.4652f}, {0.7764f, 0.3127f, -0.5330f, -0.1240f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -5202,7 +5202,7 @@ static FrameData anim_nick_jog_left_framedata9[] = {
     {{-8.5763f, -2.9214f, 18.4730f}, {0.5712f, 0.8190f, 0.0313f, -0.0437f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.3309f, -1.2989f, 37.7964f}, {0.9991f, -0.0202f, 0.0342f, 0.0151f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_jog_left_framedata12[] = {
+static s64FrameData anim_nick_jog_left_framedata12[] = {
     {{-0.2485f, -8.9466f, 77.8122f}, {0.9992f, -0.0038f, 0.0306f, -0.0246f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.7109f, -8.3283f, 70.4561f}, {0.8098f, 0.2593f, 0.5121f, -0.1211f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.9198f, -4.8423f, 71.2828f}, {0.7345f, 0.3298f, -0.5073f, -0.3072f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -5240,7 +5240,7 @@ static FrameData anim_nick_jog_left_framedata12[] = {
     {{-7.1068f, -12.9026f, 25.0518f}, {0.8249f, 0.5623f, 0.0425f, -0.0392f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.0413f, -1.7574f, 40.9689f}, {0.9590f, -0.2802f, 0.0159f, 0.0384f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_jog_left_framedata15[] = {
+static s64FrameData anim_nick_jog_left_framedata15[] = {
     {{-1.5566f, -9.3039f, 80.7671f}, {0.9993f, -0.0089f, 0.0114f, -0.0338f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.6047f, -9.7271f, 73.8854f}, {0.8186f, 0.3205f, 0.4504f, -0.1558f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.7959f, -4.5360f, 73.9760f}, {0.7098f, 0.3006f, -0.5112f, -0.3800f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -5278,7 +5278,7 @@ static FrameData anim_nick_jog_left_framedata15[] = {
     {{-5.5775f, -13.1691f, 27.3159f}, {0.9943f, 0.1023f, 0.0282f, 0.0109f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.6271f, -2.7491f, 43.6835f}, {0.9589f, -0.2607f, 0.0081f, 0.1116f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_jog_left_framedata18[] = {
+static s64FrameData anim_nick_jog_left_framedata18[] = {
     {{-2.8407f, -8.4712f, 79.2892f}, {0.9988f, -0.0362f, 0.0131f, -0.0303f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.4083f, -8.7200f, 72.6995f}, {0.7953f, 0.3672f, 0.4789f, -0.0575f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-14.0210f, -4.3155f, 71.6774f}, {0.7528f, 0.2540f, -0.5178f, -0.3173f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -5316,7 +5316,7 @@ static FrameData anim_nick_jog_left_framedata18[] = {
     {{-5.5350f, -10.7761f, 24.2495f}, {0.9870f, -0.1596f, -0.0176f, 0.0082f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.6210f, -2.9275f, 41.9920f}, {0.9798f, -0.1874f, -0.0116f, 0.0682f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_jog_left_framedata21[] = {
+static s64FrameData anim_nick_jog_left_framedata21[] = {
     {{-1.5570f, -9.0119f, 75.4475f}, {0.9978f, -0.0640f, 0.0140f, 0.0090f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.7747f, -6.6136f, 68.8384f}, {0.7485f, 0.3950f, 0.5191f, 0.1191f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.8237f, -6.6858f, 67.2703f}, {0.8270f, 0.2494f, -0.4935f, -0.1011f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -5354,7 +5354,7 @@ static FrameData anim_nick_jog_left_framedata21[] = {
     {{-4.4171f, -10.1912f, 21.8428f}, {0.9802f, 0.1833f, -0.0281f, 0.0700f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.4788f, -1.1030f, 38.8936f}, {0.9738f, -0.2207f, -0.0544f, -0.0016f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_jog_left_framedata24[] = {
+static s64FrameData anim_nick_jog_left_framedata24[] = {
     {{-0.2560f, -8.4359f, 77.6436f}, {0.9991f, -0.0306f, 0.0070f, 0.0273f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.1040f, -3.5346f, 70.9598f}, {0.6764f, 0.4220f, 0.5061f, 0.3291f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.1425f, -8.8701f, 70.2043f}, {0.8269f, 0.2544f, -0.4991f, 0.0489f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -5392,7 +5392,7 @@ static FrameData anim_nick_jog_left_framedata24[] = {
     {{-5.2709f, 1.4560f, 21.4204f}, {0.9576f, 0.2847f, -0.0372f, 0.0239f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.4371f, -0.6687f, 40.6999f}, {0.9961f, 0.0769f, -0.0278f, -0.0339f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_jog_left_keyframes[] = {
+static s64KeyFrame anim_nick_jog_left_keyframes[] = {
     {0, anim_nick_jog_left_framedata0},
     {3, anim_nick_jog_left_framedata3},
     {6, anim_nick_jog_left_framedata6},
@@ -5404,7 +5404,7 @@ static KeyFrame anim_nick_jog_left_keyframes[] = {
     {24, anim_nick_jog_left_framedata24},
 };
 
-static FrameData anim_nick_jog_right_framedata0[] = {
+static s64FrameData anim_nick_jog_right_framedata0[] = {
     {{0.2547f, -8.4402f, 77.6676f}, {0.9991f, -0.0306f, -0.0070f, -0.0273f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.1236f, -8.7961f, 70.3293f}, {0.8274f, 0.2516f, 0.4998f, -0.0483f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.1602f, -3.6012f, 70.8842f}, {0.6764f, 0.4244f, -0.5040f, -0.3293f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -5442,7 +5442,7 @@ static FrameData anim_nick_jog_right_framedata0[] = {
     {{-6.9767f, -11.6792f, 24.7767f}, {0.8061f, 0.5837f, -0.0139f, -0.0967f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.5740f, -0.8894f, 40.8761f}, {0.9617f, -0.2711f, 0.0296f, -0.0292f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_jog_right_framedata3[] = {
+static s64FrameData anim_nick_jog_right_framedata3[] = {
     {{-0.4401f, -8.5400f, 80.0170f}, {0.9997f, -0.0139f, -0.0113f, -0.0166f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.7289f, -10.3145f, 73.4174f}, {0.8043f, 0.3308f, 0.4792f, -0.1184f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.1486f, -2.7859f, 73.5052f}, {0.6249f, 0.3852f, -0.4948f, -0.4651f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -5480,7 +5480,7 @@ static FrameData anim_nick_jog_right_framedata3[] = {
     {{-5.1396f, -12.9160f, 27.0559f}, {0.9835f, 0.1596f, -0.0381f, -0.0767f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.3811f, -1.8907f, 43.0547f}, {0.9606f, -0.2770f, 0.0026f, 0.0238f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_jog_right_framedata6[] = {
+static s64FrameData anim_nick_jog_right_framedata6[] = {
     {{-0.7700f, -8.9176f, 78.0900f}, {0.9989f, -0.0424f, -0.0191f, -0.0104f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.7530f, -10.1521f, 71.6753f}, {0.7820f, 0.3562f, 0.5074f, -0.0638f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.3168f, -3.9617f, 70.6653f}, {0.6533f, 0.3382f, -0.5331f, -0.4179f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -5518,7 +5518,7 @@ static FrameData anim_nick_jog_right_framedata6[] = {
     {{-4.3486f, -9.9082f, 23.4525f}, {0.9826f, -0.1637f, -0.0714f, -0.0515f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.1782f, -1.9895f, 41.1777f}, {0.9817f, -0.1871f, -0.0264f, -0.0239f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_jog_right_framedata9[] = {
+static s64FrameData anim_nick_jog_right_framedata9[] = {
     {{-1.1024f, -9.6616f, 74.5778f}, {0.9990f, -0.0397f, -0.0144f, 0.0123f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.2758f, -8.2275f, 68.5592f}, {0.7769f, 0.3094f, 0.5341f, 0.1242f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.3123f, -6.2294f, 66.3486f}, {0.7501f, 0.2981f, -0.5751f, -0.1335f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -5556,7 +5556,7 @@ static FrameData anim_nick_jog_right_framedata9[] = {
     {{-5.1761f, -10.3206f, 21.5835f}, {0.9777f, 0.1818f, -0.0882f, -0.0570f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.6447f, -0.7332f, 38.4765f}, {0.9694f, -0.2350f, -0.0050f, -0.0710f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_jog_right_framedata12[] = {
+static s64FrameData anim_nick_jog_right_framedata12[] = {
     {{0.2568f, -8.9438f, 77.8005f}, {0.9992f, -0.0038f, -0.0306f, 0.0247f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.8749f, -4.7734f, 71.3686f}, {0.7347f, 0.3272f, 0.5087f, 0.3072f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.7251f, -8.4028f, 70.3436f}, {0.8094f, 0.2625f, -0.5111f, 0.1216f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -5594,7 +5594,7 @@ static FrameData anim_nick_jog_right_framedata12[] = {
     {{-4.8074f, 1.0674f, 21.6684f}, {0.9529f, 0.2886f, -0.0603f, -0.0715f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.9059f, -0.5511f, 41.0319f}, {0.9956f, 0.0629f, 0.0000f, -0.0698f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_jog_right_framedata15[] = {
+static s64FrameData anim_nick_jog_right_framedata15[] = {
     {{1.5613f, -9.3108f, 80.7636f}, {0.9993f, -0.0089f, -0.0114f, 0.0338f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.7439f, -4.4799f, 74.0691f}, {0.7100f, 0.2981f, 0.5124f, 0.3800f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.6212f, -9.8144f, 73.7837f}, {0.8183f, 0.3234f, -0.4489f, 0.1560f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -5632,7 +5632,7 @@ static FrameData anim_nick_jog_right_framedata15[] = {
     {{-4.4781f, 4.7521f, 25.6894f}, {0.8903f, 0.4507f, -0.0369f, -0.0534f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.3539f, -1.9554f, 43.9053f}, {0.9776f, 0.1973f, -0.0104f, -0.0720f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_jog_right_framedata18[] = {
+static s64FrameData anim_nick_jog_right_framedata18[] = {
     {{2.8422f, -8.4819f, 79.2958f}, {0.9988f, -0.0362f, -0.0131f, 0.0303f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.9745f, -4.2586f, 71.7816f}, {0.7529f, 0.2515f, 0.5187f, 0.3174f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-9.4318f, -8.8139f, 72.6084f}, {0.7950f, 0.3700f, -0.4772f, 0.0579f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -5670,7 +5670,7 @@ static FrameData anim_nick_jog_right_framedata18[] = {
     {{-5.2337f, 3.9346f, 23.9307f}, {0.7171f, 0.6882f, -0.0113f, -0.1094f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.3290f, -1.8284f, 42.4875f}, {0.9821f, 0.1706f, 0.0090f, -0.0795f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_jog_right_framedata21[] = {
+static s64FrameData anim_nick_jog_right_framedata21[] = {
     {{1.5644f, -9.0276f, 75.4425f}, {0.9978f, -0.0640f, -0.0140f, -0.0090f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.8056f, -6.6343f, 67.3746f}, {0.8274f, 0.2472f, 0.4940f, 0.1019f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.8077f, -6.6957f, 68.7302f}, {0.7482f, 0.3980f, -0.5174f, -0.1190f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -5708,7 +5708,7 @@ static FrameData anim_nick_jog_right_framedata21[] = {
     {{-7.2125f, -1.7337f, 19.2500f}, {0.5751f, 0.8127f, -0.0586f, -0.0726f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.5273f, -1.0338f, 38.5954f}, {0.9976f, 0.0008f, 0.0424f, -0.0540f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_jog_right_framedata24[] = {
+static s64FrameData anim_nick_jog_right_framedata24[] = {
     {{0.2546f, -8.4403f, 77.6676f}, {0.9991f, -0.0306f, -0.0070f, -0.0273f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.1235f, -8.7962f, 70.3293f}, {0.8274f, 0.2516f, 0.4998f, -0.0483f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.1603f, -3.6012f, 70.8842f}, {0.6764f, 0.4244f, -0.5040f, -0.3293f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -5746,7 +5746,7 @@ static FrameData anim_nick_jog_right_framedata24[] = {
     {{-6.9767f, -11.6792f, 24.7767f}, {0.8061f, 0.5837f, -0.0139f, -0.0967f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.5741f, -0.8894f, 40.8761f}, {0.9617f, -0.2711f, 0.0296f, -0.0292f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_jog_right_keyframes[] = {
+static s64KeyFrame anim_nick_jog_right_keyframes[] = {
     {0, anim_nick_jog_right_framedata0},
     {3, anim_nick_jog_right_framedata3},
     {6, anim_nick_jog_right_framedata6},
@@ -5758,7 +5758,7 @@ static KeyFrame anim_nick_jog_right_keyframes[] = {
     {24, anim_nick_jog_right_framedata24},
 };
 
-static FrameData anim_nick_jump_left_framedata0[] = {
+static s64FrameData anim_nick_jump_left_framedata0[] = {
     {{-5.5364f, -8.9465f, 75.1971f}, {0.9917f, 0.1227f, -0.0275f, 0.0251f}, {1.0000f, 1.0000f, 1.0000f}},
     {{6.6608f, -8.5828f, 67.9924f}, {0.8099f, 0.1585f, 0.5646f, -0.0156f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-16.0816f, -3.0248f, 67.5230f}, {0.7542f, 0.1028f, -0.5337f, -0.3685f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -5796,7 +5796,7 @@ static FrameData anim_nick_jump_left_framedata0[] = {
     {{-13.1936f, 5.2077f, 20.4311f}, {0.8030f, 0.2617f, 0.0162f, -0.5353f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.3636f, 3.0545f, 39.1290f}, {0.8803f, 0.0113f, 0.1285f, -0.4566f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_jump_left_framedata2[] = {
+static s64FrameData anim_nick_jump_left_framedata2[] = {
     {{-9.2399f, -9.9538f, 73.5110f}, {0.9658f, 0.2472f, -0.0678f, 0.0397f}, {1.0000f, 1.0000f, 1.0000f}},
     {{3.9521f, -7.7036f, 69.6953f}, {0.9727f, 0.0891f, 0.0409f, 0.2101f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-18.1419f, -0.5133f, 67.9118f}, {0.8664f, 0.0845f, -0.1300f, -0.4746f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -5834,7 +5834,7 @@ static FrameData anim_nick_jump_left_framedata2[] = {
     {{-17.7386f, 3.6411f, 22.0634f}, {0.8028f, 0.2716f, -0.1765f, -0.5006f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.3024f, 3.7427f, 38.4540f}, {0.8393f, -0.1213f, 0.2334f, -0.4759f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_jump_left_framedata3[] = {
+static s64FrameData anim_nick_jump_left_framedata3[] = {
     {{-11.2165f, -10.3526f, 72.2254f}, {0.9424f, 0.3181f, -0.1016f, 0.0199f}, {1.0000f, 1.0000f, 1.0000f}},
     {{2.2184f, -8.4014f, 69.8734f}, {0.9599f, 0.1006f, -0.1877f, 0.1824f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-18.9533f, 0.6741f, 67.8890f}, {0.8803f, 0.0885f, 0.0445f, -0.4640f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -5872,7 +5872,7 @@ static FrameData anim_nick_jump_left_framedata3[] = {
     {{-19.6559f, 2.3544f, 23.7612f}, {0.7938f, 0.2579f, -0.2627f, -0.4840f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.7827f, 4.1929f, 38.2000f}, {0.7953f, -0.2141f, 0.2640f, -0.5019f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_jump_left_framedata6[] = {
+static s64FrameData anim_nick_jump_left_framedata6[] = {
     {{-11.8681f, -10.9814f, 69.0202f}, {0.8740f, 0.4582f, -0.1205f, -0.1078f}, {1.0000f, 1.0000f, 1.0000f}},
     {{1.2875f, -11.1729f, 66.2105f}, {0.9644f, 0.2017f, -0.1531f, -0.0769f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-18.7425f, 1.3340f, 67.2838f}, {0.8461f, 0.2297f, 0.0777f, -0.4747f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -5910,7 +5910,7 @@ static FrameData anim_nick_jump_left_framedata6[] = {
     {{-22.8978f, -3.2598f, 31.8961f}, {0.8076f, 0.2502f, -0.3942f, -0.3603f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.6413f, 5.1953f, 38.3623f}, {0.6656f, -0.5052f, 0.2425f, -0.4929f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_jump_left_framedata7[] = {
+static s64FrameData anim_nick_jump_left_framedata7[] = {
     {{-11.1802f, -10.3859f, 68.2585f}, {0.8590f, 0.4831f, -0.1222f, -0.1175f}, {1.0000f, 1.0000f, 1.0000f}},
     {{1.7869f, -10.4899f, 64.8844f}, {0.9600f, 0.1923f, -0.1210f, -0.1635f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-18.4414f, 1.7864f, 66.7642f}, {0.8526f, 0.2584f, 0.0742f, -0.4480f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -5948,7 +5948,7 @@ static FrameData anim_nick_jump_left_framedata7[] = {
     {{-22.4969f, -5.8210f, 34.3938f}, {0.8263f, 0.2952f, -0.4065f, -0.2544f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.9697f, 5.1932f, 38.2887f}, {0.6319f, -0.5885f, 0.1835f, -0.4699f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_jump_left_keyframes[] = {
+static s64KeyFrame anim_nick_jump_left_keyframes[] = {
     {0, anim_nick_jump_left_framedata0},
     {2, anim_nick_jump_left_framedata2},
     {3, anim_nick_jump_left_framedata3},
@@ -5956,7 +5956,7 @@ static KeyFrame anim_nick_jump_left_keyframes[] = {
     {7, anim_nick_jump_left_framedata7},
 };
 
-static FrameData anim_nick_jump_right_framedata0[] = {
+static s64FrameData anim_nick_jump_right_framedata0[] = {
     {{5.5407f, -8.9385f, 75.1972f}, {0.9917f, 0.1227f, 0.0275f, -0.0251f}, {1.0000f, 1.0000f, 1.0000f}},
     {{16.0437f, -2.9720f, 67.6396f}, {0.7546f, 0.1009f, 0.5327f, 0.3696f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.6736f, -8.6296f, 67.8798f}, {0.8089f, 0.1621f, -0.5650f, 0.0163f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -5994,7 +5994,7 @@ static FrameData anim_nick_jump_right_framedata0[] = {
     {{1.6801f, -15.2532f, 23.1115f}, {0.9315f, 0.0239f, 0.0839f, 0.3530f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-0.8718f, -4.6174f, 39.1721f}, {0.9284f, -0.2751f, 0.0148f, 0.2492f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_jump_right_framedata2[] = {
+static s64FrameData anim_nick_jump_right_framedata2[] = {
     {{9.2450f, -9.9456f, 73.5032f}, {0.9658f, 0.2472f, 0.0678f, -0.0396f}, {1.0000f, 1.0000f, 1.0000f}},
     {{18.0991f, -0.4890f, 68.0157f}, {0.8665f, 0.0841f, 0.1286f, 0.4749f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.9841f, -7.7358f, 69.5899f}, {0.9726f, 0.0907f, -0.0413f, -0.2102f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -6032,7 +6032,7 @@ static FrameData anim_nick_jump_right_framedata2[] = {
     {{2.7033f, -17.7558f, 27.5061f}, {0.9405f, 0.0879f, 0.0809f, 0.3182f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.0786f, -3.6025f, 39.9317f}, {0.8757f, -0.4062f, -0.0076f, 0.2610f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_jump_right_framedata3[] = {
+static s64FrameData anim_nick_jump_right_framedata3[] = {
     {{11.2226f, -10.3440f, 72.2154f}, {0.9424f, 0.3181f, 0.1016f, -0.0199f}, {1.0000f, 1.0000f, 1.0000f}},
     {{18.9125f, 0.6832f, 67.9873f}, {0.8801f, 0.0887f, -0.0460f, 0.4641f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.2542f, -8.4300f, 69.7700f}, {0.9599f, 0.1012f, 0.1875f, -0.1823f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -6070,7 +6070,7 @@ static FrameData anim_nick_jump_right_framedata3[] = {
     {{4.3051f, -18.3924f, 30.5019f}, {0.9414f, 0.1225f, 0.1036f, 0.2965f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.4833f, -3.1146f, 40.4055f}, {0.8385f, -0.4748f, -0.0486f, 0.2629f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_jump_right_framedata6[] = {
+static s64FrameData anim_nick_jump_right_framedata6[] = {
     {{11.8753f, -10.9750f, 69.0177f}, {0.8740f, 0.4582f, 0.1205f, 0.1078f}, {1.0000f, 1.0000f, 1.0000f}},
     {{18.7100f, 1.3064f, 67.3832f}, {0.8461f, 0.2296f, -0.0789f, 0.4745f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-1.3229f, -11.1848f, 66.0973f}, {0.9645f, 0.2019f, 0.1520f, 0.0767f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -6108,7 +6108,7 @@ static FrameData anim_nick_jump_right_framedata6[] = {
     {{3.2906f, -20.2081f, 39.1614f}, {0.9576f, 0.2421f, 0.0729f, 0.1385f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.7384f, -1.8264f, 40.9902f}, {0.7384f, -0.6534f, -0.0720f, 0.1506f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_jump_right_framedata7[] = {
+static s64FrameData anim_nick_jump_right_framedata7[] = {
     {{11.1880f, -10.3795f, 68.2559f}, {0.8590f, 0.4831f, 0.1222f, 0.1175f}, {1.0000f, 1.0000f, 1.0000f}},
     {{18.4104f, 1.7549f, 66.8621f}, {0.8527f, 0.2582f, -0.0753f, 0.4478f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-1.8208f, -10.4953f, 64.7665f}, {0.9603f, 0.1923f, 0.1194f, 0.1633f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -6146,7 +6146,7 @@ static FrameData anim_nick_jump_right_framedata7[] = {
     {{2.8992f, -20.0359f, 41.4092f}, {0.9498f, 0.2768f, 0.0889f, 0.1153f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.6846f, -1.4295f, 40.9573f}, {0.7005f, -0.6975f, -0.0650f, 0.1363f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_jump_right_keyframes[] = {
+static s64KeyFrame anim_nick_jump_right_keyframes[] = {
     {0, anim_nick_jump_right_framedata0},
     {2, anim_nick_jump_right_framedata2},
     {3, anim_nick_jump_right_framedata3},
@@ -6154,7 +6154,7 @@ static KeyFrame anim_nick_jump_right_keyframes[] = {
     {7, anim_nick_jump_right_framedata7},
 };
 
-static FrameData anim_nick_look_around_left_framedata0[] = {
+static s64FrameData anim_nick_look_around_left_framedata0[] = {
     {{-1.9564f, -9.3599f, 75.1974f}, {0.9921f, 0.1218f, -0.0311f, -0.0044f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.2405f, -9.7246f, 67.9924f}, {0.8090f, 0.1752f, 0.5596f, -0.0397f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.1300f, -2.8203f, 67.5233f}, {0.7429f, 0.0868f, -0.5365f, -0.3908f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -6192,7 +6192,7 @@ static FrameData anim_nick_look_around_left_framedata0[] = {
     {{-8.7566f, 5.2252f, 20.4311f}, {0.7866f, 0.2620f, 0.0084f, -0.5590f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.0636f, 2.7878f, 39.1290f}, {0.8663f, 0.0152f, 0.1281f, -0.4826f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_left_framedata9[] = {
+static s64FrameData anim_nick_look_around_left_framedata9[] = {
     {{-2.5078f, -9.5091f, 75.1552f}, {0.9903f, 0.1124f, -0.0174f, 0.0795f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.5509f, -10.6058f, 67.9055f}, {0.8058f, 0.1984f, 0.5549f, -0.0582f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.4124f, -2.4655f, 67.4977f}, {0.7353f, 0.0762f, -0.5376f, -0.4056f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -6230,7 +6230,7 @@ static FrameData anim_nick_look_around_left_framedata9[] = {
     {{-8.7451f, 5.0508f, 20.3883f}, {0.7866f, 0.2641f, 0.0120f, -0.5580f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.0561f, 2.7762f, 39.1076f}, {0.8656f, 0.0112f, 0.1259f, -0.4845f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_left_framedata19[] = {
+static s64FrameData anim_nick_look_around_left_framedata19[] = {
     {{-2.0066f, -10.0687f, 74.8965f}, {0.9495f, 0.0742f, -0.0068f, 0.3047f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.1160f, -10.3382f, 67.7812f}, {0.8039f, 0.1800f, 0.5643f, -0.0537f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.4552f, -4.1147f, 67.0169f}, {0.7425f, 0.1146f, -0.5380f, -0.3823f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -6268,7 +6268,7 @@ static FrameData anim_nick_look_around_left_framedata19[] = {
     {{-8.4788f, 4.1379f, 20.0069f}, {0.7858f, 0.2807f, 0.0303f, -0.5504f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.7351f, 2.1055f, 38.9655f}, {0.8988f, 0.0258f, 0.1021f, -0.4255f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_left_framedata29[] = {
+static s64FrameData anim_nick_look_around_left_framedata29[] = {
     {{2.2926f, -9.3259f, 74.4816f}, {0.7525f, 0.0458f, 0.0030f, 0.6569f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.1411f, -1.7227f, 68.1241f}, {0.7880f, -0.0426f, 0.5770f, 0.2103f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-9.0027f, -11.4672f, 65.9442f}, {0.8092f, 0.3075f, -0.4719f, -0.1672f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -6306,7 +6306,7 @@ static FrameData anim_nick_look_around_left_framedata29[] = {
     {{-7.0822f, 2.9845f, 19.1191f}, {0.8847f, 0.3318f, 0.0517f, -0.3232f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.1234f, -1.1547f, 38.0802f}, {0.9801f, 0.1231f, 0.0386f, -0.1511f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_left_framedata35[] = {
+static s64FrameData anim_nick_look_around_left_framedata35[] = {
     {{5.1097f, -6.6998f, 74.1499f}, {0.5773f, 0.0608f, 0.0287f, 0.8138f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.9735f, 4.5831f, 67.7468f}, {0.6919f, -0.2050f, 0.5517f, 0.4180f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.9669f, -14.0131f, 65.8845f}, {0.8355f, 0.3959f, -0.3790f, 0.0400f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -6344,7 +6344,7 @@ static FrameData anim_nick_look_around_left_framedata35[] = {
     {{-6.4554f, 2.1598f, 18.8178f}, {0.9024f, 0.3540f, 0.0671f, -0.2362f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.1976f, -3.1061f, 37.5201f}, {0.9869f, 0.1578f, 0.0040f, 0.0324f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_left_framedata39[] = {
+static s64FrameData anim_nick_look_around_left_framedata39[] = {
     {{4.9722f, -6.4052f, 74.2452f}, {0.5927f, 0.0770f, 0.0368f, 0.8009f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.1501f, 4.5970f, 67.6334f}, {0.6808f, -0.1830f, 0.5523f, 0.4450f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.4120f, -13.6103f, 66.2496f}, {0.8304f, 0.3718f, -0.4072f, 0.0807f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -6382,7 +6382,7 @@ static FrameData anim_nick_look_around_left_framedata39[] = {
     {{-6.6907f, 2.4217f, 18.8983f}, {0.9087f, 0.3532f, 0.0562f, -0.2151f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.4149f, -2.7998f, 37.6128f}, {0.9875f, 0.1566f, 0.0064f, 0.0164f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_left_framedata46[] = {
+static s64FrameData anim_nick_look_around_left_framedata46[] = {
     {{3.3911f, -7.2918f, 74.3718f}, {0.9839f, 0.0717f, 0.1408f, 0.0840f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.9346f, 1.2772f, 67.5494f}, {0.7422f, -0.0565f, 0.5769f, 0.3364f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.3942f, -10.3628f, 66.7259f}, {0.8270f, 0.2663f, -0.4936f, -0.0396f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -6420,7 +6420,7 @@ static FrameData anim_nick_look_around_left_framedata46[] = {
     {{-7.4027f, 2.9519f, 18.9281f}, {0.9104f, 0.3513f, 0.0325f, -0.2162f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.6644f, -1.2325f, 37.8891f}, {0.9868f, 0.1270f, 0.0285f, -0.0963f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_left_framedata51[] = {
+static s64FrameData anim_nick_look_around_left_framedata51[] = {
     {{0.7456f, -8.6834f, 74.5419f}, {0.9472f, 0.1055f, 0.1474f, -0.2645f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.7617f, -2.7480f, 68.3424f}, {0.8014f, 0.0291f, 0.5561f, 0.2182f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.0670f, -7.9030f, 66.4875f}, {0.7970f, 0.2182f, -0.5316f, -0.1861f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -6458,7 +6458,7 @@ static FrameData anim_nick_look_around_left_framedata51[] = {
     {{-8.2911f, 3.8617f, 19.2202f}, {0.9111f, 0.3332f, 0.0044f, -0.2426f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.2594f, 0.3506f, 38.2234f}, {0.9635f, 0.0962f, 0.0688f, -0.2401f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_left_framedata56[] = {
+static s64FrameData anim_nick_look_around_left_framedata56[] = {
     {{-2.7515f, -8.8957f, 74.6637f}, {0.7909f, 0.1458f, 0.1268f, -0.5807f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.8157f, -7.5661f, 68.5245f}, {0.8468f, 0.1357f, 0.5135f, 0.0305f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.3433f, -3.5080f, 66.7934f}, {0.7328f, 0.1214f, -0.5740f, -0.3448f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -6496,7 +6496,7 @@ static FrameData anim_nick_look_around_left_framedata56[] = {
     {{-8.7925f, 4.8475f, 19.6339f}, {0.9082f, 0.3086f, -0.0128f, -0.2824f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.6310f, 1.6801f, 38.5428f}, {0.9237f, 0.0665f, 0.0995f, -0.3640f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_left_framedata63[] = {
+static s64FrameData anim_nick_look_around_left_framedata63[] = {
     {{-8.1483f, -6.5488f, 74.7140f}, {0.4823f, 0.1630f, 0.0563f, -0.8589f}, {1.0000f, 1.0000f, 1.0000f}},
     {{2.0794f, -13.4865f, 68.2053f}, {0.8175f, 0.3522f, 0.4096f, -0.1997f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.4122f, 5.1376f, 67.4990f}, {0.5437f, -0.0545f, -0.5704f, -0.6133f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -6534,7 +6534,7 @@ static FrameData anim_nick_look_around_left_framedata63[] = {
     {{-9.0247f, 6.1049f, 20.3838f}, {0.8813f, 0.2643f, -0.0262f, -0.3908f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.1200f, 3.3787f, 38.9872f}, {0.8334f, 0.0092f, 0.1353f, -0.5357f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_left_framedata69[] = {
+static s64FrameData anim_nick_look_around_left_framedata69[] = {
     {{-10.2841f, -1.9161f, 74.9871f}, {0.1981f, 0.1593f, 0.0045f, -0.9671f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.0255f, -13.0741f, 68.0477f}, {0.7422f, 0.4488f, 0.2558f, -0.4270f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.5294f, 10.4138f, 68.2088f}, {0.3001f, -0.1851f, -0.4909f, -0.7966f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -6572,7 +6572,7 @@ static FrameData anim_nick_look_around_left_framedata69[] = {
     {{-8.6689f, 7.0852f, 21.2328f}, {0.8150f, 0.2234f, -0.0187f, -0.5343f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.0078f, 4.1572f, 39.2503f}, {0.7198f, -0.0468f, 0.1668f, -0.6723f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_left_framedata77[] = {
+static s64FrameData anim_nick_look_around_left_framedata77[] = {
     {{-10.1737f, -0.2303f, 75.0928f}, {0.1194f, 0.1577f, -0.0250f, -0.9799f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.8537f, -11.9485f, 67.9474f}, {0.6868f, 0.4379f, 0.2354f, -0.5302f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.6080f, 11.2216f, 68.1419f}, {0.2142f, -0.2142f, -0.4731f, -0.8273f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -6610,7 +6610,7 @@ static FrameData anim_nick_look_around_left_framedata77[] = {
     {{-8.4184f, 7.3827f, 21.5285f}, {0.7881f, 0.2084f, -0.0143f, -0.5790f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-1.1896f, 3.9098f, 39.2276f}, {0.6738f, -0.0602f, 0.1830f, -0.7134f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_left_framedata80[] = {
+static s64FrameData anim_nick_look_around_left_framedata80[] = {
     {{-9.6976f, -0.7936f, 75.2816f}, {0.1716f, 0.1473f, -0.0291f, -0.9737f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.7899f, -12.4346f, 68.0452f}, {0.6889f, 0.4178f, 0.2706f, -0.5269f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.0896f, 10.8857f, 68.1476f}, {0.2463f, -0.2116f, -0.4851f, -0.8120f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -6648,7 +6648,7 @@ static FrameData anim_nick_look_around_left_framedata80[] = {
     {{-8.4731f, 7.3322f, 21.4540f}, {0.7873f, 0.2118f, -0.0154f, -0.5788f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-1.4205f, 3.8348f, 39.2192f}, {0.6808f, -0.0543f, 0.1809f, -0.7077f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_left_framedata87[] = {
+static s64FrameData anim_nick_look_around_left_framedata87[] = {
     {{-7.7405f, -3.7617f, 75.8280f}, {0.6236f, 0.0923f, -0.0436f, -0.7750f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-0.7299f, -13.7789f, 68.5140f}, {0.7319f, 0.3408f, 0.4097f, -0.4245f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.6079f, 8.2442f, 68.2090f}, {0.4185f, -0.1416f, -0.5312f, -0.7229f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -6686,7 +6686,7 @@ static FrameData anim_nick_look_around_left_framedata87[] = {
     {{-8.8459f, 6.7141f, 21.0235f}, {0.7843f, 0.2338f, -0.0154f, -0.5744f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.0216f, 3.6689f, 39.3096f}, {0.7539f, -0.0206f, 0.1550f, -0.6382f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_left_framedata90[] = {
+static s64FrameData anim_nick_look_around_left_framedata90[] = {
     {{-6.6864f, -5.2374f, 75.8933f}, {0.8088f, 0.0779f, -0.0510f, -0.5807f}, {1.0000f, 1.0000f, 1.0000f}},
     {{2.2094f, -13.4538f, 68.3666f}, {0.7623f, 0.3092f, 0.4586f, -0.3362f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.5631f, 6.1837f, 68.3321f}, {0.5229f, -0.0894f, -0.5406f, -0.6530f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -6724,7 +6724,7 @@ static FrameData anim_nick_look_around_left_framedata90[] = {
     {{-8.9595f, 6.2751f, 20.7924f}, {0.7841f, 0.2454f, -0.0102f, -0.5699f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.6430f, 3.5553f, 39.2833f}, {0.7898f, -0.0093f, 0.1416f, -0.5967f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_left_framedata99[] = {
+static s64FrameData anim_nick_look_around_left_framedata99[] = {
     {{-3.5641f, -8.3665f, 75.6092f}, {0.9906f, 0.1175f, -0.0385f, -0.0592f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.4908f, -10.1739f, 68.4378f}, {0.8034f, 0.2027f, 0.5568f, -0.0595f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.1427f, -0.9492f, 68.0894f}, {0.7311f, 0.0417f, -0.5342f, -0.4223f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -6762,7 +6762,7 @@ static FrameData anim_nick_look_around_left_framedata99[] = {
     {{-8.9474f, 5.2061f, 20.3397f}, {0.7831f, 0.2658f, 0.0072f, -0.5622f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.8250f, 2.6653f, 39.1579f}, {0.8591f, 0.0224f, 0.1160f, -0.4979f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_left_framedata109[] = {
+static s64FrameData anim_nick_look_around_left_framedata109[] = {
     {{-2.1668f, -9.2544f, 75.2839f}, {0.9913f, 0.1275f, -0.0322f, 0.0026f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.9621f, -9.4198f, 68.0614f}, {0.8053f, 0.1760f, 0.5660f, -0.0129f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.5037f, -2.7508f, 67.7411f}, {0.7484f, 0.0748f, -0.5395f, -0.3786f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -6800,7 +6800,7 @@ static FrameData anim_nick_look_around_left_framedata109[] = {
     {{-8.7507f, 5.0141f, 20.3219f}, {0.7832f, 0.2668f, 0.0123f, -0.5615f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.5670f, 2.5474f, 39.1364f}, {0.8702f, 0.0230f, 0.1168f, -0.4781f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_left_framedata120[] = {
+static s64FrameData anim_nick_look_around_left_framedata120[] = {
     {{-1.9533f, -9.3568f, 75.1988f}, {0.9921f, 0.1217f, -0.0311f, -0.0045f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.2426f, -9.7222f, 67.9922f}, {0.8090f, 0.1751f, 0.5597f, -0.0398f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.1280f, -2.8184f, 67.5252f}, {0.7429f, 0.0868f, -0.5365f, -0.3908f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -6838,7 +6838,7 @@ static FrameData anim_nick_look_around_left_framedata120[] = {
     {{-8.7566f, 5.2252f, 20.4311f}, {0.7866f, 0.2620f, 0.0084f, -0.5590f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.0636f, 2.7878f, 39.1290f}, {0.8663f, 0.0152f, 0.1281f, -0.4826f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_look_around_left_keyframes[] = {
+static s64KeyFrame anim_nick_look_around_left_keyframes[] = {
     {0, anim_nick_look_around_left_framedata0},
     {9, anim_nick_look_around_left_framedata9},
     {19, anim_nick_look_around_left_framedata19},
@@ -6859,7 +6859,7 @@ static KeyFrame anim_nick_look_around_left_keyframes[] = {
     {120, anim_nick_look_around_left_framedata120},
 };
 
-static FrameData anim_nick_look_around_right_framedata0[] = {
+static s64FrameData anim_nick_look_around_right_framedata0[] = {
     {{1.9603f, -9.3517f, 75.1975f}, {0.9921f, 0.1218f, 0.0311f, 0.0045f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.0891f, -2.7699f, 67.6399f}, {0.7433f, 0.0850f, 0.5354f, 0.3920f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.2505f, -9.7721f, 67.8798f}, {0.8080f, 0.1788f, -0.5599f, 0.0404f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -6897,7 +6897,7 @@ static FrameData anim_nick_look_around_right_framedata0[] = {
     {{-1.5162f, -15.8859f, 23.1115f}, {0.9206f, 0.0214f, 0.0846f, 0.3806f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.6978f, -5.4212f, 39.1721f}, {0.9206f, -0.2754f, 0.0066f, 0.2768f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_right_framedata9[] = {
+static s64FrameData anim_nick_look_around_right_framedata9[] = {
     {{2.5117f, -9.5013f, 75.1549f}, {0.9903f, 0.1124f, 0.0174f, -0.0795f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.3691f, -2.4186f, 67.6143f}, {0.7356f, 0.0744f, 0.5365f, 0.4068f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-9.5577f, -10.6532f, 67.7919f}, {0.8047f, 0.2020f, -0.5551f, 0.0589f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -6935,7 +6935,7 @@ static FrameData anim_nick_look_around_right_framedata9[] = {
     {{-1.3431f, -15.8296f, 23.0935f}, {0.9205f, 0.0205f, 0.0882f, 0.3801f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.6518f, -5.4889f, 39.2087f}, {0.9193f, -0.2731f, 0.0046f, 0.2835f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_right_framedata19[] = {
+static s64FrameData anim_nick_look_around_right_framedata19[] = {
     {{2.0100f, -10.0621f, 74.8979f}, {0.9495f, 0.0742f, 0.0068f, -0.3047f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.4169f, -4.0657f, 67.1371f}, {0.7429f, 0.1130f, 0.5369f, 0.3835f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.1301f, -10.3840f, 67.6696f}, {0.8028f, 0.1838f, -0.5646f, 0.0543f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -6973,7 +6973,7 @@ static FrameData anim_nick_look_around_right_framedata19[] = {
     {{-1.3186f, -15.6061f, 23.1051f}, {0.9199f, 0.0146f, 0.0910f, 0.3813f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.9546f, -4.9842f, 38.9649f}, {0.9245f, -0.2834f, -0.0116f, 0.2545f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_right_framedata29[] = {
+static s64FrameData anim_nick_look_around_right_framedata29[] = {
     {{-2.3021f, -9.3254f, 74.4899f}, {0.7525f, 0.0458f, -0.0030f, -0.6570f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.9938f, -11.4034f, 66.0704f}, {0.8098f, 0.3059f, 0.4714f, 0.1682f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.2033f, -1.7487f, 68.0271f}, {0.7871f, -0.0384f, -0.5788f, -0.2098f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -7011,7 +7011,7 @@ static FrameData anim_nick_look_around_right_framedata29[] = {
     {{-2.9910f, -14.6824f, 23.4864f}, {0.9223f, -0.0264f, 0.0553f, 0.3816f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8210f, -2.4557f, 38.3213f}, {0.9408f, -0.3217f, -0.0388f, 0.0992f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_right_framedata35[] = {
+static s64FrameData anim_nick_look_around_right_framedata35[] = {
     {{-5.1208f, -6.6981f, 74.1586f}, {0.5773f, 0.0608f, -0.0287f, -0.8138f}, {1.0000f, 1.0000f, 1.0000f}},
     {{3.9847f, -13.9498f, 66.0090f}, {0.8363f, 0.3944f, 0.3788f, -0.0391f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.0411f, 4.5854f, 67.6545f}, {0.6911f, -0.2009f, -0.5547f, -0.4175f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -7049,7 +7049,7 @@ static FrameData anim_nick_look_around_right_framedata35[] = {
     {{-4.1940f, -13.7113f, 23.5493f}, {0.9243f, -0.0626f, 0.0330f, 0.3750f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.5631f, -0.6585f, 37.8786f}, {0.9394f, -0.3400f, -0.0420f, -0.0124f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_right_framedata39[] = {
+static s64FrameData anim_nick_look_around_right_framedata39[] = {
     {{-4.9820f, -6.4022f, 74.2573f}, {0.5926f, 0.0770f, -0.0368f, -0.8009f}, {1.0000f, 1.0000f, 1.0000f}},
     {{4.4275f, -13.5417f, 66.3762f}, {0.8313f, 0.3701f, 0.4071f, -0.0797f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.2156f, 4.5970f, 67.5439f}, {0.6800f, -0.1790f, -0.5550f, -0.4445f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -7087,7 +7087,7 @@ static FrameData anim_nick_look_around_right_framedata39[] = {
     {{-3.9682f, -13.7204f, 23.5187f}, {0.9245f, -0.0590f, 0.0392f, 0.3745f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.4248f, -0.7585f, 37.9217f}, {0.9405f, -0.3376f, -0.0393f, -0.0000f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_right_framedata46[] = {
+static s64FrameData anim_nick_look_around_right_framedata46[] = {
     {{-3.3993f, -7.2880f, 74.3830f}, {0.9839f, 0.0717f, -0.1408f, -0.0840f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.3857f, -10.2872f, 66.8501f}, {0.8278f, 0.2643f, 0.4932f, 0.0408f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.9942f, 1.2534f, 67.4566f}, {0.7414f, -0.0524f, -0.5786f, -0.3359f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -7125,7 +7125,7 @@ static FrameData anim_nick_look_around_right_framedata46[] = {
     {{-3.2082f, -14.2038f, 23.4584f}, {0.9249f, -0.0335f, 0.0544f, 0.3747f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.3475f, -1.5448f, 38.0444f}, {0.9407f, -0.3316f, -0.0328f, 0.0637f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_right_framedata51[] = {
+static s64FrameData anim_nick_look_around_right_framedata51[] = {
     {{-0.7506f, -8.6796f, 74.5502f}, {0.9472f, 0.1055f, -0.1474f, 0.2645f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.0463f, -7.8320f, 66.6108f}, {0.7976f, 0.2164f, 0.5310f, 0.1873f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.8128f, -2.7852f, 68.2471f}, {0.8006f, 0.0333f, -0.5572f, -0.2179f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -7163,7 +7163,7 @@ static FrameData anim_nick_look_around_right_framedata51[] = {
     {{-2.7989f, -14.8148f, 23.4085f}, {0.9251f, -0.0146f, 0.0602f, 0.3746f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.3611f, -2.6957f, 38.3797f}, {0.9394f, -0.3182f, -0.0216f, 0.1256f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_right_framedata56[] = {
+static s64FrameData anim_nick_look_around_right_framedata56[] = {
     {{2.7488f, -8.8918f, 74.6697f}, {0.7909f, 0.1458f, -0.1268f, 0.5807f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.3019f, -3.4500f, 66.9149f}, {0.7332f, 0.1195f, 0.5730f, 0.3461f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-9.8453f, -7.6196f, 68.4235f}, {0.8459f, 0.1394f, -0.5139f, -0.0301f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -7201,7 +7201,7 @@ static FrameData anim_nick_look_around_right_framedata56[] = {
     {{-2.1443f, -15.3332f, 23.2955f}, {0.9249f, 0.0048f, 0.0724f, 0.3733f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.9900f, -3.9254f, 38.7662f}, {0.9345f, -0.2995f, -0.0077f, 0.1923f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_right_framedata63[] = {
+static s64FrameData anim_nick_look_around_right_framedata63[] = {
     {{8.1483f, -6.5405f, 74.7203f}, {0.4822f, 0.1630f, -0.0563f, 0.8589f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.3548f, 5.1532f, 67.6218f}, {0.5439f, -0.0565f, 0.5688f, 0.6144f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.0616f, -13.5369f, 68.0979f}, {0.8165f, 0.3550f, -0.4091f, 0.2001f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -7239,7 +7239,7 @@ static FrameData anim_nick_look_around_right_framedata63[] = {
     {{-0.1616f, -15.3462f, 22.7441f}, {0.9178f, 0.0256f, 0.1190f, 0.3780f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.5683f, -5.8383f, 39.3445f}, {0.9073f, -0.2511f, 0.0119f, 0.3371f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_right_framedata69[] = {
+static s64FrameData anim_nick_look_around_right_framedata69[] = {
     {{10.2867f, -1.9059f, 74.9899f}, {0.1981f, 0.1593f, -0.0045f, 0.9671f}, {1.0000f, 1.0000f, 1.0000f}},
     {{6.4890f, 10.3960f, 68.3260f}, {0.3002f, -0.1868f, 0.4887f, 0.7976f}, {1.0000f, 1.0000f, 1.0000f}},
     {{6.0775f, -13.1004f, 67.9340f}, {0.7411f, 0.4508f, -0.2551f, 0.4272f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -7277,7 +7277,7 @@ static FrameData anim_nick_look_around_right_framedata69[] = {
     {{1.5195f, -14.7177f, 22.1589f}, {0.9082f, 0.0263f, 0.1700f, 0.3816f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-1.4181f, -7.3316f, 39.8900f}, {0.8505f, -0.1895f, 0.0417f, 0.4889f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_right_framedata77[] = {
+static s64FrameData anim_nick_look_around_right_framedata77[] = {
     {{10.1751f, -0.2211f, 75.0920f}, {0.1194f, 0.1577f, 0.0250f, 0.9799f}, {1.0000f, 1.0000f, 1.0000f}},
     {{4.5728f, 11.1985f, 68.2554f}, {0.2143f, -0.2158f, 0.4708f, 0.8282f}, {1.0000f, 1.0000f, 1.0000f}},
     {{7.9103f, -11.9667f, 67.8290f}, {0.6856f, 0.4398f, -0.2348f, 0.5304f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -7315,7 +7315,7 @@ static FrameData anim_nick_look_around_right_framedata77[] = {
     {{1.9620f, -14.4724f, 21.9823f}, {0.9057f, 0.0275f, 0.1827f, 0.3817f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-0.6553f, -7.9219f, 40.0881f}, {0.8231f, -0.1641f, 0.0499f, 0.5414f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_right_framedata80[] = {
+static s64FrameData anim_nick_look_around_right_framedata80[] = {
     {{9.6993f, -0.7846f, 75.2806f}, {0.1716f, 0.1473f, 0.0291f, 0.9737f}, {1.0000f, 1.0000f, 1.0000f}},
     {{5.0502f, 10.8654f, 68.2605f}, {0.2464f, -0.2132f, 0.4828f, 0.8129f}, {1.0000f, 1.0000f, 1.0000f}},
     {{6.8470f, -12.4562f, 67.9275f}, {0.6876f, 0.4199f, -0.2701f, 0.5272f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -7353,7 +7353,7 @@ static FrameData anim_nick_look_around_right_framedata80[] = {
     {{1.8211f, -14.6482f, 22.0078f}, {0.9059f, 0.0311f, 0.1790f, 0.3825f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-0.7621f, -7.9406f, 40.0608f}, {0.8312f, -0.1676f, 0.0497f, 0.5278f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_right_framedata87[] = {
+static s64FrameData anim_nick_look_around_right_framedata87[] = {
     {{7.7421f, -3.7529f, 75.8279f}, {0.6236f, 0.0923f, 0.0436f, 0.7750f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.5526f, 8.2466f, 68.3214f}, {0.4186f, -0.1436f, 0.5294f, 0.7238f}, {1.0000f, 1.0000f, 1.0000f}},
     {{0.7744f, -13.8228f, 68.4015f}, {0.7307f, 0.3434f, -0.4092f, 0.4251f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -7391,7 +7391,7 @@ static FrameData anim_nick_look_around_right_framedata87[] = {
     {{0.7384f, -15.4701f, 22.4271f}, {0.9122f, 0.0392f, 0.1464f, 0.3807f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-1.8435f, -7.2931f, 39.8640f}, {0.8816f, -0.2061f, 0.0424f, 0.4225f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_right_framedata90[] = {
+static s64FrameData anim_nick_look_around_right_framedata90[] = {
     {{6.6878f, -5.2289f, 75.8936f}, {0.8088f, 0.0779f, 0.0510f, 0.5807f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.5039f, 6.1981f, 68.4449f}, {0.5230f, -0.0914f, 0.5389f, 0.6539f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.1769f, -13.5039f, 68.2544f}, {0.7611f, 0.3120f, -0.4582f, 0.3368f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -7429,7 +7429,7 @@ static FrameData anim_nick_look_around_right_framedata90[] = {
     {{0.3440f, -15.3974f, 22.6009f}, {0.9140f, 0.0332f, 0.1356f, 0.3808f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.4210f, -6.7943f, 39.8032f}, {0.8951f, -0.2199f, 0.0329f, 0.3865f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_right_framedata99[] = {
+static s64FrameData anim_nick_look_around_right_framedata99[] = {
     {{3.5659f, -8.3588f, 75.6091f}, {0.9906f, 0.1175f, 0.0385f, 0.0592f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.0922f, -0.9028f, 68.2031f}, {0.7315f, 0.0397f, 0.5330f, 0.4234f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.4973f, -10.2264f, 68.3272f}, {0.8024f, 0.2064f, -0.5568f, 0.0601f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -7467,7 +7467,7 @@ static FrameData anim_nick_look_around_right_framedata99[] = {
     {{-1.1881f, -15.6809f, 23.0875f}, {0.9206f, 0.0205f, 0.0932f, 0.3788f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.8935f, -5.5860f, 39.4690f}, {0.9241f, -0.2608f, 0.0163f, 0.2787f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_right_framedata109[] = {
+static s64FrameData anim_nick_look_around_right_framedata109[] = {
     {{2.1697f, -9.2455f, 75.2815f}, {0.9913f, 0.1275f, 0.0322f, -0.0026f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.4606f, -2.6996f, 67.8542f}, {0.7488f, 0.0727f, 0.5383f, 0.3797f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-9.9735f, -9.4665f, 67.9466f}, {0.8043f, 0.1796f, -0.5663f, 0.0135f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -7505,7 +7505,7 @@ static FrameData anim_nick_look_around_right_framedata109[] = {
     {{-1.5975f, -15.8167f, 23.1645f}, {0.9215f, 0.0192f, 0.0824f, 0.3790f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.5210f, -5.2999f, 39.2401f}, {0.9258f, -0.2746f, 0.0078f, 0.2596f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_look_around_right_framedata120[] = {
+static s64FrameData anim_nick_look_around_right_framedata120[] = {
     {{1.9572f, -9.3486f, 75.1990f}, {0.9921f, 0.1217f, 0.0311f, 0.0045f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.0871f, -2.7679f, 67.6418f}, {0.7433f, 0.0849f, 0.5354f, 0.3919f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.2527f, -9.7698f, 67.8796f}, {0.8080f, 0.1787f, -0.5600f, 0.0404f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -7543,7 +7543,7 @@ static FrameData anim_nick_look_around_right_framedata120[] = {
     {{-1.5163f, -15.8859f, 23.1114f}, {0.9206f, 0.0214f, 0.0846f, 0.3806f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.6978f, -5.4212f, 39.1721f}, {0.9206f, -0.2754f, 0.0066f, 0.2768f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_look_around_right_keyframes[] = {
+static s64KeyFrame anim_nick_look_around_right_keyframes[] = {
     {0, anim_nick_look_around_right_framedata0},
     {9, anim_nick_look_around_right_framedata9},
     {19, anim_nick_look_around_right_framedata19},
@@ -7564,7 +7564,7 @@ static KeyFrame anim_nick_look_around_right_keyframes[] = {
     {120, anim_nick_look_around_right_framedata120},
 };
 
-static FrameData anim_nick_run_arc_left_framedata0[] = {
+static s64FrameData anim_nick_run_arc_left_framedata0[] = {
     {{6.8115f, -9.0972f, 74.6344f}, {0.9863f, -0.0532f, 0.0371f, 0.1519f}, {1.0000f, 1.0000f, 1.0000f}},
     {{16.2674f, -5.2006f, 64.2648f}, {0.7056f, 0.2326f, 0.6503f, -0.1586f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8316f, -7.6235f, 67.9699f}, {0.8198f, 0.3848f, -0.4017f, -0.1358f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -7602,7 +7602,7 @@ static FrameData anim_nick_run_arc_left_framedata0[] = {
     {{-11.5960f, -15.8423f, 27.1758f}, {0.7524f, 0.6462f, 0.1106f, -0.0644f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.7481f, -2.0384f, 39.9636f}, {0.9127f, -0.3539f, 0.1815f, 0.0944f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_arc_left_framedata2[] = {
+static s64FrameData anim_nick_run_arc_left_framedata2[] = {
     {{6.0218f, -10.1498f, 77.4047f}, {0.9925f, -0.1037f, 0.0540f, -0.0359f}, {1.0000f, 1.0000f, 1.0000f}},
     {{16.1416f, -11.8548f, 67.2208f}, {0.7487f, 0.2820f, 0.4565f, -0.3894f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.8915f, -3.6123f, 71.1369f}, {0.7469f, 0.3364f, -0.4256f, -0.3846f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -7640,7 +7640,7 @@ static FrameData anim_nick_run_arc_left_framedata2[] = {
     {{-11.3726f, -16.1991f, 31.3955f}, {0.9535f, 0.2186f, 0.1815f, -0.1006f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.7232f, -1.7087f, 43.0440f}, {0.9007f, -0.3870f, 0.1907f, 0.0520f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_arc_left_framedata5[] = {
+static s64FrameData anim_nick_run_arc_left_framedata5[] = {
     {{5.4592f, -8.9989f, 78.1557f}, {0.9951f, -0.0870f, 0.0335f, 0.0336f}, {1.0000f, 1.0000f, 1.0000f}},
     {{16.1383f, -8.9915f, 68.4546f}, {0.7886f, 0.2479f, 0.5038f, -0.2505f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.2403f, -4.0632f, 72.1981f}, {0.7530f, 0.3927f, -0.3850f, -0.3613f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -7678,7 +7678,7 @@ static FrameData anim_nick_run_arc_left_framedata5[] = {
     {{-11.5870f, -11.6790f, 27.5398f}, {0.9691f, -0.1478f, 0.1956f, 0.0259f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8158f, -1.6031f, 43.1200f}, {0.9537f, -0.2470f, 0.1684f, 0.0320f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_arc_left_framedata6[] = {
+static s64FrameData anim_nick_run_arc_left_framedata6[] = {
     {{5.0986f, -8.1034f, 76.3254f}, {0.9942f, -0.0731f, 0.0207f, 0.0763f}, {1.0000f, 1.0000f, 1.0000f}},
     {{15.9159f, -6.8357f, 66.8084f}, {0.7312f, 0.3433f, 0.5750f, -0.1298f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.7882f, -4.6464f, 69.3578f}, {0.8109f, 0.3521f, -0.3776f, -0.2753f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -7716,7 +7716,7 @@ static FrameData anim_nick_run_arc_left_framedata6[] = {
     {{-11.5748f, -9.2251f, 24.1174f}, {0.9703f, -0.1537f, 0.1815f, 0.0445f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8231f, -1.5860f, 41.0330f}, {0.9707f, -0.1798f, 0.1584f, 0.0153f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_arc_left_framedata9[] = {
+static s64FrameData anim_nick_run_arc_left_framedata9[] = {
     {{5.7365f, -10.2024f, 72.4744f}, {0.9801f, -0.0464f, 0.0088f, 0.1929f}, {1.0000f, 1.0000f, 1.0000f}},
     {{16.0007f, -4.8732f, 63.7981f}, {0.6752f, 0.2780f, 0.6592f, 0.1797f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.7454f, -9.1942f, 63.5345f}, {0.8580f, 0.2467f, -0.4385f, 0.1034f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -7754,7 +7754,7 @@ static FrameData anim_nick_run_arc_left_framedata9[] = {
     {{-10.5707f, -10.2689f, 21.4390f}, {0.9652f, 0.2053f, 0.1593f, 0.0291f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.7527f, -1.5731f, 38.1347f}, {0.9666f, -0.2031f, 0.1454f, 0.0580f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_arc_left_framedata11[] = {
+static s64FrameData anim_nick_run_arc_left_framedata11[] = {
     {{6.6330f, -10.1869f, 73.7702f}, {0.9578f, -0.0418f, 0.0131f, 0.2840f}, {1.0000f, 1.0000f, 1.0000f}},
     {{15.5286f, -2.2834f, 65.7978f}, {0.5982f, 0.3189f, 0.6158f, 0.4015f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.7851f, -12.4570f, 65.1158f}, {0.7700f, 0.2871f, -0.4253f, 0.3793f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -7792,7 +7792,7 @@ static FrameData anim_nick_run_arc_left_framedata11[] = {
     {{-12.0683f, -3.4194f, 20.6086f}, {0.9464f, 0.2753f, 0.1690f, 0.0010f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8956f, -1.5458f, 38.9379f}, {0.9863f, -0.0273f, 0.1625f, 0.0015f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_arc_left_framedata13[] = {
+static s64FrameData anim_nick_run_arc_left_framedata13[] = {
     {{7.7939f, -8.9942f, 75.7598f}, {0.9561f, -0.0654f, 0.0267f, 0.2842f}, {1.0000f, 1.0000f, 1.0000f}},
     {{15.7063f, -0.5680f, 67.4658f}, {0.5271f, 0.4094f, 0.5893f, 0.4553f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.7358f, -12.9433f, 68.0688f}, {0.7933f, 0.2158f, -0.3204f, 0.4706f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -7830,7 +7830,7 @@ static FrameData anim_nick_run_arc_left_framedata13[] = {
     {{-11.5473f, 8.3106f, 24.7559f}, {0.9214f, 0.3401f, 0.1601f, -0.0986f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9418f, -1.5607f, 40.5264f}, {0.9413f, 0.2705f, 0.1764f, -0.0984f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_arc_left_framedata16[] = {
+static s64FrameData anim_nick_run_arc_left_framedata16[] = {
     {{8.5432f, -5.3874f, 76.4330f}, {0.9604f, -0.0762f, 0.0179f, 0.2675f}, {1.0000f, 1.0000f, 1.0000f}},
     {{16.0258f, 2.2420f, 66.7000f}, {0.5618f, 0.3000f, 0.6756f, 0.3714f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.0902f, -9.3746f, 68.8656f}, {0.8174f, 0.2654f, -0.3152f, 0.4026f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -7868,7 +7868,7 @@ static FrameData anim_nick_run_arc_left_framedata16[] = {
     {{-10.4432f, 9.0330f, 25.4401f}, {0.6827f, 0.7121f, 0.1025f, -0.1278f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8790f, -1.5331f, 41.0958f}, {0.9426f, 0.2994f, 0.1382f, -0.0519f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_arc_left_framedata17[] = {
+static s64FrameData anim_nick_run_arc_left_framedata17[] = {
     {{8.7955f, -3.9950f, 74.7517f}, {0.9667f, -0.0827f, 0.0260f, 0.2408f}, {1.0000f, 1.0000f, 1.0000f}},
     {{16.3168f, 2.4551f, 64.0065f}, {0.5674f, 0.2618f, 0.7314f, 0.2730f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.1471f, -7.1958f, 67.1914f}, {0.8216f, 0.3172f, -0.3603f, 0.3075f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -7906,7 +7906,7 @@ static FrameData anim_nick_run_arc_left_framedata17[] = {
     {{-12.6236f, 5.8577f, 22.7917f}, {0.4833f, 0.8555f, 0.0784f, -0.1688f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8557f, -1.5106f, 39.4493f}, {0.9586f, 0.2107f, 0.1877f, -0.0369f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_arc_left_framedata20[] = {
+static s64FrameData anim_nick_run_arc_left_framedata20[] = {
     {{8.5043f, -8.0961f, 72.8661f}, {0.9832f, -0.0667f, 0.0577f, 0.1601f}, {1.0000f, 1.0000f, 1.0000f}},
     {{16.7477f, -3.1258f, 61.7630f}, {0.6520f, 0.2068f, 0.7292f, -0.0200f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.1647f, -8.0199f, 65.7442f}, {0.8724f, 0.2399f, -0.4252f, -0.0253f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -7944,7 +7944,7 @@ static FrameData anim_nick_run_arc_left_framedata20[] = {
     {{-16.5943f, -6.6009f, 22.4823f}, {0.4545f, 0.8539f, 0.0567f, -0.2469f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9055f, -1.5264f, 37.8957f}, {0.9476f, -0.1023f, 0.2994f, 0.0439f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_arc_left_framedata22[] = {
+static s64FrameData anim_nick_run_arc_left_framedata22[] = {
     {{6.8115f, -9.0972f, 74.6344f}, {0.9863f, -0.0532f, 0.0371f, 0.1519f}, {1.0000f, 1.0000f, 1.0000f}},
     {{16.2674f, -5.2006f, 64.2648f}, {0.7056f, 0.2326f, 0.6503f, -0.1586f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8316f, -7.6235f, 67.9699f}, {0.8198f, 0.3848f, -0.4017f, -0.1358f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -7982,7 +7982,7 @@ static FrameData anim_nick_run_arc_left_framedata22[] = {
     {{-11.5960f, -15.8423f, 27.1758f}, {0.7524f, 0.6462f, 0.1106f, -0.0644f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.7481f, -2.0384f, 39.9637f}, {0.9127f, -0.3539f, 0.1815f, 0.0944f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_run_arc_left_keyframes[] = {
+static s64KeyFrame anim_nick_run_arc_left_keyframes[] = {
     {0, anim_nick_run_arc_left_framedata0},
     {2, anim_nick_run_arc_left_framedata2},
     {5, anim_nick_run_arc_left_framedata5},
@@ -7996,7 +7996,7 @@ static KeyFrame anim_nick_run_arc_left_keyframes[] = {
     {22, anim_nick_run_arc_left_framedata22},
 };
 
-static FrameData anim_nick_run_arc_right_framedata0[] = {
+static s64FrameData anim_nick_run_arc_right_framedata0[] = {
     {{-5.3595f, -9.8087f, 74.7353f}, {0.9959f, -0.0590f, -0.0496f, -0.0468f}, {1.0000f, 1.0000f, 1.0000f}},
     {{6.7399f, -5.7956f, 68.2535f}, {0.8077f, 0.3279f, 0.4382f, 0.2194f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-15.2805f, -8.2663f, 64.0844f}, {0.6836f, 0.2942f, -0.6227f, 0.2417f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -8034,7 +8034,7 @@ static FrameData anim_nick_run_arc_right_framedata0[] = {
     {{0.8202f, 0.0965f, 19.0128f}, {0.9304f, 0.3038f, -0.1989f, 0.0505f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.8830f, -0.6440f, 37.5735f}, {0.9860f, 0.0498f, -0.1471f, -0.0611f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_arc_right_framedata3[] = {
+static s64FrameData anim_nick_run_arc_right_framedata3[] = {
     {{-6.0189f, -10.1515f, 77.5802f}, {0.9925f, -0.1037f, -0.0540f, 0.0359f}, {1.0000f, 1.0000f, 1.0000f}},
     {{4.8297f, -3.5657f, 71.4077f}, {0.7472f, 0.3339f, 0.4272f, 0.3843f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-16.1235f, -11.9266f, 67.2921f}, {0.7484f, 0.2846f, -0.4548f, 0.3898f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -8072,7 +8072,7 @@ static FrameData anim_nick_run_arc_right_framedata3[] = {
     {{-3.7827f, 7.9992f, 22.8166f}, {0.9265f, 0.3682f, -0.0724f, -0.0291f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.7657f, -1.3518f, 39.7341f}, {0.9561f, 0.2734f, -0.0272f, -0.1017f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_arc_right_framedata5[] = {
+static s64FrameData anim_nick_run_arc_right_framedata5[] = {
     {{-5.4581f, -8.9995f, 78.5061f}, {0.9951f, -0.0870f, -0.0335f, -0.0336f}, {1.0000f, 1.0000f, 1.0000f}},
     {{6.1818f, -4.0102f, 72.6433f}, {0.7534f, 0.3904f, 0.3870f, 0.3609f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-16.1375f, -9.0607f, 68.7000f}, {0.7883f, 0.2509f, -0.5026f, 0.2510f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -8110,7 +8110,7 @@ static FrameData anim_nick_run_arc_right_framedata5[] = {
     {{-3.4434f, 9.6344f, 24.8270f}, {0.7745f, 0.6317f, 0.0133f, 0.0286f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8485f, -1.4435f, 40.6089f}, {0.9452f, 0.3206f, -0.0590f, -0.0151f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_arc_right_framedata6[] = {
+static s64FrameData anim_nick_run_arc_right_framedata6[] = {
     {{-5.0989f, -8.1035f, 76.3692f}, {0.9942f, -0.0731f, -0.0207f, -0.0764f}, {1.0000f, 1.0000f, 1.0000f}},
     {{6.7425f, -4.5839f, 69.5005f}, {0.8110f, 0.3504f, 0.3791f, 0.2751f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-15.9244f, -6.9017f, 66.7487f}, {0.7310f, 0.3468f, -0.5732f, 0.1299f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -8148,7 +8148,7 @@ static FrameData anim_nick_run_arc_right_framedata6[] = {
     {{-3.0060f, 7.2532f, 21.1354f}, {0.5574f, 0.8202f, -0.0332f, 0.1245f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8547f, -1.4577f, 38.2696f}, {0.9645f, 0.2487f, -0.0818f, 0.0360f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_arc_right_framedata9[] = {
+static s64FrameData anim_nick_run_arc_right_framedata9[] = {
     {{-5.7362f, -10.2032f, 71.8438f}, {0.9801f, -0.0464f, -0.0088f, -0.1930f}, {1.0000f, 1.0000f, 1.0000f}},
     {{5.7409f, -9.1334f, 63.0183f}, {0.8583f, 0.2453f, 0.4389f, -0.1027f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-16.0259f, -4.9199f, 63.0591f}, {0.6746f, 0.2819f, -0.6582f, -0.1795f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -8186,7 +8186,7 @@ static FrameData anim_nick_run_arc_right_framedata9[] = {
     {{-2.4649f, -1.8059f, 15.0412f}, {0.3232f, 0.9364f, -0.0720f, 0.1159f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.7897f, -1.4669f, 34.1830f}, {0.9940f, 0.0062f, -0.0825f, 0.0717f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_arc_right_framedata11[] = {
+static s64FrameData anim_nick_run_arc_right_framedata11[] = {
     {{-6.6296f, -10.1883f, 73.1756f}, {0.9578f, -0.0418f, -0.0131f, -0.2840f}, {1.0000f, 1.0000f, 1.0000f}},
     {{4.7960f, -12.3960f, 64.6374f}, {0.7706f, 0.2854f, 0.4261f, -0.3784f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-15.5673f, -2.3185f, 65.0942f}, {0.5977f, 0.3223f, -0.6146f, -0.4015f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -8224,7 +8224,7 @@ static FrameData anim_nick_run_arc_right_framedata11[] = {
     {{-2.0628f, -16.1513f, 24.0258f}, {0.6605f, 0.7219f, -0.1403f, 0.1513f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9197f, -1.4923f, 36.1838f}, {0.9092f, -0.3933f, -0.1303f, -0.0418f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_arc_right_framedata14[] = {
+static s64FrameData anim_nick_run_arc_right_framedata14[] = {
     {{-7.7903f, -8.9970f, 76.3290f}, {0.9562f, -0.0654f, -0.0266f, -0.2842f}, {1.0000f, 1.0000f, 1.0000f}},
     {{3.7461f, -12.8795f, 68.7488f}, {0.7940f, 0.2138f, 0.3209f, -0.4700f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-15.7546f, -0.6055f, 67.9260f}, {0.5269f, 0.4123f, -0.5873f, -0.4555f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -8262,7 +8262,7 @@ static FrameData anim_nick_run_arc_right_framedata14[] = {
     {{-0.5819f, -19.3362f, 34.0096f}, {0.9612f, 0.1954f, -0.1320f, 0.1430f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9602f, -1.4838f, 39.4814f}, {0.8126f, -0.5567f, -0.1725f, 0.0023f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_arc_right_framedata16[] = {
+static s64FrameData anim_nick_run_arc_right_framedata16[] = {
     {{-8.5434f, -5.3865f, 77.3087f}, {0.9604f, -0.0762f, -0.0179f, -0.2675f}, {1.0000f, 1.0000f, 1.0000f}},
     {{3.0960f, -9.3010f, 69.8470f}, {0.8178f, 0.2637f, 0.3161f, -0.4021f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-16.0647f, 2.1974f, 67.4703f}, {0.5616f, 0.3035f, -0.6741f, -0.3716f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -8300,7 +8300,7 @@ static FrameData anim_nick_run_arc_right_framedata16[] = {
     {{-0.0957f, -13.0961f, 25.1711f}, {0.9286f, -0.2702f, -0.2470f, -0.0613f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9041f, -1.5020f, 39.6423f}, {0.9388f, -0.2892f, -0.1794f, -0.0537f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_arc_right_framedata17[] = {
+static s64FrameData anim_nick_run_arc_right_framedata17[] = {
     {{-8.7962f, -3.9932f, 75.1457f}, {0.9667f, -0.0827f, -0.0260f, -0.2409f}, {1.0000f, 1.0000f, 1.0000f}},
     {{3.1486f, -7.1191f, 67.6876f}, {0.8219f, 0.3152f, 0.3617f, -0.3071f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-16.3447f, 2.4002f, 64.2968f}, {0.5674f, 0.2654f, -0.7302f, -0.2730f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -8338,7 +8338,7 @@ static FrameData anim_nick_run_arc_right_framedata17[] = {
     {{0.1225f, -11.2446f, 21.5827f}, {0.9449f, -0.2129f, -0.2392f, -0.0672f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8825f, -1.5201f, 37.2973f}, {0.9544f, -0.2321f, -0.1791f, -0.0571f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_arc_right_framedata20[] = {
+static s64FrameData anim_nick_run_arc_right_framedata20[] = {
     {{-8.5015f, -8.1016f, 72.4713f}, {0.9831f, -0.0666f, -0.0577f, -0.1602f}, {1.0000f, 1.0000f, 1.0000f}},
     {{4.1506f, -7.9616f, 65.4575f}, {0.8728f, 0.2378f, 0.4255f, 0.0258f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-16.7508f, -3.1887f, 61.2573f}, {0.6520f, 0.2102f, -0.7282f, 0.0209f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -8376,7 +8376,7 @@ static FrameData anim_nick_run_arc_right_framedata20[] = {
     {{1.8249f, -9.7255f, 19.6344f}, {0.9462f, 0.1901f, -0.2548f, 0.0610f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9280f, -1.5075f, 35.4437f}, {0.9559f, -0.1925f, -0.2188f, -0.0373f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_arc_right_framedata22[] = {
+static s64FrameData anim_nick_run_arc_right_framedata22[] = {
     {{-5.3595f, -9.8087f, 74.7353f}, {0.9959f, -0.0590f, -0.0496f, -0.0468f}, {1.0000f, 1.0000f, 1.0000f}},
     {{6.7399f, -5.7956f, 68.2535f}, {0.8077f, 0.3279f, 0.4382f, 0.2194f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-15.2805f, -8.2663f, 64.0843f}, {0.6836f, 0.2942f, -0.6227f, 0.2417f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -8414,7 +8414,7 @@ static FrameData anim_nick_run_arc_right_framedata22[] = {
     {{0.8202f, 0.0965f, 19.0128f}, {0.9304f, 0.3038f, -0.1989f, 0.0505f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.8830f, -0.6440f, 37.5735f}, {0.9860f, 0.0498f, -0.1471f, -0.0611f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_run_arc_right_keyframes[] = {
+static s64KeyFrame anim_nick_run_arc_right_keyframes[] = {
     {0, anim_nick_run_arc_right_framedata0},
     {3, anim_nick_run_arc_right_framedata3},
     {5, anim_nick_run_arc_right_framedata5},
@@ -8428,7 +8428,7 @@ static KeyFrame anim_nick_run_arc_right_keyframes[] = {
     {22, anim_nick_run_arc_right_framedata22},
 };
 
-static FrameData anim_nick_run_left_framedata0[] = {
+static s64FrameData anim_nick_run_left_framedata0[] = {
     {{0.1088f, -10.1238f, 76.4749f}, {0.9997f, -0.0056f, -0.0092f, 0.0208f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.7930f, -6.0273f, 70.3180f}, {0.6424f, 0.5465f, 0.4188f, 0.3367f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.6110f, -9.9714f, 68.2982f}, {0.8385f, 0.1103f, -0.5080f, 0.1631f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -8466,7 +8466,7 @@ static FrameData anim_nick_run_left_framedata0[] = {
     {{-4.7985f, 2.5538f, 20.9962f}, {0.9504f, 0.3090f, -0.0356f, -0.0033f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.6297f, -0.0733f, 40.2311f}, {0.9913f, 0.0906f, -0.0158f, -0.0944f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_left_framedata2[] = {
+static s64FrameData anim_nick_run_left_framedata2[] = {
     {{0.9980f, -9.5854f, 77.3946f}, {0.9997f, 0.0138f, 0.0136f, 0.0178f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.0612f, -4.4249f, 70.9884f}, {0.6127f, 0.5287f, 0.4054f, 0.4251f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.9331f, -10.8853f, 69.7724f}, {0.8511f, 0.1709f, -0.4550f, 0.1983f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -8504,7 +8504,7 @@ static FrameData anim_nick_run_left_framedata2[] = {
     {{-4.1462f, 9.0619f, 24.1832f}, {0.8832f, 0.4690f, -0.0026f, -0.0034f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9076f, -1.0546f, 40.6795f}, {0.9519f, 0.2941f, -0.0243f, -0.0822f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_left_framedata5[] = {
+static s64FrameData anim_nick_run_left_framedata5[] = {
     {{1.0164f, -9.0910f, 76.2742f}, {0.9995f, -0.0217f, 0.0212f, 0.0127f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.9074f, -4.8458f, 68.7593f}, {0.6901f, 0.3801f, 0.5360f, 0.3034f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.1908f, -9.7941f, 68.6815f}, {0.7604f, 0.3857f, -0.5186f, 0.0631f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -8542,7 +8542,7 @@ static FrameData anim_nick_run_left_framedata5[] = {
     {{-4.8916f, 6.3207f, 21.6412f}, {0.5022f, 0.8647f, 0.0010f, -0.0084f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.3164f, -1.0250f, 39.5740f}, {0.9759f, 0.2144f, -0.0318f, -0.0245f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_left_framedata7[] = {
+static s64FrameData anim_nick_run_left_framedata7[] = {
     {{-0.9980f, -9.9042f, 75.0950f}, {0.9993f, -0.0358f, -0.0036f, -0.0108f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.6969f, -7.3649f, 67.9658f}, {0.7967f, 0.2500f, 0.5486f, 0.0436f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.8842f, -8.2014f, 67.1768f}, {0.7211f, 0.4240f, -0.5223f, -0.1660f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -8580,7 +8580,7 @@ static FrameData anim_nick_run_left_framedata7[] = {
     {{-6.7223f, -1.1180f, 18.9047f}, {0.3136f, 0.9473f, 0.0409f, -0.0499f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.3215f, -0.7196f, 38.3278f}, {0.9999f, 0.0108f, 0.0113f, -0.0025f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_left_framedata9[] = {
+static s64FrameData anim_nick_run_left_framedata9[] = {
     {{-1.3329f, -10.7250f, 75.3633f}, {0.9998f, 0.0010f, 0.0006f, -0.0196f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.8898f, -9.8105f, 68.8234f}, {0.8380f, 0.0024f, 0.5083f, -0.1983f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.7776f, -5.9005f, 68.9073f}, {0.6637f, 0.4879f, -0.4418f, -0.3554f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -8618,7 +8618,7 @@ static FrameData anim_nick_run_left_framedata9[] = {
     {{-5.1773f, -15.4419f, 26.5479f}, {0.7300f, 0.6756f, 0.0940f, -0.0428f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.0607f, -0.5580f, 39.0085f}, {0.9112f, -0.4043f, 0.0145f, 0.0783f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_left_framedata11[] = {
+static s64FrameData anim_nick_run_left_framedata11[] = {
     {{-1.4313f, -10.5453f, 76.7537f}, {0.9996f, 0.0202f, 0.0016f, -0.0214f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.8313f, -10.9681f, 70.3867f}, {0.8543f, -0.0578f, 0.4175f, -0.3042f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.5176f, -4.9431f, 70.7689f}, {0.5793f, 0.5288f, -0.3977f, -0.4760f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -8656,7 +8656,7 @@ static FrameData anim_nick_run_left_framedata11[] = {
     {{-4.5764f, -19.0455f, 30.0527f}, {0.9504f, 0.3036f, 0.0554f, -0.0378f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.7206f, -2.4001f, 40.0126f}, {0.8746f, -0.4750f, 0.0232f, 0.0941f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_left_framedata14[] = {
+static s64FrameData anim_nick_run_left_framedata14[] = {
     {{-2.4313f, -10.3211f, 77.0008f}, {0.9993f, -0.0272f, -0.0006f, -0.0251f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.0232f, -10.6367f, 70.6713f}, {0.8088f, 0.3032f, 0.4864f, -0.1317f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.3668f, -5.6595f, 69.5886f}, {0.6494f, 0.3553f, -0.5164f, -0.4305f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -8694,7 +8694,7 @@ static FrameData anim_nick_run_left_framedata14[] = {
     {{-3.9862f, -13.5430f, 24.2609f}, {0.9595f, -0.2786f, -0.0003f, 0.0418f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.6358f, -2.4295f, 40.1147f}, {0.9495f, -0.2836f, 0.0022f, 0.1344f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_left_framedata16[] = {
+static s64FrameData anim_nick_run_left_framedata16[] = {
     {{-1.3961f, -11.3410f, 75.4459f}, {0.9999f, -0.0164f, 0.0050f, 0.0016f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.7987f, -9.7731f, 68.7687f}, {0.7323f, 0.4319f, 0.5145f, 0.1119f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.7347f, -8.2561f, 67.2282f}, {0.7478f, 0.2833f, -0.5652f, -0.2028f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -8732,7 +8732,7 @@ static FrameData anim_nick_run_left_framedata16[] = {
     {{-4.4999f, -11.8620f, 23.3849f}, {0.9993f, -0.0043f, -0.0359f, 0.0124f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.6044f, -0.7341f, 39.2760f}, {0.9595f, -0.2801f, -0.0288f, 0.0001f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_left_framedata18[] = {
+static s64FrameData anim_nick_run_left_framedata18[] = {
     {{0.1088f, -10.1238f, 76.4749f}, {0.9997f, -0.0056f, -0.0092f, 0.0208f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.7930f, -6.0273f, 70.3180f}, {0.6424f, 0.5465f, 0.4188f, 0.3367f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.6110f, -9.9714f, 68.2982f}, {0.8385f, 0.1103f, -0.5080f, 0.1631f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -8770,7 +8770,7 @@ static FrameData anim_nick_run_left_framedata18[] = {
     {{-4.7984f, 2.5538f, 20.9962f}, {0.9504f, 0.3090f, -0.0356f, -0.0033f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.6297f, -0.0733f, 40.2311f}, {0.9913f, 0.0906f, -0.0158f, -0.0944f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_run_left_keyframes[] = {
+static s64KeyFrame anim_nick_run_left_keyframes[] = {
     {0, anim_nick_run_left_framedata0},
     {2, anim_nick_run_left_framedata2},
     {5, anim_nick_run_left_framedata5},
@@ -8782,7 +8782,7 @@ static KeyFrame anim_nick_run_left_keyframes[] = {
     {18, anim_nick_run_left_framedata18},
 };
 
-static FrameData anim_nick_run_right_framedata0[] = {
+static s64FrameData anim_nick_run_right_framedata0[] = {
     {{-0.1088f, -10.1301f, 76.5009f}, {0.9997f, -0.0056f, 0.0092f, -0.0208f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.5966f, -9.9017f, 68.4274f}, {0.8391f, 0.1074f, 0.5080f, -0.1622f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.8490f, -6.0997f, 70.2454f}, {0.6425f, 0.5483f, -0.4159f, -0.3370f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -8820,7 +8820,7 @@ static FrameData anim_nick_run_right_framedata0[] = {
     {{-7.2328f, -13.6511f, 24.7710f}, {0.7025f, 0.7054f, 0.0464f, -0.0823f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.3022f, -1.4051f, 39.8291f}, {0.9489f, -0.3146f, 0.0251f, -0.0046f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_right_framedata2[] = {
+static s64FrameData anim_nick_run_right_framedata2[] = {
     {{-0.9923f, -9.5768f, 77.4042f}, {0.9997f, 0.0138f, -0.0136f, -0.0177f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.9280f, -10.7957f, 69.8811f}, {0.8516f, 0.1681f, 0.4554f, -0.1977f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.1180f, -4.4791f, 70.9014f}, {0.6129f, 0.5302f, -0.4026f, -0.4256f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -8858,7 +8858,7 @@ static FrameData anim_nick_run_right_framedata2[] = {
     {{-6.0575f, -17.4876f, 29.0020f}, {0.9770f, 0.2022f, 0.0175f, -0.0660f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.0749f, -1.8219f, 40.4983f}, {0.8983f, -0.4316f, 0.0393f, 0.0723f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_right_framedata5[] = {
+static s64FrameData anim_nick_run_right_framedata5[] = {
     {{-1.0151f, -9.0742f, 76.2714f}, {0.9995f, -0.0217f, -0.0212f, -0.0127f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.1760f, -9.6992f, 68.7805f}, {0.7608f, 0.3827f, 0.5204f, -0.0627f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.9523f, -4.8966f, 68.6515f}, {0.6903f, 0.3823f, -0.5345f, -0.3028f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -8896,7 +8896,7 @@ static FrameData anim_nick_run_right_framedata5[] = {
     {{-5.7091f, -11.4770f, 23.5697f}, {0.9815f, -0.1645f, -0.0666f, -0.0717f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.6820f, -0.4541f, 39.5720f}, {0.9605f, -0.2767f, -0.0081f, -0.0299f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_right_framedata7[] = {
+static s64FrameData anim_nick_run_right_framedata7[] = {
     {{1.0010f, -9.8828f, 75.0894f}, {0.9993f, -0.0358f, 0.0036f, 0.0108f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.8610f, -8.1089f, 67.2764f}, {0.7212f, 0.4214f, 0.5241f, 0.1662f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.7303f, -7.4146f, 67.8540f}, {0.7963f, 0.2527f, -0.5479f, -0.0426f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -8934,7 +8934,7 @@ static FrameData anim_nick_run_right_framedata7[] = {
     {{-5.9910f, -7.7611f, 22.0542f}, {0.9838f, 0.1492f, -0.0812f, -0.0572f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.5147f, 1.0480f, 39.3675f}, {0.9757f, -0.2128f, 0.0001f, -0.0521f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_right_framedata9[] = {
+static s64FrameData anim_nick_run_right_framedata9[] = {
     {{1.3437f, -10.7223f, 75.3490f}, {0.9998f, 0.0010f, -0.0006f, 0.0196f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.7365f, -5.8457f, 68.9961f}, {0.6641f, 0.4855f, 0.4442f, 0.3550f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.9091f, -9.8745f, 68.7030f}, {0.8371f, 0.0059f, -0.5094f, 0.1992f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -8972,7 +8972,7 @@ static FrameData anim_nick_run_right_framedata9[] = {
     {{-7.0792f, 3.6523f, 20.5006f}, {0.9402f, 0.3208f, -0.0761f, -0.0852f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.7864f, 1.2468f, 39.7390f}, {0.9857f, 0.0776f, 0.0400f, -0.1440f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_right_framedata11[] = {
+static s64FrameData anim_nick_run_right_framedata11[] = {
     {{1.4377f, -10.5541f, 76.7406f}, {0.9996f, 0.0202f, -0.0016f, 0.0214f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.4605f, -4.9028f, 70.8533f}, {0.5797f, 0.5268f, 0.4007f, 0.4752f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.8505f, -11.0491f, 70.2724f}, {0.8536f, -0.0545f, -0.4188f, 0.3050f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -9010,7 +9010,7 @@ static FrameData anim_nick_run_right_framedata11[] = {
     {{-5.7765f, 10.9352f, 24.8187f}, {0.8576f, 0.4765f, 0.0130f, -0.1932f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.1493f, -0.6365f, 40.4242f}, {0.9258f, 0.3297f, 0.0462f, -0.1788f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_right_framedata14[] = {
+static s64FrameData anim_nick_run_right_framedata14[] = {
     {{2.4297f, -10.3338f, 77.0077f}, {0.9993f, -0.0272f, 0.0006f, 0.0251f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.3171f, -5.6159f, 69.6993f}, {0.6497f, 0.3529f, 0.5178f, 0.4305f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.0532f, -10.7235f, 70.5752f}, {0.8082f, 0.3064f, -0.4853f, 0.1321f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -9048,45 +9048,7 @@ static FrameData anim_nick_run_right_framedata14[] = {
     {{-6.0906f, 9.8727f, 24.5526f}, {0.4927f, 0.8659f, -0.0752f, -0.0429f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.2475f, -0.8142f, 40.7803f}, {0.9471f, 0.3063f, 0.0227f, -0.0929f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_right_framedata15[] = {
-    {{2.0711f, -10.4156f, 76.2018f}, {0.9994f, -0.0308f, -0.0027f, 0.0138f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{13.1655f, -6.5116f, 68.4084f}, {0.6966f, 0.3203f, 0.5483f, 0.3340f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{-10.3423f, -9.9784f, 69.6027f}, {0.7697f, 0.3866f, -0.5079f, 0.0081f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{0.4359f, -5.6305f, 60.0009f}, {0.9857f, 0.1523f, 0.0440f, 0.0575f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{14.5835f, 5.7920f, 59.6529f}, {0.7350f, -0.1661f, 0.6101f, -0.2448f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{16.0210f, -1.7190f, 49.4037f}, {0.8414f, -0.1937f, 0.4007f, -0.3066f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{19.6381f, -8.5543f, 45.8485f}, {0.8249f, -0.1780f, 0.4374f, -0.3106f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{20.7373f, -10.6091f, 43.8393f}, {0.7509f, -0.1171f, 0.5655f, -0.3203f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{20.9275f, -12.0009f, 41.9782f}, {0.7394f, -0.1086f, 0.5818f, -0.3210f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{20.7751f, -5.9083f, 44.0313f}, {0.8244f, -0.1807f, 0.4382f, -0.3092f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{22.0632f, -7.9605f, 41.6984f}, {0.7483f, -0.1299f, 0.5699f, -0.3138f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{22.3025f, -9.2177f, 39.7681f}, {0.7365f, -0.1228f, 0.5866f, -0.3138f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{16.3700f, -7.0392f, 48.5562f}, {0.8721f, -0.2251f, 0.3673f, -0.2320f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{17.2087f, -9.6081f, 48.4705f}, {0.8987f, -0.1954f, 0.3604f, -0.1557f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{18.5717f, -11.3081f, 47.6276f}, {0.9146f, -0.1974f, 0.3286f, -0.1284f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{-16.5510f, -3.7199f, 57.2611f}, {0.5186f, -0.1288f, -0.6270f, 0.5669f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{-10.8147f, -13.0162f, 51.2779f}, {0.5029f, -0.1609f, -0.6401f, 0.5582f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{-6.4062f, -20.0479f, 48.6648f}, {0.4931f, -0.1502f, -0.6487f, 0.5599f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{-4.8222f, -22.3631f, 47.1491f}, {0.4500f, -0.1039f, -0.6836f, 0.5652f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{-3.4111f, -23.8389f, 45.9731f}, {0.4448f, -0.0984f, -0.6874f, 0.5656f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{-7.5314f, -19.0487f, 45.7348f}, {0.4929f, -0.1510f, -0.6496f, 0.5588f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{-6.2230f, -21.0131f, 44.1526f}, {0.4490f, -0.1082f, -0.6882f, 0.5596f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{-4.7117f, -22.6008f, 42.5986f}, {0.4437f, -0.1032f, -0.6924f, 0.5595f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{-7.4084f, -16.9825f, 51.9205f}, {0.5939f, -0.1908f, -0.6405f, 0.4479f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{-6.3593f, -19.7859f, 51.9622f}, {0.6169f, -0.1227f, -0.6624f, 0.4070f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{-5.5966f, -21.8090f, 51.0420f}, {0.6299f, -0.1344f, -0.6522f, 0.3999f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{-0.4139f, -1.1598f, 39.6968f}, {0.9954f, 0.0796f, 0.0218f, -0.0479f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{-0.0906f, -2.8870f, 50.1976f}, {0.9885f, 0.1432f, 0.0202f, 0.0444f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{3.5016f, -20.3435f, 5.4247f}, {0.9933f, 0.0763f, 0.0809f, 0.0318f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{3.5877f, -24.2504f, 2.5778f}, {0.9901f, -0.1098f, 0.0736f, 0.0463f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{-3.9765f, 20.8314f, 38.6785f}, {0.3540f, 0.9327f, -0.0617f, 0.0297f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{-3.6467f, 25.5062f, 37.4604f}, {0.3544f, 0.9326f, -0.0617f, 0.0297f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{4.2022f, -11.5933f, 22.8358f}, {0.9667f, -0.2537f, 0.0251f, 0.0222f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{5.5694f, -1.6368f, 39.4664f}, {0.9661f, -0.2477f, 0.0141f, -0.0716f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{-5.8121f, 9.1006f, 23.2138f}, {0.3425f, 0.9357f, -0.0799f, -0.0265f}, {1.0000f, 1.0000f, 1.0000f}},
-    {{-6.3756f, -0.5326f, 40.0797f}, {0.9596f, 0.2773f, -0.0022f, -0.0478f}, {1.0000f, 1.0000f, 1.0000f}},
-};
-static FrameData anim_nick_run_right_framedata16[] = {
+static s64FrameData anim_nick_run_right_framedata16[] = {
     {{1.3945f, -11.3632f, 75.4300f}, {0.9999f, -0.0164f, -0.0050f, -0.0016f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.7042f, -8.2164f, 67.3217f}, {0.7481f, 0.2805f, 0.5659f, 0.2034f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.8356f, -9.8636f, 68.6459f}, {0.7320f, 0.4347f, -0.5127f, -0.1114f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -9124,7 +9086,7 @@ static FrameData anim_nick_run_right_framedata16[] = {
     {{-6.7575f, 7.9528f, 22.0550f}, {0.2016f, 0.9753f, -0.0654f, -0.0618f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.4093f, -0.6993f, 39.4502f}, {0.9672f, 0.2485f, 0.0207f, -0.0491f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_right_framedata18[] = {
+static s64FrameData anim_nick_run_right_framedata18[] = {
     {{-0.1088f, -10.1301f, 76.5009f}, {0.9997f, -0.0056f, 0.0092f, -0.0208f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.5966f, -9.9017f, 68.4274f}, {0.8391f, 0.1074f, 0.5080f, -0.1622f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.8490f, -6.0997f, 70.2454f}, {0.6425f, 0.5483f, -0.4159f, -0.3370f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -9162,7 +9124,7 @@ static FrameData anim_nick_run_right_framedata18[] = {
     {{-7.2328f, -13.6510f, 24.7710f}, {0.7025f, 0.7054f, 0.0464f, -0.0823f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.3022f, -1.4051f, 39.8291f}, {0.9489f, -0.3146f, 0.0251f, -0.0046f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_run_right_keyframes[] = {
+static s64KeyFrame anim_nick_run_right_keyframes[] = {
     {0, anim_nick_run_right_framedata0},
     {2, anim_nick_run_right_framedata2},
     {5, anim_nick_run_right_framedata5},
@@ -9170,12 +9132,11 @@ static KeyFrame anim_nick_run_right_keyframes[] = {
     {9, anim_nick_run_right_framedata9},
     {11, anim_nick_run_right_framedata11},
     {14, anim_nick_run_right_framedata14},
-    {15, anim_nick_run_right_framedata15},
     {16, anim_nick_run_right_framedata16},
     {18, anim_nick_run_right_framedata18},
 };
 
-static FrameData anim_nick_run_to_roll_left_framedata0[] = {
+static s64FrameData anim_nick_run_to_roll_left_framedata0[] = {
     {{-4.7645f, -23.6097f, 66.6146f}, {0.9895f, 0.1395f, -0.0079f, 0.0368f}, {1.0000f, 1.0000f, 1.0000f}},
     {{7.4250f, -18.3573f, 66.9285f}, {0.5824f, 0.5943f, 0.2183f, 0.5099f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-14.8687f, -18.4205f, 57.9236f}, {0.6736f, 0.0116f, -0.6861f, 0.2745f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -9213,7 +9174,7 @@ static FrameData anim_nick_run_to_roll_left_framedata0[] = {
     {{-4.7924f, -2.9065f, 18.8509f}, {0.9198f, 0.3626f, -0.0196f, -0.1488f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8971f, -0.5766f, 38.1103f}, {0.9917f, -0.0352f, -0.0369f, -0.1181f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_roll_left_framedata2[] = {
+static s64FrameData anim_nick_run_to_roll_left_framedata2[] = {
     {{3.4366f, -29.3573f, 57.2670f}, {0.9722f, 0.2007f, 0.1119f, 0.0443f}, {1.0000f, 1.0000f, 1.0000f}},
     {{14.9424f, -23.9861f, 54.1729f}, {0.6941f, 0.5346f, 0.0147f, 0.4819f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.6231f, -23.8320f, 52.0461f}, {0.8172f, 0.1771f, -0.5218f, 0.1687f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -9251,7 +9212,7 @@ static FrameData anim_nick_run_to_roll_left_framedata2[] = {
     {{-4.2544f, 10.9427f, 19.3040f}, {0.9048f, 0.4044f, 0.0287f, -0.1299f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.7873f, -1.2752f, 34.3355f}, {0.9340f, 0.3548f, -0.0311f, -0.0283f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_roll_left_framedata5[] = {
+static s64FrameData anim_nick_run_to_roll_left_framedata5[] = {
     {{9.5391f, -35.6644f, 39.9021f}, {0.9457f, 0.2870f, 0.1356f, 0.0702f}, {1.0000f, 1.0000f, 1.0000f}},
     {{19.2253f, -30.0524f, 33.4214f}, {0.9590f, 0.0835f, 0.1488f, -0.2263f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.9685f, -28.6123f, 42.4369f}, {0.9586f, 0.2286f, -0.1287f, 0.1111f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -9289,7 +9250,7 @@ static FrameData anim_nick_run_to_roll_left_framedata5[] = {
     {{-8.3207f, -9.7402f, 10.9121f}, {0.7406f, 0.6640f, -0.0831f, 0.0604f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.5706f, -2.9813f, 28.9213f}, {0.9832f, -0.1520f, 0.0846f, 0.0552f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_roll_left_framedata8[] = {
+static s64FrameData anim_nick_run_to_roll_left_framedata8[] = {
     {{13.0292f, -36.9897f, 35.3663f}, {0.8864f, 0.3843f, 0.2378f, 0.1001f}, {1.0000f, 1.0000f, 1.0000f}},
     {{21.7189f, -29.4038f, 28.3191f}, {0.8693f, 0.1564f, 0.4246f, -0.1988f}, {1.0000f, 1.0000f, 1.0000f}},
     {{1.5285f, -36.2383f, 39.7915f}, {0.8371f, 0.2794f, -0.0934f, 0.4609f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -9327,7 +9288,7 @@ static FrameData anim_nick_run_to_roll_left_framedata8[] = {
     {{-8.7493f, -6.1604f, 17.2857f}, {0.8230f, 0.5426f, -0.1351f, 0.1003f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.3796f, -3.8550f, 36.2832f}, {0.9949f, -0.0414f, 0.0856f, -0.0345f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_roll_left_framedata11[] = {
+static s64FrameData anim_nick_run_to_roll_left_framedata11[] = {
     {{13.0945f, -35.1575f, 19.2842f}, {0.7343f, 0.5965f, 0.2093f, 0.2472f}, {1.0000f, 1.0000f, 1.0000f}},
     {{21.3787f, -24.8334f, 17.6377f}, {0.6431f, 0.5127f, 0.5503f, 0.1442f}, {1.0000f, 1.0000f, 1.0000f}},
     {{0.6229f, -35.6538f, 18.9831f}, {0.7171f, 0.2794f, -0.3274f, 0.5482f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -9365,7 +9326,7 @@ static FrameData anim_nick_run_to_roll_left_framedata11[] = {
     {{-5.1854f, 12.7340f, 18.7393f}, {0.8019f, 0.5563f, -0.1230f, 0.1800f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.5383f, -3.4898f, 29.4274f}, {0.8698f, 0.4928f, 0.0024f, -0.0222f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_roll_left_framedata14[] = {
+static s64FrameData anim_nick_run_to_roll_left_framedata14[] = {
     {{17.7218f, -27.6184f, 9.3984f}, {0.3991f, 0.7707f, 0.1572f, 0.4712f}, {1.0000f, 1.0000f, 1.0000f}},
     {{23.3837f, -18.0496f, 17.0148f}, {0.5378f, 0.5219f, 0.4353f, 0.4989f}, {1.0000f, 1.0000f, 1.0000f}},
     {{4.0853f, -29.3305f, 8.5126f}, {0.5563f, 0.6296f, -0.2958f, 0.4546f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -9403,7 +9364,7 @@ static FrameData anim_nick_run_to_roll_left_framedata14[] = {
     {{0.0271f, 16.6865f, 22.9091f}, {0.5096f, 0.7730f, -0.3034f, 0.2253f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.5313f, -1.9319f, 26.0951f}, {0.7477f, 0.6304f, -0.1989f, 0.0629f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_roll_left_framedata16[] = {
+static s64FrameData anim_nick_run_to_roll_left_framedata16[] = {
     {{24.1638f, -15.3100f, 2.4752f}, {0.0121f, -0.7747f, -0.0015f, -0.6322f}, {1.0000f, 1.0000f, 1.0000f}},
     {{25.6052f, -13.8442f, 16.3842f}, {0.5312f, 0.5971f, 0.1061f, 0.5917f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.9692f, -14.7923f, -0.6979f}, {0.1385f, 0.8496f, -0.4855f, 0.1526f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -9441,7 +9402,7 @@ static FrameData anim_nick_run_to_roll_left_framedata16[] = {
     {{3.3518f, 17.7902f, 27.5350f}, {0.3520f, 0.8140f, -0.4246f, 0.1825f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.5886f, 0.2706f, 22.7950f}, {0.5981f, 0.7201f, -0.3468f, 0.0577f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_roll_left_framedata19[] = {
+static s64FrameData anim_nick_run_to_roll_left_framedata19[] = {
     {{28.6827f, 14.7266f, 0.4423f}, {0.6848f, -0.4870f, 0.3081f, -0.4461f}, {1.0000f, 1.0000f, 1.0000f}},
     {{27.5425f, -0.6626f, 1.5348f}, {0.1100f, 0.7837f, 0.0074f, 0.6112f}, {1.0000f, 1.0000f, 1.0000f}},
     {{15.4050f, 16.9350f, 0.2539f}, {0.4253f, -0.8556f, 0.1806f, 0.2335f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -9479,7 +9440,7 @@ static FrameData anim_nick_run_to_roll_left_framedata19[] = {
     {{7.5040f, 15.7879f, 24.0120f}, {0.1289f, -0.8730f, 0.4400f, -0.1665f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.6853f, 3.7578f, 12.6527f}, {0.4318f, 0.7840f, -0.4397f, -0.0749f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_roll_left_framedata23[] = {
+static s64FrameData anim_nick_run_to_roll_left_framedata23[] = {
     {{21.2443f, 16.2337f, 29.6593f}, {0.9628f, -0.1919f, 0.1897f, 0.0112f}, {1.0000f, 1.0000f, 1.0000f}},
     {{25.6061f, 15.0232f, 16.4441f}, {0.9202f, 0.0661f, 0.3369f, -0.1880f}, {1.0000f, 1.0000f, 1.0000f}},
     {{6.9015f, 12.9434f, 29.4013f}, {0.8178f, -0.3819f, 0.0189f, 0.4301f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -9517,7 +9478,7 @@ static FrameData anim_nick_run_to_roll_left_framedata23[] = {
     {{-0.5336f, -8.8758f, 30.1407f}, {0.8334f, -0.5337f, 0.1432f, 0.0126f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.8516f, -1.7414f, 12.2157f}, {0.1991f, -0.9696f, 0.1184f, 0.0791f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_roll_left_framedata24[] = {
+static s64FrameData anim_nick_run_to_roll_left_framedata24[] = {
     {{19.7661f, 10.1782f, 34.7326f}, {0.9713f, -0.1414f, 0.1779f, 0.0699f}, {1.0000f, 1.0000f, 1.0000f}},
     {{24.2040f, 13.7352f, 22.1486f}, {0.8497f, 0.2237f, 0.4774f, 0.0051f}, {1.0000f, 1.0000f, 1.0000f}},
     {{5.9160f, 5.2637f, 33.3906f}, {0.8677f, -0.1931f, -0.0746f, 0.4519f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -9555,7 +9516,7 @@ static FrameData anim_nick_run_to_roll_left_framedata24[] = {
     {{0.0178f, -14.8183f, 27.6650f}, {0.9069f, -0.3981f, 0.1312f, 0.0416f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.6606f, -3.9695f, 11.7681f}, {0.3117f, -0.9470f, 0.0167f, 0.0754f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_roll_left_framedata27[] = {
+static s64FrameData anim_nick_run_to_roll_left_framedata27[] = {
     {{16.0857f, -12.3464f, 45.6801f}, {0.9691f, 0.1293f, 0.2018f, 0.0588f}, {1.0000f, 1.0000f, 1.0000f}},
     {{21.9684f, -0.0267f, 42.0115f}, {0.7102f, 0.3671f, 0.5896f, 0.1150f}, {1.0000f, 1.0000f, 1.0000f}},
     {{3.0813f, -13.7450f, 40.8913f}, {0.8661f, 0.3782f, -0.3033f, 0.1220f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -9593,7 +9554,7 @@ static FrameData anim_nick_run_to_roll_left_framedata27[] = {
     {{5.4434f, -22.8646f, 25.2984f}, {0.9827f, -0.0809f, 0.0869f, 0.1420f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.1282f, -7.0530f, 16.9173f}, {0.5186f, -0.8315f, -0.0768f, 0.1838f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_roll_left_framedata30[] = {
+static s64FrameData anim_nick_run_to_roll_left_framedata30[] = {
     {{3.2224f, -23.3396f, 51.9930f}, {0.9591f, 0.2736f, 0.0645f, 0.0316f}, {1.0000f, 1.0000f, 1.0000f}},
     {{14.1921f, -14.7551f, 52.2119f}, {0.5209f, 0.5931f, 0.3429f, 0.5092f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.4577f, -17.6931f, 46.3180f}, {0.8095f, 0.3614f, -0.4427f, -0.1344f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -9631,7 +9592,7 @@ static FrameData anim_nick_run_to_roll_left_framedata30[] = {
     {{4.4932f, -21.6274f, 18.4995f}, {0.9313f, 0.3624f, 0.0324f, 0.0193f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.4301f, -5.6457f, 25.0215f}, {0.8253f, -0.5085f, -0.2337f, 0.0755f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_roll_left_framedata31[] = {
+static s64FrameData anim_nick_run_to_roll_left_framedata31[] = {
     {{3.2224f, -23.3396f, 51.9930f}, {0.9591f, 0.2736f, 0.0645f, 0.0316f}, {1.0000f, 1.0000f, 1.0000f}},
     {{14.1921f, -14.7551f, 52.2119f}, {0.5209f, 0.5931f, 0.3429f, 0.5092f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.4577f, -17.6931f, 46.3180f}, {0.8095f, 0.3614f, -0.4427f, -0.1344f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -9669,7 +9630,7 @@ static FrameData anim_nick_run_to_roll_left_framedata31[] = {
     {{4.4932f, -21.6274f, 18.4995f}, {0.9313f, 0.3624f, 0.0324f, 0.0193f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.4301f, -5.6457f, 25.0215f}, {0.8253f, -0.5085f, -0.2337f, 0.0755f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_roll_left_framedata35[] = {
+static s64FrameData anim_nick_run_to_roll_left_framedata35[] = {
     {{-4.9553f, -23.7159f, 67.7295f}, {0.9916f, 0.1234f, -0.0034f, 0.0373f}, {1.0000f, 1.0000f, 1.0000f}},
     {{7.1916f, -18.4517f, 67.9592f}, {0.5949f, 0.5873f, 0.2156f, 0.5047f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-14.7214f, -18.7982f, 58.3873f}, {0.5994f, 0.0440f, -0.7235f, 0.3397f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -9707,7 +9668,7 @@ static FrameData anim_nick_run_to_roll_left_framedata35[] = {
     {{-5.0310f, 0.5821f, 19.8150f}, {0.9328f, 0.3192f, -0.0009f, -0.1673f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.7810f, -0.0743f, 39.2207f}, {0.9926f, 0.0401f, -0.0186f, -0.1135f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_run_to_roll_left_keyframes[] = {
+static s64KeyFrame anim_nick_run_to_roll_left_keyframes[] = {
     {0, anim_nick_run_to_roll_left_framedata0},
     {2, anim_nick_run_to_roll_left_framedata2},
     {5, anim_nick_run_to_roll_left_framedata5},
@@ -9724,7 +9685,7 @@ static KeyFrame anim_nick_run_to_roll_left_keyframes[] = {
     {35, anim_nick_run_to_roll_left_framedata35},
 };
 
-static FrameData anim_nick_run_to_roll_right_framedata0[] = {
+static s64FrameData anim_nick_run_to_roll_right_framedata0[] = {
     {{4.7728f, -23.6082f, 66.3894f}, {0.9895f, 0.1395f, 0.0079f, -0.0368f}, {1.0000f, 1.0000f, 1.0000f}},
     {{14.8767f, -18.4096f, 57.8310f}, {0.6755f, 0.0092f, 0.6849f, -0.2730f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.4959f, -18.3584f, 66.6090f}, {0.5805f, 0.5970f, -0.2158f, -0.5100f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -9762,7 +9723,7 @@ static FrameData anim_nick_run_to_roll_right_framedata0[] = {
     {{-8.0922f, -17.5639f, 24.9695f}, {0.7856f, 0.6084f, -0.1080f, 0.0305f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9291f, -2.5085f, 37.0622f}, {0.9078f, -0.4140f, 0.0346f, -0.0575f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_roll_right_framedata2[] = {
+static s64FrameData anim_nick_run_to_roll_right_framedata2[] = {
     {{-3.4336f, -29.3572f, 56.8148f}, {0.9722f, 0.2007f, -0.1119f, -0.0443f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.5880f, -23.8256f, 51.7207f}, {0.8175f, 0.1764f, 0.5219f, -0.1678f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-14.9794f, -23.9748f, 53.6069f}, {0.6935f, 0.5356f, -0.0137f, -0.4816f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -9800,7 +9761,7 @@ static FrameData anim_nick_run_to_roll_right_framedata2[] = {
     {{-8.2280f, -14.6539f, 16.5036f}, {0.9276f, 0.3700f, -0.0424f, 0.0287f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8409f, -1.8580f, 30.9309f}, {0.9362f, -0.3377f, 0.0299f, -0.0929f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_roll_right_framedata5[] = {
+static s64FrameData anim_nick_run_to_roll_right_framedata5[] = {
     {{-9.5342f, -35.6655f, 39.7351f}, {0.9457f, 0.2870f, -0.1356f, -0.0702f}, {1.0000f, 1.0000f, 1.0000f}},
     {{2.8918f, -28.6546f, 42.3646f}, {0.9589f, 0.2283f, 0.1265f, -0.1111f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-19.2193f, -30.0185f, 33.1335f}, {0.9586f, 0.0835f, -0.1521f, 0.2257f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -9838,7 +9799,7 @@ static FrameData anim_nick_run_to_roll_right_framedata5[] = {
     {{-9.6392f, 4.8192f, 7.0834f}, {0.7682f, 0.6265f, 0.0632f, -0.1155f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.6372f, -0.2451f, 25.4113f}, {0.9816f, 0.1479f, 0.1107f, -0.0488f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_roll_right_framedata8[] = {
+static s64FrameData anim_nick_run_to_roll_right_framedata8[] = {
     {{-13.0264f, -36.9906f, 32.8292f}, {0.8864f, 0.3843f, -0.2378f, -0.1001f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-1.6371f, -36.2660f, 37.3136f}, {0.8372f, 0.2779f, 0.0901f, -0.4623f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-21.7029f, -29.3439f, 25.6636f}, {0.8679f, 0.1561f, -0.4279f, 0.1980f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -9876,7 +9837,7 @@ static FrameData anim_nick_run_to_roll_right_framedata8[] = {
     {{-10.4410f, 10.9236f, 15.3853f}, {0.7026f, 0.6863f, 0.1253f, -0.1403f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.4654f, 0.5415f, 31.0387f}, {0.9415f, 0.2906f, 0.1544f, -0.0721f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_roll_right_framedata11[] = {
+static s64FrameData anim_nick_run_to_roll_right_framedata11[] = {
     {{-13.0925f, -35.1580f, 20.0451f}, {0.7343f, 0.5965f, -0.2093f, -0.2472f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-0.7097f, -35.7104f, 19.8251f}, {0.7174f, 0.2786f, 0.3242f, -0.5501f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-21.3710f, -24.7303f, 18.3092f}, {0.6421f, 0.5119f, -0.5522f, -0.1440f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -9914,7 +9875,7 @@ static FrameData anim_nick_run_to_roll_right_framedata11[] = {
     {{-17.1614f, 3.8851f, 17.9000f}, {0.5165f, 0.8282f, 0.1911f, -0.1036f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.5646f, 0.1076f, 33.0268f}, {0.9391f, 0.1362f, 0.3136f, 0.0333f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_roll_right_framedata14[] = {
+static s64FrameData anim_nick_run_to_roll_right_framedata14[] = {
     {{-17.7193f, -27.6185f, 9.9042f}, {0.3991f, 0.7707f, -0.1572f, -0.4712f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.1615f, -29.4107f, 9.0739f}, {0.5573f, 0.6282f, 0.2945f, -0.4561f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-23.3754f, -17.9283f, 17.4941f}, {0.5367f, 0.5233f, -0.4349f, -0.4990f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -9952,7 +9913,7 @@ static FrameData anim_nick_run_to_roll_right_framedata14[] = {
     {{-19.8891f, 3.3046f, 23.6288f}, {0.0857f, 0.9227f, 0.3293f, -0.1810f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.5104f, -1.4865f, 34.4969f}, {0.8397f, 0.2798f, 0.3955f, 0.2452f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_roll_right_framedata16[] = {
+static s64FrameData anim_nick_run_to_roll_right_framedata16[] = {
     {{-24.1624f, -15.3094f, 2.2202f}, {0.0121f, -0.7747f, 0.0015f, 0.6322f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.0284f, -14.9012f, -0.9639f}, {0.1410f, 0.8490f, 0.4856f, -0.1531f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-25.5845f, -13.7305f, 16.1805f}, {0.5297f, 0.5971f, -0.1077f, -0.5927f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -9990,7 +9951,7 @@ static FrameData anim_nick_run_to_roll_right_framedata16[] = {
     {{-22.8215f, -3.4797f, 28.8870f}, {0.0719f, 0.8023f, 0.5827f, -0.1081f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.5489f, -3.6803f, 31.3572f}, {0.6223f, 0.3767f, 0.5605f, 0.3957f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_roll_right_framedata19[] = {
+static s64FrameData anim_nick_run_to_roll_right_framedata19[] = {
     {{-28.6811f, 14.7289f, 0.6959f}, {0.6848f, -0.4870f, -0.3080f, 0.4461f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-15.4714f, 16.9709f, 0.3961f}, {0.4240f, -0.8569f, -0.1810f, -0.2306f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-27.4773f, -0.7044f, 1.8921f}, {0.1099f, 0.7824f, -0.0085f, -0.6130f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -10028,7 +9989,7 @@ static FrameData anim_nick_run_to_roll_right_framedata19[] = {
     {{-18.4743f, -7.9190f, 24.6676f}, {0.0777f, -0.6516f, -0.7517f, -0.0657f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.6482f, -6.9917f, 13.4314f}, {0.2878f, 0.6398f, 0.6297f, 0.3335f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_roll_right_framedata23[] = {
+static s64FrameData anim_nick_run_to_roll_right_framedata23[] = {
     {{-21.2415f, 16.2335f, 29.6633f}, {0.9628f, -0.1919f, -0.1897f, -0.0112f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.9366f, 13.0625f, 29.4467f}, {0.8180f, -0.3831f, -0.0211f, -0.4285f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-25.5987f, 14.9067f, 16.3849f}, {0.9210f, 0.0656f, -0.3353f, 0.1869f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -10066,7 +10027,7 @@ static FrameData anim_nick_run_to_roll_right_framedata23[] = {
     {{-8.5961f, -17.1428f, 11.1858f}, {0.6810f, -0.3052f, -0.6618f, -0.0715f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.7883f, -1.2564f, 1.6219f}, {0.2896f, -0.6843f, -0.5272f, -0.4122f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_roll_right_framedata24[] = {
+static s64FrameData anim_nick_run_to_roll_right_framedata24[] = {
     {{-19.7632f, 10.1761f, 35.4980f}, {0.9713f, -0.1414f, -0.1779f, -0.0699f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9395f, 5.3651f, 34.2340f}, {0.8682f, -0.1945f, 0.0725f, -0.4508f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-24.2136f, 13.6469f, 22.8159f}, {0.8505f, 0.2242f, -0.4757f, -0.0057f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -10104,7 +10065,7 @@ static FrameData anim_nick_run_to_roll_right_framedata24[] = {
     {{-6.7492f, -17.8525f, 5.4232f}, {0.7233f, -0.1972f, -0.6596f, -0.0536f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.5738f, 0.9574f, 2.9065f}, {0.4375f, -0.5870f, -0.4670f, -0.4959f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_roll_right_framedata27[] = {
+static s64FrameData anim_nick_run_to_roll_right_framedata27[] = {
     {{-16.0842f, -8.6748f, 45.4796f}, {0.9751f, 0.0711f, -0.2049f, -0.0466f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.1028f, -10.6124f, 41.0125f}, {0.8886f, 0.3228f, 0.2946f, -0.1396f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-22.0063f, 3.1354f, 40.2437f}, {0.7296f, 0.3270f, -0.5956f, -0.0779f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -10142,7 +10103,7 @@ static FrameData anim_nick_run_to_roll_right_framedata27[] = {
     {{-6.8744f, -12.4468f, 2.8661f}, {0.6288f, 0.3039f, -0.7119f, -0.0744f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.0058f, 3.7477f, 12.4377f}, {0.5415f, -0.3995f, -0.3041f, -0.6743f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_roll_right_framedata30[] = {
+static s64FrameData anim_nick_run_to_roll_right_framedata30[] = {
     {{-3.2179f, -23.3430f, 51.7394f}, {0.9591f, 0.2736f, -0.0645f, -0.0316f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.4540f, -17.7224f, 46.1848f}, {0.8115f, 0.3586f, 0.4411f, 0.1349f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-14.2560f, -14.7259f, 51.8538f}, {0.5192f, 0.5960f, -0.3417f, -0.5084f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -10180,7 +10141,7 @@ static FrameData anim_nick_run_to_roll_right_framedata30[] = {
     {{-7.5714f, -6.3834f, 7.3244f}, {0.6651f, 0.6756f, -0.2760f, -0.1583f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.3315f, 2.5554f, 24.2707f}, {0.9075f, -0.2333f, -0.0117f, -0.3490f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_roll_right_framedata31[] = {
+static s64FrameData anim_nick_run_to_roll_right_framedata31[] = {
     {{-3.2179f, -23.3430f, 51.7394f}, {0.9591f, 0.2736f, -0.0645f, -0.0316f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.4540f, -17.7224f, 46.1848f}, {0.8115f, 0.3586f, 0.4411f, 0.1349f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-14.2560f, -14.7259f, 51.8538f}, {0.5192f, 0.5960f, -0.3417f, -0.5084f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -10218,7 +10179,7 @@ static FrameData anim_nick_run_to_roll_right_framedata31[] = {
     {{-7.5714f, -6.3834f, 7.3244f}, {0.6651f, 0.6756f, -0.2760f, -0.1583f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.3315f, 2.5554f, 24.2707f}, {0.9075f, -0.2333f, -0.0117f, -0.3490f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_roll_right_framedata35[] = {
+static s64FrameData anim_nick_run_to_roll_right_framedata35[] = {
     {{2.7634f, -23.6884f, 67.9953f}, {0.9916f, 0.1234f, 0.0034f, -0.0373f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.5353f, -18.7567f, 58.7868f}, {0.6010f, 0.0417f, 0.7231f, -0.3378f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-9.4620f, -18.4275f, 68.1318f}, {0.5929f, 0.5900f, -0.2131f, -0.5049f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -10256,7 +10217,7 @@ static FrameData anim_nick_run_to_roll_right_framedata35[] = {
     {{-8.9851f, -18.1973f, 26.4705f}, {0.7874f, 0.6061f, -0.0665f, 0.0908f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.0224f, -2.9914f, 38.5300f}, {0.9090f, -0.4151f, 0.0357f, 0.0131f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_run_to_roll_right_keyframes[] = {
+static s64KeyFrame anim_nick_run_to_roll_right_keyframes[] = {
     {0, anim_nick_run_to_roll_right_framedata0},
     {2, anim_nick_run_to_roll_right_framedata2},
     {5, anim_nick_run_to_roll_right_framedata5},
@@ -10273,7 +10234,7 @@ static KeyFrame anim_nick_run_to_roll_right_keyframes[] = {
     {35, anim_nick_run_to_roll_right_framedata35},
 };
 
-static FrameData anim_nick_run_to_stand_left_framedata0[] = {
+static s64FrameData anim_nick_run_to_stand_left_framedata0[] = {
     {{0.6058f, -13.6583f, 74.2606f}, {0.9963f, 0.0789f, 0.0305f, -0.0141f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.0520f, -7.8944f, 68.2225f}, {0.7004f, 0.2806f, 0.5128f, 0.4095f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.9076f, -11.6490f, 65.9513f}, {0.7916f, 0.3200f, -0.5041f, -0.1298f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -10311,7 +10272,7 @@ static FrameData anim_nick_run_to_stand_left_framedata0[] = {
     {{-5.1261f, -6.4809f, 20.6330f}, {0.9559f, 0.2932f, -0.0142f, 0.0038f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9440f, -1.5388f, 39.4075f}, {0.9939f, -0.1070f, -0.0221f, -0.0129f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_stand_left_framedata3[] = {
+static s64FrameData anim_nick_run_to_stand_left_framedata3[] = {
     {{-0.9192f, -16.0146f, 68.4870f}, {0.9962f, 0.0826f, 0.0223f, -0.0189f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.8199f, -10.3349f, 62.7407f}, {0.6572f, 0.2948f, 0.4733f, 0.5071f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.1015f, -12.3572f, 60.2052f}, {0.7653f, 0.3120f, -0.5484f, -0.1274f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -10349,7 +10310,7 @@ static FrameData anim_nick_run_to_stand_left_framedata3[] = {
     {{-6.7872f, -3.5646f, 15.4058f}, {0.8585f, 0.5042f, 0.0161f, -0.0918f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9623f, -0.8936f, 34.6350f}, {0.9959f, -0.0492f, 0.0157f, -0.0739f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_stand_left_framedata5[] = {
+static s64FrameData anim_nick_run_to_stand_left_framedata5[] = {
     {{-2.9322f, -18.2165f, 63.0925f}, {0.9972f, 0.0717f, -0.0003f, -0.0194f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.3901f, -13.6955f, 57.9566f}, {0.6910f, 0.3366f, 0.4455f, 0.4591f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.6901f, -12.6793f, 55.2020f}, {0.7633f, 0.3153f, -0.5429f, -0.1522f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -10387,7 +10348,7 @@ static FrameData anim_nick_run_to_stand_left_framedata5[] = {
     {{-9.1603f, -6.7428f, 12.6797f}, {0.7883f, 0.6006f, -0.0006f, -0.1336f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.7605f, 0.0871f, 30.5506f}, {0.9763f, -0.1681f, 0.0656f, -0.1196f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_stand_left_framedata8[] = {
+static s64FrameData anim_nick_run_to_stand_left_framedata8[] = {
     {{-3.8820f, -23.1358f, 58.8177f}, {0.9915f, 0.1283f, -0.0180f, -0.0113f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.5137f, -18.4203f, 54.4769f}, {0.7665f, 0.3607f, 0.4810f, 0.2256f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-14.6625f, -16.4919f, 51.7367f}, {0.7493f, 0.3505f, -0.5433f, -0.1434f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -10425,7 +10386,7 @@ static FrameData anim_nick_run_to_stand_left_framedata8[] = {
     {{-11.0199f, -9.9889f, 13.6896f}, {0.7542f, 0.5865f, 0.0816f, -0.2838f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.7305f, 0.1934f, 29.3714f}, {0.9445f, -0.2747f, 0.0958f, -0.1523f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_stand_left_framedata11[] = {
+static s64FrameData anim_nick_run_to_stand_left_framedata11[] = {
     {{-3.8348f, -25.8405f, 59.6128f}, {0.9859f, 0.1660f, -0.0206f, -0.0039f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.6865f, -20.7767f, 55.7265f}, {0.7609f, 0.3552f, 0.4976f, 0.2172f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-14.5481f, -18.9209f, 52.9466f}, {0.7430f, 0.3777f, -0.5278f, -0.1635f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -10463,7 +10424,7 @@ static FrameData anim_nick_run_to_stand_left_framedata11[] = {
     {{-11.0484f, -7.7012f, 15.5448f}, {0.7642f, 0.5271f, 0.1124f, -0.3544f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.6998f, 0.2363f, 32.4553f}, {0.9549f, -0.2136f, 0.0980f, -0.1815f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_stand_left_framedata15[] = {
+static s64FrameData anim_nick_run_to_stand_left_framedata15[] = {
     {{-3.5693f, -24.7635f, 65.2611f}, {0.9849f, 0.1707f, -0.0276f, -0.0058f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.0742f, -20.3034f, 60.7159f}, {0.7773f, 0.3551f, 0.4682f, 0.2249f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-14.1648f, -17.4808f, 59.0183f}, {0.7739f, 0.3248f, -0.5035f, -0.2052f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -10501,7 +10462,7 @@ static FrameData anim_nick_run_to_stand_left_framedata15[] = {
     {{-10.5675f, -0.9993f, 18.8516f}, {0.8130f, 0.3943f, 0.0610f, -0.4240f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.4503f, 0.7765f, 37.5127f}, {0.9524f, -0.0609f, 0.1101f, -0.2776f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_stand_left_framedata19[] = {
+static s64FrameData anim_nick_run_to_stand_left_framedata19[] = {
     {{-3.0705f, -19.0936f, 71.7148f}, {0.9883f, 0.1500f, -0.0237f, -0.0158f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.5374f, -16.4820f, 65.6036f}, {0.8100f, 0.2867f, 0.4933f, 0.1354f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.4958f, -12.1468f, 64.9951f}, {0.8073f, 0.2079f, -0.4979f, -0.2389f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -10539,7 +10500,7 @@ static FrameData anim_nick_run_to_stand_left_framedata19[] = {
     {{-7.5726f, 4.6071f, 20.9123f}, {0.8022f, 0.2465f, 0.0705f, -0.5391f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.0380f, 1.5699f, 39.9367f}, {0.9178f, 0.0673f, 0.0836f, -0.3822f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_stand_left_framedata23[] = {
+static s64FrameData anim_nick_run_to_stand_left_framedata23[] = {
     {{-2.7080f, -13.1222f, 74.6603f}, {0.9904f, 0.1360f, -0.0212f, -0.0109f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.6799f, -12.6378f, 67.6084f}, {0.8158f, 0.2125f, 0.5377f, 0.0125f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.9304f, -6.4706f, 67.3553f}, {0.7873f, 0.1110f, -0.5225f, -0.3078f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -10577,7 +10538,7 @@ static FrameData anim_nick_run_to_stand_left_framedata23[] = {
     {{-6.9924f, 5.9693f, 20.8940f}, {0.7957f, 0.2183f, 0.0584f, -0.5620f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.5921f, 2.2489f, 39.8142f}, {0.8855f, 0.0773f, 0.0904f, -0.4492f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_stand_left_framedata27[] = {
+static s64FrameData anim_nick_run_to_stand_left_framedata27[] = {
     {{-2.2140f, -9.5758f, 75.2454f}, {0.9921f, 0.1218f, -0.0311f, -0.0045f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.9831f, -9.9422f, 68.0408f}, {0.8090f, 0.1753f, 0.5596f, -0.0398f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.3861f, -3.0343f, 67.5711f}, {0.7428f, 0.0868f, -0.5366f, -0.3909f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -10615,7 +10576,7 @@ static FrameData anim_nick_run_to_stand_left_framedata27[] = {
     {{-9.0119f, 5.0093f, 20.4794f}, {0.7866f, 0.2620f, 0.0084f, -0.5590f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.3189f, 2.5718f, 39.1772f}, {0.8663f, 0.0152f, 0.1281f, -0.4826f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_run_to_stand_left_keyframes[] = {
+static s64KeyFrame anim_nick_run_to_stand_left_keyframes[] = {
     {0, anim_nick_run_to_stand_left_framedata0},
     {3, anim_nick_run_to_stand_left_framedata3},
     {5, anim_nick_run_to_stand_left_framedata5},
@@ -10627,7 +10588,7 @@ static KeyFrame anim_nick_run_to_stand_left_keyframes[] = {
     {27, anim_nick_run_to_stand_left_framedata27},
 };
 
-static FrameData anim_nick_run_to_stand_right_framedata0[] = {
+static s64FrameData anim_nick_run_to_stand_right_framedata0[] = {
     {{-0.5996f, -13.6614f, 74.2627f}, {0.9963f, 0.0789f, -0.0305f, 0.0141f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.9003f, -11.6079f, 66.0746f}, {0.7923f, 0.3178f, 0.5043f, 0.1306f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.0910f, -7.9296f, 68.1104f}, {0.6997f, 0.2834f, -0.5125f, -0.4091f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -10665,7 +10626,7 @@ static FrameData anim_nick_run_to_stand_right_framedata0[] = {
     {{-5.3378f, -11.8846f, 22.9491f}, {0.8105f, 0.5770f, 0.0097f, -0.1007f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.0415f, -0.9038f, 38.9649f}, {0.9576f, -0.2729f, -0.0447f, -0.0805f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_stand_right_framedata3[] = {
+static s64FrameData anim_nick_run_to_stand_right_framedata3[] = {
     {{0.1625f, -31.6941f, 69.0174f}, {0.9962f, 0.0826f, -0.0223f, 0.0189f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.3313f, -28.0074f, 60.8618f}, {0.7661f, 0.3097f, 0.5483f, 0.1284f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.6160f, -26.0357f, 63.1531f}, {0.6564f, 0.2974f, -0.4732f, -0.5067f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -10703,7 +10664,7 @@ static FrameData anim_nick_run_to_stand_right_framedata3[] = {
     {{-5.6103f, -36.4706f, 29.6084f}, {0.9836f, -0.1323f, 0.0127f, 0.1222f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.7419f, -17.8308f, 34.9801f}, {0.8114f, -0.5832f, -0.0381f, -0.0032f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_stand_right_framedata5[] = {
+static s64FrameData anim_nick_run_to_stand_right_framedata5[] = {
     {{1.4885f, -43.3539f, 63.3740f}, {0.9972f, 0.0717f, 0.0003f, 0.0194f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.2292f, -37.8005f, 55.6118f}, {0.7642f, 0.3131f, 0.5426f, 0.1532f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.8731f, -38.8479f, 58.1194f}, {0.6899f, 0.3394f, -0.4454f, -0.4587f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -10741,7 +10702,7 @@ static FrameData anim_nick_run_to_stand_right_framedata5[] = {
     {{-4.3553f, -45.5529f, 22.1577f}, {0.9186f, -0.2408f, 0.0804f, 0.3030f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.2517f, -28.2833f, 30.5807f}, {0.8563f, -0.5111f, -0.0565f, 0.0481f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_stand_right_framedata8[] = {
+static s64FrameData anim_nick_run_to_stand_right_framedata8[] = {
     {{2.1394f, -56.6307f, 58.5339f}, {0.9915f, 0.1283f, 0.0180f, 0.0114f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.9044f, -49.9919f, 51.5827f}, {0.7504f, 0.3484f, 0.5428f, 0.1444f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.2992f, -51.9135f, 54.0723f}, {0.7650f, 0.3637f, -0.4814f, -0.2251f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -10779,7 +10740,7 @@ static FrameData anim_nick_run_to_stand_right_framedata8[] = {
     {{-1.9373f, -54.5361f, 23.4619f}, {0.9307f, -0.0326f, 0.0679f, 0.3579f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.5156f, -36.7717f, 29.0196f}, {0.8021f, -0.5758f, -0.0734f, 0.1403f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_stand_right_framedata11[] = {
+static s64FrameData anim_nick_run_to_stand_right_framedata11[] = {
     {{2.1620f, -63.1423f, 59.2328f}, {0.9859f, 0.1660f, 0.0206f, 0.0039f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.8596f, -56.2353f, 52.6966f}, {0.7442f, 0.3758f, 0.5272f, 0.1645f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.4027f, -58.0687f, 55.2261f}, {0.7592f, 0.3583f, -0.4982f, -0.2167f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -10817,7 +10778,7 @@ static FrameData anim_nick_run_to_stand_right_framedata11[] = {
     {{-1.8423f, -57.3575f, 23.1541f}, {0.9350f, 0.0249f, 0.0510f, 0.3502f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.4201f, -40.6441f, 31.3473f}, {0.8417f, -0.5143f, -0.0759f, 0.1462f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_stand_right_framedata15[] = {
+static s64FrameData anim_nick_run_to_stand_right_framedata15[] = {
     {{2.4330f, -64.0219f, 65.1876f}, {0.9849f, 0.1707f, 0.0276f, 0.0059f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.0058f, -56.7474f, 59.0743f}, {0.7749f, 0.3230f, 0.5026f, 0.2061f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.2478f, -59.5581f, 60.5205f}, {0.7757f, 0.3580f, -0.4687f, -0.2244f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -10855,7 +10816,7 @@ static FrameData anim_nick_run_to_stand_right_framedata15[] = {
     {{-2.0727f, -56.9399f, 23.0398f}, {0.9326f, 0.0207f, 0.0523f, 0.3565f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.6572f, -43.1417f, 35.9304f}, {0.9063f, -0.3871f, -0.0548f, 0.1605f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_stand_right_framedata19[] = {
+static s64FrameData anim_nick_run_to_stand_right_framedata19[] = {
     {{2.3961f, -59.0503f, 71.8189f}, {0.9883f, 0.1500f, 0.0237f, 0.0158f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.7885f, -52.0886f, 65.2259f}, {0.8081f, 0.2061f, 0.4969f, 0.2400f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.2388f, -56.4612f, 65.5858f}, {0.8087f, 0.2898f, -0.4937f, -0.1349f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -10893,7 +10854,7 @@ static FrameData anim_nick_run_to_stand_right_framedata19[] = {
     {{-2.1295f, -55.8397f, 23.1761f}, {0.9285f, 0.0164f, 0.0574f, 0.3666f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8079f, -44.6177f, 38.6070f}, {0.9330f, -0.2996f, -0.0291f, 0.1974f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_stand_right_framedata23[] = {
+static s64FrameData anim_nick_run_to_stand_right_framedata23[] = {
     {{2.3756f, -52.5715f, 74.9733f}, {0.9904f, 0.1360f, 0.0212f, 0.0109f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.5562f, -45.8857f, 67.7885f}, {0.7879f, 0.1091f, 0.5214f, 0.3090f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.0297f, -52.1332f, 67.8045f}, {0.8147f, 0.2158f, -0.5381f, -0.0118f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -10931,7 +10892,7 @@ static FrameData anim_nick_run_to_stand_right_framedata23[] = {
     {{-1.9066f, -54.9821f, 23.2275f}, {0.9252f, 0.0193f, 0.0651f, 0.3733f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.0386f, -44.7784f, 39.4649f}, {0.9352f, -0.2668f, -0.0091f, 0.2327f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_run_to_stand_right_framedata27[] = {
+static s64FrameData anim_nick_run_to_stand_right_framedata27[] = {
     {{2.1224f, -47.5847f, 75.1973f}, {0.9921f, 0.1218f, 0.0311f, 0.0045f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.2498f, -41.0009f, 67.6395f}, {0.7432f, 0.0849f, 0.5354f, 0.3921f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.0886f, -48.0068f, 67.8800f}, {0.8080f, 0.1789f, -0.5599f, 0.0404f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -10969,7 +10930,7 @@ static FrameData anim_nick_run_to_stand_right_framedata27[] = {
     {{-1.3564f, -54.1189f, 23.1114f}, {0.9206f, 0.0214f, 0.0846f, 0.3806f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.5380f, -43.6542f, 39.1721f}, {0.9206f, -0.2754f, 0.0066f, 0.2768f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_run_to_stand_right_keyframes[] = {
+static s64KeyFrame anim_nick_run_to_stand_right_keyframes[] = {
     {0, anim_nick_run_to_stand_right_framedata0},
     {3, anim_nick_run_to_stand_right_framedata3},
     {5, anim_nick_run_to_stand_right_framedata5},
@@ -10981,7 +10942,7 @@ static KeyFrame anim_nick_run_to_stand_right_keyframes[] = {
     {27, anim_nick_run_to_stand_right_framedata27},
 };
 
-static FrameData anim_nick_sprint_left_framedata0[] = {
+static s64FrameData anim_nick_sprint_left_framedata0[] = {
     {{0.7559f, -10.4612f, 73.3998f}, {0.9942f, 0.1018f, 0.0285f, -0.0209f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.8614f, -7.5097f, 67.7708f}, {0.7020f, 0.5378f, 0.4560f, 0.1005f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.8875f, -5.3883f, 66.9330f}, {0.7493f, -0.1234f, -0.6282f, 0.1694f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -11019,7 +10980,7 @@ static FrameData anim_nick_sprint_left_framedata0[] = {
     {{-6.6910f, -0.8246f, 18.6923f}, {0.8894f, 0.4281f, -0.0283f, -0.1577f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.4593f, 1.3739f, 37.9594f}, {0.9984f, -0.0365f, 0.0304f, -0.0321f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_sprint_left_framedata2[] = {
+static s64FrameData anim_nick_sprint_left_framedata2[] = {
     {{2.5210f, -11.8975f, 72.9589f}, {0.9913f, 0.1311f, 0.0095f, 0.0059f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.8367f, -5.3904f, 68.1134f}, {0.6324f, 0.5709f, 0.3985f, 0.3397f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-9.5735f, -11.2002f, 66.8744f}, {0.7481f, -0.1177f, -0.5579f, 0.3396f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -11057,7 +11018,7 @@ static FrameData anim_nick_sprint_left_framedata2[] = {
     {{-7.3546f, 8.5345f, 20.3590f}, {0.7735f, 0.5869f, 0.0085f, -0.2391f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.4522f, -0.1943f, 37.6148f}, {0.9611f, 0.2450f, 0.0735f, -0.1045f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_sprint_left_framedata4[] = {
+static s64FrameData anim_nick_sprint_left_framedata4[] = {
     {{1.0875f, -9.5251f, 74.1971f}, {0.9920f, 0.1190f, -0.0179f, 0.0379f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.3240f, -3.5652f, 68.9410f}, {0.6571f, 0.3250f, 0.5210f, 0.4372f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.8269f, -9.7307f, 67.0306f}, {0.7718f, 0.1714f, -0.5286f, 0.3090f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -11095,7 +11056,7 @@ static FrameData anim_nick_sprint_left_framedata4[] = {
     {{-4.1199f, 12.4291f, 22.5930f}, {0.5910f, 0.8018f, -0.0847f, 0.0233f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9489f, 0.7409f, 38.0077f}, {0.9394f, 0.3353f, -0.0604f, 0.0393f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_sprint_left_framedata6[] = {
+static s64FrameData anim_nick_sprint_left_framedata6[] = {
     {{0.4285f, -5.8125f, 75.4146f}, {0.9972f, 0.0644f, -0.0313f, 0.0197f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.6445f, -1.1119f, 67.9431f}, {0.7357f, 0.1577f, 0.6143f, 0.2377f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.5232f, -4.8977f, 67.8880f}, {0.7431f, 0.4699f, -0.4720f, 0.0652f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -11133,7 +11094,7 @@ static FrameData anim_nick_sprint_left_framedata6[] = {
     {{-3.6529f, 8.6486f, 20.3477f}, {0.2349f, 0.9611f, -0.1446f, 0.0150f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9355f, 1.9168f, 38.4322f}, {0.9664f, 0.2041f, -0.0336f, -0.1529f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_sprint_left_framedata8[] = {
+static s64FrameData anim_nick_sprint_left_framedata8[] = {
     {{1.0850f, -5.4447f, 74.7841f}, {0.9965f, 0.0812f, -0.0078f, -0.0194f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.9190f, -4.3352f, 67.7382f}, {0.7614f, -0.1486f, 0.6086f, -0.1670f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.9440f, -1.5538f, 68.8785f}, {0.6653f, 0.6156f, -0.3027f, -0.2946f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -11171,7 +11132,7 @@ static FrameData anim_nick_sprint_left_framedata8[] = {
     {{-4.7125f, -9.4105f, 21.9807f}, {0.6008f, 0.7945f, -0.0531f, 0.0708f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8444f, 1.7967f, 37.8140f}, {0.9537f, -0.2778f, -0.0624f, -0.0966f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_sprint_left_framedata10[] = {
+static s64FrameData anim_nick_sprint_left_framedata10[] = {
     {{0.5025f, -9.2596f, 73.8596f}, {0.9930f, 0.1129f, 0.0174f, -0.0295f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.5248f, -8.8547f, 68.0327f}, {0.7665f, -0.2022f, 0.5407f, -0.2813f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.8030f, -2.5023f, 68.9934f}, {0.5237f, 0.6067f, -0.2510f, -0.5428f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -11209,7 +11170,7 @@ static FrameData anim_nick_sprint_left_framedata10[] = {
     {{-4.0398f, -16.7820f, 31.3534f}, {0.9835f, 0.1729f, 0.0266f, 0.0461f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.5105f, 1.3385f, 38.2138f}, {0.8254f, -0.5503f, 0.0412f, 0.1194f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_sprint_left_framedata12[] = {
+static s64FrameData anim_nick_sprint_left_framedata12[] = {
     {{0.0864f, -9.0807f, 73.9941f}, {0.9937f, 0.1080f, 0.0099f, -0.0292f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.3258f, -8.3841f, 67.9836f}, {0.8045f, 0.2773f, 0.3998f, -0.3407f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.8031f, -2.1207f, 68.3637f}, {0.5786f, 0.4813f, -0.4760f, -0.4550f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -11247,7 +11208,7 @@ static FrameData anim_nick_sprint_left_framedata12[] = {
     {{-5.0741f, -11.8141f, 24.1942f}, {0.9938f, -0.0995f, -0.0504f, 0.0003f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.6560f, 1.5620f, 38.2768f}, {0.9337f, -0.3512f, 0.0137f, 0.0677f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_sprint_left_framedata13[] = {
+static s64FrameData anim_nick_sprint_left_framedata13[] = {
     {{0.3433f, -8.8551f, 74.0300f}, {0.9931f, 0.1126f, 0.0045f, -0.0323f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.6717f, -8.0218f, 67.8903f}, {0.7909f, 0.3059f, 0.4675f, -0.2498f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.3317f, -1.8242f, 68.0162f}, {0.6828f, 0.3257f, -0.5968f, -0.2674f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -11285,7 +11246,7 @@ static FrameData anim_nick_sprint_left_framedata13[] = {
     {{-5.1428f, -10.4266f, 23.3140f}, {0.9901f, 0.0959f, -0.0674f, -0.0772f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.7044f, 1.8570f, 38.3598f}, {0.9485f, -0.3159f, -0.0060f, 0.0217f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_sprint_left_framedata14[] = {
+static s64FrameData anim_nick_sprint_left_framedata14[] = {
     {{0.6980f, -9.0812f, 73.7389f}, {0.9940f, 0.1003f, 0.0214f, -0.0387f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.9262f, -7.6587f, 67.7214f}, {0.7633f, 0.3633f, 0.5316f, -0.0521f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.3006f, -2.5768f, 67.3864f}, {0.7490f, 0.0666f, -0.6579f, -0.0416f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -11323,7 +11284,7 @@ static FrameData anim_nick_sprint_left_framedata14[] = {
     {{-5.6935f, -6.9021f, 21.1350f}, {0.9553f, 0.2822f, -0.0570f, -0.0674f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.5518f, 2.2677f, 38.2660f}, {0.9748f, -0.2227f, 0.0079f, 0.0107f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_sprint_left_framedata16[] = {
+static s64FrameData anim_nick_sprint_left_framedata16[] = {
     {{0.7640f, -10.4710f, 73.3940f}, {0.9942f, 0.1018f, 0.0285f, -0.0209f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.8695f, -7.5197f, 67.7650f}, {0.7020f, 0.5378f, 0.4560f, 0.1005f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.8794f, -5.3981f, 66.9273f}, {0.7493f, -0.1234f, -0.6282f, 0.1694f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -11361,7 +11322,7 @@ static FrameData anim_nick_sprint_left_framedata16[] = {
     {{-6.6062f, -1.3643f, 18.7485f}, {0.8921f, 0.4244f, -0.0281f, -0.1525f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.4496f, 1.3638f, 37.9525f}, {0.9980f, -0.0501f, 0.0285f, -0.0272f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_sprint_left_keyframes[] = {
+static s64KeyFrame anim_nick_sprint_left_keyframes[] = {
     {0, anim_nick_sprint_left_framedata0},
     {2, anim_nick_sprint_left_framedata2},
     {4, anim_nick_sprint_left_framedata4},
@@ -11374,7 +11335,7 @@ static KeyFrame anim_nick_sprint_left_keyframes[] = {
     {16, anim_nick_sprint_left_framedata16},
 };
 
-static FrameData anim_nick_sprint_right_framedata0[] = {
+static s64FrameData anim_nick_sprint_right_framedata0[] = {
     {{-0.7457f, -10.4670f, 73.4093f}, {0.9942f, 0.1018f, -0.0285f, 0.0209f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.8578f, -5.3387f, 67.0472f}, {0.7502f, -0.1280f, 0.6265f, -0.1684f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.8949f, -7.5813f, 67.6811f}, {0.7014f, 0.5408f, -0.4531f, -0.1010f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -11412,7 +11373,7 @@ static FrameData anim_nick_sprint_right_framedata0[] = {
     {{-4.9061f, -14.0999f, 23.3398f}, {0.6147f, 0.7884f, 0.0208f, 0.0117f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.3726f, -0.5105f, 37.1512f}, {0.9327f, -0.3589f, -0.0357f, 0.0099f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_sprint_right_framedata2[] = {
+static s64FrameData anim_nick_sprint_right_framedata2[] = {
     {{-2.5145f, -11.8805f, 72.9690f}, {0.9913f, 0.1311f, -0.0095f, -0.0059f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.5571f, -11.1185f, 66.9922f}, {0.7493f, -0.1218f, 0.5560f, -0.3385f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.8975f, -5.4183f, 68.0245f}, {0.6319f, 0.5731f, -0.3954f, -0.3404f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -11450,7 +11411,7 @@ static FrameData anim_nick_sprint_right_framedata2[] = {
     {{-4.1978f, -20.6721f, 33.6444f}, {0.9734f, 0.2155f, 0.0651f, 0.0415f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.4503f, -1.6833f, 37.0982f}, {0.7688f, -0.6242f, 0.0409f, 0.1330f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_sprint_right_framedata4[] = {
+static s64FrameData anim_nick_sprint_right_framedata4[] = {
     {{-1.0862f, -9.5097f, 74.1989f}, {0.9920f, 0.1190f, 0.0179f, -0.0379f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.8176f, -9.6437f, 67.1354f}, {0.7726f, 0.1675f, 0.5291f, -0.3085f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.3938f, -3.6065f, 68.8468f}, {0.6571f, 0.3274f, -0.5197f, -0.4370f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -11488,7 +11449,7 @@ static FrameData anim_nick_sprint_right_framedata4[] = {
     {{-5.1115f, -15.1369f, 27.0215f}, {0.9865f, -0.1279f, -0.0039f, 0.1026f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.0615f, 0.7575f, 38.1590f}, {0.8950f, -0.4432f, 0.0012f, 0.0508f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_sprint_right_framedata6[] = {
+static s64FrameData anim_nick_sprint_right_framedata6[] = {
     {{-0.4176f, -5.7882f, 75.4330f}, {0.9972f, 0.0644f, 0.0313f, -0.0197f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.5134f, -4.7919f, 68.0000f}, {0.7432f, 0.4668f, 0.4747f, -0.0657f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.6778f, -1.1610f, 67.8652f}, {0.7356f, 0.1609f, -0.6139f, -0.2370f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -11526,7 +11487,7 @@ static FrameData anim_nick_sprint_right_framedata6[] = {
     {{-6.5873f, -7.8591f, 23.3831f}, {0.9854f, 0.1280f, -0.0635f, -0.0925f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9471f, 3.4879f, 39.1442f}, {0.9533f, -0.2869f, -0.0139f, -0.0937f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_sprint_right_framedata8[] = {
+static s64FrameData anim_nick_sprint_right_framedata8[] = {
     {{-1.0555f, -5.4402f, 74.8004f}, {0.9965f, 0.0812f, 0.0078f, 0.0194f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.9183f, -1.4714f, 68.9793f}, {0.6655f, 0.6141f, 0.3066f, 0.2932f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.9191f, -4.4206f, 67.6663f}, {0.7608f, -0.1445f, -0.6098f, 0.1683f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -11564,7 +11525,7 @@ static FrameData anim_nick_sprint_right_framedata8[] = {
     {{-8.0909f, 5.7407f, 19.4065f}, {0.9135f, 0.3686f, -0.0446f, -0.1660f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9353f, 3.9192f, 38.6318f}, {0.9707f, 0.0540f, 0.0611f, -0.2262f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_sprint_right_framedata10[] = {
+static s64FrameData anim_nick_sprint_right_framedata10[] = {
     {{-0.4968f, -9.2740f, 73.8499f}, {0.9930f, 0.1129f, -0.0174f, 0.0295f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.7387f, -2.4678f, 69.0778f}, {0.5240f, 0.6059f, 0.2547f, 0.5418f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.5460f, -8.9435f, 67.9272f}, {0.7659f, -0.1977f, -0.5428f, 0.2822f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -11602,7 +11563,7 @@ static FrameData anim_nick_sprint_right_framedata10[] = {
     {{-7.6465f, 12.8405f, 21.2855f}, {0.7906f, 0.6032f, 0.0083f, -0.1053f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.3871f, 2.9379f, 37.9567f}, {0.9360f, 0.2712f, 0.0859f, -0.2071f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_sprint_right_framedata12[] = {
+static s64FrameData anim_nick_sprint_right_framedata12[] = {
     {{-0.0852f, -9.0992f, 73.9933f}, {0.9937f, 0.1080f, -0.0099f, 0.0292f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.7433f, -2.0936f, 68.4625f}, {0.5791f, 0.4787f, 0.4786f, 0.4544f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.3528f, -8.4726f, 67.8854f}, {0.8038f, 0.2810f, -0.3987f, 0.3405f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -11640,7 +11601,7 @@ static FrameData anim_nick_sprint_right_framedata12[] = {
     {{-6.3589f, 9.5881f, 19.9716f}, {0.4464f, 0.8916f, -0.0720f, -0.0250f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.3422f, 1.7562f, 37.7546f}, {0.9722f, 0.2262f, 0.0127f, -0.0591f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_sprint_right_framedata14[] = {
+static s64FrameData anim_nick_sprint_right_framedata14[] = {
     {{-0.6953f, -9.0960f, 73.7463f}, {0.9940f, 0.1003f, -0.0214f, 0.0387f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.2556f, -2.5389f, 67.4947f}, {0.7497f, 0.0620f, 0.6576f, 0.0419f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.9561f, -7.7479f, 67.6312f}, {0.7628f, 0.3671f, -0.5299f, 0.0519f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -11678,7 +11639,7 @@ static FrameData anim_nick_sprint_right_framedata14[] = {
     {{-6.0005f, -2.3832f, 18.2142f}, {0.3474f, 0.9372f, -0.0085f, -0.0317f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.3458f, 0.8709f, 37.3680f}, {0.9969f, -0.0624f, -0.0126f, -0.0454f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_sprint_right_framedata16[] = {
+static s64FrameData anim_nick_sprint_right_framedata16[] = {
     {{-0.7537f, -10.4773f, 73.4031f}, {0.9942f, 0.1018f, -0.0285f, 0.0209f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.8497f, -5.3489f, 67.0410f}, {0.7502f, -0.1280f, 0.6265f, -0.1684f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.9029f, -7.5918f, 67.6749f}, {0.7014f, 0.5408f, -0.4531f, -0.1010f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -11716,7 +11677,7 @@ static FrameData anim_nick_sprint_right_framedata16[] = {
     {{-4.9427f, -13.8988f, 23.1266f}, {0.6101f, 0.7920f, 0.0173f, 0.0131f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.3824f, -0.5212f, 37.1460f}, {0.9354f, -0.3518f, -0.0348f, 0.0101f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_sprint_right_keyframes[] = {
+static s64KeyFrame anim_nick_sprint_right_keyframes[] = {
     {0, anim_nick_sprint_right_framedata0},
     {2, anim_nick_sprint_right_framedata2},
     {4, anim_nick_sprint_right_framedata4},
@@ -11728,7 +11689,7 @@ static KeyFrame anim_nick_sprint_right_keyframes[] = {
     {16, anim_nick_sprint_right_framedata16},
 };
 
-static FrameData anim_nick_stand_idle_left_framedata0[] = {
+static s64FrameData anim_nick_stand_idle_left_framedata0[] = {
     {{-1.8952f, -8.9541f, 75.1977f}, {0.9921f, 0.1218f, -0.0310f, -0.0048f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.3005f, -9.3241f, 67.9914f}, {0.8090f, 0.1753f, 0.5596f, -0.0399f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.0666f, -2.4093f, 67.5246f}, {0.7428f, 0.0868f, -0.5365f, -0.3911f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -11766,7 +11727,7 @@ static FrameData anim_nick_stand_idle_left_framedata0[] = {
     {{-8.6987f, 5.6332f, 20.4327f}, {0.7866f, 0.2621f, 0.0085f, -0.5590f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.0023f, 3.1920f, 39.1292f}, {0.8663f, 0.0152f, 0.1282f, -0.4826f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_idle_left_framedata9[] = {
+static s64FrameData anim_nick_stand_idle_left_framedata9[] = {
     {{-1.7121f, -8.7472f, 75.3548f}, {0.9895f, 0.1383f, -0.0402f, -0.0077f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.5154f, -9.1548f, 68.3040f}, {0.8123f, 0.1703f, 0.5561f, -0.0431f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.9519f, -2.1574f, 67.9064f}, {0.7442f, 0.0822f, -0.5347f, -0.3919f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -11804,7 +11765,7 @@ static FrameData anim_nick_stand_idle_left_framedata9[] = {
     {{-8.5554f, 5.6671f, 20.4850f}, {0.7872f, 0.2595f, 0.0111f, -0.5594f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.9823f, 3.1132f, 39.1970f}, {0.8667f, 0.0194f, 0.1268f, -0.4821f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_idle_left_framedata19[] = {
+static s64FrameData anim_nick_stand_idle_left_framedata19[] = {
     {{-1.4373f, -8.4503f, 75.6277f}, {0.9902f, 0.1332f, -0.0403f, -0.0071f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.8394f, -8.9059f, 68.8489f}, {0.8172f, 0.1616f, 0.5513f, -0.0465f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.8105f, -1.8767f, 68.5456f}, {0.7463f, 0.0752f, -0.5333f, -0.3911f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -11842,7 +11803,7 @@ static FrameData anim_nick_stand_idle_left_framedata19[] = {
     {{-8.3059f, 5.7171f, 20.5785f}, {0.7881f, 0.2548f, 0.0157f, -0.5601f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.9494f, 2.9269f, 39.3084f}, {0.8663f, 0.0274f, 0.1248f, -0.4829f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_idle_left_framedata29[] = {
+static s64FrameData anim_nick_stand_idle_left_framedata29[] = {
     {{-1.3926f, -8.4432f, 75.7242f}, {0.9941f, 0.1013f, -0.0377f, -0.0067f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.8709f, -8.9328f, 68.9325f}, {0.8163f, 0.1596f, 0.5532f, -0.0464f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.7833f, -1.9261f, 68.6128f}, {0.7445f, 0.0748f, -0.5368f, -0.3898f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -11880,7 +11841,7 @@ static FrameData anim_nick_stand_idle_left_framedata29[] = {
     {{-8.1984f, 5.7204f, 20.6146f}, {0.7886f, 0.2530f, 0.0181f, -0.5602f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.9651f, 2.8031f, 39.3534f}, {0.8661f, 0.0318f, 0.1236f, -0.4833f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_idle_left_framedata39[] = {
+static s64FrameData anim_nick_stand_idle_left_framedata39[] = {
     {{-1.5820f, -8.6784f, 75.5202f}, {0.9939f, 0.1041f, -0.0355f, -0.0049f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.6493f, -9.1180f, 68.5293f}, {0.8114f, 0.1683f, 0.5579f, -0.0448f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.8859f, -2.1388f, 68.1787f}, {0.7412f, 0.0823f, -0.5399f, -0.3904f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -11918,7 +11879,7 @@ static FrameData anim_nick_stand_idle_left_framedata39[] = {
     {{-8.3775f, 5.6937f, 20.5508f}, {0.7879f, 0.2562f, 0.0145f, -0.5598f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.9821f, 2.9414f, 39.2772f}, {0.8663f, 0.0261f, 0.1253f, -0.4828f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_idle_left_framedata49[] = {
+static s64FrameData anim_nick_stand_idle_left_framedata49[] = {
     {{-1.7780f, -8.8334f, 75.3090f}, {0.9927f, 0.1157f, -0.0328f, -0.0052f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.4267f, -9.2246f, 68.1741f}, {0.8102f, 0.1730f, 0.5585f, -0.0422f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.0099f, -2.2993f, 67.7605f}, {0.7421f, 0.0859f, -0.5382f, -0.3903f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -11956,7 +11917,7 @@ static FrameData anim_nick_stand_idle_left_framedata49[] = {
     {{-8.6035f, 5.6572f, 20.4671f}, {0.7870f, 0.2604f, 0.0102f, -0.5593f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.0102f, 3.1208f, 39.1766f}, {0.8664f, 0.0187f, 0.1271f, -0.4825f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_idle_left_framedata59[] = {
+static s64FrameData anim_nick_stand_idle_left_framedata59[] = {
     {{-1.9107f, -8.9538f, 75.1961f}, {0.9921f, 0.1218f, -0.0313f, -0.0046f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.2900f, -9.3236f, 67.9979f}, {0.8092f, 0.1754f, 0.5594f, -0.0398f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.0771f, -2.4095f, 67.5161f}, {0.7426f, 0.0869f, -0.5368f, -0.3910f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -11994,7 +11955,7 @@ static FrameData anim_nick_stand_idle_left_framedata59[] = {
     {{-8.6992f, 5.6324f, 20.4324f}, {0.7866f, 0.2621f, 0.0085f, -0.5590f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.0023f, 3.1921f, 39.1290f}, {0.8663f, 0.0152f, 0.1282f, -0.4826f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_stand_idle_left_keyframes[] = {
+static s64KeyFrame anim_nick_stand_idle_left_keyframes[] = {
     {0, anim_nick_stand_idle_left_framedata0},
     {9, anim_nick_stand_idle_left_framedata9},
     {19, anim_nick_stand_idle_left_framedata19},
@@ -12004,7 +11965,7 @@ static KeyFrame anim_nick_stand_idle_left_keyframes[] = {
     {59, anim_nick_stand_idle_left_framedata59},
 };
 
-static FrameData anim_nick_stand_idle_right_framedata0[] = {
+static s64FrameData anim_nick_stand_idle_right_framedata0[] = {
     {{1.8990f, -8.9460f, 75.1978f}, {0.9921f, 0.1218f, 0.0310f, 0.0048f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.0257f, -2.3589f, 67.6412f}, {0.7432f, 0.0849f, 0.5354f, 0.3922f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.3106f, -9.3717f, 67.8787f}, {0.8080f, 0.1789f, -0.5599f, 0.0406f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -12042,7 +12003,7 @@ static FrameData anim_nick_stand_idle_right_framedata0[] = {
     {{-1.5758f, -15.4814f, 23.1113f}, {0.9206f, 0.0214f, 0.0845f, 0.3806f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.7591f, -5.0169f, 39.1717f}, {0.9206f, -0.2754f, 0.0065f, 0.2768f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_idle_right_framedata9[] = {
+static s64FrameData anim_nick_stand_idle_right_framedata9[] = {
     {{1.7159f, -8.7392f, 75.3550f}, {0.9895f, 0.1383f, 0.0402f, 0.0077f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.9079f, -2.1068f, 68.0213f}, {0.7446f, 0.0801f, 0.5336f, 0.3930f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.5267f, -9.2046f, 68.1932f}, {0.8113f, 0.1740f, -0.5564f, 0.0437f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -12080,7 +12041,7 @@ static FrameData anim_nick_stand_idle_right_framedata9[] = {
     {{-1.6497f, -15.4659f, 23.1193f}, {0.9207f, 0.0208f, 0.0831f, 0.3807f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.7989f, -5.0747f, 39.2340f}, {0.9217f, -0.2730f, 0.0063f, 0.2753f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_idle_right_framedata19[] = {
+static s64FrameData anim_nick_stand_idle_right_framedata19[] = {
     {{1.4410f, -8.4426f, 75.6281f}, {0.9902f, 0.1332f, 0.0403f, 0.0071f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.7615f, -1.8257f, 68.6572f}, {0.7467f, 0.0729f, 0.5323f, 0.3921f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.8534f, -8.9593f, 68.7414f}, {0.8163f, 0.1655f, -0.5515f, 0.0470f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -12118,7 +12079,7 @@ static FrameData anim_nick_stand_idle_right_framedata19[] = {
     {{-1.7051f, -15.4992f, 23.1211f}, {0.9209f, 0.0217f, 0.0816f, 0.3806f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.8317f, -5.2615f, 39.3381f}, {0.9231f, -0.2685f, 0.0055f, 0.2752f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_idle_right_framedata29[] = {
+static s64FrameData anim_nick_stand_idle_right_framedata29[] = {
     {{1.3963f, -8.4356f, 75.7247f}, {0.9941f, 0.1013f, 0.0377f, 0.0067f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.7341f, -1.8746f, 68.7243f}, {0.7449f, 0.0724f, 0.5359f, 0.3907f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.8850f, -8.9868f, 68.8256f}, {0.8154f, 0.1635f, -0.5533f, 0.0469f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -12156,7 +12117,7 @@ static FrameData anim_nick_stand_idle_right_framedata29[] = {
     {{-1.7174f, -15.5623f, 23.1217f}, {0.9209f, 0.0232f, 0.0806f, 0.3806f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.8142f, -5.3873f, 39.3838f}, {0.9238f, -0.2664f, 0.0056f, 0.2749f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_idle_right_framedata39[] = {
+static s64FrameData anim_nick_stand_idle_right_framedata39[] = {
     {{1.5857f, -8.6706f, 75.5206f}, {0.9939f, 0.1041f, 0.0355f, 0.0049f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.8400f, -2.0877f, 68.2924f}, {0.7416f, 0.0801f, 0.5389f, 0.3915f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.6614f, -9.1693f, 68.4198f}, {0.8104f, 0.1721f, -0.5582f, 0.0454f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -12194,7 +12155,7 @@ static FrameData anim_nick_stand_idle_right_framedata39[] = {
     {{-1.6675f, -15.5307f, 23.1169f}, {0.9208f, 0.0225f, 0.0821f, 0.3806f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.7959f, -5.2501f, 39.3064f}, {0.9228f, -0.2697f, 0.0058f, 0.2752f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_idle_right_framedata49[] = {
+static s64FrameData anim_nick_stand_idle_right_framedata49[] = {
     {{1.7818f, -8.8253f, 75.3093f}, {0.9927f, 0.1157f, 0.0328f, 0.0052f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.9672f, -2.2486f, 67.8761f}, {0.7425f, 0.0839f, 0.5371f, 0.3914f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.4374f, -9.2736f, 68.0626f}, {0.8091f, 0.1767f, -0.5588f, 0.0428f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -12232,7 +12193,7 @@ static FrameData anim_nick_stand_idle_right_framedata49[] = {
     {{-1.5996f, -15.4842f, 23.1108f}, {0.9207f, 0.0216f, 0.0841f, 0.3806f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.7587f, -5.0803f, 39.2153f}, {0.9213f, -0.2735f, 0.0064f, 0.2762f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_idle_right_framedata59[] = {
+static s64FrameData anim_nick_stand_idle_right_framedata59[] = {
     {{1.9145f, -8.9456f, 75.1962f}, {0.9921f, 0.1218f, 0.0313f, 0.0047f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.0362f, -2.3590f, 67.6327f}, {0.7430f, 0.0850f, 0.5357f, 0.3921f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.3001f, -9.3712f, 67.8853f}, {0.8082f, 0.1790f, -0.5597f, 0.0405f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -12270,7 +12231,7 @@ static FrameData anim_nick_stand_idle_right_framedata59[] = {
     {{-1.5747f, -15.4811f, 23.1113f}, {0.9206f, 0.0214f, 0.0846f, 0.3807f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.7588f, -5.0171f, 39.1719f}, {0.9206f, -0.2754f, 0.0065f, 0.2768f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_stand_idle_right_keyframes[] = {
+static s64KeyFrame anim_nick_stand_idle_right_keyframes[] = {
     {0, anim_nick_stand_idle_right_framedata0},
     {9, anim_nick_stand_idle_right_framedata9},
     {19, anim_nick_stand_idle_right_framedata19},
@@ -12280,7 +12241,7 @@ static KeyFrame anim_nick_stand_idle_right_keyframes[] = {
     {59, anim_nick_stand_idle_right_framedata59},
 };
 
-static FrameData anim_nick_stand_to_crouch_left_framedata0[] = {
+static s64FrameData anim_nick_stand_to_crouch_left_framedata0[] = {
     {{-1.9566f, -9.3606f, 75.1971f}, {0.9921f, 0.1218f, -0.0311f, -0.0044f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.2405f, -9.7244f, 67.9924f}, {0.8090f, 0.1752f, 0.5596f, -0.0397f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.1302f, -2.8211f, 67.5230f}, {0.7429f, 0.0869f, -0.5365f, -0.3908f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -12318,7 +12279,7 @@ static FrameData anim_nick_stand_to_crouch_left_framedata0[] = {
     {{-8.7565f, 5.2253f, 20.4311f}, {0.7866f, 0.2620f, 0.0084f, -0.5590f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.0636f, 2.7878f, 39.1290f}, {0.8663f, 0.0152f, 0.1281f, -0.4826f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_crouch_left_framedata4[] = {
+static s64FrameData anim_nick_stand_to_crouch_left_framedata4[] = {
     {{-2.7884f, -9.7697f, 74.5585f}, {0.9925f, 0.1073f, -0.0482f, -0.0317f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.7693f, -11.0155f, 68.1946f}, {0.8071f, 0.2416f, 0.5387f, -0.0007f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.2185f, -2.3113f, 67.3253f}, {0.7712f, 0.1015f, -0.5237f, -0.3475f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -12356,7 +12317,7 @@ static FrameData anim_nick_stand_to_crouch_left_framedata4[] = {
     {{-8.8197f, 6.2796f, 21.5365f}, {0.8094f, 0.2161f, -0.0377f, -0.5447f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.6510f, 5.7337f, 39.9546f}, {0.8314f, -0.0569f, 0.1326f, -0.5366f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_crouch_left_framedata7[] = {
+static s64FrameData anim_nick_stand_to_crouch_left_framedata7[] = {
     {{-3.4530f, -13.2859f, 67.6531f}, {0.9880f, 0.1244f, -0.0639f, -0.0647f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.3847f, -12.8381f, 62.3542f}, {0.7991f, 0.3170f, 0.5092f, -0.0395f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.6248f, -6.1004f, 61.7155f}, {0.7595f, 0.2293f, -0.5152f, -0.3242f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -12394,7 +12355,7 @@ static FrameData anim_nick_stand_to_crouch_left_framedata7[] = {
     {{-14.1425f, 4.2058f, 21.9273f}, {0.8658f, 0.3059f, -0.2020f, -0.3405f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.0287f, 8.1762f, 37.3640f}, {0.8203f, -0.2286f, 0.1957f, -0.4864f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_crouch_left_framedata10[] = {
+static s64FrameData anim_nick_stand_to_crouch_left_framedata10[] = {
     {{-2.1487f, -20.6956f, 53.9415f}, {0.9815f, 0.1815f, -0.0249f, -0.0553f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.3600f, -17.3181f, 49.3821f}, {0.7399f, 0.5486f, 0.3889f, -0.0186f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.4406f, -13.8946f, 49.6770f}, {0.7601f, 0.4587f, -0.3835f, -0.2546f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -12432,7 +12393,7 @@ static FrameData anim_nick_stand_to_crouch_left_framedata10[] = {
     {{-14.6420f, 0.2707f, 17.6089f}, {0.9090f, 0.3133f, -0.2712f, -0.0443f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.3927f, 7.9380f, 32.2287f}, {0.8561f, -0.2910f, 0.1601f, -0.3960f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_crouch_left_framedata13[] = {
+static s64FrameData anim_nick_stand_to_crouch_left_framedata13[] = {
     {{1.4458f, -24.4780f, 42.0478f}, {0.9683f, 0.2494f, 0.0048f, -0.0119f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.0162f, -17.5619f, 39.3631f}, {0.7290f, 0.5959f, 0.3264f, -0.0831f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.4114f, -17.9969f, 37.2815f}, {0.7432f, 0.5759f, -0.3369f, -0.0507f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -12470,7 +12431,7 @@ static FrameData anim_nick_stand_to_crouch_left_framedata13[] = {
     {{-12.7437f, -6.5091f, 14.6623f}, {0.8604f, 0.4624f, -0.2052f, -0.0620f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.2099f, 7.1700f, 26.2252f}, {0.8667f, -0.4205f, 0.0943f, -0.2513f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_crouch_left_framedata15[] = {
+static s64FrameData anim_nick_stand_to_crouch_left_framedata15[] = {
     {{3.6792f, -25.6804f, 36.4313f}, {0.9571f, 0.2884f, 0.0284f, 0.0075f}, {1.0000f, 1.0000f, 1.0000f}},
     {{14.4834f, -17.2748f, 35.1004f}, {0.7375f, 0.5660f, 0.3555f, -0.0968f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.4514f, -18.9755f, 31.9888f}, {0.7452f, 0.4905f, -0.4433f, 0.0868f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -12508,7 +12469,7 @@ static FrameData anim_nick_stand_to_crouch_left_framedata15[] = {
     {{-9.6865f, -9.7641f, 13.2668f}, {0.8378f, 0.5304f, -0.1260f, -0.0318f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.3423f, 6.7355f, 22.5657f}, {0.8612f, -0.4892f, 0.0554f, -0.1262f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_crouch_left_framedata16[] = {
+static s64FrameData anim_nick_stand_to_crouch_left_framedata16[] = {
     {{4.1183f, -25.8459f, 35.6792f}, {0.9600f, 0.2782f, 0.0305f, 0.0090f}, {1.0000f, 1.0000f, 1.0000f}},
     {{14.6560f, -16.9792f, 34.5911f}, {0.7481f, 0.5243f, 0.3962f, -0.0918f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.0096f, -19.0514f, 31.0613f}, {0.7494f, 0.4590f, -0.4663f, 0.1017f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -12546,7 +12507,7 @@ static FrameData anim_nick_stand_to_crouch_left_framedata16[] = {
     {{-8.3326f, -10.6860f, 12.6625f}, {0.8275f, 0.5531f, -0.0959f, -0.0122f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.3707f, 6.5714f, 21.0879f}, {0.8538f, -0.5127f, 0.0388f, -0.0821f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_crouch_left_framedata19[] = {
+static s64FrameData anim_nick_stand_to_crouch_left_framedata19[] = {
     {{3.4993f, -25.8175f, 36.3142f}, {0.9724f, 0.2328f, 0.0132f, -0.0040f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.8055f, -16.3766f, 35.1873f}, {0.7681f, 0.4287f, 0.4737f, -0.0429f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.1173f, -18.6654f, 30.5915f}, {0.7639f, 0.3963f, -0.4934f, 0.1264f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -12584,7 +12545,7 @@ static FrameData anim_nick_stand_to_crouch_left_framedata19[] = {
     {{-7.3402f, -11.3113f, 10.5030f}, {0.7954f, 0.6008f, -0.0796f, -0.0079f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.4255f, 6.1251f, 18.8628f}, {0.8544f, -0.5154f, 0.0185f, -0.0634f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_stand_to_crouch_left_keyframes[] = {
+static s64KeyFrame anim_nick_stand_to_crouch_left_keyframes[] = {
     {0, anim_nick_stand_to_crouch_left_framedata0},
     {4, anim_nick_stand_to_crouch_left_framedata4},
     {7, anim_nick_stand_to_crouch_left_framedata7},
@@ -12595,7 +12556,7 @@ static KeyFrame anim_nick_stand_to_crouch_left_keyframes[] = {
     {19, anim_nick_stand_to_crouch_left_framedata19},
 };
 
-static FrameData anim_nick_stand_to_crouch_right_framedata0[] = {
+static s64FrameData anim_nick_stand_to_crouch_right_framedata0[] = {
     {{1.9605f, -9.3524f, 75.1972f}, {0.9921f, 0.1218f, 0.0311f, 0.0044f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.0894f, -2.7707f, 67.6396f}, {0.7433f, 0.0850f, 0.5354f, 0.3920f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.2506f, -9.7719f, 67.8797f}, {0.8080f, 0.1788f, -0.5599f, 0.0404f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -12633,7 +12594,7 @@ static FrameData anim_nick_stand_to_crouch_right_framedata0[] = {
     {{-1.5162f, -15.8859f, 23.1114f}, {0.9206f, 0.0214f, 0.0846f, 0.3806f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.6978f, -5.4212f, 39.1721f}, {0.9206f, -0.2754f, 0.0066f, 0.2768f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_crouch_right_framedata4[] = {
+static s64FrameData anim_nick_stand_to_crouch_right_framedata4[] = {
     {{2.7911f, -9.7641f, 74.5547f}, {0.9925f, 0.1073f, 0.0482f, 0.0317f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.1777f, -2.2843f, 67.4445f}, {0.7718f, 0.0996f, 0.5222f, 0.3488f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-9.7887f, -11.0528f, 68.0749f}, {0.8057f, 0.2456f, -0.5390f, 0.0011f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -12671,7 +12632,7 @@ static FrameData anim_nick_stand_to_crouch_right_framedata4[] = {
     {{-3.2093f, -12.9763f, 23.1143f}, {0.9394f, -0.0872f, 0.0689f, 0.3244f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.7718f, -2.8115f, 39.4754f}, {0.9244f, -0.2616f, 0.0199f, 0.2769f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_crouch_right_framedata7[] = {
+static s64FrameData anim_nick_stand_to_crouch_right_framedata7[] = {
     {{3.4575f, -13.2773f, 67.6448f}, {0.9880f, 0.1244f, 0.0639f, 0.0647f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.5921f, -6.1058f, 61.8347f}, {0.7609f, 0.2273f, 0.5133f, 0.3254f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-9.4196f, -12.8358f, 62.2261f}, {0.7972f, 0.3208f, -0.5100f, 0.0397f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -12709,7 +12670,7 @@ static FrameData anim_nick_stand_to_crouch_right_framedata7[] = {
     {{-3.4707f, -12.4645f, 23.0235f}, {0.9493f, -0.1228f, 0.0722f, 0.2803f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.6691f, 1.1474f, 36.5166f}, {0.9080f, -0.3719f, -0.0026f, 0.1926f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_crouch_right_framedata10[] = {
+static s64FrameData anim_nick_stand_to_crouch_right_framedata10[] = {
     {{2.1535f, -20.6892f, 53.9344f}, {0.9815f, 0.1815f, 0.0249f, 0.0554f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.4105f, -13.9501f, 49.7854f}, {0.7616f, 0.4577f, 0.3812f, 0.2552f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.3990f, -17.2632f, 49.2639f}, {0.7381f, 0.5506f, -0.3895f, 0.0188f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -12747,7 +12708,7 @@ static FrameData anim_nick_stand_to_crouch_right_framedata10[] = {
     {{-4.5958f, -14.2109f, 23.5704f}, {0.9721f, -0.0920f, 0.0306f, 0.2137f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.7165f, 3.4609f, 31.3673f}, {0.8428f, -0.5296f, 0.0009f, 0.0960f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_crouch_right_framedata13[] = {
+static s64FrameData anim_nick_stand_to_crouch_right_framedata13[] = {
     {{-1.4347f, -24.4727f, 42.0386f}, {0.9683f, 0.2494f, -0.0048f, 0.0119f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.3969f, -18.0694f, 37.3850f}, {0.7436f, 0.5766f, 0.3346f, 0.0511f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.0392f, -17.4782f, 39.2579f}, {0.7280f, 0.5968f, -0.3270f, 0.0832f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -12785,7 +12746,7 @@ static FrameData anim_nick_stand_to_crouch_right_framedata13[] = {
     {{-10.9879f, -12.7312f, 20.5180f}, {0.9168f, 0.3530f, 0.0417f, -0.1819f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.6640f, 5.4090f, 25.9782f}, {0.8113f, -0.5730f, 0.1065f, -0.0471f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_crouch_right_framedata15[] = {
+static s64FrameData anim_nick_stand_to_crouch_right_framedata15[] = {
     {{-3.6596f, -25.6829f, 36.4340f}, {0.9571f, 0.2884f, -0.0284f, -0.0075f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.4515f, -19.0592f, 32.1036f}, {0.7461f, 0.4915f, 0.4408f, -0.0865f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-14.4932f, -17.1935f, 35.0111f}, {0.7365f, 0.5668f, -0.3562f, 0.0969f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -12823,7 +12784,7 @@ static FrameData anim_nick_stand_to_crouch_right_framedata15[] = {
     {{-16.4926f, -7.8903f, 14.1654f}, {0.7996f, 0.5165f, 0.0575f, -0.3009f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.6490f, 6.4110f, 22.8918f}, {0.8552f, -0.4448f, 0.2462f, -0.1009f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_crouch_right_framedata16[] = {
+static s64FrameData anim_nick_stand_to_crouch_right_framedata16[] = {
     {{-4.0979f, -25.8519f, 35.6804f}, {0.9600f, 0.2782f, -0.0305f, -0.0090f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.0157f, -19.1343f, 31.1787f}, {0.7504f, 0.4599f, 0.4638f, -0.1012f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-14.6643f, -16.9058f, 34.4971f}, {0.7469f, 0.5255f, -0.3969f, 0.0920f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -12861,7 +12822,7 @@ static FrameData anim_nick_stand_to_crouch_right_framedata16[] = {
     {{-18.3792f, -5.7055f, 12.5841f}, {0.7625f, 0.5476f, 0.0601f, -0.3393f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.6105f, 6.7789f, 21.7063f}, {0.8586f, -0.3982f, 0.3017f, -0.1150f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_crouch_right_framedata19[] = {
+static s64FrameData anim_nick_stand_to_crouch_right_framedata19[] = {
     {{-3.4800f, -25.8210f, 36.3057f}, {0.9724f, 0.2328f, -0.0132f, 0.0041f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.1388f, -18.7306f, 30.7089f}, {0.7651f, 0.3972f, 0.4910f, -0.1258f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.8164f, -16.3159f, 35.0749f}, {0.7665f, 0.4307f, -0.4744f, 0.0432f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -12899,7 +12860,7 @@ static FrameData anim_nick_stand_to_crouch_right_framedata19[] = {
     {{-19.3003f, -5.6844f, 12.7981f}, {0.7436f, 0.5391f, 0.0650f, -0.3901f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.4875f, 7.0449f, 19.9658f}, {0.8283f, -0.4294f, 0.3387f, -0.1214f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_stand_to_crouch_right_keyframes[] = {
+static s64KeyFrame anim_nick_stand_to_crouch_right_keyframes[] = {
     {0, anim_nick_stand_to_crouch_right_framedata0},
     {4, anim_nick_stand_to_crouch_right_framedata4},
     {7, anim_nick_stand_to_crouch_right_framedata7},
@@ -12910,7 +12871,7 @@ static KeyFrame anim_nick_stand_to_crouch_right_keyframes[] = {
     {19, anim_nick_stand_to_crouch_right_framedata19},
 };
 
-static FrameData anim_nick_stand_to_jump_left_framedata0[] = {
+static s64FrameData anim_nick_stand_to_jump_left_framedata0[] = {
     {{-1.9014f, -8.9570f, 75.1962f}, {0.9920f, 0.1219f, -0.0311f, -0.0047f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.2960f, -9.3244f, 67.9931f}, {0.8091f, 0.1753f, 0.5596f, -0.0398f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.0722f, -2.4137f, 67.5208f}, {0.7428f, 0.0868f, -0.5366f, -0.3909f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -12948,7 +12909,7 @@ static FrameData anim_nick_stand_to_jump_left_framedata0[] = {
     {{-8.6966f, 5.6316f, 20.4318f}, {0.7866f, 0.2620f, 0.0083f, -0.5590f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.0022f, 3.1917f, 39.1290f}, {0.8662f, 0.0152f, 0.1282f, -0.4827f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_jump_left_framedata5[] = {
+static s64FrameData anim_nick_stand_to_jump_left_framedata5[] = {
     {{-9.4890f, -15.7626f, 63.9983f}, {0.9886f, 0.1341f, -0.0589f, -0.0362f}, {1.0000f, 1.0000f, 1.0000f}},
     {{3.5230f, -17.5982f, 58.3942f}, {0.8265f, 0.3765f, 0.3970f, 0.1326f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-14.8108f, -3.8950f, 58.0523f}, {0.6128f, 0.1923f, -0.4880f, -0.5911f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -12986,7 +12947,7 @@ static FrameData anim_nick_stand_to_jump_left_framedata5[] = {
     {{-12.9776f, 3.5394f, 18.4921f}, {0.7674f, 0.3398f, -0.0494f, -0.5415f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-0.4953f, 4.1905f, 33.3696f}, {0.8346f, -0.1570f, 0.2858f, -0.4441f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_jump_left_framedata8[] = {
+static s64FrameData anim_nick_stand_to_jump_left_framedata8[] = {
     {{-14.9737f, -16.6857f, 49.2345f}, {0.9739f, 0.1448f, -0.0911f, -0.1490f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-1.4836f, -18.9101f, 44.8820f}, {0.7813f, 0.5097f, 0.3486f, 0.0912f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-15.9850f, -2.5740f, 45.5163f}, {0.4242f, 0.1146f, -0.5710f, -0.6934f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -13024,7 +12985,7 @@ static FrameData anim_nick_stand_to_jump_left_framedata8[] = {
     {{-16.2516f, 1.4804f, 15.2479f}, {0.7175f, 0.4499f, -0.0750f, -0.5264f}, {1.0000f, 1.0000f, 1.0000f}},
     {{0.9441f, 4.6141f, 23.7369f}, {0.7768f, -0.2865f, 0.4287f, -0.3614f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_jump_left_framedata9[] = {
+static s64FrameData anim_nick_stand_to_jump_left_framedata9[] = {
     {{-14.8155f, -15.7377f, 48.1255f}, {0.9708f, 0.1364f, -0.0897f, -0.1756f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-1.4067f, -18.3409f, 43.5741f}, {0.7743f, 0.4957f, 0.3896f, -0.0537f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-15.7063f, -1.7574f, 43.9444f}, {0.4682f, 0.0657f, -0.5982f, -0.6470f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -13062,7 +13023,7 @@ static FrameData anim_nick_stand_to_jump_left_framedata9[] = {
     {{-16.7834f, 1.1749f, 14.4908f}, {0.6923f, 0.4789f, -0.0721f, -0.5350f}, {1.0000f, 1.0000f, 1.0000f}},
     {{0.8517f, 4.6029f, 21.8953f}, {0.7686f, -0.2977f, 0.4528f, -0.3399f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_jump_left_framedata12[] = {
+static s64FrameData anim_nick_stand_to_jump_left_framedata12[] = {
     {{-8.6524f, -9.8081f, 57.7876f}, {0.9856f, 0.0522f, -0.0639f, -0.1478f}, {1.0000f, 1.0000f, 1.0000f}},
     {{3.7013f, -13.9059f, 51.6795f}, {0.8262f, 0.2073f, 0.3617f, -0.3788f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.9853f, 1.8052f, 50.7256f}, {0.7968f, -0.0696f, -0.4626f, -0.3826f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -13100,7 +13061,7 @@ static FrameData anim_nick_stand_to_jump_left_framedata12[] = {
     {{-16.9666f, 2.4912f, 13.4499f}, {0.6668f, 0.5053f, -0.0965f, -0.5391f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-1.2443f, 4.7842f, 24.6359f}, {0.8162f, -0.2277f, 0.3831f, -0.3677f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_jump_left_framedata16[] = {
+static s64FrameData anim_nick_stand_to_jump_left_framedata16[] = {
     {{-4.8061f, -1.5766f, 76.3850f}, {0.9714f, 0.2106f, -0.0500f, -0.0980f}, {1.0000f, 1.0000f, 1.0000f}},
     {{7.5293f, -4.1937f, 73.2539f}, {0.8538f, -0.1558f, -0.2641f, -0.4207f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.4484f, 6.8744f, 71.6271f}, {0.9774f, -0.0592f, 0.2017f, -0.0220f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -13138,7 +13099,7 @@ static FrameData anim_nick_stand_to_jump_left_framedata16[] = {
     {{-6.8890f, 8.5370f, 20.1853f}, {0.8570f, 0.1624f, 0.0243f, -0.4885f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.8418f, 3.9867f, 39.0522f}, {0.8647f, 0.1339f, 0.0265f, -0.4834f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_jump_left_framedata19[] = {
+static s64FrameData anim_nick_stand_to_jump_left_framedata19[] = {
     {{-10.7315f, -7.8282f, 73.6235f}, {0.9492f, 0.3048f, -0.0776f, 0.0035f}, {1.0000f, 1.0000f, 1.0000f}},
     {{2.5740f, -6.2773f, 71.9703f}, {0.9399f, -0.0258f, -0.3343f, 0.0647f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-18.4096f, 2.7716f, 69.6272f}, {0.9343f, 0.0256f, 0.1878f, -0.3019f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -13176,7 +13137,7 @@ static FrameData anim_nick_stand_to_jump_left_framedata19[] = {
     {{-18.1089f, 4.4529f, 22.2045f}, {0.8115f, 0.2125f, -0.1217f, -0.5305f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.2302f, 4.4576f, 38.3051f}, {0.8246f, -0.1318f, 0.2421f, -0.4940f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_jump_left_framedata24[] = {
+static s64FrameData anim_nick_stand_to_jump_left_framedata24[] = {
     {{-11.6739f, -10.4504f, 68.0714f}, {0.8627f, 0.4806f, -0.1146f, -0.1081f}, {1.0000f, 1.0000f, 1.0000f}},
     {{1.3803f, -10.2727f, 64.9610f}, {0.9634f, 0.2055f, -0.1227f, -0.1211f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-19.1073f, 1.5826f, 66.4944f}, {0.8509f, 0.2625f, 0.0708f, -0.4494f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -13214,7 +13175,7 @@ static FrameData anim_nick_stand_to_jump_left_framedata24[] = {
     {{-23.1574f, -5.0780f, 33.8256f}, {0.8262f, 0.2845f, -0.4069f, -0.2663f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.3467f, 5.3993f, 38.0473f}, {0.6375f, -0.5749f, 0.2023f, -0.4714f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_jump_left_framedata25[] = {
+static s64FrameData anim_nick_stand_to_jump_left_framedata25[] = {
     {{-11.1467f, -10.2848f, 68.4130f}, {0.8608f, 0.4831f, -0.1203f, -0.1053f}, {1.0000f, 1.0000f, 1.0000f}},
     {{1.7588f, -10.1234f, 64.8570f}, {0.9600f, 0.1808f, -0.1195f, -0.1770f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-18.7464f, 1.6846f, 66.8995f}, {0.8642f, 0.2501f, 0.0816f, -0.4289f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -13252,7 +13213,7 @@ static FrameData anim_nick_stand_to_jump_left_framedata25[] = {
     {{-22.3893f, -6.5876f, 34.4340f}, {0.8298f, 0.3112f, -0.3978f, -0.2373f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.5155f, 5.2763f, 38.3832f}, {0.6432f, -0.5933f, 0.1633f, -0.4557f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_stand_to_jump_left_keyframes[] = {
+static s64KeyFrame anim_nick_stand_to_jump_left_keyframes[] = {
     {0, anim_nick_stand_to_jump_left_framedata0},
     {5, anim_nick_stand_to_jump_left_framedata5},
     {8, anim_nick_stand_to_jump_left_framedata8},
@@ -13264,7 +13225,7 @@ static KeyFrame anim_nick_stand_to_jump_left_keyframes[] = {
     {25, anim_nick_stand_to_jump_left_framedata25},
 };
 
-static FrameData anim_nick_stand_to_jump_right_framedata0[] = {
+static s64FrameData anim_nick_stand_to_jump_right_framedata0[] = {
     {{1.9052f, -8.9488f, 75.1964f}, {0.9920f, 0.1219f, 0.0311f, 0.0047f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.0314f, -2.3632f, 67.6374f}, {0.7432f, 0.0849f, 0.5355f, 0.3921f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.3061f, -9.3719f, 67.8805f}, {0.8080f, 0.1789f, -0.5598f, 0.0405f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -13302,7 +13263,7 @@ static FrameData anim_nick_stand_to_jump_right_framedata0[] = {
     {{-1.5767f, -15.4813f, 23.1112f}, {0.9206f, 0.0214f, 0.0846f, 0.3806f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.7592f, -5.0172f, 39.1721f}, {0.9206f, -0.2754f, 0.0066f, 0.2768f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_jump_right_framedata5[] = {
+static s64FrameData anim_nick_stand_to_jump_right_framedata5[] = {
     {{9.4953f, -15.7453f, 63.9970f}, {0.9886f, 0.1341f, 0.0589f, 0.0362f}, {1.0000f, 1.0000f, 1.0000f}},
     {{14.7953f, -3.8955f, 58.1734f}, {0.6136f, 0.1904f, 0.4869f, 0.5918f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.5394f, -17.5950f, 58.2715f}, {0.8250f, 0.3796f, -0.3971f, -0.1325f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -13340,7 +13301,7 @@ static FrameData anim_nick_stand_to_jump_right_framedata5[] = {
     {{1.0927f, -19.5510f, 22.6145f}, {0.9150f, 0.1018f, 0.0937f, 0.3790f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.0559f, -5.1153f, 32.7528f}, {0.8257f, -0.4664f, -0.0663f, 0.3102f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_jump_right_framedata8[] = {
+static s64FrameData anim_nick_stand_to_jump_right_framedata8[] = {
     {{14.9809f, -16.6622f, 49.2300f}, {0.9739f, 0.1448f, 0.0911f, 0.1490f}, {1.0000f, 1.0000f, 1.0000f}},
     {{16.0043f, -2.5925f, 45.6270f}, {0.4257f, 0.1124f, 0.5690f, 0.6946f}, {1.0000f, 1.0000f, 1.0000f}},
     {{1.4557f, -18.8701f, 44.7597f}, {0.7794f, 0.5126f, -0.3486f, -0.0913f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -13378,7 +13339,7 @@ static FrameData anim_nick_stand_to_jump_right_framedata8[] = {
     {{3.4012f, -20.5680f, 22.1046f}, {0.9070f, 0.1385f, 0.1267f, 0.3770f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.1288f, -4.9856f, 23.4562f}, {0.6803f, -0.6529f, -0.1364f, 0.3037f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_jump_right_framedata9[] = {
+static s64FrameData anim_nick_stand_to_jump_right_framedata9[] = {
     {{14.8230f, -15.7128f, 48.1206f}, {0.9708f, 0.1364f, 0.0897f, 0.1756f}, {1.0000f, 1.0000f, 1.0000f}},
     {{15.7260f, -1.7709f, 44.0571f}, {0.4696f, 0.0635f, 0.5960f, 0.6483f}, {1.0000f, 1.0000f, 1.0000f}},
     {{1.3801f, -18.3024f, 43.4496f}, {0.7724f, 0.4987f, -0.3896f, 0.0536f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -13416,7 +13377,7 @@ static FrameData anim_nick_stand_to_jump_right_framedata9[] = {
     {{3.5852f, -20.5130f, 22.0950f}, {0.9053f, 0.1452f, 0.1329f, 0.3764f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.0746f, -4.9703f, 21.8692f}, {0.6521f, -0.6826f, -0.1399f, 0.2989f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_jump_right_framedata12[] = {
+static s64FrameData anim_nick_stand_to_jump_right_framedata12[] = {
     {{8.6600f, -9.7828f, 57.7838f}, {0.9856f, 0.0522f, 0.0639f, 0.1478f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.9692f, 1.8237f, 50.8452f}, {0.7975f, -0.0710f, 0.4602f, 0.3836f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.7077f, -13.9105f, 51.5531f}, {0.8250f, 0.2100f, -0.3627f, 0.3791f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -13454,7 +13415,7 @@ static FrameData anim_nick_stand_to_jump_right_framedata12[] = {
     {{3.2013f, -20.0872f, 21.8368f}, {0.8978f, 0.1682f, 0.1468f, 0.3797f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.0544f, -3.8715f, 24.9109f}, {0.7068f, -0.6281f, -0.0825f, 0.3149f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_jump_right_framedata16[] = {
+static s64FrameData anim_nick_stand_to_jump_right_framedata16[] = {
     {{4.8071f, -1.5756f, 76.3145f}, {0.9714f, 0.2106f, 0.0500f, 0.0980f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.3629f, 6.9047f, 71.6393f}, {0.9770f, -0.0591f, -0.2034f, 0.0225f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.5591f, -4.2835f, 73.1187f}, {0.8542f, -0.1543f, 0.2626f, 0.4214f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -13492,7 +13453,7 @@ static FrameData anim_nick_stand_to_jump_right_framedata16[] = {
     {{-0.4650f, -13.4583f, 22.9906f}, {0.9112f, -0.0701f, 0.1277f, 0.3853f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-1.3321f, -3.7237f, 39.7853f}, {0.9382f, -0.2372f, 0.0506f, 0.2468f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_jump_right_framedata19[] = {
+static s64FrameData anim_nick_stand_to_jump_right_framedata19[] = {
     {{10.7369f, -7.8226f, 73.5316f}, {0.9492f, 0.3048f, 0.0776f, -0.0035f}, {1.0000f, 1.0000f, 1.0000f}},
     {{18.3535f, 2.7850f, 69.6346f}, {0.9338f, 0.0260f, -0.1897f, 0.3023f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.6135f, -6.3245f, 71.8022f}, {0.9401f, -0.0250f, 0.3338f, -0.0641f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -13530,7 +13491,7 @@ static FrameData anim_nick_stand_to_jump_right_framedata19[] = {
     {{1.9232f, -15.5378f, 26.0951f}, {0.9080f, 0.0776f, 0.0746f, 0.4048f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.0110f, -2.9113f, 40.3314f}, {0.8962f, -0.3471f, 0.0068f, 0.2764f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_jump_right_framedata24[] = {
+static s64FrameData anim_nick_stand_to_jump_right_framedata24[] = {
     {{11.6817f, -10.4440f, 67.8447f}, {0.8627f, 0.4806f, 0.1146f, 0.1081f}, {1.0000f, 1.0000f, 1.0000f}},
     {{19.0765f, 1.5523f, 66.3689f}, {0.8510f, 0.2623f, -0.0719f, 0.4492f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-1.4161f, -10.2781f, 64.6204f}, {0.9635f, 0.2056f, 0.1213f, 0.1209f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -13568,7 +13529,7 @@ static FrameData anim_nick_stand_to_jump_right_framedata24[] = {
     {{3.1998f, -19.7693f, 40.7675f}, {0.9533f, 0.2683f, 0.0846f, 0.1102f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.3246f, -1.1403f, 40.6315f}, {0.7061f, -0.6919f, -0.0623f, 0.1372f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_jump_right_framedata25[] = {
+static s64FrameData anim_nick_stand_to_jump_right_framedata25[] = {
     {{11.1547f, -10.2787f, 67.8982f}, {0.8608f, 0.4831f, 0.1204f, 0.1053f}, {1.0000f, 1.0000f, 1.0000f}},
     {{18.7140f, 1.6542f, 66.4850f}, {0.8643f, 0.2498f, -0.0827f, 0.4286f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-1.7916f, -10.1284f, 64.2259f}, {0.9603f, 0.1808f, 0.1178f, 0.1768f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -13606,7 +13567,7 @@ static FrameData anim_nick_stand_to_jump_right_framedata25[] = {
     {{2.4418f, -19.8365f, 40.7567f}, {0.9500f, 0.2840f, 0.0854f, 0.0982f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.3874f, -1.0177f, 40.4215f}, {0.7051f, -0.6965f, -0.0505f, 0.1228f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_stand_to_jump_right_keyframes[] = {
+static s64KeyFrame anim_nick_stand_to_jump_right_keyframes[] = {
     {0, anim_nick_stand_to_jump_right_framedata0},
     {5, anim_nick_stand_to_jump_right_framedata5},
     {8, anim_nick_stand_to_jump_right_framedata8},
@@ -13618,7 +13579,7 @@ static KeyFrame anim_nick_stand_to_jump_right_keyframes[] = {
     {25, anim_nick_stand_to_jump_right_framedata25},
 };
 
-static FrameData anim_nick_stand_to_roll_left_framedata0[] = {
+static s64FrameData anim_nick_stand_to_roll_left_framedata0[] = {
     {{-2.2124f, -9.5764f, 75.2365f}, {0.9921f, 0.1218f, -0.0311f, -0.0045f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.9847f, -9.9408f, 68.0318f}, {0.8090f, 0.1752f, 0.5596f, -0.0397f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.3857f, -3.0364f, 67.5624f}, {0.7428f, 0.0869f, -0.5365f, -0.3909f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -13656,7 +13617,7 @@ static FrameData anim_nick_stand_to_roll_left_framedata0[] = {
     {{-9.0119f, 5.0093f, 20.4705f}, {0.7866f, 0.2620f, 0.0084f, -0.5590f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.3189f, 2.5718f, 39.1683f}, {0.8663f, 0.0152f, 0.1281f, -0.4826f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_left_framedata4[] = {
+static s64FrameData anim_nick_stand_to_roll_left_framedata4[] = {
     {{-3.3894f, -12.7488f, 73.2043f}, {0.9781f, 0.2011f, -0.0286f, -0.0451f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.1734f, -15.8375f, 67.9344f}, {0.9364f, 0.2091f, 0.2520f, -0.1262f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-14.1789f, -6.1568f, 68.2321f}, {0.8673f, 0.1588f, -0.3329f, -0.3343f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -13694,7 +13655,7 @@ static FrameData anim_nick_stand_to_roll_left_framedata4[] = {
     {{-8.8656f, 7.3788f, 19.4675f}, {0.7933f, 0.3631f, 0.0959f, -0.4792f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.9917f, 1.7330f, 37.6524f}, {0.9131f, 0.1201f, 0.1417f, -0.3629f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_left_framedata5[] = {
+static s64FrameData anim_nick_stand_to_roll_left_framedata5[] = {
     {{-4.0054f, -14.8912f, 72.3897f}, {0.9755f, 0.2137f, -0.0299f, -0.0430f}, {1.0000f, 1.0000f, 1.0000f}},
     {{7.5110f, -17.8811f, 67.3631f}, {0.9366f, 0.2421f, 0.2230f, -0.1201f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-14.8126f, -8.1480f, 67.8208f}, {0.8509f, 0.2115f, -0.3168f, -0.3617f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -13732,7 +13693,7 @@ static FrameData anim_nick_stand_to_roll_left_framedata5[] = {
     {{-9.5039f, 7.1934f, 19.7224f}, {0.7928f, 0.3839f, 0.1065f, -0.4612f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.1229f, 1.5170f, 37.7823f}, {0.9236f, 0.1219f, 0.1518f, -0.3303f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_left_framedata8[] = {
+static s64FrameData anim_nick_stand_to_roll_left_framedata8[] = {
     {{-4.4743f, -29.5272f, 59.4761f}, {0.9591f, 0.2744f, -0.0193f, -0.0665f}, {1.0000f, 1.0000f, 1.0000f}},
     {{7.3383f, -29.9441f, 52.6598f}, {0.8331f, 0.3617f, 0.3802f, -0.1747f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-14.9068f, -21.5127f, 54.0979f}, {0.7286f, 0.2493f, -0.6040f, -0.2053f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -13770,7 +13731,7 @@ static FrameData anim_nick_stand_to_roll_left_framedata8[] = {
     {{-11.5111f, -11.7591f, 22.8788f}, {0.9192f, 0.3504f, -0.0104f, -0.1796f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.5517f, 0.1531f, 37.0267f}, {0.9274f, -0.3299f, 0.1154f, -0.1329f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_left_framedata11[] = {
+static s64FrameData anim_nick_stand_to_roll_left_framedata11[] = {
     {{-3.2944f, -33.9266f, 47.5418f}, {0.9265f, 0.3652f, -0.0582f, -0.0698f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.8241f, -33.3640f, 41.1294f}, {0.8131f, 0.2673f, 0.3569f, -0.3741f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-14.3638f, -28.2415f, 43.1600f}, {0.8225f, 0.2705f, -0.4829f, 0.1308f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -13808,7 +13769,7 @@ static FrameData anim_nick_stand_to_roll_left_framedata11[] = {
     {{-7.6086f, -12.9349f, 16.3266f}, {0.9125f, 0.3933f, -0.0049f, -0.1126f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.6235f, -0.5772f, 31.1900f}, {0.9443f, -0.3214f, 0.0316f, -0.0631f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_left_framedata14[] = {
+static s64FrameData anim_nick_stand_to_roll_left_framedata14[] = {
     {{-5.6772f, -37.2127f, 42.2947f}, {0.8514f, 0.5021f, -0.1133f, -0.1009f}, {1.0000f, 1.0000f, 1.0000f}},
     {{6.2133f, -36.9887f, 36.3440f}, {0.7553f, 0.3010f, 0.2107f, -0.5428f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-16.6780f, -32.1883f, 39.8667f}, {0.8102f, 0.3659f, -0.3168f, 0.3306f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -13846,7 +13807,7 @@ static FrameData anim_nick_stand_to_roll_left_framedata14[] = {
     {{-6.4552f, 5.3751f, 18.0854f}, {0.9006f, 0.4249f, 0.0088f, -0.0908f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.6972f, -0.9893f, 36.4292f}, {0.9757f, 0.1835f, 0.0374f, -0.1136f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_left_framedata17[] = {
+static s64FrameData anim_nick_stand_to_roll_left_framedata17[] = {
     {{-8.7432f, -36.2773f, 34.1941f}, {0.7168f, 0.6426f, -0.1762f, -0.2053f}, {1.0000f, 1.0000f, 1.0000f}},
     {{4.2339f, -34.0281f, 29.0119f}, {0.6911f, 0.3114f, 0.3611f, -0.5432f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-18.5143f, -29.6763f, 32.2376f}, {0.7204f, 0.4413f, -0.4582f, 0.2763f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -13884,7 +13845,7 @@ static FrameData anim_nick_stand_to_roll_left_framedata17[] = {
     {{-5.9450f, 13.5705f, 31.2486f}, {0.7787f, 0.6061f, 0.0909f, -0.1345f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8745f, -1.5234f, 43.4855f}, {0.8889f, 0.4469f, 0.0439f, -0.0904f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_left_framedata18[] = {
+static s64FrameData anim_nick_stand_to_roll_left_framedata18[] = {
     {{-11.7100f, -32.2158f, 21.8601f}, {0.5951f, 0.7141f, -0.1826f, -0.3204f}, {1.0000f, 1.0000f, 1.0000f}},
     {{1.6026f, -28.1603f, 17.8848f}, {0.6632f, 0.4099f, 0.4759f, -0.4071f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-19.9080f, -24.0068f, 23.7920f}, {0.6693f, 0.4727f, -0.5707f, 0.0533f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -13922,7 +13883,7 @@ static FrameData anim_nick_stand_to_roll_left_framedata18[] = {
     {{-7.4117f, 14.6699f, 30.0249f}, {0.6014f, 0.7672f, 0.1563f, -0.1589f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8710f, -1.7544f, 40.2934f}, {0.8608f, 0.4964f, 0.0849f, -0.0741f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_left_framedata20[] = {
+static s64FrameData anim_nick_stand_to_roll_left_framedata20[] = {
     {{-18.5067f, -20.7782f, 8.2888f}, {0.2204f, 0.8415f, 0.0035f, -0.4933f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.6837f, -15.9823f, 4.2056f}, {0.4231f, 0.7595f, 0.4716f, -0.1476f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-23.4311f, -15.3708f, 20.0768f}, {0.6631f, 0.4177f, -0.5587f, -0.2716f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -13960,7 +13921,7 @@ static FrameData anim_nick_stand_to_roll_left_framedata20[] = {
     {{-12.6294f, 13.8812f, 29.6594f}, {0.3520f, 0.8694f, 0.2791f, -0.2058f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.3036f, -2.8148f, 36.3788f}, {0.8085f, 0.5327f, 0.2479f, -0.0329f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_left_framedata23[] = {
+static s64FrameData anim_nick_stand_to_roll_left_framedata23[] = {
     {{-28.7889f, -0.4321f, 1.2085f}, {0.4229f, -0.6832f, -0.0301f, 0.5946f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-18.0434f, 7.7217f, 2.5803f}, {0.2455f, -0.9192f, -0.2315f, 0.2031f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-26.5988f, -9.3445f, 11.5338f}, {0.5083f, 0.6087f, -0.1867f, -0.5798f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -13998,7 +13959,7 @@ static FrameData anim_nick_stand_to_roll_left_framedata23[] = {
     {{-16.7776f, 8.0986f, 28.3332f}, {0.0645f, 0.8278f, 0.4199f, -0.3666f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.4419f, -5.6572f, 25.0907f}, {0.6313f, 0.5928f, 0.4991f, 0.0289f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_left_framedata25[] = {
+static s64FrameData anim_nick_stand_to_roll_left_framedata25[] = {
     {{-32.0003f, 16.8206f, 3.5991f}, {0.6670f, -0.5486f, -0.3354f, 0.3763f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-21.4072f, 24.4961f, 6.2330f}, {0.7047f, -0.7025f, -0.0999f, 0.0022f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-32.4642f, 3.7522f, 5.2573f}, {0.1211f, -0.6106f, -0.2373f, 0.7458f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -14036,7 +13997,7 @@ static FrameData anim_nick_stand_to_roll_left_framedata25[] = {
     {{-12.6652f, -1.7445f, 21.2067f}, {0.3173f, -0.5752f, -0.4404f, 0.6120f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.7418f, -6.9317f, 5.3260f}, {0.2815f, 0.6179f, 0.7324f, 0.0498f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_left_framedata28[] = {
+static s64FrameData anim_nick_stand_to_roll_left_framedata28[] = {
     {{-22.8625f, 13.9583f, 28.5397f}, {0.9037f, 0.0873f, -0.4137f, 0.0679f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.7452f, 11.6999f, 32.8785f}, {0.9399f, -0.0278f, -0.0037f, -0.3403f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-26.9709f, 12.2363f, 16.4388f}, {0.5205f, -0.2833f, -0.7021f, 0.3949f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -14074,7 +14035,7 @@ static FrameData anim_nick_stand_to_roll_left_framedata28[] = {
     {{-7.4676f, -20.1487f, 5.8538f}, {0.7788f, -0.0800f, -0.6222f, 0.0054f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.4910f, -1.4064f, 2.6149f}, {0.5046f, -0.6596f, -0.3740f, -0.4129f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_left_framedata31[] = {
+static s64FrameData anim_nick_stand_to_roll_left_framedata31[] = {
     {{-19.0664f, -4.4127f, 42.5174f}, {0.9144f, 0.3121f, -0.2496f, -0.0648f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.1140f, -10.0828f, 41.6309f}, {0.8786f, 0.1509f, 0.0683f, -0.4480f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-25.4553f, 2.9309f, 32.6965f}, {0.7144f, -0.0479f, -0.6979f, -0.0153f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -14112,7 +14073,7 @@ static FrameData anim_nick_stand_to_roll_left_framedata31[] = {
     {{-13.7248f, -12.9772f, 3.6168f}, {0.6707f, 0.1649f, -0.7067f, -0.1532f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.1775f, 2.3732f, 9.1572f}, {0.4457f, -0.5414f, -0.2448f, -0.6696f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_left_framedata34[] = {
+static s64FrameData anim_nick_stand_to_roll_left_framedata34[] = {
     {{-11.7348f, -10.7133f, 55.8686f}, {0.9342f, 0.3278f, -0.1189f, -0.0756f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-0.5742f, -15.0959f, 50.7392f}, {0.9093f, 0.2240f, 0.2054f, -0.2842f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-19.6561f, -0.5768f, 49.4309f}, {0.8007f, 0.0527f, -0.5097f, -0.3103f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -14150,7 +14111,7 @@ static FrameData anim_nick_stand_to_roll_left_framedata34[] = {
     {{-12.4592f, -0.9827f, 4.2646f}, {0.6778f, 0.1648f, -0.6988f, -0.1584f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.6292f, 3.0316f, 21.1019f}, {0.6881f, -0.2267f, 0.0770f, -0.6850f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_left_framedata39[] = {
+static s64FrameData anim_nick_stand_to_roll_left_framedata39[] = {
     {{-6.4847f, -11.8191f, 69.7628f}, {0.9566f, 0.2808f, -0.0438f, -0.0652f}, {1.0000f, 1.0000f, 1.0000f}},
     {{5.4766f, -14.5658f, 63.7300f}, {0.8791f, 0.2872f, 0.3691f, -0.0923f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-15.1946f, -2.8712f, 62.6075f}, {0.7182f, 0.0535f, -0.5570f, -0.4137f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -14188,7 +14149,7 @@ static FrameData anim_nick_stand_to_roll_left_framedata39[] = {
     {{-12.4629f, 3.3725f, 17.3352f}, {0.7050f, 0.3761f, -0.4297f, -0.4206f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.3516f, 3.3818f, 34.4979f}, {0.7647f, -0.1330f, 0.1777f, -0.6049f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_left_framedata49[] = {
+static s64FrameData anim_nick_stand_to_roll_left_framedata49[] = {
     {{-2.2124f, -9.5764f, 74.9895f}, {0.9921f, 0.1218f, -0.0311f, -0.0045f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.9847f, -9.9408f, 67.7848f}, {0.8090f, 0.1752f, 0.5596f, -0.0397f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.3857f, -3.0364f, 67.3154f}, {0.7428f, 0.0869f, -0.5365f, -0.3909f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -14226,7 +14187,7 @@ static FrameData anim_nick_stand_to_roll_left_framedata49[] = {
     {{-9.0120f, 5.0092f, 20.2236f}, {0.7866f, 0.2620f, 0.0084f, -0.5590f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.3189f, 2.5718f, 38.9214f}, {0.8663f, 0.0152f, 0.1281f, -0.4826f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_stand_to_roll_left_keyframes[] = {
+static s64KeyFrame anim_nick_stand_to_roll_left_keyframes[] = {
     {0, anim_nick_stand_to_roll_left_framedata0},
     {4, anim_nick_stand_to_roll_left_framedata4},
     {5, anim_nick_stand_to_roll_left_framedata5},
@@ -14245,7 +14206,7 @@ static KeyFrame anim_nick_stand_to_roll_left_keyframes[] = {
     {49, anim_nick_stand_to_roll_left_framedata49},
 };
 
-static FrameData anim_nick_stand_to_roll_right_framedata0[] = {
+static s64FrameData anim_nick_stand_to_roll_right_framedata0[] = {
     {{2.2151f, -9.5743f, 75.2447f}, {0.9921f, 0.1218f, 0.0311f, 0.0045f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.3437f, -2.9920f, 67.6871f}, {0.7433f, 0.0850f, 0.5354f, 0.3920f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-9.9959f, -9.9944f, 67.9272f}, {0.8080f, 0.1788f, -0.5599f, 0.0404f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -14283,7 +14244,7 @@ static FrameData anim_nick_stand_to_roll_right_framedata0[] = {
     {{-1.2621f, -16.1079f, 23.1589f}, {0.9206f, 0.0214f, 0.0846f, 0.3806f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.4437f, -5.6433f, 39.2196f}, {0.9206f, -0.2754f, 0.0066f, 0.2768f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_right_framedata4[] = {
+static s64FrameData anim_nick_stand_to_roll_right_framedata4[] = {
     {{3.3924f, -12.7472f, 73.3525f}, {0.9781f, 0.2011f, 0.0286f, 0.0451f}, {1.0000f, 1.0000f, 1.0000f}},
     {{14.1081f, -6.1244f, 68.4823f}, {0.8677f, 0.1570f, 0.3324f, 0.3347f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.1969f, -15.9115f, 67.9834f}, {0.9360f, 0.2111f, -0.2518f, 0.1261f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -14321,7 +14282,7 @@ static FrameData anim_nick_stand_to_roll_right_framedata4[] = {
     {{-1.7217f, -17.8378f, 23.5491f}, {0.9495f, 0.1826f, 0.0211f, 0.2544f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.0755f, -4.8147f, 37.5750f}, {0.9175f, -0.3533f, -0.0155f, 0.1820f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_right_framedata5[] = {
+static s64FrameData anim_nick_stand_to_roll_right_framedata5[] = {
     {{4.0084f, -14.8897f, 72.5380f}, {0.9755f, 0.2137f, 0.0300f, 0.0430f}, {1.0000f, 1.0000f, 1.0000f}},
     {{14.7419f, -8.1224f, 68.0724f}, {0.8514f, 0.2097f, 0.3165f, 0.3620f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.5378f, -17.9509f, 67.4093f}, {0.9362f, 0.2439f, -0.2228f, 0.1200f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -14359,7 +14320,7 @@ static FrameData anim_nick_stand_to_roll_right_framedata5[] = {
     {{-1.7167f, -17.1900f, 23.0636f}, {0.9570f, 0.1964f, 0.0147f, 0.2129f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.2001f, -4.6048f, 37.4531f}, {0.9244f, -0.3396f, -0.0261f, 0.1715f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_right_framedata8[] = {
+static s64FrameData anim_nick_stand_to_roll_right_framedata8[] = {
     {{4.4797f, -29.5256f, 58.7283f}, {0.9591f, 0.2744f, 0.0193f, 0.0665f}, {1.0000f, 1.0000f, 1.0000f}},
     {{14.8783f, -21.5429f, 53.4765f}, {0.7301f, 0.2473f, 0.6025f, 0.2068f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.3657f, -29.9387f, 51.7872f}, {0.8320f, 0.3636f, -0.3809f, 0.1747f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -14397,7 +14358,7 @@ static FrameData anim_nick_stand_to_roll_right_framedata8[] = {
     {{-1.2608f, -15.2668f, 18.8367f}, {0.9246f, 0.3482f, -0.0032f, 0.1543f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.6128f, -3.3257f, 33.5353f}, {0.9360f, -0.3212f, -0.0716f, 0.1246f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_right_framedata11[] = {
+static s64FrameData anim_nick_stand_to_roll_right_framedata11[] = {
     {{3.3000f, -33.9256f, 46.8766f}, {0.9265f, 0.3652f, 0.0582f, 0.0698f}, {1.0000f, 1.0000f, 1.0000f}},
     {{14.3155f, -28.2758f, 42.6142f}, {0.8238f, 0.2696f, 0.4813f, -0.1299f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.8563f, -33.3481f, 40.3410f}, {0.8123f, 0.2686f, -0.3580f, 0.3740f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -14435,7 +14396,7 @@ static FrameData anim_nick_stand_to_roll_right_framedata11[] = {
     {{-1.9974f, -11.9237f, 10.3783f}, {0.8151f, 0.5755f, 0.0143f, 0.0646f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.6864f, -2.6369f, 27.0433f}, {0.9666f, -0.2339f, -0.0785f, 0.0687f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_right_framedata14[] = {
+static s64FrameData anim_nick_stand_to_roll_right_framedata14[] = {
     {{5.6799f, -37.2124f, 40.1733f}, {0.8514f, 0.5021f, 0.1133f, 0.1009f}, {1.0000f, 1.0000f, 1.0000f}},
     {{16.6127f, -32.2534f, 37.8384f}, {0.8108f, 0.3657f, 0.3151f, -0.3310f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.2619f, -36.9493f, 34.1137f}, {0.7553f, 0.3014f, -0.2116f, 0.5421f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -14473,7 +14434,7 @@ static FrameData anim_nick_stand_to_roll_right_framedata14[] = {
     {{-4.0285f, 4.8950f, 12.9296f}, {0.8249f, 0.5432f, -0.0542f, 0.1465f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.7484f, -2.2855f, 30.9034f}, {0.9722f, 0.2034f, -0.0605f, 0.0993f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_right_framedata16[] = {
+static s64FrameData anim_nick_stand_to_roll_right_framedata16[] = {
     {{7.4840f, -37.1632f, 35.2137f}, {0.7621f, 0.6041f, 0.1606f, 0.1688f}, {1.0000f, 1.0000f, 1.0000f}},
     {{17.9418f, -31.4926f, 32.9777f}, {0.7477f, 0.4181f, 0.4044f, -0.3204f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.0440f, -35.5349f, 29.6429f}, {0.6934f, 0.2890f, -0.3150f, 0.5801f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -14511,7 +14472,7 @@ static FrameData anim_nick_stand_to_roll_right_framedata16[] = {
     {{-4.6490f, 11.2913f, 23.0989f}, {0.7424f, 0.6639f, -0.0535f, 0.0720f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8719f, -1.8231f, 37.3850f}, {0.9215f, 0.3785f, -0.0566f, 0.0666f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_right_framedata18[] = {
+static s64FrameData anim_nick_stand_to_roll_right_framedata18[] = {
     {{11.7121f, -32.2158f, 23.7537f}, {0.5951f, 0.7141f, 0.1826f, 0.3204f}, {1.0000f, 1.0000f, 1.0000f}},
     {{19.8798f, -24.1343f, 25.7279f}, {0.6706f, 0.4737f, 0.5683f, -0.0540f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-1.6411f, -28.0491f, 19.7131f}, {0.6638f, 0.4083f, -0.4778f, 0.4055f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -14549,7 +14510,7 @@ static FrameData anim_nick_stand_to_roll_right_framedata18[] = {
     {{-3.7601f, 15.5527f, 30.9693f}, {0.6671f, 0.7281f, -0.1287f, 0.0905f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8943f, -1.6388f, 39.7712f}, {0.8401f, 0.5326f, -0.0905f, 0.0487f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_right_framedata20[] = {
+static s64FrameData anim_nick_stand_to_roll_right_framedata20[] = {
     {{18.5095f, -20.7787f, 7.4735f}, {0.2204f, 0.8415f, -0.0035f, 0.4933f}, {1.0000f, 1.0000f, 1.0000f}},
     {{23.4348f, -15.5000f, 19.2267f}, {0.6652f, 0.4181f, 0.5561f, 0.2710f}, {1.0000f, 1.0000f, 1.0000f}},
     {{6.6519f, -15.8532f, 3.3723f}, {0.4232f, 0.7586f, -0.4734f, 0.1457f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -14587,7 +14548,7 @@ static FrameData anim_nick_stand_to_roll_right_framedata20[] = {
     {{0.4405f, 17.3372f, 25.7591f}, {0.6029f, 0.7740f, -0.1782f, 0.0753f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.3488f, -0.6028f, 30.4727f}, {0.7740f, 0.5862f, -0.2303f, 0.0648f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_right_framedata23[] = {
+static s64FrameData anim_nick_stand_to_roll_right_framedata23[] = {
     {{28.7912f, -0.4343f, 0.9550f}, {0.4229f, -0.6832f, 0.0301f, -0.5946f}, {1.0000f, 1.0000f, 1.0000f}},
     {{26.6508f, -9.3773f, 11.1670f}, {0.5098f, 0.6104f, 0.1844f, 0.5775f}, {1.0000f, 1.0000f, 1.0000f}},
     {{18.0203f, 7.7904f, 2.4437f}, {0.2436f, -0.9205f, 0.2329f, -0.1976f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -14625,7 +14586,7 @@ static FrameData anim_nick_stand_to_roll_right_framedata23[] = {
     {{9.5886f, 16.6600f, 18.9785f}, {0.3071f, 0.8743f, -0.3584f, 0.1134f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.4995f, 2.2983f, 19.1085f}, {0.6954f, 0.5743f, -0.4290f, -0.0508f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_right_framedata25[] = {
+static s64FrameData anim_nick_stand_to_roll_right_framedata25[] = {
     {{31.9316f, 16.8185f, 2.9819f}, {0.6624f, -0.5537f, 0.3445f, -0.3688f}, {1.0000f, 1.0000f, 1.0000f}},
     {{32.4871f, 3.8312f, 4.5266f}, {0.1182f, -0.6219f, 0.2405f, -0.7358f}, {1.0000f, 1.0000f, 1.0000f}},
     {{21.3304f, 24.4916f, 6.0061f}, {0.7049f, -0.7009f, 0.1087f, 0.0078f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -14663,7 +14624,7 @@ static FrameData anim_nick_stand_to_roll_right_framedata25[] = {
     {{11.8205f, 13.9732f, 14.1792f}, {0.1384f, -0.8654f, 0.4695f, -0.1077f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-2.6889f, 3.7619f, 6.2556f}, {0.4870f, 0.7218f, -0.4491f, -0.2007f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_right_framedata28[] = {
+static s64FrameData anim_nick_stand_to_roll_right_framedata28[] = {
     {{22.8659f, 13.9584f, 28.2805f}, {0.9037f, 0.0873f, 0.4137f, -0.0679f}, {1.0000f, 1.0000f, 1.0000f}},
     {{26.9766f, 12.3627f, 16.2343f}, {0.5206f, -0.2847f, 0.7030f, -0.3921f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.6991f, 11.5755f, 32.6052f}, {0.9397f, -0.0259f, 0.0035f, 0.3409f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -14701,7 +14662,7 @@ static FrameData anim_nick_stand_to_roll_right_framedata28[] = {
     {{3.7352f, -12.4253f, 26.4795f}, {0.7940f, -0.5398f, 0.2767f, 0.0399f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.5531f, -1.5942f, 12.0869f}, {0.2605f, -0.9005f, 0.2302f, 0.2612f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_right_framedata31[] = {
+static s64FrameData anim_nick_stand_to_roll_right_framedata31[] = {
     {{19.0796f, -4.3985f, 42.5060f}, {0.9144f, 0.3121f, 0.2497f, 0.0648f}, {1.0000f, 1.0000f, 1.0000f}},
     {{25.4401f, 2.9935f, 32.8100f}, {0.7150f, -0.0489f, 0.6972f, 0.0178f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.0960f, -10.1567f, 41.5285f}, {0.8783f, 0.1521f, -0.0689f, 0.4481f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -14739,7 +14700,7 @@ static FrameData anim_nick_stand_to_roll_right_framedata31[] = {
     {{7.2457f, -21.5575f, 18.1782f}, {0.8377f, -0.2857f, 0.3387f, 0.3193f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.2570f, -5.4028f, 15.6685f}, {0.5243f, -0.7361f, 0.0948f, 0.4175f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_right_framedata37[] = {
+static s64FrameData anim_nick_stand_to_roll_right_framedata37[] = {
     {{8.4515f, -12.2550f, 63.1040f}, {0.9479f, 0.3043f, 0.0664f, 0.0664f}, {1.0000f, 1.0000f, 1.0000f}},
     {{16.9171f, -2.9503f, 56.3742f}, {0.7703f, 0.0739f, 0.5204f, 0.3612f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.5917f, -15.2108f, 57.6013f}, {0.9124f, 0.2511f, -0.2858f, 0.1511f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -14777,7 +14738,7 @@ static FrameData anim_nick_stand_to_roll_right_framedata37[] = {
     {{6.5689f, -21.1945f, 22.1496f}, {0.9072f, 0.0832f, 0.1620f, 0.3793f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.6519f, -6.3230f, 29.3574f}, {0.7587f, -0.5385f, -0.0790f, 0.3581f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_right_framedata40[] = {
+static s64FrameData anim_nick_stand_to_roll_right_framedata40[] = {
     {{5.6817f, -11.2377f, 73.2560f}, {0.9682f, 0.2409f, 0.0347f, 0.0572f}, {1.0000f, 1.0000f, 1.0000f}},
     {{14.3063f, -2.4418f, 65.8152f}, {0.7001f, 0.0453f, 0.5818f, 0.4116f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.1387f, -14.3339f, 66.7986f}, {0.8586f, 0.3003f, -0.4058f, 0.0886f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -14815,7 +14776,7 @@ static FrameData anim_nick_stand_to_roll_right_framedata40[] = {
     {{3.4923f, -17.0416f, 22.7916f}, {0.9146f, 0.0414f, 0.1304f, 0.3804f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.4065f, -6.5499f, 37.6208f}, {0.8617f, -0.3223f, -0.0439f, 0.3895f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_roll_right_framedata49[] = {
+static s64FrameData anim_nick_stand_to_roll_right_framedata49[] = {
     {{2.2151f, -9.5743f, 75.2447f}, {0.9921f, 0.1218f, 0.0311f, 0.0045f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.3437f, -2.9921f, 67.6871f}, {0.7433f, 0.0850f, 0.5354f, 0.3920f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-9.9959f, -9.9944f, 67.9272f}, {0.8080f, 0.1788f, -0.5599f, 0.0404f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -14853,7 +14814,7 @@ static FrameData anim_nick_stand_to_roll_right_framedata49[] = {
     {{-1.2620f, -16.1080f, 23.1589f}, {0.9206f, 0.0214f, 0.0846f, 0.3806f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.4437f, -5.6433f, 39.2196f}, {0.9206f, -0.2754f, 0.0066f, 0.2768f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_stand_to_roll_right_keyframes[] = {
+static s64KeyFrame anim_nick_stand_to_roll_right_keyframes[] = {
     {0, anim_nick_stand_to_roll_right_framedata0},
     {4, anim_nick_stand_to_roll_right_framedata4},
     {5, anim_nick_stand_to_roll_right_framedata5},
@@ -14872,7 +14833,7 @@ static KeyFrame anim_nick_stand_to_roll_right_keyframes[] = {
     {49, anim_nick_stand_to_roll_right_framedata49},
 };
 
-static FrameData anim_nick_stand_to_run_left_framedata0[] = {
+static s64FrameData anim_nick_stand_to_run_left_framedata0[] = {
     {{-1.9571f, -9.3604f, 75.1971f}, {0.9921f, 0.1218f, -0.0311f, -0.0045f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.2400f, -9.7248f, 67.9924f}, {0.8090f, 0.1752f, 0.5596f, -0.0397f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.1304f, -2.8204f, 67.5230f}, {0.7428f, 0.0869f, -0.5365f, -0.3909f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -14910,7 +14871,7 @@ static FrameData anim_nick_stand_to_run_left_framedata0[] = {
     {{-8.7565f, 5.2253f, 20.4311f}, {0.7866f, 0.2620f, 0.0084f, -0.5590f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.0636f, 2.7878f, 39.1290f}, {0.8663f, 0.0152f, 0.1281f, -0.4826f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_run_left_framedata3[] = {
+static s64FrameData anim_nick_stand_to_run_left_framedata3[] = {
     {{-5.5784f, -19.4760f, 66.5047f}, {0.9943f, 0.1053f, -0.0114f, 0.0148f}, {1.0000f, 1.0000f, 1.0000f}},
     {{6.1016f, -17.4801f, 58.4030f}, {0.8016f, 0.2262f, 0.5531f, 0.0170f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-15.6418f, -11.6762f, 59.3607f}, {0.7167f, 0.1717f, -0.5362f, -0.4116f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -14948,7 +14909,7 @@ static FrameData anim_nick_stand_to_run_left_framedata3[] = {
     {{-13.2617f, -0.7509f, 16.2960f}, {0.8366f, 0.4546f, -0.0654f, -0.2987f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.4456f, 0.9306f, 34.0064f}, {0.9282f, -0.0878f, 0.1752f, -0.3163f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_run_left_framedata4[] = {
+static s64FrameData anim_nick_stand_to_run_left_framedata4[] = {
     {{-5.7531f, -20.7792f, 64.6237f}, {0.9945f, 0.1036f, -0.0046f, 0.0162f}, {1.0000f, 1.0000f, 1.0000f}},
     {{5.6707f, -18.1441f, 56.3379f}, {0.8033f, 0.2357f, 0.5452f, 0.0441f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-15.9128f, -12.8694f, 57.5711f}, {0.7174f, 0.1913f, -0.5331f, -0.4057f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -14986,7 +14947,7 @@ static FrameData anim_nick_stand_to_run_left_framedata4[] = {
     {{-13.8193f, -0.7999f, 15.3666f}, {0.8308f, 0.4802f, -0.0783f, -0.2703f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.5084f, 0.7921f, 32.8586f}, {0.9301f, -0.0870f, 0.1908f, -0.3016f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_run_left_framedata7[] = {
+static s64FrameData anim_nick_stand_to_run_left_framedata7[] = {
     {{-4.0677f, -21.6280f, 64.1388f}, {0.9930f, 0.1180f, -0.0091f, 0.0054f}, {1.0000f, 1.0000f, 1.0000f}},
     {{6.9461f, -18.7254f, 55.1892f}, {0.8049f, 0.3366f, 0.4540f, 0.1811f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-14.8710f, -14.5720f, 57.6739f}, {0.7398f, 0.2675f, -0.4662f, -0.4047f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -15024,7 +14985,7 @@ static FrameData anim_nick_stand_to_run_left_framedata7[] = {
     {{-12.2039f, 3.0644f, 14.8415f}, {0.8197f, 0.5072f, -0.0300f, -0.2644f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.5057f, 0.7669f, 32.9365f}, {0.9383f, 0.0258f, 0.1802f, -0.2939f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_run_left_framedata9[] = {
+static s64FrameData anim_nick_stand_to_run_left_framedata9[] = {
     {{-1.4308f, -20.9816f, 64.8384f}, {0.9911f, 0.1275f, -0.0375f, 0.0022f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.3621f, -17.6280f, 55.7070f}, {0.8107f, 0.3002f, 0.4697f, 0.1789f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.9039f, -15.2036f, 58.5167f}, {0.7259f, 0.3207f, -0.4135f, -0.4463f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -15062,7 +15023,7 @@ static FrameData anim_nick_stand_to_run_left_framedata9[] = {
     {{-8.9941f, 5.5523f, 14.6668f}, {0.8021f, 0.5578f, 0.0368f, -0.2099f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8096f, -0.1372f, 32.9715f}, {0.9596f, 0.1479f, 0.1096f, -0.2127f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_run_left_framedata11[] = {
+static s64FrameData anim_nick_stand_to_run_left_framedata11[] = {
     {{2.2457f, -22.1259f, 64.8297f}, {0.9884f, 0.1480f, -0.0345f, 0.0043f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.9030f, -16.2041f, 54.9662f}, {0.7697f, -0.0188f, 0.6263f, -0.1221f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.4710f, -17.1560f, 59.9806f}, {0.7151f, 0.3695f, -0.3587f, -0.4727f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -15100,7 +15061,7 @@ static FrameData anim_nick_stand_to_run_left_framedata11[] = {
     {{-7.7265f, -3.2178f, 14.1598f}, {0.6358f, 0.7687f, 0.0122f, -0.0690f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9929f, -1.9947f, 33.4749f}, {0.9983f, -0.0120f, 0.0438f, -0.0371f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_run_left_framedata15[] = {
+static s64FrameData anim_nick_stand_to_run_left_framedata15[] = {
     {{0.9818f, -24.3999f, 63.0176f}, {0.9874f, 0.1477f, -0.0437f, -0.0352f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.2439f, -24.9054f, 55.4622f}, {0.6885f, 0.0403f, 0.4774f, -0.5445f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.0096f, -16.9062f, 60.6759f}, {0.6612f, 0.3800f, -0.0381f, -0.6457f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -15138,7 +15099,7 @@ static FrameData anim_nick_stand_to_run_left_framedata15[] = {
     {{-4.4867f, -20.6847f, 30.8505f}, {0.9803f, 0.1956f, -0.0173f, -0.0210f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8716f, -1.6759f, 34.6353f}, {0.7861f, -0.6169f, -0.0380f, 0.0088f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_run_left_framedata18[] = {
+static s64FrameData anim_nick_stand_to_run_left_framedata18[] = {
     {{-5.2711f, -22.9521f, 64.4255f}, {0.9904f, 0.1199f, -0.0454f, -0.0521f}, {1.0000f, 1.0000f, 1.0000f}},
     {{7.3824f, -25.5786f, 57.4040f}, {0.7438f, 0.4463f, 0.3622f, -0.3410f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.6826f, -14.2424f, 60.5990f}, {0.6787f, 0.2650f, -0.2343f, -0.6436f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -15176,7 +15137,7 @@ static FrameData anim_nick_stand_to_run_left_framedata18[] = {
     {{-6.6334f, -15.6738f, 23.7690f}, {0.9823f, 0.0271f, -0.1399f, -0.1214f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.7602f, -0.8066f, 36.2503f}, {0.9046f, -0.4019f, -0.0407f, -0.1357f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_run_left_framedata22[] = {
+static s64FrameData anim_nick_stand_to_run_left_framedata22[] = {
     {{-4.7644f, -23.6097f, 66.4977f}, {0.9895f, 0.1395f, -0.0079f, 0.0368f}, {1.0000f, 1.0000f, 1.0000f}},
     {{7.4251f, -18.3573f, 66.8116f}, {0.5824f, 0.5943f, 0.2183f, 0.5099f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-14.8686f, -18.4205f, 57.8067f}, {0.6736f, 0.0116f, -0.6861f, 0.2745f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -15214,7 +15175,7 @@ static FrameData anim_nick_stand_to_run_left_framedata22[] = {
     {{-4.7908f, -2.9011f, 18.7335f}, {0.9199f, 0.3624f, -0.0196f, -0.1487f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8971f, -0.5766f, 37.9935f}, {0.9917f, -0.0351f, -0.0369f, -0.1180f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_stand_to_run_left_keyframes[] = {
+static s64KeyFrame anim_nick_stand_to_run_left_keyframes[] = {
     {0, anim_nick_stand_to_run_left_framedata0},
     {3, anim_nick_stand_to_run_left_framedata3},
     {4, anim_nick_stand_to_run_left_framedata4},
@@ -15226,7 +15187,7 @@ static KeyFrame anim_nick_stand_to_run_left_keyframes[] = {
     {22, anim_nick_stand_to_run_left_framedata22},
 };
 
-static FrameData anim_nick_stand_to_run_right_framedata0[] = {
+static s64FrameData anim_nick_stand_to_run_right_framedata0[] = {
     {{1.9609f, -9.3523f, 75.1972f}, {0.9921f, 0.1218f, 0.0311f, 0.0045f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.0895f, -2.7700f, 67.6396f}, {0.7433f, 0.0850f, 0.5354f, 0.3920f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.2501f, -9.7724f, 67.8798f}, {0.8080f, 0.1788f, -0.5599f, 0.0404f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -15264,7 +15225,7 @@ static FrameData anim_nick_stand_to_run_right_framedata0[] = {
     {{-1.5163f, -15.8858f, 23.1114f}, {0.9206f, 0.0214f, 0.0846f, 0.3806f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.6978f, -5.4212f, 39.1721f}, {0.9206f, -0.2754f, 0.0066f, 0.2768f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_run_right_framedata3[] = {
+static s64FrameData anim_nick_stand_to_run_right_framedata3[] = {
     {{5.5822f, -19.4745f, 66.2299f}, {0.9943f, 0.1053f, 0.0114f, -0.0148f}, {1.0000f, 1.0000f, 1.0000f}},
     {{15.6094f, -11.6560f, 59.2124f}, {0.7173f, 0.1700f, 0.5350f, 0.4128f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.0989f, -17.4988f, 58.0034f}, {0.8002f, 0.2291f, -0.5540f, -0.0162f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -15302,7 +15263,7 @@ static FrameData anim_nick_stand_to_run_right_framedata3[] = {
     {{-1.5941f, -20.6484f, 24.4553f}, {0.9484f, 0.0664f, 0.0186f, 0.3094f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.4919f, -4.0332f, 33.7462f}, {0.8599f, -0.4915f, -0.0343f, 0.1337f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_run_right_framedata4[] = {
+static s64FrameData anim_nick_stand_to_run_right_framedata4[] = {
     {{5.7571f, -20.7777f, 64.6237f}, {0.9945f, 0.1036f, 0.0046f, -0.0161f}, {1.0000f, 1.0000f, 1.0000f}},
     {{15.8822f, -12.8530f, 57.6989f}, {0.7180f, 0.1897f, 0.5319f, 0.4070f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.6639f, -18.1559f, 56.2121f}, {0.8019f, 0.2384f, -0.5462f, -0.0433f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -15340,7 +15301,7 @@ static FrameData anim_nick_stand_to_run_right_framedata4[] = {
     {{-2.0861f, -20.9562f, 24.3304f}, {0.9514f, 0.1105f, 0.0039f, 0.2874f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.5469f, -3.9019f, 32.9763f}, {0.8546f, -0.5074f, -0.0380f, 0.1038f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_run_right_framedata7[] = {
+static s64FrameData anim_nick_stand_to_run_right_framedata7[] = {
     {{4.0738f, -21.6257f, 64.1391f}, {0.9930f, 0.1180f, 0.0091f, -0.0054f}, {1.0000f, 1.0000f, 1.0000f}},
     {{14.8347f, -14.5548f, 57.7990f}, {0.7403f, 0.2659f, 0.4655f, 0.4056f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.9321f, -18.7359f, 55.0641f}, {0.8040f, 0.3384f, -0.4545f, -0.1804f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -15378,7 +15339,7 @@ static FrameData anim_nick_stand_to_run_right_framedata7[] = {
     {{-5.3877f, -19.5478f, 20.8469f}, {0.9376f, 0.3472f, -0.0189f, -0.0025f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.5497f, -3.8925f, 32.3561f}, {0.9011f, -0.4325f, 0.0127f, 0.0303f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_run_right_framedata9[] = {
+static s64FrameData anim_nick_stand_to_run_right_framedata9[] = {
     {{1.4361f, -20.9805f, 65.6629f}, {0.9911f, 0.1275f, 0.0375f, -0.0022f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.8663f, -15.1797f, 59.4618f}, {0.7264f, 0.3190f, 0.4134f, 0.4469f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-9.3526f, -17.6504f, 56.4056f}, {0.8100f, 0.3018f, -0.4703f, -0.1782f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -15416,7 +15377,7 @@ static FrameData anim_nick_stand_to_run_right_framedata9[] = {
     {{-7.5875f, -14.7274f, 17.7626f}, {0.8891f, 0.4432f, 0.0071f, -0.1142f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8414f, -2.9831f, 33.1443f}, {0.9529f, -0.2992f, 0.0487f, -0.0008f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_run_right_framedata11[] = {
+static s64FrameData anim_nick_stand_to_run_right_framedata11[] = {
     {{-2.2395f, -22.1263f, 64.8297f}, {0.9884f, 0.1480f, 0.0345f, -0.0043f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.4304f, -17.1396f, 60.0942f}, {0.7160f, 0.3671f, 0.3593f, 0.4727f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.8777f, -16.2252f, 54.8368f}, {0.7683f, -0.0174f, -0.6278f, 0.1237f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -15454,7 +15415,7 @@ static FrameData anim_nick_stand_to_run_right_framedata11[] = {
     {{-8.7105f, -6.5980f, 15.0217f}, {0.8611f, 0.4954f, 0.0164f, -0.1135f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9863f, -1.1189f, 33.4644f}, {0.9880f, -0.1262f, 0.0614f, -0.0652f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_run_right_framedata15[] = {
+static s64FrameData anim_nick_stand_to_run_right_framedata15[] = {
     {{-0.9789f, -24.3999f, 63.0180f}, {0.9874f, 0.1477f, 0.0437f, 0.0352f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.9392f, -16.9141f, 60.7754f}, {0.6617f, 0.3792f, 0.0390f, 0.6457f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.2580f, -24.9314f, 55.3374f}, {0.6869f, 0.0431f, -0.4788f, 0.5450f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -15492,7 +15453,7 @@ static FrameData anim_nick_stand_to_run_right_framedata15[] = {
     {{-5.9645f, 8.6802f, 15.7309f}, {0.8528f, 0.4881f, 0.1091f, -0.1506f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9100f, -1.4571f, 32.3082f}, {0.9535f, 0.2903f, 0.0228f, -0.0780f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_run_right_framedata18[] = {
+static s64FrameData anim_nick_stand_to_run_right_framedata18[] = {
     {{5.2734f, -22.9517f, 64.1513f}, {0.9904f, 0.1199f, 0.0454f, 0.0521f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.6238f, -14.2588f, 60.4360f}, {0.6792f, 0.2639f, 0.2336f, 0.6439f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.3962f, -25.6013f, 57.0028f}, {0.7426f, 0.4485f, -0.3616f, 0.3415f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -15530,7 +15491,7 @@ static FrameData anim_nick_stand_to_run_right_framedata18[] = {
     {{-4.6142f, 8.7206f, 17.2171f}, {0.7682f, 0.6325f, 0.0281f, -0.0953f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8173f, -2.3233f, 33.1595f}, {0.9469f, 0.3190f, -0.0209f, -0.0352f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_stand_to_run_right_framedata22[] = {
+static s64FrameData anim_nick_stand_to_run_right_framedata22[] = {
     {{4.7727f, -23.6082f, 66.4983f}, {0.9895f, 0.1395f, 0.0079f, -0.0368f}, {1.0000f, 1.0000f, 1.0000f}},
     {{14.8766f, -18.4095f, 57.9399f}, {0.6755f, 0.0092f, 0.6849f, -0.2730f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.4960f, -18.3584f, 66.7180f}, {0.5805f, 0.5970f, -0.2158f, -0.5100f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -15568,7 +15529,7 @@ static FrameData anim_nick_stand_to_run_right_framedata22[] = {
     {{-8.0923f, -17.5638f, 25.0783f}, {0.7857f, 0.6084f, -0.1080f, 0.0305f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9291f, -2.5085f, 37.1711f}, {0.9078f, -0.4140f, 0.0346f, -0.0575f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_stand_to_run_right_keyframes[] = {
+static s64KeyFrame anim_nick_stand_to_run_right_keyframes[] = {
     {0, anim_nick_stand_to_run_right_framedata0},
     {3, anim_nick_stand_to_run_right_framedata3},
     {4, anim_nick_stand_to_run_right_framedata4},
@@ -15580,7 +15541,7 @@ static KeyFrame anim_nick_stand_to_run_right_keyframes[] = {
     {22, anim_nick_stand_to_run_right_framedata22},
 };
 
-static FrameData anim_nick_tap_shoe_left_framedata0[] = {
+static s64FrameData anim_nick_tap_shoe_left_framedata0[] = {
     {{-1.9374f, -9.3719f, 75.1953f}, {0.9920f, 0.1221f, -0.0306f, -0.0045f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.2522f, -9.7319f, 67.9796f}, {0.8087f, 0.1753f, 0.5601f, -0.0396f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.1186f, -2.8279f, 67.5332f}, {0.7431f, 0.0870f, -0.5360f, -0.3911f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -15618,7 +15579,7 @@ static FrameData anim_nick_tap_shoe_left_framedata0[] = {
     {{-8.7566f, 5.2253f, 20.4311f}, {0.7866f, 0.2620f, 0.0084f, -0.5590f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.0637f, 2.7878f, 39.1290f}, {0.8663f, 0.0152f, 0.1281f, -0.4826f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_left_framedata9[] = {
+static s64FrameData anim_nick_tap_shoe_left_framedata9[] = {
     {{-1.7342f, -13.7373f, 73.6401f}, {0.8634f, 0.4536f, -0.0942f, -0.1997f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.6531f, -12.9739f, 66.6920f}, {0.8067f, 0.2104f, 0.5501f, -0.0488f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.8578f, -6.5152f, 66.6429f}, {0.7206f, 0.1424f, -0.5717f, -0.3655f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -15656,7 +15617,7 @@ static FrameData anim_nick_tap_shoe_left_framedata9[] = {
     {{-8.4302f, 4.2914f, 20.3049f}, {0.7862f, 0.2693f, 0.0276f, -0.5554f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.5714f, 1.5407f, 38.9167f}, {0.8755f, 0.0236f, 0.1364f, -0.4630f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_left_framedata19[] = {
+static s64FrameData anim_nick_tap_shoe_left_framedata19[] = {
     {{-1.0608f, -25.3680f, 72.2852f}, {0.7230f, 0.6026f, -0.1309f, -0.3116f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.9223f, -25.3364f, 65.1286f}, {0.7691f, 0.3818f, 0.5112f, -0.0363f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.3345f, -15.3839f, 67.7225f}, {0.6884f, 0.1331f, -0.5262f, -0.4812f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -15694,7 +15655,7 @@ static FrameData anim_nick_tap_shoe_left_framedata19[] = {
     {{-9.3585f, -0.3261f, 23.9918f}, {0.7020f, 0.3104f, 0.0616f, -0.6380f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-0.6899f, -3.5585f, 41.0792f}, {0.8453f, -0.0196f, 0.2335f, -0.4803f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_left_framedata23[] = {
+static s64FrameData anim_nick_tap_shoe_left_framedata23[] = {
     {{-1.0549f, -27.7218f, 72.1851f}, {0.6990f, 0.6208f, -0.1365f, -0.3279f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.7554f, -28.1407f, 64.9774f}, {0.7622f, 0.4067f, 0.5021f, -0.0408f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-9.8548f, -17.0044f, 68.0767f}, {0.6795f, 0.1154f, -0.5173f, -0.5073f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -15732,7 +15693,7 @@ static FrameData anim_nick_tap_shoe_left_framedata23[] = {
     {{-10.3230f, -3.8796f, 25.2693f}, {0.7171f, 0.4119f, -0.0544f, -0.5596f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-0.0195f, -4.9880f, 41.7066f}, {0.8371f, -0.0924f, 0.2454f, -0.4801f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_left_framedata24[] = {
+static s64FrameData anim_nick_tap_shoe_left_framedata24[] = {
     {{-1.1482f, -28.2014f, 72.1069f}, {0.6980f, 0.6205f, -0.1358f, -0.3309f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.6086f, -28.6656f, 64.8379f}, {0.7590f, 0.4118f, 0.5026f, -0.0412f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-9.9107f, -17.4055f, 68.0858f}, {0.6756f, 0.1135f, -0.5174f, -0.5128f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -15770,7 +15731,7 @@ static FrameData anim_nick_tap_shoe_left_framedata24[] = {
     {{-10.2229f, -4.3706f, 25.2794f}, {0.7220f, 0.4031f, -0.0615f, -0.5589f}, {1.0000f, 1.0000f, 1.0000f}},
     {{0.0422f, -5.2809f, 41.7528f}, {0.8353f, -0.0977f, 0.2411f, -0.4843f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_left_framedata27[] = {
+static s64FrameData anim_nick_tap_shoe_left_framedata27[] = {
     {{-1.4688f, -29.0885f, 71.8589f}, {0.6929f, 0.6223f, -0.1312f, -0.3397f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.0881f, -29.6125f, 64.2660f}, {0.7509f, 0.4220f, 0.5058f, -0.0470f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.1984f, -18.1544f, 68.1205f}, {0.6700f, 0.1075f, -0.5163f, -0.5225f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -15808,7 +15769,7 @@ static FrameData anim_nick_tap_shoe_left_framedata27[] = {
     {{-8.9243f, -4.5191f, 24.3649f}, {0.7131f, 0.2983f, -0.0029f, -0.6344f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-0.0645f, -5.9809f, 41.5969f}, {0.8386f, -0.0674f, 0.2124f, -0.4971f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_left_framedata28[] = {
+static s64FrameData anim_nick_tap_shoe_left_framedata28[] = {
     {{-1.5008f, -29.3120f, 71.8541f}, {0.6925f, 0.6216f, -0.1304f, -0.3422f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.0157f, -29.8769f, 64.1979f}, {0.7484f, 0.4218f, 0.5093f, -0.0510f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.2364f, -18.3813f, 68.1486f}, {0.6678f, 0.1082f, -0.5164f, -0.5251f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -15846,7 +15807,7 @@ static FrameData anim_nick_tap_shoe_left_framedata28[] = {
     {{-8.3735f, -4.4679f, 24.0848f}, {0.6831f, 0.2818f, 0.0058f, -0.6738f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-0.1063f, -6.2265f, 41.5815f}, {0.8402f, -0.0528f, 0.2019f, -0.5006f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_left_framedata31[] = {
+static s64FrameData anim_nick_tap_shoe_left_framedata31[] = {
     {{-1.5599f, -29.7220f, 71.8915f}, {0.6935f, 0.6186f, -0.1306f, -0.3456f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.9149f, -30.3160f, 64.1595f}, {0.7453f, 0.4235f, 0.5123f, -0.0513f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.2707f, -18.7630f, 68.1957f}, {0.6642f, 0.1143f, -0.5126f, -0.5320f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -15884,7 +15845,7 @@ static FrameData anim_nick_tap_shoe_left_framedata31[] = {
     {{-6.8532f, -4.2682f, 23.5838f}, {0.6863f, 0.2735f, 0.0146f, -0.6738f}, {1.0000f, 1.0000f, 1.0000f}},
     {{0.0554f, -6.6271f, 41.5916f}, {0.8415f, -0.0221f, 0.1773f, -0.5099f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_left_framedata36[] = {
+static s64FrameData anim_nick_tap_shoe_left_framedata36[] = {
     {{-2.0023f, -31.2927f, 72.3776f}, {0.6922f, 0.6022f, -0.1319f, -0.3752f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.9694f, -32.7308f, 64.3272f}, {0.7195f, 0.4606f, 0.5139f, -0.0775f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-9.9225f, -19.4239f, 69.1110f}, {0.6427f, 0.1030f, -0.5016f, -0.5698f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -15922,7 +15883,7 @@ static FrameData anim_nick_tap_shoe_left_framedata36[] = {
     {{-5.1476f, -3.6104f, 24.6914f}, {0.6470f, 0.3178f, -0.0059f, -0.6931f}, {1.0000f, 1.0000f, 1.0000f}},
     {{1.4602f, -7.6142f, 42.5206f}, {0.8055f, 0.0055f, 0.1918f, -0.5606f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_left_framedata39[] = {
+static s64FrameData anim_nick_tap_shoe_left_framedata39[] = {
     {{-1.9196f, -31.4643f, 71.9369f}, {0.6827f, 0.6014f, -0.1310f, -0.3938f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.7442f, -32.9819f, 63.4950f}, {0.7143f, 0.4744f, 0.5047f, -0.1004f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-9.6572f, -19.3413f, 69.1719f}, {0.6249f, 0.0912f, -0.4985f, -0.5938f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -15960,7 +15921,7 @@ static FrameData anim_nick_tap_shoe_left_framedata39[] = {
     {{-4.6323f, -3.9706f, 24.0694f}, {0.7336f, 0.3072f, -0.0309f, -0.6054f}, {1.0000f, 1.0000f, 1.0000f}},
     {{1.3281f, -7.5860f, 42.2071f}, {0.8115f, 0.0078f, 0.1713f, -0.5587f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_left_framedata44[] = {
+static s64FrameData anim_nick_tap_shoe_left_framedata44[] = {
     {{-2.0629f, -31.5150f, 72.1852f}, {0.6763f, 0.6045f, -0.1220f, -0.4029f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.6221f, -33.1997f, 63.9318f}, {0.7209f, 0.4671f, 0.4966f, -0.1244f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-9.6852f, -19.2839f, 69.2912f}, {0.6086f, 0.0914f, -0.5058f, -0.6046f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -15998,7 +15959,7 @@ static FrameData anim_nick_tap_shoe_left_framedata44[] = {
     {{-3.6593f, -2.5402f, 24.5525f}, {0.6842f, 0.3110f, -0.0196f, -0.6593f}, {1.0000f, 1.0000f, 1.0000f}},
     {{1.6674f, -7.5108f, 42.5662f}, {0.7904f, 0.0397f, 0.1782f, -0.5848f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_left_framedata51[] = {
+static s64FrameData anim_nick_tap_shoe_left_framedata51[] = {
     {{-3.1502f, -29.5668f, 72.3104f}, {0.6733f, 0.5983f, -0.1220f, -0.4170f}, {1.0000f, 1.0000f, 1.0000f}},
     {{7.7288f, -31.2214f, 64.2326f}, {0.7185f, 0.4613f, 0.5053f, -0.1250f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.8114f, -17.4640f, 69.2380f}, {0.5972f, 0.0997f, -0.5147f, -0.6070f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -16036,7 +15997,7 @@ static FrameData anim_nick_tap_shoe_left_framedata51[] = {
     {{-4.2204f, 0.3497f, 24.8580f}, {0.7150f, 0.2592f, 0.0738f, -0.6451f}, {1.0000f, 1.0000f, 1.0000f}},
     {{0.9380f, -5.6640f, 42.6006f}, {0.7938f, 0.0671f, 0.1913f, -0.5734f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_left_framedata59[] = {
+static s64FrameData anim_nick_tap_shoe_left_framedata59[] = {
     {{-5.8121f, -24.0460f, 72.3283f}, {0.6886f, 0.5816f, -0.1375f, -0.4107f}, {1.0000f, 1.0000f, 1.0000f}},
     {{5.9710f, -25.3652f, 65.1285f}, {0.7444f, 0.4082f, 0.5171f, -0.1090f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.8264f, -12.8410f, 67.8799f}, {0.5966f, 0.1298f, -0.5404f, -0.5790f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -16074,7 +16035,7 @@ static FrameData anim_nick_tap_shoe_left_framedata59[] = {
     {{-7.0547f, 2.4328f, 23.3051f}, {0.8112f, 0.2155f, 0.0892f, -0.5363f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-1.5040f, -1.9132f, 41.4125f}, {0.8279f, 0.0359f, 0.1734f, -0.5321f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_left_framedata69[] = {
+static s64FrameData anim_nick_tap_shoe_left_framedata69[] = {
     {{-8.4147f, -13.5078f, 74.4332f}, {0.8105f, 0.4570f, -0.1950f, -0.3101f}, {1.0000f, 1.0000f, 1.0000f}},
     {{4.4255f, -14.7976f, 68.2620f}, {0.8025f, 0.2785f, 0.5182f, -0.0996f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-16.7709f, -4.5948f, 67.4398f}, {0.6736f, 0.1337f, -0.5488f, -0.4767f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -16112,7 +16073,7 @@ static FrameData anim_nick_tap_shoe_left_framedata69[] = {
     {{-8.8536f, 4.3458f, 21.2789f}, {0.8010f, 0.2454f, 0.0182f, -0.5458f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.7419f, 2.5703f, 40.1870f}, {0.8644f, 0.0064f, 0.1060f, -0.4915f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_left_framedata79[] = {
+static s64FrameData anim_nick_tap_shoe_left_framedata79[] = {
     {{-6.3415f, -10.4958f, 74.9186f}, {0.9734f, 0.1993f, -0.1073f, -0.0360f}, {1.0000f, 1.0000f, 1.0000f}},
     {{6.1918f, -11.4875f, 68.4671f}, {0.8354f, 0.2125f, 0.5049f, -0.0443f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-15.5975f, -2.9980f, 66.8931f}, {0.6843f, 0.1154f, -0.5664f, -0.4445f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -16150,7 +16111,7 @@ static FrameData anim_nick_tap_shoe_left_framedata79[] = {
     {{-9.5283f, 3.8306f, 20.0953f}, {0.7968f, 0.2872f, 0.0066f, -0.5315f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.2931f, 2.3852f, 39.0043f}, {0.8709f, -0.0010f, 0.1050f, -0.4801f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_left_framedata85[] = {
+static s64FrameData anim_nick_tap_shoe_left_framedata85[] = {
     {{-4.1190f, -10.1749f, 75.0686f}, {0.9872f, 0.1489f, -0.0574f, 0.0068f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.1043f, -10.8425f, 67.9782f}, {0.8289f, 0.1987f, 0.5217f, -0.0359f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.9901f, -3.2235f, 67.2507f}, {0.6933f, 0.0975f, -0.5616f, -0.4409f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -16188,7 +16149,7 @@ static FrameData anim_nick_tap_shoe_left_framedata85[] = {
     {{-9.3135f, 4.7485f, 20.1911f}, {0.7954f, 0.2740f, -0.0044f, -0.5406f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.7993f, 2.1510f, 38.9114f}, {0.8602f, 0.0192f, 0.1258f, -0.4938f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_left_framedata98[] = {
+static s64FrameData anim_nick_tap_shoe_left_framedata98[] = {
     {{-1.9623f, -9.3555f, 75.1983f}, {0.9921f, 0.1217f, -0.0312f, -0.0044f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.2363f, -9.7214f, 67.9963f}, {0.8091f, 0.1751f, 0.5595f, -0.0398f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.1341f, -2.8177f, 67.5202f}, {0.7428f, 0.0868f, -0.5367f, -0.3908f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -16226,7 +16187,7 @@ static FrameData anim_nick_tap_shoe_left_framedata98[] = {
     {{-8.7563f, 5.2256f, 20.4311f}, {0.7866f, 0.2620f, 0.0084f, -0.5590f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.0637f, 2.7878f, 39.1290f}, {0.8663f, 0.0152f, 0.1281f, -0.4826f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_tap_shoe_left_keyframes[] = {
+static s64KeyFrame anim_nick_tap_shoe_left_keyframes[] = {
     {0, anim_nick_tap_shoe_left_framedata0},
     {9, anim_nick_tap_shoe_left_framedata9},
     {19, anim_nick_tap_shoe_left_framedata19},
@@ -16246,7 +16207,7 @@ static KeyFrame anim_nick_tap_shoe_left_keyframes[] = {
     {98, anim_nick_tap_shoe_left_framedata98},
 };
 
-static FrameData anim_nick_tap_shoe_right_framedata0[] = {
+static s64FrameData anim_nick_tap_shoe_right_framedata0[] = {
     {{1.9412f, -9.3638f, 75.1955f}, {0.9920f, 0.1221f, 0.0306f, 0.0045f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.0776f, -2.7775f, 67.6498f}, {0.7435f, 0.0851f, 0.5348f, 0.3923f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.2622f, -9.7794f, 67.8669f}, {0.8077f, 0.1789f, -0.5604f, 0.0403f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -16284,7 +16245,7 @@ static FrameData anim_nick_tap_shoe_right_framedata0[] = {
     {{-1.5147f, -15.8847f, 23.1110f}, {0.9206f, 0.0214f, 0.0846f, 0.3805f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.6977f, -5.4211f, 39.1721f}, {0.9206f, -0.2754f, 0.0065f, 0.2768f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_right_framedata9[] = {
+static s64FrameData anim_nick_tap_shoe_right_framedata9[] = {
     {{1.7345f, -13.7289f, 73.6439f}, {0.8634f, 0.4536f, 0.0942f, 0.1997f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.8162f, -6.4727f, 66.7673f}, {0.7212f, 0.1402f, 0.5707f, 0.3667f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.6674f, -13.0122f, 66.5774f}, {0.8055f, 0.2137f, -0.5504f, 0.0496f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -16322,7 +16283,7 @@ static FrameData anim_nick_tap_shoe_right_framedata9[] = {
     {{-1.1115f, -17.2509f, 23.0289f}, {0.9201f, 0.0506f, 0.0819f, 0.3798f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.4442f, -6.3823f, 38.5427f}, {0.9116f, -0.2977f, -0.0172f, 0.2831f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_right_framedata19[] = {
+static s64FrameData anim_nick_tap_shoe_right_framedata19[] = {
     {{1.0645f, -25.3598f, 72.2878f}, {0.7230f, 0.6026f, 0.1309f, 0.3116f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.2870f, -15.3781f, 67.8469f}, {0.6892f, 0.1309f, 0.5247f, 0.4823f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.9262f, -25.3510f, 65.0051f}, {0.7677f, 0.3848f, -0.5111f, 0.0369f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -16360,7 +16321,7 @@ static FrameData anim_nick_tap_shoe_right_framedata19[] = {
     {{-1.2740f, -20.0581f, 22.7278f}, {0.9206f, 0.0987f, 0.0515f, 0.3744f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.2434f, -12.4443f, 39.5793f}, {0.9052f, -0.2280f, -0.0659f, 0.3526f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_right_framedata23[] = {
+static s64FrameData anim_nick_tap_shoe_right_framedata23[] = {
     {{1.0583f, -27.7144f, 72.1891f}, {0.6990f, 0.6208f, 0.1365f, 0.3279f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.8059f, -17.0065f, 68.2017f}, {0.6804f, 0.1133f, 0.5156f, 0.5084f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.7578f, -28.1528f, 64.8551f}, {0.7607f, 0.4097f, -0.5019f, 0.0413f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -16398,7 +16359,7 @@ static FrameData anim_nick_tap_shoe_right_framedata23[] = {
     {{-1.1202f, -20.6235f, 22.5511f}, {0.9198f, 0.1115f, 0.0521f, 0.3726f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.4378f, -14.1962f, 39.7660f}, {0.8995f, -0.2034f, -0.0792f, 0.3786f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_right_framedata24[] = {
+static s64FrameData anim_nick_tap_shoe_right_framedata24[] = {
     {{1.1515f, -28.1942f, 72.1110f}, {0.6979f, 0.6204f, 0.1358f, 0.3309f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.8613f, -17.4089f, 68.2106f}, {0.6764f, 0.1113f, 0.5157f, 0.5139f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.6103f, -28.6769f, 64.7154f}, {0.7575f, 0.4148f, -0.5024f, 0.0417f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -16436,7 +16397,7 @@ static FrameData anim_nick_tap_shoe_right_framedata24[] = {
     {{-0.9928f, -20.7680f, 22.4921f}, {0.9193f, 0.1157f, 0.0537f, 0.3723f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.3944f, -14.5616f, 39.7570f}, {0.8974f, -0.1994f, -0.0818f, 0.3850f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_right_framedata27[] = {
+static s64FrameData anim_nick_tap_shoe_right_framedata27[] = {
     {{1.4719f, -29.0828f, 71.8638f}, {0.6929f, 0.6223f, 0.1312f, 0.3397f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.1466f, -18.1617f, 68.2451f}, {0.6708f, 0.1053f, 0.5145f, 0.5236f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.0863f, -29.6229f, 64.1434f}, {0.7493f, 0.4249f, -0.5056f, 0.0476f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -16474,7 +16435,7 @@ static FrameData anim_nick_tap_shoe_right_framedata27[] = {
     {{-0.5281f, -21.1955f, 22.2902f}, {0.9171f, 0.1314f, 0.0598f, 0.3716f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.1169f, -15.4007f, 39.6276f}, {0.8932f, -0.1925f, -0.0877f, 0.3967f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_right_framedata28[] = {
+static s64FrameData anim_nick_tap_shoe_right_framedata28[] = {
     {{1.5038f, -29.3066f, 71.8594f}, {0.6925f, 0.6216f, 0.1304f, 0.3422f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.1839f, -18.3889f, 68.2731f}, {0.6686f, 0.1060f, 0.5146f, 0.5262f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.0132f, -29.8878f, 64.0754f}, {0.7469f, 0.4247f, -0.5091f, 0.0516f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -16512,7 +16473,7 @@ static FrameData anim_nick_tap_shoe_right_framedata28[] = {
     {{-0.4586f, -21.3312f, 22.2354f}, {0.9165f, 0.1357f, 0.0604f, 0.3713f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.0762f, -15.6426f, 39.5970f}, {0.8928f, -0.1903f, -0.0891f, 0.3985f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_right_framedata31[] = {
+static s64FrameData anim_nick_tap_shoe_right_framedata31[] = {
     {{1.5625f, -29.7169f, 71.8969f}, {0.6935f, 0.6185f, 0.1306f, 0.3456f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.2174f, -18.7711f, 68.3202f}, {0.6650f, 0.1121f, 0.5109f, 0.5331f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-9.9117f, -30.3268f, 64.0370f}, {0.7438f, 0.4264f, -0.5121f, 0.0519f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -16550,7 +16511,7 @@ static FrameData anim_nick_tap_shoe_right_framedata31[] = {
     {{-0.3412f, -21.5326f, 22.1525f}, {0.9158f, 0.1420f, 0.0607f, 0.3709f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.0368f, -16.1909f, 39.5942f}, {0.8890f, -0.1838f, -0.0921f, 0.4091f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_right_framedata36[] = {
+static s64FrameData anim_nick_tap_shoe_right_framedata36[] = {
     {{2.0038f, -31.2859f, 72.3797f}, {0.6922f, 0.6022f, 0.1319f, 0.3752f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.8671f, -19.4393f, 69.2306f}, {0.6435f, 0.1009f, 0.4998f, 0.5709f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.9635f, -32.7352f, 64.2015f}, {0.7178f, 0.4635f, -0.5136f, 0.0781f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -16588,7 +16549,7 @@ static FrameData anim_nick_tap_shoe_right_framedata36[] = {
     {{-1.3444f, -22.0031f, 22.2595f}, {0.9170f, 0.1400f, 0.0283f, 0.3723f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.2745f, -17.8830f, 40.2994f}, {0.8880f, -0.1465f, -0.0831f, 0.4278f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_right_framedata39[] = {
+static s64FrameData anim_nick_tap_shoe_right_framedata39[] = {
     {{1.9215f, -31.4593f, 71.9416f}, {0.6827f, 0.6014f, 0.1311f, 0.3938f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.6009f, -19.3633f, 69.2919f}, {0.6257f, 0.0889f, 0.4966f, 0.5949f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.7344f, -32.9855f, 63.3711f}, {0.7126f, 0.4771f, -0.5043f, 0.1011f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -16626,7 +16587,7 @@ static FrameData anim_nick_tap_shoe_right_framedata39[] = {
     {{-1.3338f, -22.2472f, 22.1988f}, {0.9159f, 0.1472f, 0.0250f, 0.3727f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.3197f, -17.7854f, 40.1386f}, {0.8925f, -0.1541f, -0.0832f, 0.4156f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_right_framedata44[] = {
+static s64FrameData anim_nick_tap_shoe_right_framedata44[] = {
     {{2.0641f, -31.5085f, 72.1877f}, {0.6763f, 0.6045f, 0.1220f, 0.4029f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.6297f, -19.3042f, 69.4098f}, {0.6094f, 0.0892f, 0.5039f, 0.6056f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.6147f, -33.2029f, 63.8059f}, {0.7193f, 0.4699f, -0.4963f, 0.1250f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -16664,7 +16625,7 @@ static FrameData anim_nick_tap_shoe_right_framedata44[] = {
     {{-1.5779f, -22.0687f, 22.2939f}, {0.9169f, 0.1389f, 0.0204f, 0.3736f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.2954f, -17.8924f, 40.3893f}, {0.8903f, -0.1448f, -0.0781f, 0.4245f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_right_framedata51[] = {
+static s64FrameData anim_nick_tap_shoe_right_framedata51[] = {
     {{3.1520f, -29.5612f, 72.3137f}, {0.6733f, 0.5983f, 0.1220f, 0.4170f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.7579f, -17.4839f, 69.3584f}, {0.5980f, 0.0975f, 0.5129f, 0.6081f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.7231f, -31.2264f, 64.1076f}, {0.7168f, 0.4641f, -0.5050f, 0.1255f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -16702,7 +16663,7 @@ static FrameData anim_nick_tap_shoe_right_framedata51[] = {
     {{-1.2161f, -20.7303f, 22.5792f}, {0.9197f, 0.1079f, 0.0401f, 0.3753f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.6623f, -16.0341f, 40.6308f}, {0.8866f, -0.1549f, -0.0644f, 0.4311f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_right_framedata59[] = {
+static s64FrameData anim_nick_tap_shoe_right_framedata59[] = {
     {{5.8145f, -24.0415f, 72.3331f}, {0.6886f, 0.5816f, 0.1375f, 0.4107f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.7799f, -12.8484f, 68.0069f}, {0.5974f, 0.1277f, 0.5388f, 0.5801f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.9735f, -25.3805f, 65.0060f}, {0.7428f, 0.4112f, -0.5169f, 0.1096f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -16740,7 +16701,7 @@ static FrameData anim_nick_tap_shoe_right_framedata59[] = {
     {{-0.3221f, -18.6808f, 22.7769f}, {0.9198f, 0.0689f, 0.0779f, 0.3784f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.1848f, -11.8233f, 40.2956f}, {0.8918f, -0.1995f, -0.0323f, 0.4047f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_right_framedata69[] = {
+static s64FrameData anim_nick_tap_shoe_right_framedata69[] = {
     {{8.4145f, -13.5004f, 74.4243f}, {0.8105f, 0.4570f, 0.1950f, 0.3101f}, {1.0000f, 1.0000f, 1.0000f}},
     {{16.7284f, -4.5656f, 67.5542f}, {0.6741f, 0.1319f, 0.5476f, 0.4779f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.4395f, -14.8359f, 68.1332f}, {0.8012f, 0.2818f, -0.5183f, 0.1002f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -16778,7 +16739,7 @@ static FrameData anim_nick_tap_shoe_right_framedata69[] = {
     {{-0.9538f, -14.6985f, 23.0141f}, {0.9193f, -0.0171f, 0.0998f, 0.3803f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.1223f, -6.5012f, 40.4977f}, {0.9139f, -0.2037f, 0.0328f, 0.3497f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_right_framedata79[] = {
+static s64FrameData anim_nick_tap_shoe_right_framedata79[] = {
     {{6.3428f, -10.4874f, 74.9191f}, {0.9734f, 0.1993f, 0.1073f, 0.0360f}, {1.0000f, 1.0000f, 1.0000f}},
     {{15.5578f, -2.9510f, 67.0124f}, {0.6847f, 0.1135f, 0.5655f, 0.4456f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.2064f, -11.5362f, 68.3549f}, {0.8344f, 0.2158f, -0.5051f, 0.0449f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -16816,7 +16777,7 @@ static FrameData anim_nick_tap_shoe_right_framedata79[] = {
     {{-0.1843f, -15.8992f, 22.8900f}, {0.9180f, 0.0286f, 0.1089f, 0.3803f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.0206f, -6.2632f, 39.5236f}, {0.9131f, -0.2490f, 0.0227f, 0.3222f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_right_framedata85[] = {
+static s64FrameData anim_nick_tap_shoe_right_framedata85[] = {
     {{4.1262f, -10.1655f, 75.0693f}, {0.9872f, 0.1489f, 0.0574f, -0.0068f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.9531f, -3.1735f, 67.3682f}, {0.6937f, 0.0955f, 0.5606f, 0.4420f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.1098f, -10.8892f, 67.8657f}, {0.8279f, 0.2020f, -0.5220f, 0.0366f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -16854,7 +16815,7 @@ static FrameData anim_nick_tap_shoe_right_framedata85[] = {
     {{-0.8821f, -16.5879f, 23.0142f}, {0.9199f, 0.0415f, 0.0885f, 0.3799f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-3.7235f, -6.2937f, 39.2479f}, {0.9193f, -0.2676f, 0.0177f, 0.2881f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_tap_shoe_right_framedata98[] = {
+static s64FrameData anim_nick_tap_shoe_right_framedata98[] = {
     {{1.9661f, -9.3474f, 75.1985f}, {0.9921f, 0.1217f, 0.0312f, 0.0044f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.0932f, -2.7672f, 67.6368f}, {0.7432f, 0.0849f, 0.5355f, 0.3919f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.2464f, -9.7690f, 67.8837f}, {0.8081f, 0.1787f, -0.5598f, 0.0405f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -16892,7 +16853,7 @@ static FrameData anim_nick_tap_shoe_right_framedata98[] = {
     {{-1.5150f, -15.8844f, 23.1108f}, {0.9206f, 0.0214f, 0.0845f, 0.3805f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.6977f, -5.4211f, 39.1721f}, {0.9206f, -0.2754f, 0.0065f, 0.2767f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_tap_shoe_right_keyframes[] = {
+static s64KeyFrame anim_nick_tap_shoe_right_keyframes[] = {
     {0, anim_nick_tap_shoe_right_framedata0},
     {9, anim_nick_tap_shoe_right_framedata9},
     {19, anim_nick_tap_shoe_right_framedata19},
@@ -16912,7 +16873,7 @@ static KeyFrame anim_nick_tap_shoe_right_keyframes[] = {
     {98, anim_nick_tap_shoe_right_framedata98},
 };
 
-static FrameData anim_nick_walk_left_framedata0[] = {
+static s64FrameData anim_nick_walk_left_framedata0[] = {
     {{0.7329f, -2.0358f, 79.5920f}, {0.9991f, 0.0408f, -0.0018f, 0.0074f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.8003f, -1.9258f, 70.3997f}, {0.8263f, 0.0111f, 0.5628f, -0.0204f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.8025f, -2.7420f, 70.7556f}, {0.8250f, 0.0555f, -0.5539f, -0.0969f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -16950,7 +16911,7 @@ static FrameData anim_nick_walk_left_framedata0[] = {
     {{-5.2288f, -5.4990f, 22.9746f}, {0.9959f, 0.0808f, -0.0340f, 0.0234f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8520f, -1.6398f, 42.0086f}, {0.9955f, -0.0778f, -0.0210f, -0.0488f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_walk_left_framedata4[] = {
+static s64FrameData anim_nick_walk_left_framedata4[] = {
     {{1.5622f, -2.3967f, 78.9824f}, {0.9983f, 0.0545f, 0.0083f, 0.0171f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.5960f, -1.3284f, 69.5829f}, {0.7837f, 0.0858f, 0.6013f, 0.1303f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.0231f, -3.3895f, 70.5743f}, {0.8397f, -0.0225f, -0.5413f, 0.0381f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -16988,7 +16949,7 @@ static FrameData anim_nick_walk_left_framedata4[] = {
     {{-5.7560f, 1.0750f, 22.1951f}, {0.9775f, 0.2043f, -0.0516f, -0.0077f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8970f, -1.1407f, 41.4992f}, {0.9909f, 0.0782f, 0.0014f, -0.1098f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_walk_left_framedata7[] = {
+static s64FrameData anim_nick_walk_left_framedata7[] = {
     {{2.1553f, -2.3215f, 76.2675f}, {0.9984f, 0.0522f, 0.0013f, 0.0207f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.5036f, -0.9173f, 67.3248f}, {0.7778f, 0.0987f, 0.5827f, 0.2137f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-9.4934f, -3.7775f, 68.5021f}, {0.8344f, -0.0180f, -0.5226f, 0.1739f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -17026,7 +16987,7 @@ static FrameData anim_nick_walk_left_framedata7[] = {
     {{-6.0728f, 4.5604f, 20.0985f}, {0.9426f, 0.3282f, -0.0544f, -0.0268f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.6668f, -0.7164f, 38.7952f}, {0.9773f, 0.1550f, 0.0281f, -0.1420f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_walk_left_framedata11[] = {
+static s64FrameData anim_nick_walk_left_framedata11[] = {
     {{2.9673f, -1.9942f, 76.3702f}, {0.9994f, 0.0255f, -0.0092f, 0.0195f}, {1.0000f, 1.0000f, 1.0000f}},
     {{14.1051f, -1.4239f, 67.1432f}, {0.7773f, 0.1261f, 0.5654f, 0.2454f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.8277f, -3.5603f, 68.6244f}, {0.8308f, 0.0658f, -0.5447f, 0.0937f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -17064,7 +17025,7 @@ static FrameData anim_nick_walk_left_framedata11[] = {
     {{-5.9166f, 4.3509f, 20.1987f}, {0.8731f, 0.4785f, -0.0034f, -0.0938f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.9297f, -1.3424f, 38.7509f}, {0.9769f, 0.1644f, 0.0431f, -0.1295f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_walk_left_framedata16[] = {
+static s64FrameData anim_nick_walk_left_framedata16[] = {
     {{3.1177f, -2.2748f, 79.9690f}, {0.9981f, 0.0577f, -0.0106f, 0.0159f}, {1.0000f, 1.0000f, 1.0000f}},
     {{13.8797f, -2.7009f, 70.3271f}, {0.7916f, 0.0952f, 0.6034f, 0.0132f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-8.4633f, -1.9743f, 71.1625f}, {0.8031f, 0.0896f, -0.5874f, -0.0443f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -17102,7 +17063,7 @@ static FrameData anim_nick_walk_left_framedata16[] = {
     {{-5.2847f, -8.3320f, 24.2653f}, {0.9535f, 0.2895f, 0.0011f, -0.0836f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.2486f, -1.4866f, 42.4214f}, {0.9858f, -0.1594f, 0.0184f, -0.0488f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_walk_left_framedata20[] = {
+static s64FrameData anim_nick_walk_left_framedata20[] = {
     {{1.5256f, -3.1537f, 78.3828f}, {0.9979f, 0.0565f, -0.0275f, 0.0173f}, {1.0000f, 1.0000f, 1.0000f}},
     {{12.6482f, -3.5607f, 69.3942f}, {0.8385f, 0.0806f, 0.5339f, -0.0727f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-9.9161f, -2.1103f, 69.3884f}, {0.7778f, 0.1336f, -0.5990f, -0.1355f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -17140,7 +17101,7 @@ static FrameData anim_nick_walk_left_framedata20[] = {
     {{-4.4193f, -12.8007f, 24.5920f}, {0.9877f, -0.1516f, 0.0130f, -0.0354f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.3335f, -1.7845f, 40.5987f}, {0.9610f, -0.2766f, 0.0044f, 0.0029f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_walk_left_framedata23[] = {
+static s64FrameData anim_nick_walk_left_framedata23[] = {
     {{0.4311f, -2.8465f, 76.0842f}, {0.9990f, 0.0390f, -0.0154f, 0.0128f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.5882f, -3.9102f, 67.2807f}, {0.8590f, 0.0406f, 0.4980f, -0.1117f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.7241f, -1.7449f, 66.5375f}, {0.7482f, 0.1839f, -0.5999f, -0.2157f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -17178,7 +17139,7 @@ static FrameData anim_nick_walk_left_framedata23[] = {
     {{-3.9088f, -15.2740f, 24.0165f}, {0.9723f, -0.2332f, 0.0076f, 0.0162f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-4.7435f, -2.1159f, 38.2904f}, {0.9385f, -0.3443f, -0.0128f, 0.0223f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_walk_left_framedata27[] = {
+static s64FrameData anim_nick_walk_left_framedata27[] = {
     {{0.4734f, -2.3684f, 77.0575f}, {0.9995f, 0.0221f, -0.0186f, 0.0103f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.7957f, -3.2863f, 68.2895f}, {0.8549f, 0.0209f, 0.5045f, -0.1190f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.6268f, -2.1716f, 67.5076f}, {0.7675f, 0.1642f, -0.5831f, -0.2094f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -17216,7 +17177,7 @@ static FrameData anim_nick_walk_left_framedata27[] = {
     {{-4.4756f, -13.1549f, 23.5793f}, {0.9994f, -0.0246f, -0.0131f, 0.0218f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.3873f, -2.0895f, 39.5261f}, {0.9601f, -0.2785f, -0.0190f, 0.0137f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_walk_left_framedata31[] = {
+static s64FrameData anim_nick_walk_left_framedata31[] = {
     {{0.7329f, -2.0358f, 79.5920f}, {0.9991f, 0.0408f, -0.0018f, 0.0074f}, {1.0000f, 1.0000f, 1.0000f}},
     {{11.8003f, -1.9258f, 70.3997f}, {0.8263f, 0.0111f, 0.5628f, -0.0204f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-10.8025f, -2.7420f, 70.7556f}, {0.8250f, 0.0555f, -0.5539f, -0.0969f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -17254,7 +17215,7 @@ static FrameData anim_nick_walk_left_framedata31[] = {
     {{-5.2288f, -5.4990f, 22.9746f}, {0.9959f, 0.0808f, -0.0340f, 0.0234f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-5.8520f, -1.6398f, 42.0086f}, {0.9955f, -0.0778f, -0.0210f, -0.0488f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_walk_left_keyframes[] = {
+static s64KeyFrame anim_nick_walk_left_keyframes[] = {
     {0, anim_nick_walk_left_framedata0},
     {4, anim_nick_walk_left_framedata4},
     {7, anim_nick_walk_left_framedata7},
@@ -17266,7 +17227,7 @@ static KeyFrame anim_nick_walk_left_keyframes[] = {
     {31, anim_nick_walk_left_framedata31},
 };
 
-static FrameData anim_nick_walk_right_framedata0[] = {
+static s64FrameData anim_nick_walk_right_framedata0[] = {
     {{-0.7242f, -2.0363f, 79.5955f}, {0.9991f, 0.0408f, 0.0018f, -0.0074f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.5696f, -2.6476f, 70.3881f}, {0.8075f, 0.0564f, 0.5793f, 0.0963f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.8115f, -2.0258f, 70.3149f}, {0.8261f, 0.0128f, -0.5630f, 0.0219f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -17304,7 +17265,7 @@ static FrameData anim_nick_walk_right_framedata0[] = {
     {{-8.2364f, -8.9006f, 24.0477f}, {0.9278f, 0.3628f, -0.0147f, -0.0855f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.1382f, -1.0690f, 41.7067f}, {0.9771f, -0.1898f, 0.0355f, -0.0898f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_walk_right_framedata4[] = {
+static s64FrameData anim_nick_walk_right_framedata4[] = {
     {{-1.5591f, -2.3917f, 78.9836f}, {0.9983f, 0.0545f, -0.0083f, -0.0170f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.0125f, -3.2884f, 70.6647f}, {0.8401f, -0.0248f, 0.5406f, -0.0367f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.6152f, -1.4179f, 69.4932f}, {0.7836f, 0.0878f, -0.6013f, -0.1291f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -17342,7 +17303,7 @@ static FrameData anim_nick_walk_right_framedata4[] = {
     {{-6.8975f, -12.8285f, 25.4040f}, {0.9944f, -0.0650f, -0.0051f, -0.0835f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.1036f, -1.3827f, 41.0865f}, {0.9559f, -0.2903f, 0.0078f, -0.0428f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_walk_right_framedata7[] = {
+static s64FrameData anim_nick_walk_right_framedata7[] = {
     {{-2.1529f, -2.3167f, 77.1150f}, {0.9984f, 0.0522f, -0.0013f, -0.0207f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.4790f, -3.6749f, 69.4372f}, {0.8349f, -0.0206f, 0.5222f, -0.1725f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.1922f, -1.0056f, 67.4161f}, {0.7506f, 0.1102f, -0.6175f, -0.2078f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -17380,7 +17341,7 @@ static FrameData anim_nick_walk_right_framedata7[] = {
     {{-6.3676f, -14.9107f, 25.2536f}, {0.9813f, -0.1909f, 0.0051f, -0.0252f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.3152f, -1.4481f, 39.2655f}, {0.9352f, -0.3537f, -0.0048f, -0.0175f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_walk_right_framedata11[] = {
+static s64FrameData anim_nick_walk_right_framedata11[] = {
     {{-2.9693f, -1.9909f, 76.3683f}, {0.9994f, 0.0255f, 0.0092f, -0.0195f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.8083f, -3.4570f, 68.7062f}, {0.8310f, 0.0631f, 0.5449f, -0.0926f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.6858f, -1.5201f, 66.2471f}, {0.7489f, 0.1147f, -0.6163f, -0.2150f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -17418,7 +17379,7 @@ static FrameData anim_nick_walk_right_framedata11[] = {
     {{-6.9504f, -14.3391f, 23.5299f}, {0.9998f, -0.0072f, -0.0137f, 0.0146f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.0592f, -2.1110f, 38.6309f}, {0.9493f, -0.3137f, -0.0094f, -0.0200f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_walk_right_framedata16[] = {
+static s64FrameData anim_nick_walk_right_framedata16[] = {
     {{-3.1141f, -2.2699f, 79.9648f}, {0.9981f, 0.0577f, 0.0106f, -0.0159f}, {1.0000f, 1.0000f, 1.0000f}},
     {{8.4487f, -1.8762f, 71.2470f}, {0.7760f, 0.0886f, 0.6231f, 0.0413f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-13.8859f, -2.7976f, 70.2347f}, {0.7915f, 0.0969f, -0.6033f, -0.0118f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -17456,7 +17417,7 @@ static FrameData anim_nick_walk_right_framedata16[] = {
     {{-7.5459f, -4.1254f, 22.8989f}, {0.9942f, 0.1025f, -0.0302f, 0.0154f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.7546f, -1.2150f, 42.1099f}, {0.9943f, -0.0532f, -0.0131f, -0.0910f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_walk_right_framedata20[] = {
+static s64FrameData anim_nick_walk_right_framedata20[] = {
     {{-1.5223f, -3.1548f, 78.3840f}, {0.9979f, 0.0565f, 0.0275f, -0.0173f}, {1.0000f, 1.0000f, 1.0000f}},
     {{9.5816f, -2.0235f, 68.8900f}, {0.7618f, 0.1346f, 0.6196f, 0.1328f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-12.6588f, -3.6610f, 69.3048f}, {0.8383f, 0.0821f, -0.5338f, 0.0740f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -17494,7 +17455,7 @@ static FrameData anim_nick_walk_right_framedata20[] = {
     {{-7.9870f, 2.7342f, 21.6679f}, {0.9735f, 0.2225f, -0.0507f, 0.0169f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.6167f, -0.6038f, 40.8067f}, {0.9815f, 0.1045f, 0.0209f, -0.1592f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_walk_right_framedata23[] = {
+static s64FrameData anim_nick_walk_right_framedata23[] = {
     {{-0.5460f, -3.0759f, 76.1553f}, {0.9986f, 0.0478f, 0.0194f, -0.0138f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.3810f, -1.7799f, 66.3468f}, {0.7357f, 0.1914f, 0.6180f, 0.2005f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.7735f, -4.0237f, 67.3451f}, {0.8546f, 0.0459f, -0.5042f, 0.1156f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -17532,7 +17493,7 @@ static FrameData anim_nick_walk_right_framedata23[] = {
     {{-8.0068f, 5.5284f, 20.0821f}, {0.9310f, 0.3611f, -0.0529f, 0.0058f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-7.3192f, -0.2647f, 38.6170f}, {0.9695f, 0.1660f, 0.0416f, -0.1754f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_walk_right_framedata27[] = {
+static s64FrameData anim_nick_walk_right_framedata27[] = {
     {{-0.4668f, -2.3784f, 77.0499f}, {0.9995f, 0.0221f, 0.0186f, -0.0103f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.3358f, -2.0901f, 67.1150f}, {0.7473f, 0.1691f, 0.6091f, 0.2046f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.8056f, -3.3988f, 68.1952f}, {0.8546f, 0.0224f, -0.5046f, 0.1205f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -17570,7 +17531,7 @@ static FrameData anim_nick_walk_right_framedata27[] = {
     {{-8.6796f, 0.8959f, 19.8866f}, {0.8328f, 0.5445f, -0.0100f, -0.0988f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.5253f, -0.6273f, 39.1379f}, {0.9873f, 0.0523f, 0.0586f, -0.1378f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static FrameData anim_nick_walk_right_framedata31[] = {
+static s64FrameData anim_nick_walk_right_framedata31[] = {
     {{-0.6525f, -2.1209f, 78.9633f}, {0.9993f, 0.0361f, 0.0062f, -0.0082f}, {1.0000f, 1.0000f, 1.0000f}},
     {{10.5304f, -2.5068f, 69.5685f}, {0.7953f, 0.0842f, 0.5873f, 0.1249f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-11.8138f, -2.3677f, 69.7896f}, {0.8346f, 0.0152f, -0.5487f, 0.0464f}, {1.0000f, 1.0000f, 1.0000f}},
@@ -17608,7 +17569,7 @@ static FrameData anim_nick_walk_right_framedata31[] = {
     {{-8.5147f, -6.5485f, 22.5929f}, {0.9077f, 0.4095f, -0.0110f, -0.0908f}, {1.0000f, 1.0000f, 1.0000f}},
     {{-6.2381f, -0.9584f, 41.0630f}, {0.9853f, -0.1301f, 0.0430f, -0.1025f}, {1.0000f, 1.0000f, 1.0000f}},
 };
-static KeyFrame anim_nick_walk_right_keyframes[] = {
+static s64KeyFrame anim_nick_walk_right_keyframes[] = {
     {0, anim_nick_walk_right_framedata0},
     {4, anim_nick_walk_right_framedata4},
     {7, anim_nick_walk_right_framedata7},
@@ -17625,7 +17586,7 @@ static KeyFrame anim_nick_walk_right_keyframes[] = {
         Sausage64 Structs
 *********************************/
 
-static Mesh meshes_nick[] = {
+static s64Mesh meshes_nick[] = {
     {"mixamorig_Head", 0, gfx_nick_mixamorig_Head},
     {"mixamorig_LeftArm", 0, gfx_nick_mixamorig_LeftArm},
     {"mixamorig_RightArm", 0, gfx_nick_mixamorig_RightArm},
@@ -17664,7 +17625,7 @@ static Mesh meshes_nick[] = {
     {"mixamorig_RightUpLeg", 0, gfx_nick_mixamorig_RightUpLeg},
 };
 
-static Animation anims_nick[] = {
+static s64Animation anims_nick[] = {
     {"_0_t_pose", 1, anim_nick__0_t_pose_keyframes},
     {"crouch_idle_left", 8, anim_nick_crouch_idle_left_keyframes},
     {"crouch_idle_right", 8, anim_nick_crouch_idle_right_keyframes},
@@ -17685,7 +17646,7 @@ static Animation anims_nick[] = {
     {"run_arc_left", 11, anim_nick_run_arc_left_keyframes},
     {"run_arc_right", 11, anim_nick_run_arc_right_keyframes},
     {"run_left", 9, anim_nick_run_left_keyframes},
-    {"run_right", 10, anim_nick_run_right_keyframes},
+    {"run_right", 9, anim_nick_run_right_keyframes},
     {"run_to_roll_left", 14, anim_nick_run_to_roll_left_keyframes},
     {"run_to_roll_right", 14, anim_nick_run_to_roll_right_keyframes},
     {"run_to_stand_left", 9, anim_nick_run_to_stand_left_keyframes},
@@ -17708,4 +17669,4 @@ static Animation anims_nick[] = {
     {"walk_right", 9, anim_nick_walk_right_keyframes},
 };
 
-static ModelData mdl_nick = {36, 41, meshes_nick, anims_nick};
+static s64ModelData mdl_nick = {36, 41, meshes_nick, anims_nick};

@@ -21,16 +21,13 @@ typedef struct {
 
 typedef enum { 
 
-    IDLE,
-    START_WALKING,
-    WALKING, 
-   	START_RUNNING, 
-   	RUNNING,
-	STOP_RUNNING,
+	STAND,
+	CROUCH,
+    WALK,
+	RUN,
 	ROLL,
-   	JUMP,
-	AIRIDLE,	
-	LAND
+	JUMP,
+	FALL
 
 } EntityState;
 
@@ -48,12 +45,9 @@ typedef struct {
 	Mtx	rot_mtx[3];
 	Mtx scale_mtx;
 
-	float pos[3];
-	float dir[3];
-	float scale;
-
+	float position[3];
 	float pitch;
-	
+
 	float target_yaw;
 	float yaw;
 
@@ -62,15 +56,12 @@ typedef struct {
 
 	float target_speed[3];
 	float speed[3];
-
-	float horizontal_speed;
-	float vertical_speed;
-	float input_amount;
-
+	
 	EntityType type;
 	EntityState state;
+	EntityState new_state;
 
-	ModelHelper model;
+	s64ModelHelper model;
 
 } Entity;
 
@@ -78,7 +69,7 @@ typedef struct {
 void set_entity_position(Entity *entity, TimeData time_data);
 void set_animation(Entity *entity);
 void entity_animcallback(Entity *entity);
-void set_entity_state(Entity *entity, EntityState new_state);
+void set_entity_state(Entity *entity);
 
 
 /*==============================================================
@@ -89,9 +80,9 @@ void set_entity_state(Entity *entity, EntityState new_state);
 void set_entity_position(Entity *entity, TimeData time_data){
 
 
-    entity->pos[0] += entity->speed[0] * time_data.frame_duration;
-    entity->pos[1] += entity->speed[1] * time_data.frame_duration;
-    entity->pos[2] += entity->speed[2] * time_data.frame_duration;
+    entity->position[0] += entity->speed[0] * time_data.frame_duration;
+    entity->position[1] += entity->speed[1] * time_data.frame_duration;
+    entity->position[2] += entity->speed[2] * time_data.frame_duration;
 
 }
 
@@ -104,18 +95,14 @@ void set_entity_position(Entity *entity, TimeData time_data){
 
 void set_animation(Entity *entity) {
 
-        if (entity->type == NICK) {
+	if (entity->type == NICK) {
 
-            if (entity->state  == IDLE) set_anim(&entity->model, ANIMATION_nick_tap_shoe_left);
-            if (entity->state  == START_WALKING) set_anim(&entity->model, ANIMATION_nick_walk_left);
-            if (entity->state  == WALKING) set_anim_transition(&entity->model, ANIMATION_nick_walk_left);
-            if (entity->state  == START_RUNNING) set_anim(&entity->model, ANIMATION_nick_stand_to_run_left);
-            if (entity->state  == RUNNING) set_anim_transition(&entity->model, ANIMATION_nick_run_left);
-            if (entity->state  == STOP_RUNNING) set_anim(&entity->model, ANIMATION_nick_run_to_stand_left);
-            if (entity->state  == ROLL) set_anim(&entity->model, ANIMATION_nick_run_to_roll_left);
-            if (entity->state  == JUMP) set_anim(&entity->model, ANIMATION_nick_jump_left);
-            if (entity->state  == AIRIDLE) set_anim(&entity->model, ANIMATION_nick_fall_idle_left);
-            if (entity->state  == LAND) set_anim(&entity->model, ANIMATION_nick_fall_to_stand_left);
+		if (entity->state  == STAND) sausage64_set_anim(&entity->model, ANIMATION_nick_tap_shoe_left);
+		if (entity->state  == CROUCH) sausage64_set_anim(&entity->model, ANIMATION_nick_tap_shoe_left);
+		if (entity->state  == WALK) sausage64_set_anim(&entity->model, ANIMATION_nick_walk_left);
+		if (entity->state  == RUN) sausage64_set_anim(&entity->model, ANIMATION_nick_run_left);
+		if (entity->state  == ROLL) sausage64_set_anim(&entity->model, ANIMATION_nick_run_to_roll_left);
+		if (entity->state  == JUMP) sausage64_set_anim(&entity->model, ANIMATION_nick_jump_left);
 
     }
 }
@@ -128,28 +115,19 @@ void set_animation(Entity *entity) {
 
 void entity_animcallback(Entity *entity){
 
-    // Go to idle animation when we finished attacking
-    switch(entity->state)
-    {
-        case ROLL:
-            set_entity_state(entity, IDLE);
-            break;
+    switch(entity->state){
 
-        case JUMP:
-            set_entity_state(entity, AIRIDLE);
-            break;
+		case STAND: break;
 
-        case LAND:
-            set_entity_state(entity, IDLE);
-            break;
+		case CROUCH: break;
 
-         case START_WALKING:
-            set_entity_state(entity, WALKING);
-            break;
+		case WALK: break;
 
-         case START_RUNNING:
-            set_entity_state(entity, RUNNING);
-            break;
+		case RUN: break;
+
+        case ROLL: set_entity_state(entity); break;
+
+        case JUMP: set_entity_state(entity); break;
     }
 }
 
@@ -160,95 +138,60 @@ void entity_animcallback(Entity *entity){
 ==============================================================*/
 
 
-void set_entity_state(Entity *entity, EntityState new_state) {
+void set_entity_state(Entity *entity) {
     
-    if (entity->state == new_state){
+    if (entity->state == entity->new_state){
         return;
     }
 
-    if (new_state == IDLE && 
-            (    entity->state == START_WALKING 
-              || entity->state == WALKING 
-              || entity->state == START_RUNNING 
-              || entity->state == RUNNING 
+    if (entity->new_state == STAND && 
+              (  entity->state == WALK
+              || entity->state == RUN
               || entity->state == ROLL 
-              || entity->state == JUMP
-              || entity->state == AIRIDLE 
-              || entity->state == LAND)){
+              || entity->state == JUMP)){
 
-        entity->state = new_state;
+        entity->state = entity->new_state;
         set_animation(entity);
     }
 
-    if (new_state == START_WALKING && 
-            (    entity->state == IDLE)){
+	if (entity->new_state == CROUCH && 
+				entity->state == STAND){
 
-        entity->state = new_state;
+        entity->state = entity->new_state;
         set_animation(entity);
     }
 
-    if (new_state == WALKING && 
-            (    entity->state == IDLE
-              || entity->state == START_WALKING
-              || entity->state == RUNNING)){
+    if (entity->new_state == WALK && 
+              (  entity->state == STAND
+              || entity->state == RUN)){
 
-        entity->state = new_state;
+        entity->state = entity->new_state;
         set_animation(entity);
     }
 
-    if (new_state == START_RUNNING && 
-            (    entity->state == IDLE
-              || entity->state == START_WALKING)){
+    if (entity->new_state == RUN && 
+              (  entity->state == STAND
+              || entity->state == WALK)){
 
-        entity->state = new_state;
+        entity->state = entity->new_state;
         set_animation(entity);
     }
 
-    if (new_state == RUNNING && 
-            (    entity->state == IDLE 
-              || entity->state == START_RUNNING
-              || entity->state == WALKING)){
+    if (entity->new_state == ROLL && 
+              (  entity->state == STAND 
+              || entity->state == WALK 
+              || entity->state == RUN)){
 
-        entity->state = new_state;
+        entity->state = entity->new_state;
         set_animation(entity);
     }
 
-    if (entity->state == STOP_RUNNING &&
-                entity->state == RUNNING){
+    if (entity->new_state == JUMP && 
+              (  entity->state == STAND
+              || entity->state == WALK
+              || entity->state == RUN)){
 
-        entity->state = new_state;
-        set_animation(entity);
-    }
-
-    if (new_state == ROLL && 
-            (    entity->state == IDLE 
-              || entity->state == WALKING 
-              || entity->state == RUNNING)){
-
-        entity->state = new_state;
-        set_animation(entity);
-    }
-
-    if (new_state == JUMP && 
-            (    entity->state == IDLE
-              || entity->state == START_WALKING
-              || entity->state == WALKING 
-              || entity->state == START_RUNNING
-              || entity->state == RUNNING)){
-
-        entity->state = new_state;
-        set_animation(entity);
-    }
-
-    if (new_state == AIRIDLE){
-
-        entity->state = new_state;
-        set_animation(entity);
-    }
-
-    if (new_state == LAND){
-
-        entity->state = new_state;
+        entity->state = entity->new_state;
         set_animation(entity);
     }
 }
