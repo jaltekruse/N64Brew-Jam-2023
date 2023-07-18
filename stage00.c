@@ -46,7 +46,7 @@ LightData light_data = {
 
 Camera cam = {
 
-    distance_from_target: 680,
+    distance_from_target: 550,
     angle_around_target: 0,
     pitch: 15, 
 };
@@ -191,11 +191,13 @@ void render_world(Entity highlighted, Camera *camera, LightData *light){
 void render_debug_data(){
 
     nuDebConTextPos(NU_DEB_CON_WINDOW0, 1, 1);
-    nuDebConPrintf(NU_DEB_CON_WINDOW0, "%d", (int)sin(rad(cam.angle_around_target)));
+    nuDebConPrintf(NU_DEB_CON_WINDOW0, "time %d", (int) get_time());
     
     nuDebConTextPos(NU_DEB_CON_WINDOW0, 1, 2);
-    nuDebConPrintf(NU_DEB_CON_WINDOW0, "%d", (int)cos(rad(cam.angle_around_target)));
+    nuDebConPrintf(NU_DEB_CON_WINDOW0, "FPS %d", (int) time_data.FPS);
 
+    nuDebConTextPos(NU_DEB_CON_WINDOW0, 1, 3);
+    nuDebConPrintf(NU_DEB_CON_WINDOW0, "framerate 0.%.d", (int)(tuk.framerate * 100));
 }
 
 

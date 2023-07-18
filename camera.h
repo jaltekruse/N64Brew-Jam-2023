@@ -62,11 +62,11 @@ void set_camera_position_2d(Camera *camera, Entity entity){
 
 	camera->position[0] = entity.position[0];	
     camera->position[1] = entity.position[1] - camera->horizontal_distance_from_target;
-    camera->position[2] = camera->vertical_distance_from_target + entity.position[2] + 80;
+    camera->position[2] = camera->vertical_distance_from_target + entity.position[2] + 60;
 
 	camera->target[0] = entity.position[0];
 	camera->target[1] = entity.position[1];
-	camera->target[2] = entity.position[2] + 220;
+	camera->target[2] = entity.position[2] + 190;
 
     if ((camera->vertical_distance_from_target + entity.position[2]) < 5){camera->position[2] = 5;}
 }

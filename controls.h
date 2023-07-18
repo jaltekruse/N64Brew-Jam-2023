@@ -47,12 +47,12 @@ void move_entity_stick_2d(Entity *entity, Camera camera, NUContData cont[1], Tim
 
         if (fabs(entity->speed[0]) < 300) {
             
-            entity->framerate = fabs(entity->speed[0]) / 600;
+            entity->framerate = fabs(entity->speed[0]) / 450;
             entity->new_state = WALK;
         }
         else {
 
-            entity->framerate = fabs(entity->speed[0]) / 1200;
+            entity->framerate = fabs(entity->speed[0]) / 1000;
             entity->new_state = RUN;
         }
     }
