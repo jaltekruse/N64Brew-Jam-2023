@@ -35,7 +35,8 @@ typedef enum {
 
 typedef enum {
 
-	TUK
+	TUK,
+    PALM_TREE
 
 } EntityType;
 
@@ -46,6 +47,7 @@ typedef struct {
 	Mtx	rot_mtx[3];
 	Mtx scale_mtx;
 
+    float scale;
 	float position[3];
 	float pitch;
 
@@ -63,7 +65,6 @@ typedef struct {
 	EntityState new_state;
 
 	s64ModelHelper model;
-
     float framerate;
 
 } Entity;

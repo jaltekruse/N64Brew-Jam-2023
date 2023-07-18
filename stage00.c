@@ -8,6 +8,7 @@
 #include "sausage64.h"
 #include "palette.h"
 #include "tuk.h"
+#include "palm_tree.h"
 #include "cube.h"
 #include "math_util.h"
 #include "time.h"
@@ -22,7 +23,7 @@
 
 void change_mode();
 
-void init_tuk(Entity *entity);
+void init_entity(Entity *entity);
 
 void animcallback(u16 anim);
 
@@ -58,7 +59,30 @@ Entity tuk = {
     type: TUK,
 };
 
+Entity palm_tree_0 = {
+
+    scale: 1.f,
+    position: { 20, 200, 0},
+    yaw: 1,
+    type: PALM_TREE,
+};
+Entity palm_tree_1 = {
+
+    scale: 1.3f,
+    position: { 20, 200, 0},
+    yaw: 113,
+    type: PALM_TREE,
+};
+Entity palm_tree_2 = {
+
+    scale: 1.9f,
+    position: { 20, 200, 0},
+    yaw: 267,
+    type: PALM_TREE,
+};
+
 Mtx tukMtx[MESHCOUNT_tuk];
+Mtx palm_treeMtx[MESHCOUNT_palm_tree];
 
 StaticObject cube = {
     
@@ -67,10 +91,15 @@ StaticObject cube = {
 };
 
 
-void init_tuk(Entity *entity){
+void init_entity(Entity *entity){
 
     if (entity->type == TUK) {
         sausage64_initmodel(&entity->model, MODEL_tuk, tukMtx);
+        sausage64_set_anim(&entity->model, 0); 
+        sausage64_set_animcallback(&entity->model, animcallback);
+    }
+    if (entity->type == PALM_TREE) {
+        sausage64_initmodel(&entity->model, MODEL_palm_tree, palm_treeMtx);
         sausage64_set_anim(&entity->model, 0); 
         sausage64_set_animcallback(&entity->model, animcallback);
     }
@@ -128,10 +157,11 @@ void set_viewport(Camera *camera, Entity entity){
 
 
 void render_entity(Entity *entity){
-
+    
     guTranslate(&entity->pos_mtx, entity->position[0], entity->position[1], entity->position[2]);
     guRotate(&entity->rot_mtx[0], entity->pitch, 1, 0, 0);
     guRotate(&entity->rot_mtx[1], entity->yaw, 0, 0, 1);
+    guScale(&entity->scale_mtx, entity->scale, entity->scale, entity->scale);
 
     gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&entity->pos_mtx), G_MTX_MODELVIEW | G_MTX_LOAD | G_MTX_PUSH);
     gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&entity->rot_mtx[0]), G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_NOPUSH);
@@ -178,6 +208,10 @@ void render_world(Entity highlighted, Camera *camera, LightData *light){
 
     render_entity(&tuk);
 
+    render_entity(&palm_tree_0);
+    render_entity(&palm_tree_1);
+    render_entity(&palm_tree_2);
+
     render_static_object(&cube);
     
     gDPFullSync(glistp++);
@@ -203,7 +237,10 @@ void render_debug_data(){
 
 void stage00_init(void){
 
-    init_tuk(&tuk);
+    init_entity(&tuk);
+    init_entity(&palm_tree_0);
+    init_entity(&palm_tree_1);
+    init_entity(&palm_tree_2);
 }
 
 
@@ -222,6 +259,9 @@ void stage00_update(void){
     move_camera(&cam, tuk, contdata, time_data);
 
     sausage64_advance_anim(&tuk.model, tuk.framerate);
+    sausage64_advance_anim(&palm_tree_0.model, 0.25f);
+    sausage64_advance_anim(&palm_tree_1.model, 0.35f);
+    sausage64_advance_anim(&palm_tree_2.model, 0.55f);
 }
 
 
