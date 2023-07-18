@@ -25,6 +25,7 @@ typedef enum {
 	CROUCH,
     WALK,
 	RUN,
+    ATTACK,
 	ROLL,
 	JUMP,
 	FALL
@@ -34,7 +35,7 @@ typedef enum {
 
 typedef enum {
 
-	NICK
+	TUK
 
 } EntityType;
 
@@ -62,6 +63,8 @@ typedef struct {
 	EntityState new_state;
 
 	s64ModelHelper model;
+
+    float framerate;
 
 } Entity;
 
@@ -91,18 +94,37 @@ void set_entity_position(Entity *entity, TimeData time_data){
 /*==============================================================
     set_animation
     sets animation based on state
+
+
 ==============================================================*/
 
 void set_animation(Entity *entity) {
 
-	if (entity->type == NICK) {
+	if (entity->type == TUK) {
 
-		if (entity->state  == STAND) sausage64_set_anim(&entity->model, ANIMATION_nick_tap_shoe_left);
-		if (entity->state  == CROUCH) sausage64_set_anim(&entity->model, ANIMATION_nick_tap_shoe_left);
-		if (entity->state  == WALK) sausage64_set_anim(&entity->model, ANIMATION_nick_walk_left);
-		if (entity->state  == RUN) sausage64_set_anim(&entity->model, ANIMATION_nick_run_left);
-		if (entity->state  == ROLL) sausage64_set_anim(&entity->model, ANIMATION_nick_run_to_roll_left);
-		if (entity->state  == JUMP) sausage64_set_anim(&entity->model, ANIMATION_nick_jump_left);
+		if (entity->state  == STAND) {
+
+            if (entity->yaw > 0) sausage64_set_anim(&entity->model, 0);
+            else if (entity->yaw < 0) sausage64_set_anim(&entity->model, 1);
+        }
+
+	    //if (entity->state  == CROUCH);
+
+		if (entity->state  == WALK) {
+
+            if (entity->yaw > 0) sausage64_set_anim(&entity->model, 2);
+            else if (entity->yaw < 0) sausage64_set_anim(&entity->model, 3);
+        }
+
+		if (entity->state  == RUN) {
+
+            if (entity->yaw > 0) sausage64_set_anim(&entity->model, 4);
+            else if (entity->yaw < 0) sausage64_set_anim(&entity->model, 5);
+        }
+
+
+		//if (entity->state  == ROLL);
+		//if (entity->state  == JUMP);
 
     }
 }
@@ -124,6 +146,8 @@ void entity_animcallback(Entity *entity){
 		case WALK: break;
 
 		case RUN: break;
+
+		case ATTACK: break;
 
         case ROLL: set_entity_state(entity); break;
 
