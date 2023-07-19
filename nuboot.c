@@ -50,6 +50,7 @@ void nuBoot(void)
     osCreateThread(&IdleThread,NU_IDLE_THREAD_ID, idle, 0,
 		   (IdleStack + NU_IDLE_STACK_SIZE/8), 10);
     osStartThread(&IdleThread);
+    osInitialize_isv();
 
 }
 

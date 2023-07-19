@@ -7,7 +7,8 @@
 #include "helper.h"
 #include "sausage64.h"
 #include "palette.h"
-#include "nick.h"
+#include "tuk.h"
+#include "palm_tree.h"
 #include "cube.h"
 #include "math_util.h"
 #include "time.h"
@@ -18,14 +19,11 @@
 
 
 #define USB_BUFFER_SIZE 256
-#define COS_45 0.7071
-#define GRAVITY 980
-#define NICKMASS 40
 
 
 void change_mode();
 
-void init_nick(Entity *entity);
+void init_entity(Entity *entity);
 
 void animcallback(u16 anim);
 
@@ -41,30 +39,50 @@ void render_debug_data();
 
 TimeData time_data;
 
-int mode = 1;
-
-float anim_speed;
-
-Camera cam = {
-
-    distance_from_player: 200,
-    pitch: 30,
-    angle_around_player: 0,
-};
-
 LightData light_data = {
 
     angle: { 0, 0, -70},
     ambcol: 40,
 };
 
-Entity nick = {
+Camera cam = {
 
-    position: { 0, 0, 0},
-    type: NICK,
+    distance_from_target: 550,
+    angle_around_target: 0,
+    pitch: 15, 
 };
 
-Mtx nickMtx[MESHCOUNT_nick];
+Entity tuk = {
+
+    position: { 0, 0, 0},
+    yaw: 75,
+    type: TUK,
+};
+
+Entity palm_tree_0 = {
+
+    scale: 1.f,
+    position: { 20, 200, 0},
+    yaw: 1,
+    type: PALM_TREE,
+};
+Entity palm_tree_1 = {
+
+    scale: 1.3f,
+    position: { 20, 200, 0},
+    yaw: 113,
+    type: PALM_TREE,
+};
+Entity palm_tree_2 = {
+
+    scale: 1.9f,
+    position: { 20, 200, 0},
+    yaw: 267,
+    type: PALM_TREE,
+};
+
+Mtx tukMtx[MESHCOUNT_tuk];
+Mtx palm_treeMtx[MESHCOUNT_palm_tree];
 
 StaticObject cube = {
     
@@ -73,18 +91,23 @@ StaticObject cube = {
 };
 
 
-void init_nick(Entity *entity){
+void init_entity(Entity *entity){
 
-    if (entity->type == NICK) {
-        sausage64_initmodel(&entity->model, MODEL_nick, nickMtx);
-        sausage64_set_anim(&entity->model, ANIMATION_nick_look_around_left); 
+    if (entity->type == TUK) {
+        sausage64_initmodel(&entity->model, MODEL_tuk, tukMtx);
+        sausage64_set_anim(&entity->model, 0); 
+        sausage64_set_animcallback(&entity->model, animcallback);
+    }
+    if (entity->type == PALM_TREE) {
+        sausage64_initmodel(&entity->model, MODEL_palm_tree, palm_treeMtx);
+        sausage64_set_anim(&entity->model, 0); 
         sausage64_set_animcallback(&entity->model, animcallback);
     }
 }
 
 
 void animcallback(u16 anim){
-    entity_animcallback(&nick);
+    entity_animcallback(&tuk);
 }
 
 
@@ -120,7 +143,7 @@ void set_viewport(Camera *camera, Entity entity){
     guLookAt(
     	&camera->viewpoint,
     	camera->position[0], camera->position[1], camera->position[2],
-    	entity.position[0], entity.position[1], entity.position[2] + 100,
+    	camera->target[0], camera->target[1], camera->target[2],
     	0, 0, 1
   	);
 
@@ -134,10 +157,11 @@ void set_viewport(Camera *camera, Entity entity){
 
 
 void render_entity(Entity *entity){
-
+    
     guTranslate(&entity->pos_mtx, entity->position[0], entity->position[1], entity->position[2]);
     guRotate(&entity->rot_mtx[0], entity->pitch, 1, 0, 0);
     guRotate(&entity->rot_mtx[1], entity->yaw, 0, 0, 1);
+    guScale(&entity->scale_mtx, entity->scale, entity->scale, entity->scale);
 
     gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&entity->pos_mtx), G_MTX_MODELVIEW | G_MTX_LOAD | G_MTX_PUSH);
     gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&entity->rot_mtx[0]), G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_NOPUSH);
@@ -148,10 +172,11 @@ void render_entity(Entity *entity){
 
 
 void render_static_object(StaticObject *static_object){
-
+    
     guTranslate(&static_object->pos_mtx, static_object->pos[0], static_object->pos[1], static_object->pos[2]);
     guRotate(&static_object->rot_mtx[0], 0, 1, 0, 0);
     guRotate(&static_object->rot_mtx[1], 0, 0, 0, 1);
+    //guScale(&static_object->scale_mtx, 10000, 10000, 10000);
 
     gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&static_object->pos_mtx), G_MTX_MODELVIEW | G_MTX_LOAD | G_MTX_PUSH);
     gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&static_object->rot_mtx[0]), G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_NOPUSH);
@@ -181,9 +206,13 @@ void render_world(Entity highlighted, Camera *camera, LightData *light){
 
     set_light(light);
 
-    render_static_object(&cube);
+    render_entity(&tuk);
 
-    render_entity(&nick);
+    render_entity(&palm_tree_0);
+    render_entity(&palm_tree_1);
+    render_entity(&palm_tree_2);
+
+    render_static_object(&cube);
     
     gDPFullSync(glistp++);
     gSPEndDisplayList(glistp++);
@@ -196,23 +225,22 @@ void render_world(Entity highlighted, Camera *camera, LightData *light){
 void render_debug_data(){
 
     nuDebConTextPos(NU_DEB_CON_WINDOW0, 1, 1);
-    nuDebConPrintf(NU_DEB_CON_WINDOW0, "%d", (int)(nick.model.curkeyframe));
+    nuDebConPrintf(NU_DEB_CON_WINDOW0, "time %d", (int) get_time());
     
     nuDebConTextPos(NU_DEB_CON_WINDOW0, 1, 2);
-    nuDebConPrintf(NU_DEB_CON_WINDOW0, "%d", (int)(nick.model.curanimlen));
+    nuDebConPrintf(NU_DEB_CON_WINDOW0, "FPS %d", (int) time_data.FPS);
 
+    nuDebConTextPos(NU_DEB_CON_WINDOW0, 1, 3);
+    nuDebConPrintf(NU_DEB_CON_WINDOW0, "framerate 0.%.d", (int)(tuk.framerate * 100));
 }
 
 
 void stage00_init(void){
 
-    init_nick(&nick);
-
-    #if TV_TYPE == PAL    
-        anim_speed = 0.66;
-    #else-
-        anim_speed = 0.5;
-    #endif
+    init_entity(&tuk);
+    init_entity(&palm_tree_0);
+    init_entity(&palm_tree_1);
+    init_entity(&palm_tree_2);
 }
 
 
@@ -224,13 +252,16 @@ void stage00_update(void){
     
     nuContDataGetEx(contdata, 0);
     
-    move_player(&nick, cam, contdata, time_data);
+    move_entity(&tuk, cam, contdata, time_data);
 
-    set_entity_state(&nick);
+    set_entity_state(&tuk);
 
-    move_camera(&cam, nick, contdata, time_data);
+    move_camera(&cam, tuk, contdata, time_data);
 
-    sausage64_advance_anim(&nick.model, anim_speed);
+    sausage64_advance_anim(&tuk.model, tuk.framerate);
+    sausage64_advance_anim(&palm_tree_0.model, 0.25f);
+    sausage64_advance_anim(&palm_tree_1.model, 0.35f);
+    sausage64_advance_anim(&palm_tree_2.model, 0.55f);
 }
 
 
@@ -241,7 +272,7 @@ void stage00_draw(void){
     rcp_init();
     fb_clear(16, 32, 32);
 
-    render_world(nick, &cam, &light_data);    
+    render_world(tuk, &cam, &light_data);    
     
     debug_assert((glistp-glist) < GLIST_LENGTH);
     #if TV_TYPE != PAL
