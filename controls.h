@@ -1,6 +1,7 @@
 #ifndef CONTROLS_H
 #define CONTROLS_H
 
+#define GRAVITY 1000
 
 void entity_acceleration_to_speed(Entity *entity, TimeData time);
 void move_entity_stick_2d(Entity *entity, Camera camera, NUContData cont[1], TimeData time_data);
@@ -21,11 +22,15 @@ void entity_acceleration_to_speed(Entity *entity, TimeData time){
 
 
 void move_entity_stick_2d(Entity *entity, Camera camera, NUContData cont[1], TimeData time_data){
-    
-    float input_amount = cont->stick_x;
 
+    float input_amount = cont->stick_x;
+    
 	if (fabs(input_amount) < 7){input_amount = 0;} 
     
+    if (entity->state == JUMP) {
+        return;
+    }
+
     if (input_amount == 0){
 
         if  (fabs(entity->speed[0]) < 1){
@@ -64,6 +69,44 @@ void move_entity_stick_2d(Entity *entity, Camera camera, NUContData cont[1], Tim
     if (entity->speed[0] < 0 && input_amount < 0) entity->yaw = -75;
 }
 
+void handle_entity_action_controls(Entity *entity, Camera camera, NUContData cont[1], TimeData time_data){
+    Entity* player = entity;
+    // set jump
+    if (cont[0].trigger & A_BUTTON 
+            && player->position[2] == 0 
+            && player->state != ROLL){
+        
+        player->new_state = JUMP;
+            
+        player->target_speed[2] = 300;
+
+        player->acceleration[2] = 100 * (player->target_speed[2] - player->speed[2]);
+
+    }
+
+    // apply gravity
+    if (player->position[2] > 0 && player->speed[2] <= 0) {player->acceleration[2] = 2.5  * -GRAVITY;} //gravity is higher when nick is falling
+    else if (player->position[2] > 0) {player->acceleration[2] = -GRAVITY;}
+
+    player->target_speed[2] = 0;
+
+    if (player->position[2] < 200 && player->speed[2] < 0) player->new_state = FALL;
+   
+    if ( player->position[2] <= 0 && player->state == JUMP){
+        player->new_state = STAND; 
+    }
+
+    // set speed
+    entity_acceleration_to_speed(player, time_data);
+
+
+    if (player->position[2] < 0) {
+        
+        player->acceleration[2] = 0;
+        player->speed[2] = 0;
+        player->position[2] = 0;
+    }
+}
 
 void move_entity_stick_3d(Entity *entity, Camera camera, NUContData cont[1], TimeData time_data){
     
@@ -113,10 +156,10 @@ void move_entity_stick_3d(Entity *entity, Camera camera, NUContData cont[1], Tim
     if (entity->speed[0] != 0 || entity->speed[1] != 0) entity->yaw = deg(atan2(entity->speed[0], -entity->speed[1]));
 }
 
-
 void move_entity(Entity *entity, Camera camera, NUContData cont[1], TimeData time_data){
 
         move_entity_stick_2d(entity, camera, cont, time_data);
+        handle_entity_action_controls(entity, camera, cont, time_data);
         set_entity_position(entity, time_data);
 }
 

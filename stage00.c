@@ -10,6 +10,7 @@
 #include "tuk.h"
 #include "palm_tree.h"
 #include "cube.h"
+#include "ground_block.h"
 #include "rock.h"
 #include "beach_chair.h"
 #include "math_util.h"
@@ -81,12 +82,13 @@ StaticObject cube = {
     scale: 1.0
 };
 
-#define SCENERY_COUNT 4
+#define SCENERY_COUNT 5
 StaticObject scenery[SCENERY_COUNT] = {
     { position: { 24, 190, 0}, mesh: gfx_rock, scale: 3.0,}, 
     { position: { 400, 300, 0}, yaw: 8, mesh: gfx_beach_chair, scale: 1.0 },
     { position: { 470, 300, 0}, yaw: -7, mesh: gfx_beach_chair, scale: 1.0 },
     { position: { 540, 300, 0}, yaw: 2, mesh: gfx_beach_chair, scale: 1.0 },
+    { position: { 100, 0, 200}, mesh: gfx_ground, scale: 0.3}
 };
 
 
