@@ -59,6 +59,7 @@ Entity tuk = {
     position: { 0, 0, 0},
     yaw: 75,
     type: TUK,
+    scale: 1.0f
 };
 
 Entity palm_tree_0 = {
@@ -90,18 +91,21 @@ StaticObject cube = {
     
     position: { 0, 0, 0},
     mesh: gfx_cube,
+    scale: 1.0
 };
 
 StaticObject rock = {
     
     position: { 24, 190, 0},
     mesh: gfx_rock,
+    scale: 3.0,
 };
 
 StaticObject beach_chair = {
     
     position: { 400, 300, 0},
     mesh: gfx_beach_chair,
+    scale: 1.0,
 };
 
 
@@ -175,13 +179,19 @@ void render_entity(Entity *entity){
     guTranslate(&entity->pos_mtx, entity->position[0], entity->position[1], entity->position[2]);
     guRotate(&entity->rot_mtx[0], entity->pitch, 1, 0, 0);
     guRotate(&entity->rot_mtx[1], entity->yaw, 0, 0, 1);
-    //guScale(&entity->scale_mtx, entity->scale, entity->scale, entity->scale);
+    guScale(&entity->scale_mtx, entity->scale, entity->scale, entity->scale);
 
     gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&entity->pos_mtx), G_MTX_MODELVIEW | G_MTX_LOAD | G_MTX_PUSH);
     gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&entity->rot_mtx[0]), G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_NOPUSH);
     gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&entity->rot_mtx[1]), G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_NOPUSH);
+    gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&entity->scale_mtx), G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_PUSH);
 
     sausage64_drawmodel(&glistp, &entity->model);
+
+    gSPPopMatrix(glistp++, G_MTX_MODELVIEW);
+    gSPPopMatrix(glistp++, G_MTX_MODELVIEW);
+    gSPPopMatrix(glistp++, G_MTX_MODELVIEW);
+    gSPPopMatrix(glistp++, G_MTX_MODELVIEW);
 }
 
 
@@ -190,12 +200,20 @@ void render_static_object(StaticObject *static_object){
     guTranslate(&static_object->pos_mtx, static_object->position[0], static_object->position[1], static_object->position[2]);
     guRotate(&static_object->rot_mtx[0], 0, 1, 0, 0);
     guRotate(&static_object->rot_mtx[1], 0, 0, 0, 1);
+    guScale(&static_object->scale_mtx, static_object->scale, static_object->scale, static_object->scale);
+    //guScale(&static_object->scale_mtx, 10000, 10000, 10000);
 
     gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&static_object->pos_mtx), G_MTX_MODELVIEW | G_MTX_LOAD | G_MTX_PUSH);
     gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&static_object->rot_mtx[0]), G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_NOPUSH);
     gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&static_object->rot_mtx[1]), G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_NOPUSH);
+    gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&static_object->scale_mtx), G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_PUSH);
     
     gSPDisplayList(glistp++, static_object->mesh);
+
+    gSPPopMatrix(glistp++, G_MTX_MODELVIEW);
+    gSPPopMatrix(glistp++, G_MTX_MODELVIEW);
+    gSPPopMatrix(glistp++, G_MTX_MODELVIEW);
+    gSPPopMatrix(glistp++, G_MTX_MODELVIEW);
 }
 
 

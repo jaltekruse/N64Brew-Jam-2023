@@ -30,7 +30,12 @@ CP_LD_SCRIPT	= game_cp.ld
 
 NUSYSINC  = /usr/include/n64/nusys
 NUSYSLIB  = /usr/lib/n64/nusys
+# Note on July 16th, this was already commented out before we started messing
+# with ivf debugging
+# further note, apparently we didn't need either of these, somewhere Buu
+# has this stuff already set up for this ROM/game template from Sausage that we borrowed
 #NUOBJ		= $(NUSYSLIB)/nusys_rom.o
+#NUOBJ		= $(NUSYSLIB)/nusys_isv.o
 
 ################################################################
 #                         Make Commands                        #
@@ -43,7 +48,7 @@ default: $(TARGETS)
 #     Don't touch below unless you know what you're doing!     #
 ################################################################
 
-include $(ROOT)/usr/include/make/PRdefs
+include $(N64_ROOT)/usr/include/make/PRdefs
 
 BOOT		= /usr/lib/n64/PR/bootcode/boot.6102
 BOOT_OBJ	= boot.6102.o
@@ -74,10 +79,10 @@ endif
 #                        Linker Settings                       #
 ################################################################
 
-LCINCS =	-I. -I./assets -I./debug -I./sausage -I$(ROOT)/usr/include/PR -I$(ROOT)/usr/include -I$(NUSYSINC) -I$(ROOT)/usr/include/nustd
+LCINCS =	-I. -I./assets -I./debug -I./sausage -I$(N64_ROOT)/usr/include/PR -I$(N64_ROOT)/usr/include -I$(NUSYSINC) -I$(N64_ROOT)/usr/include/nustd
 LCOPTS =	-G 0
 LDIRT  =	$(ELF) $(CP_LD_SCRIPT) $(TARGETS) $(MAP) $(ASMOBJECTS)
-LDFLAGS=	$(MKDEPOPT) -L$(ROOT)/usr/lib -L$(ROOT)/usr/lib/PR -L$(NUSYSLIB) $(N64LIB) -L$(N64_LIBGCCDIR) -lgcc -lnustd
+LDFLAGS=	$(MKDEPOPT) -L$(N64_ROOT)/usr/lib -L$(N64_ROOT)/usr/lib/PR -L$(NUSYSLIB) $(N64LIB) -L$(N64_LIBGCCDIR) -lgcc -lnustd
 
 
 ################################################################

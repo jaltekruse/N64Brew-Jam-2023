@@ -28,6 +28,7 @@ NUContData contdata[1];
 
 void mainproc(void)
 {
+    osSyncPrintf("mainproc in main.c\n");
     // Start by selecting the proper television
     if (TV_TYPE == PAL)
     {
