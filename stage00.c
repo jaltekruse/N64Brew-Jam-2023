@@ -206,9 +206,7 @@ void render_debug_data(){
 
 void stage00_init(void){
 
-    osSyncPrintf("stage00_init\n");
     init_nick(&nick);
-    osSyncPrintf("after init_nick\n");
 
     #if TV_TYPE == PAL    
         anim_speed = 0.66;
@@ -220,35 +218,25 @@ void stage00_init(void){
 
 void stage00_update(void){
     
-    osSyncPrintf("stage00_update start\n");
     debug_pollcommands();  
-    osSyncPrintf("stage00_update debug_pollcommands\n");
     
     time_management(&time_data);
-    osSyncPrintf("stage00_update time_management\n");
     
     nuContDataGetEx(contdata, 0);
-    osSyncPrintf("stage00_update nuContDataGetEx\n");
     
     move_player(&nick, cam, contdata, time_data);
-    osSyncPrintf("stage00_update move_player\n");
 
     set_entity_state(&nick);
-    osSyncPrintf("stage00_update set_entity_state\n");
 
     move_camera(&cam, nick, contdata, time_data);
-    osSyncPrintf("stage00_update after move_camera\n");
 
     sausage64_advance_anim(&nick.model, anim_speed);
-    osSyncPrintf("stage00_update sausage64_advance_anim\n");
-
-    osSyncPrintf("stage00_update end\n");
 }
 
 
 void stage00_draw(void){
     
-    osSyncPrintf("stage00_draw start\n");
+
     glistp = glist;
     rcp_init();
     fb_clear(16, 32, 32);
@@ -267,6 +255,4 @@ void stage00_draw(void){
         render_debug_data();
         nuDebConDisp(NU_SC_SWAPBUFFER);
     #endif
-
-    osSyncPrintf("stage00_draw end\n");
 }
