@@ -10,6 +10,8 @@
 #include "tuk.h"
 #include "palm_tree.h"
 #include "cube.h"
+#include "rock.h"
+#include "beach_chair.h"
 #include "math_util.h"
 #include "time.h"
 #include "entity.h"
@@ -62,21 +64,21 @@ Entity tuk = {
 Entity palm_tree_0 = {
 
     scale: 1.f,
-    position: { 20, 200, 0},
+    position: { 18, 200, 0},
     yaw: 1,
     type: PALM_TREE,
 };
 Entity palm_tree_1 = {
 
     scale: 1.3f,
-    position: { 20, 200, 0},
+    position: { 26, 194, 0},
     yaw: 113,
     type: PALM_TREE,
 };
 Entity palm_tree_2 = {
 
     scale: 1.9f,
-    position: { 20, 200, 0},
+    position: { 24, 208, 0},
     yaw: 267,
     type: PALM_TREE,
 };
@@ -86,8 +88,20 @@ Mtx palm_treeMtx[MESHCOUNT_palm_tree];
 
 StaticObject cube = {
     
-    pos: { 400, 300, 0},
+    position: { 0, 0, 0},
     mesh: gfx_cube,
+};
+
+StaticObject rock = {
+    
+    position: { 24, 190, 0},
+    mesh: gfx_rock,
+};
+
+StaticObject beach_chair = {
+    
+    position: { 400, 300, 0},
+    mesh: gfx_beach_chair,
 };
 
 
@@ -161,7 +175,7 @@ void render_entity(Entity *entity){
     guTranslate(&entity->pos_mtx, entity->position[0], entity->position[1], entity->position[2]);
     guRotate(&entity->rot_mtx[0], entity->pitch, 1, 0, 0);
     guRotate(&entity->rot_mtx[1], entity->yaw, 0, 0, 1);
-    guScale(&entity->scale_mtx, entity->scale, entity->scale, entity->scale);
+    //guScale(&entity->scale_mtx, entity->scale, entity->scale, entity->scale);
 
     gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&entity->pos_mtx), G_MTX_MODELVIEW | G_MTX_LOAD | G_MTX_PUSH);
     gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&entity->rot_mtx[0]), G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_NOPUSH);
@@ -173,10 +187,9 @@ void render_entity(Entity *entity){
 
 void render_static_object(StaticObject *static_object){
     
-    guTranslate(&static_object->pos_mtx, static_object->pos[0], static_object->pos[1], static_object->pos[2]);
+    guTranslate(&static_object->pos_mtx, static_object->position[0], static_object->position[1], static_object->position[2]);
     guRotate(&static_object->rot_mtx[0], 0, 1, 0, 0);
     guRotate(&static_object->rot_mtx[1], 0, 0, 0, 1);
-    //guScale(&static_object->scale_mtx, 10000, 10000, 10000);
 
     gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&static_object->pos_mtx), G_MTX_MODELVIEW | G_MTX_LOAD | G_MTX_PUSH);
     gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&static_object->rot_mtx[0]), G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_NOPUSH);
@@ -213,6 +226,10 @@ void render_world(Entity highlighted, Camera *camera, LightData *light){
     render_entity(&palm_tree_2);
 
     render_static_object(&cube);
+
+    render_static_object(&rock);
+
+    render_static_object(&beach_chair);
     
     gDPFullSync(glistp++);
     gSPEndDisplayList(glistp++);
@@ -259,9 +276,9 @@ void stage00_update(void){
     move_camera(&cam, tuk, contdata, time_data);
 
     sausage64_advance_anim(&tuk.model, tuk.framerate);
-    sausage64_advance_anim(&palm_tree_0.model, 0.25f);
-    sausage64_advance_anim(&palm_tree_1.model, 0.35f);
-    sausage64_advance_anim(&palm_tree_2.model, 0.55f);
+    sausage64_advance_anim(&palm_tree_0.model, -0.35f);
+    sausage64_advance_anim(&palm_tree_1.model, 0.45f);
+    sausage64_advance_anim(&palm_tree_2.model, 0.25f);
 }
 
 

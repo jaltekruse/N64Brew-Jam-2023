@@ -8,7 +8,7 @@ typedef struct {
 	Mtx	rot_mtx[3];
 	Mtx scale_mtx;
 
-	float pos[3];
+	float position[3];
 	float dir[3];
 	float pitch;
 	float yaw;
