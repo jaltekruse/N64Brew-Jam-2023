@@ -62,26 +62,13 @@ Entity tuk = {
     scale: 1.0f
 };
 
-Entity palm_tree_0 = {
 
-    scale: 1.f,
-    position: { 18, 200, 0},
-    yaw: 1,
-    type: PALM_TREE,
-};
-Entity palm_tree_1 = {
-
-    scale: 1.3f,
-    position: { 26, 194, 0},
-    yaw: 113,
-    type: PALM_TREE,
-};
-Entity palm_tree_2 = {
-
-    scale: 1.9f,
-    position: { 24, 208, 0},
-    yaw: 267,
-    type: PALM_TREE,
+#define ANIM_SCENERY_COUNT 4
+Entity animated_scenery[ANIM_SCENERY_COUNT] = {
+    { scale: 1.f, position: { 18, 200, 0}, yaw: 1, type: PALM_TREE, framerate: 0.2},
+    { scale: 1.3f, position: { 26, 194, 0}, yaw: 113, type: PALM_TREE, framerate: 0.45},
+    { scale: 1.9f, position: { 24, 208, 0}, yaw: 267, type: PALM_TREE, framerate: 0.5},
+    { scale: 1.9f, position: { 54, 238, 0}, yaw: 267, type: PALM_TREE, framerate: 0.6},
 };
 
 Mtx tukMtx[MESHCOUNT_tuk];
@@ -233,9 +220,9 @@ void render_world(Entity highlighted, Camera *camera, LightData *light){
 
     render_entity(&tuk);
 
-    render_entity(&palm_tree_0);
-    render_entity(&palm_tree_1);
-    render_entity(&palm_tree_2);
+    for (int i = 0; i < ANIM_SCENERY_COUNT; i++) {
+        render_entity(&animated_scenery[i]);
+    }
 
     // keep the skybox special for now, doesn't feel like it belongs
     // with the other static objects in scenery
@@ -269,9 +256,9 @@ void render_debug_data(){
 void stage00_init(void){
 
     init_entity(&tuk);
-    init_entity(&palm_tree_0);
-    init_entity(&palm_tree_1);
-    init_entity(&palm_tree_2);
+    for (int i = 0; i < ANIM_SCENERY_COUNT; i++) {
+        init_entity(&animated_scenery[i]);
+    }
 }
 
 
@@ -290,9 +277,10 @@ void stage00_update(void){
     move_camera(&cam, tuk, contdata, time_data);
 
     sausage64_advance_anim(&tuk.model, tuk.framerate);
-    sausage64_advance_anim(&palm_tree_0.model, -0.35f);
-    sausage64_advance_anim(&palm_tree_1.model, 0.45f);
-    sausage64_advance_anim(&palm_tree_2.model, 0.25f);
+
+    for (int i = 0; i < ANIM_SCENERY_COUNT; i++) {
+        sausage64_advance_anim(&animated_scenery[i].model, animated_scenery[i].framerate);
+    }
 }
 
 
