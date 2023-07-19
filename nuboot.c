@@ -43,14 +43,14 @@ void nuBoot(void)
 {
 
     __osInitialize_common();	/* Initialize N64OS   */
-    osInitialize_isv();
+    //osInitialize_isv();
     osSyncPrintf("nuBoot in nuboot.c after osInitialize_isv\n");
     
     /* Create and execute the Idle thread  */
     osCreateThread(&IdleThread,NU_IDLE_THREAD_ID, idle, 0,
 		   (IdleStack + NU_IDLE_STACK_SIZE/8), 10);
     osStartThread(&IdleThread);
-    osInitialize_isv();
+    //osInitialize_isv();
 
 }
 
