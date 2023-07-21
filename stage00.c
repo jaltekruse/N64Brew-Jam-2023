@@ -9,7 +9,11 @@
 #include "palette.h"
 #include "tuk.h"
 #include "palm_tree.h"
-#include "cube.h"
+#include "cliff_1.h"
+#include "cliff_2.h"
+#include "cliff_3.h"
+#include "cliff_4.h"
+#include "cliff_5.h"
 #include "ground_block.h"
 #include "rock.h"
 #include "beach_chair.h"
@@ -50,14 +54,14 @@ LightData light_data = {
 
 Camera cam = {
 
-    distance_from_target: 550,
+    distance_from_target: 800,
     angle_around_target: 0,
-    pitch: 15, 
+    pitch: 10, 
 };
 
 Entity tuk = {
 
-    position: { 0, 0, 0},
+    position: { 0, -200, 10},
     yaw: 75,
     type: TUK,
     scale: 1.0f
@@ -75,20 +79,22 @@ Entity animated_scenery[ANIM_SCENERY_COUNT] = {
 Mtx tukMtx[MESHCOUNT_tuk];
 Mtx palm_treeMtx[MESHCOUNT_palm_tree];
 
+/*
 StaticObject cube = {
     
-    position: { 0, 0, 0},
-    mesh: gfx_cube,
-    scale: 1.0
+    position: { 0, 0, -20},
+    mesh: gfx_beach,
+    scale: 1.0f
 };
+*/
 
 #define SCENERY_COUNT 5
 StaticObject scenery[SCENERY_COUNT] = {
-    { position: { 24, 190, 0}, mesh: gfx_rock, scale: 3.0,}, 
-    { position: { 400, 300, 0}, yaw: 8, mesh: gfx_beach_chair, scale: 1.0 },
-    { position: { 470, 300, 0}, yaw: -7, mesh: gfx_beach_chair, scale: 1.0 },
-    { position: { 540, 300, 0}, yaw: 2, mesh: gfx_beach_chair, scale: 1.0 },
-    { position: { 100, 0, 200}, mesh: gfx_ground, scale: 0.3}
+    { position: {  -3000,  2000,    0},     mesh: gfx_cliff_1,     scale: 1.0,}, 
+    { position: {  -1500,  2000,    0},     mesh: gfx_cliff_2,     scale: 1.0 },
+    { position: {      0,  2000,    0},     mesh: gfx_cliff_3,     scale: 1.0 },
+    { position: {   1500,  2000,    0},     mesh: gfx_cliff_4,     scale: 1.0 },
+    { position: {   3000,  2000,  200},     mesh: gfx_cliff_5,     scale: 1.0}
 };
 
 
@@ -184,7 +190,6 @@ void render_static_object(StaticObject *static_object){
     guRotate(&static_object->rot_mtx[0], static_object->pitch, 1, 0, 0);
     guRotate(&static_object->rot_mtx[1], static_object->yaw, 0, 0, 1);
     guScale(&static_object->scale_mtx, static_object->scale, static_object->scale, static_object->scale);
-    //guScale(&static_object->scale_mtx, 10000, 10000, 10000);
 
     gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&static_object->pos_mtx), G_MTX_MODELVIEW | G_MTX_LOAD | G_MTX_PUSH);
     gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&static_object->rot_mtx[0]), G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_PUSH);
@@ -222,17 +227,18 @@ void render_world(Entity highlighted, Camera *camera, LightData *light){
 
     render_entity(&tuk);
 
-    for (int i = 0; i < ANIM_SCENERY_COUNT; i++) {
-        render_entity(&animated_scenery[i]);
-    }
-
-    // keep the skybox special for now, doesn't feel like it belongs
-    // with the other static objects in scenery
-    render_static_object(&cube);
-
     for (int i = 0; i < SCENERY_COUNT; i++) {
         render_static_object(&scenery[i]);
     }
+    
+    /*
+    // keep the skybox special for now, doesn't feel like it belongs with the other static objects in scenery
+    render_static_object(&cube);
+
+    for (int i = 0; i < ANIM_SCENERY_COUNT; i++) {
+        render_entity(&animated_scenery[i]);
+    }
+    */
     
     gDPFullSync(glistp++);
     gSPEndDisplayList(glistp++);

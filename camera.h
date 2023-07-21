@@ -32,12 +32,8 @@ typedef struct{
 
 
 void set_camera_position(Camera *camera, Entity entity);
+void set_camera_position_2d(Camera *camera, Entity entity);
 
-
-/*==============================================================
-    set_camera_position
-    calculates camera coordinates
-==============================================================*/
 
 void set_camera_position(Camera *camera, Entity entity){
 
@@ -62,7 +58,7 @@ void set_camera_position_2d(Camera *camera, Entity entity){
 
 	camera->position[0] = entity.position[0];	
     camera->position[1] = entity.position[1] - camera->horizontal_distance_from_target;
-    camera->position[2] = camera->vertical_distance_from_target + entity.position[2] + 60;
+    camera->position[2] = camera->vertical_distance_from_target + entity.position[2] + 40;
 
 	camera->target[0] = entity.position[0];
 	camera->target[1] = entity.position[1];

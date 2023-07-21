@@ -61,11 +61,10 @@ void move_entity_stick_2d(Entity *entity, Camera camera, NUContData cont[1], Tim
 
     if (entity->state == JUMP) {
 
-        entity->acceleration[0] = entity->acceleration[0] / 10;
+        entity->acceleration[0] = entity->acceleration[0] / 20;
         return;
     }
     
-    entity_acceleration_to_speed(entity, time_data);
     
     //set yaw and direction
     if (entity->speed[0] > 0 && input_amount > 0) entity->yaw = 75;
@@ -85,15 +84,9 @@ void handle_entity_actions(Entity *entity, Camera camera, NUContData cont[1], Ti
         entity->new_state = JUMP;
     }
 
-    // apply gravity
-    if (entity->position[2] > 0 && entity->speed[2] <= 0) entity->acceleration[2] = 2.5  * -GRAVITY;//gravity is higher when nick is falling
-    else if (entity->position[2] > 0) {entity->acceleration[2] = -GRAVITY;}
-   
-    if ( entity->position[2] <= 0 && entity->state == JUMP){
-        entity->new_state = STAND; 
-    }
-    
-    entity_acceleration_to_speed(entity, time_data);
+    // apply gravity (it's higher when nick is falling)
+    if (entity->position[2] > 0 && entity->speed[2] <= 0) entity->acceleration[2] = 2.5  * -GRAVITY;
+    else if (entity->position[2] > 0) entity->acceleration[2] = -GRAVITY;
 
     // set ground collision
     if (entity->position[2] < 0) {
@@ -101,6 +94,8 @@ void handle_entity_actions(Entity *entity, Camera camera, NUContData cont[1], Ti
         entity->acceleration[2] = 0;
         entity->speed[2] = 0;
         entity->position[2] = 0;
+
+        entity->new_state = STAND; 
     }
 }
 
@@ -147,8 +142,6 @@ void move_entity_stick_3d(Entity *entity, Camera camera, NUContData cont[1], Tim
         entity->new_state = RUN;
     }
     
-    entity_acceleration_to_speed(entity, time_data);
-    
     if (entity->speed[0] != 0 || entity->speed[1] != 0) entity->yaw = deg(atan2(entity->speed[0], -entity->speed[1]));
 }
 
@@ -156,6 +149,7 @@ void move_entity(Entity *entity, Camera camera, NUContData cont[1], TimeData tim
 
         move_entity_stick_2d(entity, camera, cont, time_data);
         handle_entity_actions(entity, camera, cont, time_data);
+        entity_acceleration_to_speed(entity, time_data);
         set_entity_position(entity, time_data);
 }
 

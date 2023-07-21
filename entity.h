@@ -76,11 +76,6 @@ void entity_animcallback(Entity *entity);
 void set_entity_state(Entity *entity);
 
 
-/*==============================================================
-    set_entity_position
-    calculates entity coordinates
-==============================================================*/
-
 void set_entity_position(Entity *entity, TimeData time_data){
 
 
@@ -90,14 +85,6 @@ void set_entity_position(Entity *entity, TimeData time_data){
 
 }
 
-
-
-/*==============================================================
-    set_animation
-    sets animation based on state
-
-
-==============================================================*/
 
 void set_animation(Entity *entity) {
 
@@ -131,11 +118,6 @@ void set_animation(Entity *entity) {
 }
 
 
-/*==============================================================
-    entity_animcallback
-    auxiliary function for generic subset of movements
-==============================================================*/
-
 void entity_animcallback(Entity *entity){
 
     switch(entity->state){
@@ -155,12 +137,6 @@ void entity_animcallback(Entity *entity){
         case JUMP: set_entity_state(entity); break;
     }
 }
-
-
-/*==============================================================
-    set_entity_state
-    sets entity state and changes animation
-==============================================================*/
 
 
 void set_entity_state(Entity *entity) {
