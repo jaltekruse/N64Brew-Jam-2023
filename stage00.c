@@ -9,6 +9,7 @@
 #include "palette.h"
 #include "tuk.h"
 #include "palm_tree.h"
+#include "beach.h"
 #include "cliff_1.h"
 #include "cliff_2.h"
 #include "cliff_3.h"
@@ -88,13 +89,19 @@ StaticObject cube = {
 };
 */
 
-#define SCENERY_COUNT 5
+#define SCENERY_COUNT 11
 StaticObject scenery[SCENERY_COUNT] = {
     { position: {  -3000,  2000,    0},     mesh: gfx_cliff_1,     scale: 1.0,}, 
     { position: {  -1500,  2000,    0},     mesh: gfx_cliff_2,     scale: 1.0 },
     { position: {      0,  2000,    0},     mesh: gfx_cliff_3,     scale: 1.0 },
     { position: {   1500,  2000,    0},     mesh: gfx_cliff_4,     scale: 1.0 },
-    { position: {   3000,  2000,  200},     mesh: gfx_cliff_5,     scale: 1.0}
+    { position: {   3000,  2000,  200},     mesh: gfx_cliff_5,     scale: 1.0},
+    { position: {   300,  2000,  200},     mesh: gfx_beach,     scale: 1.0},
+    { position: {   1300,  2000,  200},     mesh: gfx_beach,     scale: 1.0},
+    { position: {   2300,  2000,  200},     mesh: gfx_beach,     scale: 1.0},
+    { position: { 100, 0, 80}, mesh: gfx_ground, scale: 1.f, width: 150, height: 30},
+    { position: { 600, 0, 120}, mesh: gfx_ground, scale: 1.f, width: 150, height: 30},
+    { position: { 600, 0, 200}, mesh: gfx_ground, scale: 1.f, width: 150, height: 30},
 };
 
 
@@ -247,6 +254,7 @@ void render_world(Entity highlighted, Camera *camera, LightData *light){
     osWritebackDCache(&camera->modeling, sizeof(camera->modeling));
 }
 
+int hit_stuff = 0;
 
 void render_debug_data(){
 
@@ -258,6 +266,21 @@ void render_debug_data(){
 
     nuDebConTextPos(NU_DEB_CON_WINDOW0, 1, 3);
     nuDebConPrintf(NU_DEB_CON_WINDOW0, "framerate 0.%.d", (int)(tuk.framerate * 100));
+
+    nuDebConTextPos(NU_DEB_CON_WINDOW0, 1, 4);
+    nuDebConPrintf(NU_DEB_CON_WINDOW0, "hit? %d", (int) hit_stuff);
+
+    nuDebConTextPos(NU_DEB_CON_WINDOW0, 1, 5);
+    nuDebConPrintf(NU_DEB_CON_WINDOW0, "tuk 0.%.d", (int)(tuk.position[2] * 100));
+
+    nuDebConTextPos(NU_DEB_CON_WINDOW0, 1, 6);
+    nuDebConPrintf(NU_DEB_CON_WINDOW0, "platform 0.%.d", (int)(scenery[6].position[2] * 100));
+
+    nuDebConTextPos(NU_DEB_CON_WINDOW0, 1, 7);
+    nuDebConPrintf(NU_DEB_CON_WINDOW0, "platform 0.%.d", (int)(scenery[5].position[2] * 100));
+
+    nuDebConTextPos(NU_DEB_CON_WINDOW0, 1, 8);
+    nuDebConPrintf(NU_DEB_CON_WINDOW0, "platform 0.%.d", (int)(scenery[4].position[2] * 100));
 }
 
 
@@ -266,6 +289,27 @@ void stage00_init(void){
     init_entity(&tuk);
     for (int i = 0; i < ANIM_SCENERY_COUNT; i++) {
         init_entity(&animated_scenery[i]);
+    }
+}
+
+void detect_collisions(Entity *tuk) { 
+
+    if (hit_stuff) {
+        hit_stuff = 0;
+    }
+    StaticObject *obj;
+    for (int i = 0; i < SCENERY_COUNT; i++) {
+        obj = &scenery[i];
+        if (obj->mesh == gfx_ground) {
+            if (   ( tuk->position[0] > obj->position[0]
+                     && tuk->position[0] < obj->position[0] + obj->position[0] + obj->width)
+
+                 && ( tuk->position[2] > obj->position[2]
+                      && tuk->position[2] < obj->position[2] + obj->height)
+            ) {
+                hit_stuff = 1;
+            }
+        }
     }
 }
 
@@ -279,6 +323,8 @@ void stage00_update(void){
     nuContDataGetEx(contdata, 0);
     
     move_entity(&tuk, cam, contdata, time_data);
+
+    detect_collisions(&tuk);
 
     set_entity_state(&tuk);
 

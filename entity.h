@@ -14,6 +14,9 @@ typedef struct {
 	float yaw;
 	float scale;
 
+	float width;
+	float height;
+
 	Gfx *mesh;
 
 } StaticObject;
