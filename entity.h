@@ -25,10 +25,15 @@ typedef enum {
 	CROUCH,
     WALK,
 	RUN,
+        JOG,
+        SPRINT,
     ATTACK,
+        PUNCH,
+        HOOK,
 	ROLL,
 	JUMP,
-	FALL
+        FALL,
+        LAND
 
 } EntityState;
 
@@ -64,6 +69,9 @@ typedef struct {
 	EntityState state;
 	EntityState new_state;
 
+    EntityState new_sub_state;
+	EntityState sub_state;
+
 	s64ModelHelper model;
     float framerate;
 
@@ -84,7 +92,23 @@ void set_entity_position(Entity *entity, TimeData time_data){
     entity->position[2] += entity->speed[2] * time_data.frame_duration;
 
 }
+/*
+#define ANIMATION_tuk_fall_idle_left   0
+#define ANIMATION_tuk_fall_idle_right  1
+#define ANIMATION_tuk_jump_left        2
+#define ANIMATION_tuk_jump_right       3
+#define ANIMATION_tuk_run_left         4
+#define ANIMATION_tuk_run_right        5
+#define ANIMATION_tuk_slide_left       6
+#define ANIMATION_tuk_slide_right      7
+#define ANIMATION_tuk_sprint_left      8
+#define ANIMATION_tuk_sprint_right     9
+#define ANIMATION_tuk_stand_idle_left  10
+#define ANIMATION_tuk_stand_idle_right 11
+#define ANIMATION_tuk_walk_left        12
+#define ANIMATION_tuk_walk_right       13
 
+*/
 
 void set_animation(Entity *entity) {
 
@@ -92,27 +116,42 @@ void set_animation(Entity *entity) {
 
 		if (entity->state  == STAND) {
 
-            if (entity->yaw > 0) sausage64_set_anim(&entity->model, 0);
-            else if (entity->yaw < 0) sausage64_set_anim(&entity->model, 1);
+            if (entity->yaw > 0) sausage64_set_anim(&entity->model, 10);
+            else if (entity->yaw < 0) sausage64_set_anim(&entity->model, 11);
         }
 
-	    //if (entity->state  == CROUCH);
-
 		if (entity->state  == WALK) {
+
+            if (entity->yaw > 0) sausage64_set_anim(&entity->model, 12);
+            else if (entity->yaw < 0) sausage64_set_anim(&entity->model, 13);
+        }
+
+		if (entity->state  == RUN) {
+            
+            if (entity->sub_state == RUN){
+
+                if (entity->yaw > 0) sausage64_set_anim(&entity->model, 4);
+                else if (entity->yaw < 0) sausage64_set_anim(&entity->model, 5);
+            }
+            else
+            if (entity->sub_state == SPRINT){
+
+                if (entity->yaw > 0) sausage64_set_anim(&entity->model, 8);
+                else if (entity->yaw < 0) sausage64_set_anim(&entity->model, 9);
+            }
+        }
+		if (entity->state  == JUMP); {
 
             if (entity->yaw > 0) sausage64_set_anim(&entity->model, 2);
             else if (entity->yaw < 0) sausage64_set_anim(&entity->model, 3);
         }
-
-		if (entity->state  == RUN) {
-
-            if (entity->yaw > 0) sausage64_set_anim(&entity->model, 4);
-            else if (entity->yaw < 0) sausage64_set_anim(&entity->model, 5);
-        }
+/*
+*/
 
 
+
+	    //if (entity->state  == CROUCH);
 		//if (entity->state  == ROLL);
-		//if (entity->state  == JUMP);
 
     }
 }
@@ -132,16 +171,16 @@ void entity_animcallback(Entity *entity){
 
 		case ATTACK: break;
 
-        case ROLL: set_entity_state(entity); break;
+        case ROLL: break;
 
-        case JUMP: set_entity_state(entity); break;
+        case JUMP: break;
     }
 }
 
 
 void set_entity_state(Entity *entity) {
     
-    if (entity->state == entity->new_state){
+    if (entity->state == entity->new_state /*&& entity->sub_state == entity->new_sub_state*/) {
         return;
     }
 
@@ -175,6 +214,7 @@ void set_entity_state(Entity *entity) {
               || entity->state == WALK)){
 
         entity->state = entity->new_state;
+        entity->sub_state = entity->new_sub_state;
         set_animation(entity);
     }
 

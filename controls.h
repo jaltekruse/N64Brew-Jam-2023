@@ -44,8 +44,8 @@ void move_entity_stick_2d(Entity *entity, Camera camera, NUContData cont[1], Tim
     else
     if (fabs(input_amount) > 0){
 
-        entity->target_speed[0] = input_amount * 8;
-        entity->acceleration[0] = 10 * (entity->target_speed[0] - entity->speed[0]);
+        entity->target_speed[0] = input_amount * 12;
+        entity->acceleration[0] = 15 * (entity->target_speed[0] - entity->speed[0]);
 
         if (fabs(entity->speed[0]) < 300) {
             
@@ -53,22 +53,29 @@ void move_entity_stick_2d(Entity *entity, Camera camera, NUContData cont[1], Tim
             entity->new_state = WALK;
         }
         else {
+            if (fabs(entity->speed[0]) < 600){
 
-            entity->framerate = fabs(entity->speed[0]) / 1000;
+                entity->framerate = fabs(entity->speed[0]) / 1000;
+                entity->new_sub_state = RUN;
+            }
+            else 
+            if (fabs(entity->speed[0]) > 600){
+
+                entity->framerate = fabs(entity->speed[0]) / 1600;
+                entity->new_sub_state = SPRINT;
+            }
             entity->new_state = RUN;
         }
     }
 
-    if (entity->state == JUMP) {
-
-        entity->acceleration[0] = entity->acceleration[0] / 20;
-        return;
-    }
-    
-    
     //set yaw and direction
     if (entity->speed[0] > 0 && input_amount > 0) entity->yaw = 75;
     if (entity->speed[0] < 0 && input_amount < 0) entity->yaw = -75;
+    
+    if (entity->state == JUMP) {
+
+        entity->acceleration[0] = entity->acceleration[0] * 0.8f;
+    }
 }
 
 void handle_entity_actions(Entity *entity, Camera camera, NUContData cont[1], TimeData time_data){
@@ -78,8 +85,8 @@ void handle_entity_actions(Entity *entity, Camera camera, NUContData cont[1], Ti
             && entity->position[2] == 0 
             && entity->state != ROLL){
           
-        entity->target_speed[2] = 300;
-        entity->acceleration[2] = 100 * (entity->target_speed[2] - entity->speed[2]);
+        entity->target_speed[2] = 370;
+        entity->acceleration[2] = 120 * (entity->target_speed[2] - entity->speed[2]);
 
         entity->new_state = JUMP;
     }

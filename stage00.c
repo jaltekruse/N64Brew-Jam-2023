@@ -7,8 +7,10 @@
 #include "helper.h"
 #include "sausage64.h"
 #include "palette.h"
+#include "textures.h"
 #include "tuk.h"
 #include "palm_tree.h"
+#include "beach.h"
 #include "cliff_1.h"
 #include "cliff_2.h"
 #include "cliff_3.h"
@@ -54,7 +56,7 @@ LightData light_data = {
 
 Camera cam = {
 
-    distance_from_target: 800,
+    distance_from_target: 700,
     angle_around_target: 0,
     pitch: 10, 
 };
@@ -80,13 +82,13 @@ Mtx tukMtx[MESHCOUNT_tuk];
 Mtx palm_treeMtx[MESHCOUNT_palm_tree];
 
 /*
+*/
 StaticObject cube = {
     
     position: { 0, 0, -20},
     mesh: gfx_beach,
     scale: 1.0f
 };
-*/
 
 #define SCENERY_COUNT 5
 StaticObject scenery[SCENERY_COUNT] = {
@@ -94,7 +96,7 @@ StaticObject scenery[SCENERY_COUNT] = {
     { position: {  -1500,  2000,    0},     mesh: gfx_cliff_2,     scale: 1.0 },
     { position: {      0,  2000,    0},     mesh: gfx_cliff_3,     scale: 1.0 },
     { position: {   1500,  2000,    0},     mesh: gfx_cliff_4,     scale: 1.0 },
-    { position: {   3000,  2000,  200},     mesh: gfx_cliff_5,     scale: 1.0}
+    { position: {   3000,  2000,  200},     mesh: gfx_cliff_5,     scale: 1.0 }
 };
 
 
@@ -102,7 +104,7 @@ void init_entity(Entity *entity){
 
     if (entity->type == TUK) {
         sausage64_initmodel(&entity->model, MODEL_tuk, tukMtx);
-        sausage64_set_anim(&entity->model, 0); 
+        sausage64_set_anim(&entity->model, 10); 
         sausage64_set_animcallback(&entity->model, animcallback);
     }
     if (entity->type == PALM_TREE) {
@@ -227,14 +229,14 @@ void render_world(Entity highlighted, Camera *camera, LightData *light){
 
     render_entity(&tuk);
 
-    for (int i = 0; i < SCENERY_COUNT; i++) {
-        render_static_object(&scenery[i]);
-    }
+    render_static_object(&cube);
     
     /*
     // keep the skybox special for now, doesn't feel like it belongs with the other static objects in scenery
-    render_static_object(&cube);
 
+    for (int i = 0; i < SCENERY_COUNT; i++) {
+        render_static_object(&scenery[i]);
+    }
     for (int i = 0; i < ANIM_SCENERY_COUNT; i++) {
         render_entity(&animated_scenery[i]);
     }
@@ -257,7 +259,7 @@ void render_debug_data(){
     nuDebConPrintf(NU_DEB_CON_WINDOW0, "FPS %d", (int) time_data.FPS);
 
     nuDebConTextPos(NU_DEB_CON_WINDOW0, 1, 3);
-    nuDebConPrintf(NU_DEB_CON_WINDOW0, "framerate 0.%.d", (int)(tuk.framerate * 100));
+    nuDebConPrintf(NU_DEB_CON_WINDOW0, "speed %.d", (int)(tuk.speed[0]));
 }
 
 
