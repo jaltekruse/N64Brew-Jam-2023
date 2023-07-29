@@ -4,9 +4,9 @@
 #define GRAVITY 1000
 
 void entity_acceleration_to_speed(Entity *entity, TimeData time);
-void move_entity_stick_2d(Entity *entity, Camera camera, NUContData cont[1], TimeData time_data);
-void move_entity_stick_3d(Entity *entity, Camera camera, NUContData cont[1], TimeData time_data);
-void move_entity(Entity *entity, Camera camera, NUContData cont[1], TimeData time_data);
+void move_entity_stick_2d(AnimatedEntity *entity, Camera camera, NUContData cont[1], TimeData time_data);
+void move_entity_stick_3d(AnimatedEntity *entity, Camera camera, NUContData cont[1], TimeData time_data);
+void move_entity(AnimatedEntity *entity, Camera camera, NUContData cont[1], TimeData time_data);
 
 void move_camera_stick(Camera *camera, NUContData cont[1], TimeData time_data);
 void move_camera_c_buttons(Camera *camera, NUContData cont[1], TimeData time_data);
@@ -21,8 +21,9 @@ void entity_acceleration_to_speed(Entity *entity, TimeData time){
 }
 
 
-void move_entity_stick_2d(Entity *entity, Camera camera, NUContData cont[1], TimeData time_data){
+void move_entity_stick_2d(AnimatedEntity *animated_entity, Camera camera, NUContData cont[1], TimeData time_data){
 
+    Entity* entity = &animated_entity->entity;
     float input_amount = cont->stick_x;
     
 	if (fabs(input_amount) < 7){input_amount = 0;} 
@@ -33,8 +34,8 @@ void move_entity_stick_2d(Entity *entity, Camera camera, NUContData cont[1], Tim
             
             entity->speed[0] = 0;
             
-            entity->framerate = 0.5f;
-            entity-> new_state = STAND;
+            animated_entity->framerate = 0.5f;
+            animated_entity->new_state = STAND;
         }else{
 
             entity->target_speed[0] = 0;
@@ -49,17 +50,17 @@ void move_entity_stick_2d(Entity *entity, Camera camera, NUContData cont[1], Tim
 
         if (fabs(entity->speed[0]) < 300) {
             
-            entity->framerate = fabs(entity->speed[0]) / 450;
-            entity->new_state = WALK;
+            animated_entity->framerate = fabs(entity->speed[0]) / 450;
+            animated_entity->new_state = WALK;
         }
         else {
 
-            entity->framerate = fabs(entity->speed[0]) / 1000;
-            entity->new_state = RUN;
+            animated_entity->framerate = fabs(entity->speed[0]) / 1000;
+            animated_entity->new_state = RUN;
         }
     }
 
-    if (entity->state == JUMP) {
+    if (animated_entity->state == JUMP) {
 
         entity->acceleration[0] = entity->acceleration[0] / 20;
         return;
@@ -71,17 +72,18 @@ void move_entity_stick_2d(Entity *entity, Camera camera, NUContData cont[1], Tim
     if (entity->speed[0] < 0 && input_amount < 0) entity->yaw = -75;
 }
 
-void handle_entity_actions(Entity *entity, Camera camera, NUContData cont[1], TimeData time_data){
+void handle_entity_actions(AnimatedEntity *animated_entity, Camera camera, NUContData cont[1], TimeData time_data){
     
+    Entity* entity = &animated_entity->entity;
     // set jump
     if (cont[0].trigger & A_BUTTON 
             && entity->position[2] == 0 
-            && entity->state != ROLL){
+            && animated_entity->state != ROLL){
           
         entity->target_speed[2] = 300;
         entity->acceleration[2] = 100 * (entity->target_speed[2] - entity->speed[2]);
 
-        entity->new_state = JUMP;
+        animated_entity->new_state = JUMP;
     }
 
     // apply gravity (it's higher when nick is falling)
@@ -95,12 +97,13 @@ void handle_entity_actions(Entity *entity, Camera camera, NUContData cont[1], Ti
         entity->speed[2] = 0;
         entity->position[2] = 0;
 
-        entity->new_state = STAND; 
+        animated_entity->new_state = STAND; 
     }
 }
 
-void move_entity_stick_3d(Entity *entity, Camera camera, NUContData cont[1], TimeData time_data){
+void move_entity_stick_3d(AnimatedEntity *animated_entity, Camera camera, NUContData cont[1], TimeData time_data){
     
+    Entity* entity = &animated_entity->entity;
 	if (fabs(cont->stick_x) < 7){cont->stick_x = 0;}
 	if (fabs(cont->stick_y) < 7){cont->stick_y = 0;}
 
@@ -114,7 +117,7 @@ void move_entity_stick_3d(Entity *entity, Camera camera, NUContData cont[1], Tim
             entity->speed[0] = 0;
             entity->speed[1] = 0;
             
-            entity-> new_state = STAND;
+            animated_entity->new_state = STAND;
         }
 
         entity->acceleration[0] = 9 * (0 - entity->speed[0]);
@@ -129,7 +132,7 @@ void move_entity_stick_3d(Entity *entity, Camera camera, NUContData cont[1], Tim
         entity->acceleration[0] = 4 * (entity->target_speed[0] - entity->speed[0]);
         entity->acceleration[1] = 4 * (entity->target_speed[1] - entity->speed[1]);
 
-        entity-> new_state = WALK;
+        animated_entity->new_state = WALK;
     }else
     if (input_amount > 60){
 
@@ -139,18 +142,18 @@ void move_entity_stick_3d(Entity *entity, Camera camera, NUContData cont[1], Tim
         entity->acceleration[0] = 4 * (entity->target_speed[0] - entity->speed[0]);
         entity->acceleration[1] = 4 * (entity->target_speed[1] - entity->speed[1]);
 
-        entity->new_state = RUN;
+        animated_entity->new_state = RUN;
     }
     
     if (entity->speed[0] != 0 || entity->speed[1] != 0) entity->yaw = deg(atan2(entity->speed[0], -entity->speed[1]));
 }
 
-void move_entity(Entity *entity, Camera camera, NUContData cont[1], TimeData time_data){
+void move_entity(AnimatedEntity *animated_entity, Camera camera, NUContData cont[1], TimeData time_data){
 
-        move_entity_stick_2d(entity, camera, cont, time_data);
-        handle_entity_actions(entity, camera, cont, time_data);
-        entity_acceleration_to_speed(entity, time_data);
-        set_entity_position(entity, time_data);
+        move_entity_stick_2d(animated_entity, camera, cont, time_data);
+        handle_entity_actions(animated_entity, camera, cont, time_data);
+        entity_acceleration_to_speed(&animated_entity->entity, time_data);
+        set_entity_position(&animated_entity->entity, time_data);
 }
 
 

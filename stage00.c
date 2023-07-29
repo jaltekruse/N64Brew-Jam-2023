@@ -31,16 +31,16 @@
 
 void change_mode();
 
-void init_entity(Entity *entity);
+void init_entity(AnimatedEntity *entity);
 
 void animcallback(u16 anim);
 
 void set_light(LightData *light);
 void set_viewport(Camera *camera, Entity entity);
 
-void render_entity(Entity *entity);
+void render_entity(AnimatedEntity *entity);
 void render_static_object(StaticObject *static_object);
-void render_world(Entity entity, Camera *camera, LightData *light);
+void render_world(AnimatedEntity entity, Camera *camera, LightData *light);
 
 void render_debug_data();
 
@@ -60,21 +60,22 @@ Camera cam = {
     pitch: 10, 
 };
 
-Entity tuk = {
-
-    position: { 0, -200, 10},
-    yaw: 75,
+AnimatedEntity tuk = {
+    entity : {
+        position: { 0, -200, 10},
+        yaw: 75,
+        scale: 1.0f
+    },
     type: TUK,
-    scale: 1.0f
 };
 
 
 #define ANIM_SCENERY_COUNT 4
-Entity animated_scenery[ANIM_SCENERY_COUNT] = {
-    { scale: 1.f, position: { 18, 200, 0}, yaw: 1, type: PALM_TREE, framerate: 0.2},
-    { scale: 1.3f, position: { 26, 194, 0}, yaw: 113, type: PALM_TREE, framerate: 0.45},
-    { scale: 1.9f, position: { 24, 208, 0}, yaw: 267, type: PALM_TREE, framerate: 0.5},
-    { scale: 1.9f, position: { 54, 238, 0}, yaw: 267, type: PALM_TREE, framerate: 0.6},
+AnimatedEntity animated_scenery[ANIM_SCENERY_COUNT] = {
+    { entity: { scale: 1.f, position: { 18, 200, 0}, yaw: 1 }, type: PALM_TREE, framerate: 0.2},
+    { entity: { scale: 1.3f, position: { 26, 194, 0}, yaw: 113}, type: PALM_TREE, framerate: 0.45},
+    { entity: { scale: 1.9f, position: { 24, 208, 0}, yaw: 267}, type: PALM_TREE, framerate: 0.5},
+    { entity: { scale: 1.9f, position: { 54, 238, 0}, yaw: 267}, type: PALM_TREE, framerate: 0.6},
 };
 
 Mtx tukMtx[MESHCOUNT_tuk];
@@ -105,7 +106,7 @@ StaticObject scenery[SCENERY_COUNT] = {
 };
 
 
-void init_entity(Entity *entity){
+void init_entity(AnimatedEntity *entity){
 
     if (entity->type == TUK) {
         sausage64_initmodel(&entity->model, MODEL_tuk, tukMtx);
@@ -170,7 +171,8 @@ void set_viewport(Camera *camera, Entity entity){
 }
 
 
-void render_entity(Entity *entity){
+void render_entity(AnimatedEntity *animated_entity){
+    Entity* entity = &animated_entity->entity;
     
     guTranslate(&entity->pos_mtx, entity->position[0], entity->position[1], entity->position[2]);
     guRotate(&entity->rot_mtx[0], entity->pitch, 1, 0, 0);
@@ -182,7 +184,7 @@ void render_entity(Entity *entity){
     gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&entity->rot_mtx[1]), G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_PUSH);
     gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&entity->scale_mtx), G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_PUSH);
 
-    sausage64_drawmodel(&glistp, &entity->model);
+    sausage64_drawmodel(&glistp, &animated_entity->model);
 
     gSPPopMatrix(glistp++, G_MTX_MODELVIEW);
     gSPPopMatrix(glistp++, G_MTX_MODELVIEW);
@@ -212,7 +214,7 @@ void render_static_object(StaticObject *static_object){
 }
 
 
-void render_world(Entity highlighted, Camera *camera, LightData *light){
+void render_world(AnimatedEntity highlighted, Camera *camera, LightData *light){
 
     gDPSetCycleType(glistp++, G_CYC_1CYCLE);
     gDPSetDepthSource(glistp++, G_ZS_PIXEL);
@@ -228,7 +230,7 @@ void render_world(Entity highlighted, Camera *camera, LightData *light){
     gDPSetTextureDetail(glistp++, G_TD_CLAMP);
     gDPSetTextureLUT(glistp++, G_TT_NONE);
 
-    set_viewport(camera, highlighted);
+    set_viewport(camera, highlighted.entity);
 
     set_light(light);
 
@@ -271,7 +273,7 @@ void render_debug_data(){
     nuDebConPrintf(NU_DEB_CON_WINDOW0, "hit? %d", (int) hit_stuff);
 
     nuDebConTextPos(NU_DEB_CON_WINDOW0, 1, 5);
-    nuDebConPrintf(NU_DEB_CON_WINDOW0, "tuk 0.%.d", (int)(tuk.position[2] * 100));
+    nuDebConPrintf(NU_DEB_CON_WINDOW0, "tuk 0.%.d", (int)(tuk.entity.position[2] * 100));
 
     nuDebConTextPos(NU_DEB_CON_WINDOW0, 1, 6);
     nuDebConPrintf(NU_DEB_CON_WINDOW0, "platform 0.%.d", (int)(scenery[6].position[2] * 100));
@@ -324,11 +326,11 @@ void stage00_update(void){
     
     move_entity(&tuk, cam, contdata, time_data);
 
-    detect_collisions(&tuk);
+    detect_collisions(&tuk.entity);
 
     set_entity_state(&tuk);
 
-    move_camera(&cam, tuk, contdata, time_data);
+    move_camera(&cam, tuk.entity, contdata, time_data);
 
     sausage64_advance_anim(&tuk.model, tuk.framerate);
 

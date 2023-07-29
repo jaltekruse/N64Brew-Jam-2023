@@ -62,7 +62,12 @@ typedef struct {
 
 	float target_speed[3];
 	float speed[3];
-	
+} Entity;
+
+
+typedef struct {
+    Entity entity;
+
 	EntityType type;
 	EntityState state;
 	EntityState new_state;
@@ -70,13 +75,13 @@ typedef struct {
 	s64ModelHelper model;
     float framerate;
 
-} Entity;
+} AnimatedEntity;
 
 
 void set_entity_position(Entity *entity, TimeData time_data);
-void set_animation(Entity *entity);
-void entity_animcallback(Entity *entity);
-void set_entity_state(Entity *entity);
+void set_animation(AnimatedEntity *entity);
+void entity_animcallback(AnimatedEntity *entity);
+void set_entity_state(AnimatedEntity *entity);
 
 
 void set_entity_position(Entity *entity, TimeData time_data){
@@ -89,28 +94,28 @@ void set_entity_position(Entity *entity, TimeData time_data){
 }
 
 
-void set_animation(Entity *entity) {
+void set_animation(AnimatedEntity *entity) {
 
 	if (entity->type == TUK) {
 
 		if (entity->state  == STAND) {
 
-            if (entity->yaw > 0) sausage64_set_anim(&entity->model, 0);
-            else if (entity->yaw < 0) sausage64_set_anim(&entity->model, 1);
+            if (entity->entity.yaw > 0) sausage64_set_anim(&entity->model, 0);
+            else if (entity->entity.yaw < 0) sausage64_set_anim(&entity->model, 1);
         }
 
 	    //if (entity->state  == CROUCH);
 
 		if (entity->state  == WALK) {
 
-            if (entity->yaw > 0) sausage64_set_anim(&entity->model, 2);
-            else if (entity->yaw < 0) sausage64_set_anim(&entity->model, 3);
+            if (entity->entity.yaw > 0) sausage64_set_anim(&entity->model, 2);
+            else if (entity->entity.yaw < 0) sausage64_set_anim(&entity->model, 3);
         }
 
 		if (entity->state  == RUN) {
 
-            if (entity->yaw > 0) sausage64_set_anim(&entity->model, 4);
-            else if (entity->yaw < 0) sausage64_set_anim(&entity->model, 5);
+            if (entity->entity.yaw > 0) sausage64_set_anim(&entity->model, 4);
+            else if (entity->entity.yaw < 0) sausage64_set_anim(&entity->model, 5);
         }
 
 
@@ -121,7 +126,7 @@ void set_animation(Entity *entity) {
 }
 
 
-void entity_animcallback(Entity *entity){
+void entity_animcallback(AnimatedEntity *entity){
 
     switch(entity->state){
 
@@ -142,7 +147,7 @@ void entity_animcallback(Entity *entity){
 }
 
 
-void set_entity_state(Entity *entity) {
+void set_entity_state(AnimatedEntity *entity) {
     
     if (entity->state == entity->new_state){
         return;
