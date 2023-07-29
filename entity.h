@@ -2,26 +2,6 @@
 #define ENTITY_H
 
 
-typedef struct {
-
-	Mtx	pos_mtx;
-	Mtx	rot_mtx[3];
-	Mtx scale_mtx;
-
-	float position[3];
-	float dir[3];
-	float pitch;
-	float yaw;
-	float scale;
-
-	float width;
-	float height;
-
-	Gfx *mesh;
-
-} StaticObject;
-
-
 typedef enum { 
 
 	STAND,
@@ -62,8 +42,16 @@ typedef struct {
 
 	float target_speed[3];
 	float speed[3];
+
+	float width;
+	float height;
 } Entity;
 
+typedef struct {
+    Entity entity;
+	Gfx *mesh;
+
+} StaticObject;
 
 typedef struct {
     Entity entity;

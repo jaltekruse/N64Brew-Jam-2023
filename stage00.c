@@ -92,17 +92,17 @@ StaticObject cube = {
 
 #define SCENERY_COUNT 11
 StaticObject scenery[SCENERY_COUNT] = {
-    { position: {  -3000,  2000,    0},     mesh: gfx_cliff_1,     scale: 1.0,}, 
-    { position: {  -1500,  2000,    0},     mesh: gfx_cliff_2,     scale: 1.0 },
-    { position: {      0,  2000,    0},     mesh: gfx_cliff_3,     scale: 1.0 },
-    { position: {   1500,  2000,    0},     mesh: gfx_cliff_4,     scale: 1.0 },
-    { position: {   3000,  2000,  200},     mesh: gfx_cliff_5,     scale: 1.0},
-    { position: {   300,  2000,  200},     mesh: gfx_beach,     scale: 1.0},
-    { position: {   1300,  2000,  200},     mesh: gfx_beach,     scale: 1.0},
-    { position: {   2300,  2000,  200},     mesh: gfx_beach,     scale: 1.0},
-    { position: { 100, 0, 80}, mesh: gfx_ground, scale: 1.f, width: 150, height: 30},
-    { position: { 600, 0, 120}, mesh: gfx_ground, scale: 1.f, width: 150, height: 30},
-    { position: { 600, 0, 200}, mesh: gfx_ground, scale: 1.f, width: 150, height: 30},
+    { entity: { position: {  -3000,  2000,    0},     scale: 1.0, },                        mesh: gfx_cliff_1, },
+    { entity: { position: {  -1500,  2000,    0},     scale: 1.0 },                         mesh: gfx_cliff_2, },
+    { entity: { position: {      0,  2000,    0},     scale: 1.0 },                         mesh: gfx_cliff_3, },
+    { entity: { position: {   1500,  2000,    0},     scale: 1.0 },                         mesh: gfx_cliff_4, },
+    { entity: { position: {   3000,  2000,  200},     scale: 1.0},                          mesh: gfx_cliff_5, },
+    { entity: { position: {   300,  2000,  200},      scale: 1.0},                          mesh: gfx_beach,   },
+    { entity: { position: {   1300,  2000,  200},     scale: 1.0},                          mesh: gfx_beach,   },
+    { entity: { position: {   2300,  2000,  200},     scale: 1.0},                          mesh: gfx_beach,   },
+    { entity: { position: { 100, 0, 80},              scale: 1.f, width: 150, height: 30},  mesh: gfx_ground,  },
+    { entity: { position: { 600, 0, 120},             scale: 1.f, width: 150, height: 30},  mesh: gfx_ground,  },
+    { entity: { position: { 600, 0, 200},             scale: 1.f, width: 150, height: 30},  mesh: gfx_ground,  },
 };
 
 
@@ -170,10 +170,7 @@ void set_viewport(Camera *camera, Entity entity){
     gSPMatrix(glistp++, &camera->modeling, G_MTX_MODELVIEW | G_MTX_LOAD | G_MTX_NOPUSH);
 }
 
-
-void render_entity(AnimatedEntity *animated_entity){
-    Entity* entity = &animated_entity->entity;
-    
+void setup_modelview_for_entity(Entity *entity) {
     guTranslate(&entity->pos_mtx, entity->position[0], entity->position[1], entity->position[2]);
     guRotate(&entity->rot_mtx[0], entity->pitch, 1, 0, 0);
     guRotate(&entity->rot_mtx[1], entity->yaw, 0, 0, 1);
@@ -183,6 +180,13 @@ void render_entity(AnimatedEntity *animated_entity){
     gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&entity->rot_mtx[0]), G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_PUSH);
     gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&entity->rot_mtx[1]), G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_PUSH);
     gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&entity->scale_mtx), G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_PUSH);
+}
+
+
+void render_entity(AnimatedEntity *animated_entity){
+    Entity* entity = &animated_entity->entity;
+    
+    setup_modelview_for_entity(entity);
 
     sausage64_drawmodel(&glistp, &animated_entity->model);
 
@@ -195,16 +199,8 @@ void render_entity(AnimatedEntity *animated_entity){
 
 void render_static_object(StaticObject *static_object){
     
-    guTranslate(&static_object->pos_mtx, static_object->position[0], static_object->position[1], static_object->position[2]);
-    guRotate(&static_object->rot_mtx[0], static_object->pitch, 1, 0, 0);
-    guRotate(&static_object->rot_mtx[1], static_object->yaw, 0, 0, 1);
-    guScale(&static_object->scale_mtx, static_object->scale, static_object->scale, static_object->scale);
+    setup_modelview_for_entity(&static_object->entity);
 
-    gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&static_object->pos_mtx), G_MTX_MODELVIEW | G_MTX_LOAD | G_MTX_PUSH);
-    gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&static_object->rot_mtx[0]), G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_PUSH);
-    gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&static_object->rot_mtx[1]), G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_PUSH);
-    gSPMatrix(glistp++, OS_K0_TO_PHYSICAL(&static_object->scale_mtx), G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_PUSH);
-    
     gSPDisplayList(glistp++, static_object->mesh);
 
     gSPPopMatrix(glistp++, G_MTX_MODELVIEW);
@@ -276,13 +272,13 @@ void render_debug_data(){
     nuDebConPrintf(NU_DEB_CON_WINDOW0, "tuk 0.%.d", (int)(tuk.entity.position[2] * 100));
 
     nuDebConTextPos(NU_DEB_CON_WINDOW0, 1, 6);
-    nuDebConPrintf(NU_DEB_CON_WINDOW0, "platform 0.%.d", (int)(scenery[6].position[2] * 100));
+    nuDebConPrintf(NU_DEB_CON_WINDOW0, "platform 0.%.d", (int)(scenery[6].entity.position[2] * 100));
 
     nuDebConTextPos(NU_DEB_CON_WINDOW0, 1, 7);
-    nuDebConPrintf(NU_DEB_CON_WINDOW0, "platform 0.%.d", (int)(scenery[5].position[2] * 100));
+    nuDebConPrintf(NU_DEB_CON_WINDOW0, "platform 0.%.d", (int)(scenery[5].entity.position[2] * 100));
 
     nuDebConTextPos(NU_DEB_CON_WINDOW0, 1, 8);
-    nuDebConPrintf(NU_DEB_CON_WINDOW0, "platform 0.%.d", (int)(scenery[4].position[2] * 100));
+    nuDebConPrintf(NU_DEB_CON_WINDOW0, "platform 0.%.d", (int)(scenery[4].entity.position[2] * 100));
 }
 
 
@@ -299,10 +295,12 @@ void detect_collisions(Entity *tuk) {
     if (hit_stuff) {
         hit_stuff = 0;
     }
-    StaticObject *obj;
+    Entity *obj;
+    StaticObject *static_obj;
     for (int i = 0; i < SCENERY_COUNT; i++) {
-        obj = &scenery[i];
-        if (obj->mesh == gfx_ground) {
+        static_obj = &scenery[i];
+        obj = &static_obj->entity;
+        if (static_obj->mesh == gfx_ground) {
             if (   ( tuk->position[0] > obj->position[0]
                      && tuk->position[0] < obj->position[0] + obj->position[0] + obj->width)
 
