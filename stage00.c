@@ -7,6 +7,7 @@
 #include "helper.h"
 #include "sausage64.h"
 #include "palette.h"
+#include "textures.h"
 #include "tuk.h"
 #include "palm_tree.h"
 #include "beach.h"
@@ -55,7 +56,7 @@ LightData light_data = {
 
 Camera cam = {
 
-    distance_from_target: 800,
+    distance_from_target: 700,
     angle_around_target: 0,
     pitch: 10, 
 };
@@ -82,13 +83,14 @@ Mtx tukMtx[MESHCOUNT_tuk];
 Mtx palm_treeMtx[MESHCOUNT_palm_tree];
 
 /*
-StaticObject cube = {
-    
-    position: { 0, 0, -20},
-    mesh: gfx_beach,
-    scale: 1.0f
-};
 */
+StaticObject cube = {
+    entity : {
+        position: { 0, 0, -20},
+        scale: 1.0f
+    },
+    mesh: gfx_beach,
+};
 
 #define SCENERY_COUNT 11
 StaticObject scenery[SCENERY_COUNT] = {
@@ -110,7 +112,7 @@ void init_entity(AnimatedEntity *entity){
 
     if (entity->type == TUK) {
         sausage64_initmodel(&entity->model, MODEL_tuk, tukMtx);
-        sausage64_set_anim(&entity->model, 0); 
+        sausage64_set_anim(&entity->model, 10); 
         sausage64_set_animcallback(&entity->model, animcallback);
     }
     if (entity->type == PALM_TREE) {
@@ -232,14 +234,14 @@ void render_world(AnimatedEntity highlighted, Camera *camera, LightData *light){
 
     render_entity(&tuk);
 
-    for (int i = 0; i < SCENERY_COUNT; i++) {
-        render_static_object(&scenery[i]);
-    }
+    render_static_object(&cube);
     
     /*
     // keep the skybox special for now, doesn't feel like it belongs with the other static objects in scenery
-    render_static_object(&cube);
 
+    for (int i = 0; i < SCENERY_COUNT; i++) {
+        render_static_object(&scenery[i]);
+    }
     for (int i = 0; i < ANIM_SCENERY_COUNT; i++) {
         render_entity(&animated_scenery[i]);
     }
@@ -279,6 +281,7 @@ void render_debug_data(){
 
     nuDebConTextPos(NU_DEB_CON_WINDOW0, 1, 8);
     nuDebConPrintf(NU_DEB_CON_WINDOW0, "platform 0.%.d", (int)(scenery[4].entity.position[2] * 100));
+//    nuDebConPrintf(NU_DEB_CON_WINDOW0, "speed %.d", (int)(tuk.speed[0]));
 }
 
 

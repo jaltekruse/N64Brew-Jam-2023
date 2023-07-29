@@ -45,8 +45,8 @@ void move_entity_stick_2d(AnimatedEntity *animated_entity, Camera camera, NUCont
     else
     if (fabs(input_amount) > 0){
 
-        entity->target_speed[0] = input_amount * 8;
-        entity->acceleration[0] = 10 * (entity->target_speed[0] - entity->speed[0]);
+        entity->target_speed[0] = input_amount * 12;
+        entity->acceleration[0] = 15 * (entity->target_speed[0] - entity->speed[0]);
 
         if (fabs(entity->speed[0]) < 300) {
             
@@ -54,8 +54,17 @@ void move_entity_stick_2d(AnimatedEntity *animated_entity, Camera camera, NUCont
             animated_entity->new_state = WALK;
         }
         else {
+            if (fabs(entity->speed[0]) < 600){
 
-            animated_entity->framerate = fabs(entity->speed[0]) / 1000;
+                animated_entity->framerate = fabs(entity->speed[0]) / 1000;
+                animated_entity->new_sub_state = RUN;
+            }
+            else 
+            if (fabs(entity->speed[0]) > 600){
+
+                animated_entity->framerate = fabs(entity->speed[0]) / 1600;
+                animated_entity->new_sub_state = SPRINT;
+            }
             animated_entity->new_state = RUN;
         }
     }
@@ -70,6 +79,11 @@ void move_entity_stick_2d(AnimatedEntity *animated_entity, Camera camera, NUCont
     //set yaw and direction
     if (entity->speed[0] > 0 && input_amount > 0) entity->yaw = 75;
     if (entity->speed[0] < 0 && input_amount < 0) entity->yaw = -75;
+    
+    if (animated_entity->state == JUMP) {
+
+        entity->acceleration[0] = entity->acceleration[0] * 0.8f;
+    }
 }
 
 void handle_entity_actions(AnimatedEntity *animated_entity, Camera camera, NUContData cont[1], TimeData time_data){
@@ -80,8 +94,8 @@ void handle_entity_actions(AnimatedEntity *animated_entity, Camera camera, NUCon
             && entity->position[2] == 0 
             && animated_entity->state != ROLL){
           
-        entity->target_speed[2] = 300;
-        entity->acceleration[2] = 100 * (entity->target_speed[2] - entity->speed[2]);
+        entity->target_speed[2] = 370;
+        entity->acceleration[2] = 120 * (entity->target_speed[2] - entity->speed[2]);
 
         animated_entity->new_state = JUMP;
     }
