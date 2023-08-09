@@ -136,11 +136,11 @@ void set_animation(AnimatedEntity *entity) {
                 else if (entity->entity.yaw < 0) sausage64_set_anim(&entity->model, 9);
             }
         }
-		if (entity->state  == JUMP); {
+		// if (entity->state  == JUMP); {
 
-            if (entity->entity.yaw > 0) sausage64_set_anim(&entity->model, 2);
-            else if (entity->entity.yaw < 0) sausage64_set_anim(&entity->model, 3);
-        }
+        //     if (entity->entity.yaw > 0) sausage64_set_anim(&entity->model, 2);
+        //     else if (entity->entity.yaw < 0) sausage64_set_anim(&entity->model, 3);
+        // }
 /*
 */
 
