@@ -91,18 +91,30 @@ void handle_entity_actions(AnimatedEntity *animated_entity, Camera camera, NUCon
     Entity* entity = &animated_entity->entity;
     // set jump
     if (cont[0].trigger & A_BUTTON 
-            && entity->position[2] == 0 
+            //&& entity->position[2] == 0 
             && animated_entity->state != ROLL){
           
         entity->target_speed[2] = 370;
         entity->acceleration[2] = 120 * (entity->target_speed[2] - entity->speed[2]);
 
+        osSyncPrintf("new state JUMP\n");
         animated_entity->new_state = JUMP;
     }
 
     // apply gravity (it's higher when nick is falling)
+    /*
     if (entity->position[2] > 0 && entity->speed[2] <= 0) entity->acceleration[2] = 2.5  * -GRAVITY;
     else if (entity->position[2] > 0) entity->acceleration[2] = -GRAVITY;
+    */
+
+    if (animated_entity->state == JUMP || animated_entity->state == FALL) {
+        if (entity->speed[2] <= 0) {
+            entity->acceleration[2] = 2.5  * -GRAVITY;
+        } 
+        else {
+            entity->acceleration[2] = -GRAVITY;
+        }
+    }
 
     // set ground collision
     if (entity->position[2] < 0) {
@@ -111,8 +123,10 @@ void handle_entity_actions(AnimatedEntity *animated_entity, Camera camera, NUCon
         entity->speed[2] = 0;
         entity->position[2] = 0;
 
+        osSyncPrintf("new state STAND\n");
         animated_entity->new_state = STAND; 
     }
+    
 }
 
 void move_entity_stick_3d(AnimatedEntity *animated_entity, Camera camera, NUContData cont[1], TimeData time_data){

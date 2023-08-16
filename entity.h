@@ -176,6 +176,8 @@ void entity_animcallback(AnimatedEntity *entity){
 
 void set_entity_state(AnimatedEntity *entity) {
     
+    osSyncPrintf("set_entity_state new: %d    old: %d\n", entity->state, entity->new_state);
+
     if (entity->state == entity->new_state /*&& entity->sub_state == entity->new_sub_state*/) {
         return;
     }

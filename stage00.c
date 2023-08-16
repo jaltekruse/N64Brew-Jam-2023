@@ -92,19 +92,19 @@ StaticObject cube = {
     mesh: gfx_beach,
 };
 
-#define SCENERY_COUNT 11
+#define SCENERY_COUNT 8
 StaticObject scenery[SCENERY_COUNT] = {
     { entity: { position: {  -3000,  2000,    0},     scale: 1.0, },                        mesh: gfx_cliff_1, },
     { entity: { position: {  -1500,  2000,    0},     scale: 1.0 },                         mesh: gfx_cliff_2, },
     { entity: { position: {      0,  2000,    0},     scale: 1.0 },                         mesh: gfx_cliff_3, },
     { entity: { position: {   1500,  2000,    0},     scale: 1.0 },                         mesh: gfx_cliff_4, },
     { entity: { position: {   3000,  2000,  200},     scale: 1.0},                          mesh: gfx_cliff_5, },
-    { entity: { position: {   3300,  2000,  200},      scale: 1.0},                          mesh: gfx_beach,   },
-    { entity: { position: {   4300,  2000,  200},     scale: 1.0},                          mesh: gfx_beach,   },
-    { entity: { position: {   5300,  2000,  200},     scale: 1.0},                          mesh: gfx_beach,   },
+    // { entity: { position: {   3300,  2000,  200},      scale: 1.0},                          mesh: gfx_beach,   },
+    // { entity: { position: {   4300,  2000,  200},     scale: 1.0},                          mesh: gfx_beach,   },
+    // { entity: { position: {   5300,  2000,  200},     scale: 1.0},                          mesh: gfx_beach,   },
     { entity: { position: { 100, 0, 80},              scale: 1.f, width: 150, height: 30},  mesh: gfx_ground,  },
-    { entity: { position: { 600, 0, 120},             scale: 1.f, width: 150, height: 30},  mesh: gfx_ground,  },
-    { entity: { position: { 600, 0, 200},             scale: 1.f, width: 150, height: 30},  mesh: gfx_ground,  },
+    { entity: { position: { 800, 0, 250},             scale: 1.f, width: 150, height: 30},  mesh: gfx_ground,  },
+    { entity: { position: { 1400, 0, 400},             scale: 1.f, width: 150, height: 30},  mesh: gfx_ground,  },
 };
 
 
@@ -236,7 +236,6 @@ void render_world(AnimatedEntity highlighted, Camera *camera, LightData *light){
 
     render_static_object(&cube);
     
-    /*
     // keep the skybox special for now, doesn't feel like it belongs with the other static objects in scenery
 
     for (int i = 0; i < SCENERY_COUNT; i++) {
@@ -245,7 +244,6 @@ void render_world(AnimatedEntity highlighted, Camera *camera, LightData *light){
     for (int i = 0; i < ANIM_SCENERY_COUNT; i++) {
         render_entity(&animated_scenery[i]);
     }
-    */
     
     gDPFullSync(glistp++);
     gSPEndDisplayList(glistp++);
@@ -271,7 +269,7 @@ void render_debug_data(){
     nuDebConPrintf(NU_DEB_CON_WINDOW0, "hit? %d", (int) hit_stuff);
 
     nuDebConTextPos(NU_DEB_CON_WINDOW0, 1, 5);
-    nuDebConPrintf(NU_DEB_CON_WINDOW0, "tuk 0.%.d", (int)(tuk.entity.position[2] * 100));
+    nuDebConPrintf(NU_DEB_CON_WINDOW0, "tuk 0.%.d", (int)(tuk.state));
 
     nuDebConTextPos(NU_DEB_CON_WINDOW0, 1, 6);
     nuDebConPrintf(NU_DEB_CON_WINDOW0, "platform 0.%.d", (int)(scenery[6].entity.position[2] * 100));
@@ -293,8 +291,8 @@ void stage00_init(void){
     }
 }
 
-void detect_collisions(Entity *tuk) { 
-
+void detect_collisions(AnimatedEntity *tuk_anim) { 
+    Entity *tuk = &tuk_anim->entity;
     if (hit_stuff) {
         hit_stuff = 0;
     }
@@ -311,6 +309,13 @@ void detect_collisions(Entity *tuk) {
                       && tuk->position[2] < obj->position[2] + obj->height)
             ) {
                 hit_stuff = 1;
+        
+                tuk->acceleration[2] = 0;
+                tuk->speed[2] = 0;
+                // TODO - need to move back up to top of platform we collide with
+                tuk->position[2] = obj->position[2];
+
+                tuk_anim->new_state = STAND; 
             }
         }
     }
@@ -327,7 +332,7 @@ void stage00_update(void){
     
     move_entity(&tuk, cam, contdata, time_data);
 
-    detect_collisions(&tuk.entity);
+    detect_collisions(&tuk);
 
     set_entity_state(&tuk);
 
